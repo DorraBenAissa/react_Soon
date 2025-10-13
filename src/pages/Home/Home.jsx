@@ -24,6 +24,21 @@ import logoBrand2 from "../../assets/img/brand/logo-2.png";
 import logoBrand3 from "../../assets/img/brand/logo-3.png";
 import logoBrand4 from "../../assets/img/brand/logo-4.png";
 import logoBrand5 from "../../assets/img/brand/logo-5.png";
+import logoBrand6 from "../../assets/img/brand/logo-6.png";
+
+import logoBrand7 from "../../assets/img/brand/logo-7.png";
+import logoBrand8 from "../../assets/img/brand/logo-8.png";
+import logoBrand9 from "../../assets/img/brand/logo-9.png";
+import logoBrand10 from "../../assets/img/brand/logo-10.png";
+import logoBrand11 from "../../assets/img/brand/logo-11.png";
+import logoBrand12 from "../../assets/img/brand/logo-12.png";
+
+import logoBrand13 from "../../assets/img/brand/logo-13.png";
+import logoBrand14 from "../../assets/img/brand/logo-14.png";
+import logoBrand15 from "../../assets/img/brand/logo-15.png";
+import logoBrand16 from "../../assets/img/brand/logo-16.png";
+import logoBrand17 from "../../assets/img/brand/logo-17.png";
+import logoBrand18 from "../../assets/img/brand/logo-18.png";
 
 import thumBlog1 from "../../assets/img/blog/thumb.jpg";
 import thumBlog2 from "../../assets/img/blog/thumb-2.jpg";
@@ -33,6 +48,8 @@ import bgImage from "../../assets/img/project/bg.jpg";
 
 import cta1 from "../../assets/img/cta/cta.png";
 import cta2 from "../../assets/img/cta/cta-2.png";
+
+import bgCta from "../../assets/img/cta/bg.jpg";
 
 // COMPONENTS
 import Odometer from "../../components/Odometer";
@@ -310,10 +327,8 @@ function Home() {
                   <div className="col-lg-8">
                     <div className="td-about-content mb-30">
                       <h2 className="td-about-title mb-30 td-text-invert">
-                        Nous créons et mettons en œuvre des stratégies de
-                        communication efficaces sur le branding, le print, les
-                        sites web, et les réseaux sociaux — des solutions qui
-                        captivent votre audience et valorisent votre entreprise.
+                        Nous créons et mettons en œuvre votre stratégie de
+                        communication
                       </h2>
 
                       <p className="mb-45">
@@ -590,6 +605,8 @@ function Home() {
                 backgroundImage: "url(${bgImage})",
                 backgroundSize: "cover",
                 backgroundPosition: "center",
+                borderTopRightRadius: "142px",
+                borderBottomLeftRadius: "142px",
               }}
             >
               <div className="container">
@@ -1126,7 +1143,91 @@ function Home() {
                           </div>
                           <div className="swiper-slide">
                             <div className="td-brand-item">
-                              <img src={logoBrand3} alt="" />
+                              <img src={logoBrand6} alt="" />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <br />
+                  <br />
+                  <br />
+                  <br />
+                  <div className="col-12">
+                    <div className="td-brand-wrap">
+                      <div className="swiper-container td-brand-slide-active">
+                        <div className="swiper-wrapper slide-transtion">
+                          <div className="swiper-slide">
+                            <div className="td-brand-item">
+                              <img src={logoBrand7} alt="" />
+                            </div>
+                          </div>
+                          <div className="swiper-slide">
+                            <div className="td-brand-item">
+                              <img src={logoBrand8} alt="" />
+                            </div>
+                          </div>
+                          <div className="swiper-slide">
+                            <div className="td-brand-item">
+                              <img src={logoBrand9} alt="" />
+                            </div>
+                          </div>
+                          <div className="swiper-slide">
+                            <div className="td-brand-item">
+                              <img src={logoBrand10} alt="" />
+                            </div>
+                          </div>
+                          <div className="swiper-slide">
+                            <div className="td-brand-item">
+                              <img src={logoBrand11} alt="" />
+                            </div>
+                          </div>
+                          <div className="swiper-slide">
+                            <div className="td-brand-item">
+                              <img src={logoBrand12} alt="" />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <br />
+                  <br />
+                  <br />
+                  <br />
+                  <div className="col-12">
+                    <div className="td-brand-wrap">
+                      <div className="swiper-container td-brand-slide-active">
+                        <div className="swiper-wrapper slide-transtion">
+                          <div className="swiper-slide">
+                            <div className="td-brand-item">
+                              <img src={logoBrand13} alt="" />
+                            </div>
+                          </div>
+                          <div className="swiper-slide">
+                            <div className="td-brand-item">
+                              <img src={logoBrand14} alt="" />
+                            </div>
+                          </div>
+                          <div className="swiper-slide">
+                            <div className="td-brand-item">
+                              <img src={logoBrand15} alt="" />
+                            </div>
+                          </div>
+                          <div className="swiper-slide">
+                            <div className="td-brand-item">
+                              <img src={logoBrand16} alt="" />
+                            </div>
+                          </div>
+                          <div className="swiper-slide">
+                            <div className="td-brand-item">
+                              <img src={logoBrand17} alt="" />
+                            </div>
+                          </div>
+                          <div className="swiper-slide">
+                            <div className="td-brand-item">
+                              <img src={logoBrand18} alt="" />
                             </div>
                           </div>
                         </div>
@@ -1283,6 +1384,22 @@ function Home() {
                         EN TÊTE
                       </a>
                     </h2>
+
+                    <div className="td-btn-group mb-35" style = {{marginLeft: "39%", marginBottom: "5%", marginTop: "2%"}}>
+                        <a className="td-btn-circle" href="about.html">
+                          <i className="fa-solid fa-arrow-right"></i>
+                        </a>
+                        <a
+                          className="td-btn-2 td-btn-primary"
+                          href="about.html"
+                        >
+                          Demander un devis
+                        </a>
+                        <a className="td-btn-circle" href="about.html">
+                          <i className="fa-solid fa-arrow-right"></i>
+                        </a>
+                      </div>
+
                   </div>
                 </div>
               </div>

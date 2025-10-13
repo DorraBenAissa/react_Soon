@@ -11,7 +11,7 @@ function Footer() {
 
         <>
            <footer>
-            <div className="td-footer-area td-footer-spacing black-bg">
+            <div className="td-footer-area td-footer-spacing them5-bg">
               <div className="container">
                 <div className="row">
                   <div className="col-lg-3 col-md-6 col-sm-6">
