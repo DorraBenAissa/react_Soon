@@ -291,10 +291,10 @@ function Contact() {
                       <div className="td-contact-map-wrap">
                         <img className="mb-100" src={logoWhiteBlack} alt="" />
                         <h6 className="mb-25">Contact info:</h6>
-                        <a href="tel:+999235645689">01 85 49 22 88</a>
+                        <a href="tel:0185492288">01 85 49 22 88</a>
                         <a
                           className="mb-10"
-                          href="mailto:hello@parodyagency.com"
+                          href="mailto:hello@soon-agency.com"
                         >
                           hello@parodyagency.com
                         </a>
@@ -305,7 +305,7 @@ function Contact() {
                       </div>
                       <div className="td-contact-map-inner">
                         <iframe
-                          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31078.361591144112!2d-74.0256365664179!3d40.705584751235754!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2sbd!4v1724572184688!5m2!1sen!2sbd"
+                          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2623.684422245482!2d2.785801815674353!3d48.87263217929161!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66fdb827e8d7d%3A0x123456789abcdef0!2sJazz%20Building%2C%2026%20Avenue%20Herg%C3%A9%2C%2077700%20Chessy%2C%20France!5e0!3m2!1sen!2sfr!4v1724572184688!5m2!1sen!2sfr"
                           width="600"
                           height="450"
                           style={{ border: "0" }}
