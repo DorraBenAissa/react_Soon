@@ -1383,23 +1383,22 @@ function Home() {
                       </a>
                     </h2>
 
-                    <div className="td-btn-group mb-35"  style={{
-    padding: "2% 3% 14% 20%"
-  }}>
-                        <a className="td-btn-circle" href="about.html">
-                          <i className="fa-solid fa-arrow-right"></i>
-                        </a>
-                        <a
-                          className="td-btn-2 td-btn-primary"
-                          href="about.html"
-                        >
-                          Demander un devis
-                        </a>
-                        <a className="td-btn-circle" href="about.html">
-                          <i className="fa-solid fa-arrow-right"></i>
-                        </a>
-                      </div>
-
+                    <div
+                      className="td-btn-group mb-35"
+                      style={{
+                        padding: "2% 3% 14% 20%",
+                      }}
+                    >
+                      <a className="td-btn-circle" href="about.html">
+                        <i className="fa-solid fa-arrow-right"></i>
+                      </a>
+                      <a className="td-btn-2 td-btn-primary" href="about.html">
+                        Demander un devis
+                      </a>
+                      <a className="td-btn-circle" href="about.html">
+                        <i className="fa-solid fa-arrow-right"></i>
+                      </a>
+                    </div>
                   </div>
                 </div>
               </div>
