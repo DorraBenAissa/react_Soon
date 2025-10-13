@@ -1,0 +1,1298 @@
+//imports
+import { Link } from "react-router-dom";
+
+// ASSETS
+import shapeImg from "../../assets/img/hero/shape.png";
+import thumb1 from "../../assets/img/hero/thumb.jpg";
+import thumb2 from "../../assets/img/hero/thumb-2.jpg";
+import bgThumb3 from "../../assets/img/hero/bg-thumb3.jpg";
+import thumbAbout from "../../assets/img/about/thumb.jpg";
+import shapeAbout from "../../assets/img/about/shape.png";
+import thumb2About from "../../assets/img/about/thumb-2.jpg";
+
+import product1 from "../../assets/img/project/product.jpg";
+import product2 from "../../assets/img/project/product-2.jpg";
+import product3 from "../../assets/img/project/product-3.jpg";
+import product4 from "../../assets/img/project/product-4.jpg";
+import product5 from "../../assets/img/project/product-5.jpg";
+import thumbProcess from "../../assets/img/process/thumb.jpg";
+import user from "../../assets/img/testimonial/user.png";
+import thumbTest from "../../assets/img/testimonial/thumb.jpg";
+
+import logoBrand1 from "../../assets/img/brand/logo-1.png";
+import logoBrand2 from "../../assets/img/brand/logo-2.png";
+import logoBrand3 from "../../assets/img/brand/logo-3.png";
+import logoBrand4 from "../../assets/img/brand/logo-4.png";
+import logoBrand5 from "../../assets/img/brand/logo-5.png";
+
+import thumBlog1 from "../../assets/img/blog/thumb.jpg";
+import thumBlog2 from "../../assets/img/blog/thumb-2.jpg";
+import thumBlog3 from "../../assets/img/blog/thumb-3.jpg";
+
+import bgImage from "../../assets/img/project/bg.jpg";
+
+import cta1 from "../../assets/img/cta/cta.png";
+import cta2 from "../../assets/img/cta/cta-2.png";
+
+// COMPONENTS
+import Odometer from "../../components/Odometer";
+import Header from "./../../layouts/Header/Header";
+import Footer from "./../../layouts/Footer/Footer";
+import Loader from "../../components/Loader";
+import StickyHeader from "../../components/StickyHeader";
+import MouseFollower from "../../components/MouseFollower";
+import ScrollToTop from "../../components/ScrollToTop";
+import SearchPopup from "../../components/SearchPopup";
+import SmoothScroll from "../../components/SmoothScroll";
+import TextAnimations from "../../components/TextAnimations";
+import HeroTextSlider from "../../components/HeroTextSlider";
+import WowInit from "../../components/WowInit";
+import BackgroundHandler from "../../components/BackgroundHandler";
+import FixedTitleAnimation from "../../components/FixedTitleAnimation";
+import TestimonialSlider from "../../components/TestimonialSlider";
+import BrandSlider from "../../components/BrandSlider";
+import ScrollToTopAutomatic from "../../components/ScrollToTopAutomatic";
+
+function Home() {
+  return (
+    <>
+      <ScrollToTopAutomatic />
+      <Loader />
+      <MouseFollower />
+      <ScrollToTop />
+      <SearchPopup />
+      <TextAnimations />
+      <HeroTextSlider />
+      <BackgroundHandler />
+      <FixedTitleAnimation />
+      <TestimonialSlider />
+      <BrandSlider />
+      <StickyHeader />
+      <SmoothScroll />
+      <WowInit />
+
+      <div className="search__popup">
+        <div className="container">
+          <div className="row">
+            <div className="col-12">
+              <div className="search__wrapper">
+                <div className="search__close">
+                  <button type="button" className="search-close-btn">
+                    <svg
+                      width="18"
+                      height="18"
+                      viewBox="0 0 18 18"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M17 1L1 17"
+                        stroke="currentColor"
+                        strokeWidth="1.5"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      ></path>
+                      <path
+                        d="M1 1L17 17"
+                        stroke="currentColor"
+                        strokeWidth="1.5"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      ></path>
+                    </svg>
+                  </button>
+                </div>
+                <div className="search__form">
+                  <form action="#">
+                    <div className="search__input">
+                      <input
+                        className="search-input-field"
+                        type="text"
+                        placeholder="Type keywords here"
+                      />
+                      <span className="search-focus-border"></span>
+                      <button type="submit">
+                        <svg
+                          width="20"
+                          height="20"
+                          viewBox="0 0 20 20"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M9.55 18.1C14.272 18.1 18.1 14.272 18.1 9.55C18.1 4.82797 14.272 1 9.55 1C4.82797 1 1 4.82797 1 9.55C1 14.272 4.82797 18.1 9.55 18.1Z"
+                            stroke="currentColor"
+                            strokeWidth="1.5"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                          ></path>
+                          <path
+                            d="M19.0002 19.0002L17.2002 17.2002"
+                            stroke="currentColor"
+                            strokeWidth="1.5"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                          ></path>
+                        </svg>
+                      </button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="search-popup-overlay"></div>
+
+      <Header />
+
+      <div id="smooth-wrapper">
+        <div id="smooth-content">
+          <main>
+            <div className="td-hero-area td-hero-spacing p-relative fix z-index-1">
+              <img className="td-hero-shape p-absolute" src={shapeImg} alt="" />
+              <div className="container">
+                <div className="row justify-content-center">
+                  <div className="col-lg-10">
+                    <div className="td-hero-content">
+                      <div
+                        className="td-hero-title text-center  wow fadeInUp"
+                        data-wow-delay=".5s"
+                        data-wow-duration="1s"
+                      >
+                        <h2 className="title">MAKE YOUR </h2>
+                        <h2 className="title mb-0 d-flex align-items-center justify-content-center">
+                          <img
+                            className="mr-30 d-none d-sm-block"
+                            src={thumb1}
+                            alt=""
+                          />
+                          BRAND
+                          <img
+                            className="ml-35 d-none d-sm-block"
+                            src={thumb2}
+                            alt=""
+                          />
+                        </h2>
+                        <h2 className="title">FLY</h2>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                className="td-hero-text-slide  wow fadeInUp"
+                data-wow-delay=".7s"
+                data-wow-duration="1s"
+              >
+                <div className="container-fluid">
+                  <div className="row">
+                    <div className="swiper-container td-hero-text-slide-active">
+                      <div className="swiper-wrapper slide-transtion">
+                        <div className="swiper-slide">
+                          <div>
+                            <h2 className="td-hero-bigtext">creative </h2>
+                          </div>
+                        </div>
+                        <div className="swiper-slide">
+                          <div>
+                            <h2 className="td-hero-bigtext ">studio </h2>
+                          </div>
+                        </div>
+                        <div className="swiper-slide">
+                          <div>
+                            <h2 className="td-hero-bigtext">creative </h2>
+                          </div>
+                        </div>
+                        <div className="swiper-slide">
+                          <div>
+                            <h2 className="td-hero-bigtext ">studio </h2>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="pb-60">
+                <div className="container">
+                  <div className="row">
+                    <div className="col-12">
+                      <div className="td-hero-feature">
+                        <ul>
+                          <li>
+                            <span>
+                              <svg
+                                width="26"
+                                height="26"
+                                viewBox="0 0 26 26"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  d="M24.1129 11.043C21.8064 11.043 19.2903 12.7204 13.2097 12.8952C17.4731 8.59678 20.5833 8.14248 22.2607 6.46506C22.6452 6.08065 22.8199 5.62635 22.8199 5.24194C22.8199 4.19355 21.8064 3.21506 20.828 3.21506C20.3737 3.21506 19.8495 3.38979 19.465 3.7742C17.8575 5.41667 17.2285 8.35215 13.1048 12.7903C13.0699 6.70968 14.957 4.12366 14.957 1.85215C14.957 0.594087 14.0134 0 13 0C12.0564 0 11.043 0.594087 11.043 1.8871C11.043 4.12366 12.7204 6.70968 12.8952 12.7903C8.7715 8.42205 8.21236 5.41667 6.56989 3.7742C6.15054 3.38979 5.69624 3.18011 5.24193 3.18011C4.12366 3.18011 3.18011 4.19355 3.18011 5.24194C3.18011 5.62635 3.35484 6.08065 3.73925 6.46506C5.41667 8.21237 8.52688 8.59678 12.7903 12.8952C6.74462 12.7204 4.22849 11.043 1.95699 11.043C0.663978 11.043 0 12.0565 0 13.0699C0 14.0134 0.594086 14.957 1.85215 14.957C4.22849 14.957 6.74462 13.0699 12.8253 13.0699C8.35215 17.2285 5.41667 17.8575 3.77419 19.4651C3.38978 19.8495 3.18011 20.3737 3.18011 20.828C3.18011 21.8763 4.19355 22.8199 5.24193 22.8199C5.62634 22.8199 6.08064 22.6452 6.46505 22.2608C8.14247 20.5833 8.59677 17.4731 12.8952 13.2097C12.7204 19.2903 11.043 21.8065 11.043 24.1129C11.043 25.4059 12.0564 26 13 26C14.0134 26 14.957 25.4059 14.957 24.1479C14.957 21.8065 13.0699 19.2903 13.1048 13.2097C17.4032 17.4731 17.8575 20.5833 19.5349 22.2608C19.9194 22.6452 20.3737 22.8199 20.7581 22.8199C21.8064 22.8199 22.7849 21.8065 22.7849 20.828C22.7849 20.3737 22.6102 19.8495 22.2258 19.4651C20.5833 17.8575 17.6478 17.2285 13.1747 13.0699C19.2903 13.0699 21.8064 14.957 24.1478 14.957C25.4059 14.957 26 14.0134 26 13C26 12.0565 25.4059 11.043 24.1129 11.043Z"
+                                  fill="#1C1D1F"
+                                />
+                              </svg>
+                            </span>
+                            FLEXIBILITÉ & AGILITÉ
+                          </li>
+                          <li className="td-border"></li>
+                          <li>
+                            <span>
+                              <svg
+                                width="26"
+                                height="26"
+                                viewBox="0 0 26 26"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  d="M24.1129 11.043C21.8064 11.043 19.2903 12.7204 13.2097 12.8952C17.4731 8.59678 20.5833 8.14248 22.2607 6.46506C22.6452 6.08065 22.8199 5.62635 22.8199 5.24194C22.8199 4.19355 21.8064 3.21506 20.828 3.21506C20.3737 3.21506 19.8495 3.38979 19.465 3.7742C17.8575 5.41667 17.2285 8.35215 13.1048 12.7903C13.0699 6.70968 14.957 4.12366 14.957 1.85215C14.957 0.594087 14.0134 0 13 0C12.0564 0 11.043 0.594087 11.043 1.8871C11.043 4.12366 12.7204 6.70968 12.8952 12.7903C8.7715 8.42205 8.21236 5.41667 6.56989 3.7742C6.15054 3.38979 5.69624 3.18011 5.24193 3.18011C4.12366 3.18011 3.18011 4.19355 3.18011 5.24194C3.18011 5.62635 3.35484 6.08065 3.73925 6.46506C5.41667 8.21237 8.52688 8.59678 12.7903 12.8952C6.74462 12.7204 4.22849 11.043 1.95699 11.043C0.663978 11.043 0 12.0565 0 13.0699C0 14.0134 0.594086 14.957 1.85215 14.957C4.22849 14.957 6.74462 13.0699 12.8253 13.0699C8.35215 17.2285 5.41667 17.8575 3.77419 19.4651C3.38978 19.8495 3.18011 20.3737 3.18011 20.828C3.18011 21.8763 4.19355 22.8199 5.24193 22.8199C5.62634 22.8199 6.08064 22.6452 6.46505 22.2608C8.14247 20.5833 8.59677 17.4731 12.8952 13.2097C12.7204 19.2903 11.043 21.8065 11.043 24.1129C11.043 25.4059 12.0564 26 13 26C14.0134 26 14.957 25.4059 14.957 24.1479C14.957 21.8065 13.0699 19.2903 13.1048 13.2097C17.4032 17.4731 17.8575 20.5833 19.5349 22.2608C19.9194 22.6452 20.3737 22.8199 20.7581 22.8199C21.8064 22.8199 22.7849 21.8065 22.7849 20.828C22.7849 20.3737 22.6102 19.8495 22.2258 19.4651C20.5833 17.8575 17.6478 17.2285 13.1747 13.0699C19.2903 13.0699 21.8064 14.957 24.1478 14.957C25.4059 14.957 26 14.0134 26 13C26 12.0565 25.4059 11.043 24.1129 11.043Z"
+                                  fill="#1C1D1F"
+                                />
+                              </svg>
+                            </span>
+                            CRÉATIVITÉ & INNOVATION
+                          </li>
+                          <li className="td-border"></li>
+                          <li>
+                            <span>
+                              <svg
+                                width="26"
+                                height="26"
+                                viewBox="0 0 26 26"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  d="M24.1129 11.043C21.8064 11.043 19.2903 12.7204 13.2097 12.8952C17.4731 8.59678 20.5833 8.14248 22.2607 6.46506C22.6452 6.08065 22.8199 5.62635 22.8199 5.24194C22.8199 4.19355 21.8064 3.21506 20.828 3.21506C20.3737 3.21506 19.8495 3.38979 19.465 3.7742C17.8575 5.41667 17.2285 8.35215 13.1048 12.7903C13.0699 6.70968 14.957 4.12366 14.957 1.85215C14.957 0.594087 14.0134 0 13 0C12.0564 0 11.043 0.594087 11.043 1.8871C11.043 4.12366 12.7204 6.70968 12.8952 12.7903C8.7715 8.42205 8.21236 5.41667 6.56989 3.7742C6.15054 3.38979 5.69624 3.18011 5.24193 3.18011C4.12366 3.18011 3.18011 4.19355 3.18011 5.24194C3.18011 5.62635 3.35484 6.08065 3.73925 6.46506C5.41667 8.21237 8.52688 8.59678 12.7903 12.8952C6.74462 12.7204 4.22849 11.043 1.95699 11.043C0.663978 11.043 0 12.0565 0 13.0699C0 14.0134 0.594086 14.957 1.85215 14.957C4.22849 14.957 6.74462 13.0699 12.8253 13.0699C8.35215 17.2285 5.41667 17.8575 3.77419 19.4651C3.38978 19.8495 3.18011 20.3737 3.18011 20.828C3.18011 21.8763 4.19355 22.8199 5.24193 22.8199C5.62634 22.8199 6.08064 22.6452 6.46505 22.2608C8.14247 20.5833 8.59677 17.4731 12.8952 13.2097C12.7204 19.2903 11.043 21.8065 11.043 24.1129C11.043 25.4059 12.0564 26 13 26C14.0134 26 14.957 25.4059 14.957 24.1479C14.957 21.8065 13.0699 19.2903 13.1048 13.2097C17.4032 17.4731 17.8575 20.5833 19.5349 22.2608C19.9194 22.6452 20.3737 22.8199 20.7581 22.8199C21.8064 22.8199 22.7849 21.8065 22.7849 20.828C22.7849 20.3737 22.6102 19.8495 22.2258 19.4651C20.5833 17.8575 17.6478 17.2285 13.1747 13.0699C19.2903 13.0699 21.8064 14.957 24.1478 14.957C25.4059 14.957 26 14.0134 26 13C26 12.0565 25.4059 11.043 24.1129 11.043Z"
+                                  fill="#1C1D1F"
+                                />
+                              </svg>
+                            </span>
+                            ENGAGEMENT HUMAIN & DURABLE
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="container container-1680">
+                <div className="row">
+                  <div className="col-12">
+                    <div className="td-hero-bottom-thumb">
+                      <img
+                        data-speed="0.6"
+                        className="w-100 round-2"
+                        src={bgThumb3}
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="td-about-area">
+              <div className="container">
+                <div className="row">
+                  <div className="col-lg-4">
+                    <div className="td-about-left mb-30">
+                      <span>QUI NOUS SOMMES</span>
+                      <div className="td-about-left-thumb ml-60 fix td-rounded-10">
+                        <img data-speed=".9" src={thumbAbout} alt="" />
+                      </div>
+                    </div>
+                  </div>
+                  <div className="col-lg-8">
+                    <div className="td-about-content mb-30">
+                      <h2 className="td-about-title mb-30 td-text-invert">
+                        Nous créons et mettons en œuvre des stratégies de
+                        communication efficaces sur le branding, le print, les
+                        sites web, et les réseaux sociaux — des solutions qui
+                        captivent votre audience et valorisent votre entreprise.
+                      </h2>
+
+                      <p className="mb-45">
+                        Soon est une agence de communication créative basée au
+                        cœur de Val d’Europe. Notre studio réunit des designers,
+                        des stratèges, des directeurs artistiques et des experts
+                        du digital pour concevoir des concepts audacieux, des
+                        visuels percutants et des solutions innovantes. Du
+                        branding au développement web en passant par les réseaux
+                        sociaux, nous transformons les idées en expériences
+                        engageantes qui permettent aux entreprises de se
+                        démarquer et de se développer.
+                      </p>
+                      <div className="td-btn-group mb-35">
+                        {/* <a className="td-btn-circle" href="about.html">
+                          <i className="fa-solid fa-arrow-right"></i>
+                        </a> */}
+                        {/* <a
+                          className="td-btn-2 td-btn-primary"
+                          href="about.html"
+                        >
+                          À PROPOS
+                        </a> */}
+                        <Link to="/about" className="td-btn-circle">
+                          <i className="fa-solid fa-arrow-right"></i>
+                        </Link>
+                        <Link to="/about" className="td-btn-2 td-btn-primary">
+                          À PROPOS
+                        </Link>
+                        <Link to="/about" className="td-btn-circle">
+                          <i className="fa-solid fa-arrow-right"></i>
+                        </Link>
+                        {/* <a className="td-btn-circle" href="about.html">
+                          <i className="fa-solid fa-arrow-right"></i>
+                        </a> */}
+                      </div>
+                      <div className="td-about-thumb-wrap d-flex align-items-center justify-content-end">
+                        <div className="mr-150 td-about-shape">
+                          <img
+                            className="td-live-anim-spin"
+                            src={shapeAbout}
+                            alt=""
+                          />
+                        </div>
+                        <div className="td-about-thumb fix td-rounded-10">
+                          <img data-speed=".9" src={thumb2About} alt="" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="td-service-area pb-100 pt-100">
+              <div className="container">
+                <div className="row">
+                  <div className="col-lg-6">
+                    <div className="td-service-title-wrap">
+                      <h2 className="td-section-title mb-30 td-text-invert">
+                        Service
+                      </h2>
+
+                      <p className="td-section-text mr-200">
+                        Chez Soon, notre espace créatif est un véritable
+                        laboratoire d’idées où chaque projet prend vie. Entre
+                        briefing précis, brainstorming intense, visuels
+                        inspirants, croquis et maquettes, nous explorons sans
+                        cesse de nouvelles pistes pour créer des concepts
+                        uniques et percutants. Chaque mood board, prototype et
+                        élément de design est pensé pour transformer vos idées
+                        en expériences visuelles concrètes et innovantes.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div className="row">
+                  <div className="col-lg-5">
+                    <div className="td-service-btn mt-35 ml-110 mb-30">
+                      <div className="td-btn-group mb-35">
+                        <a className="td-btn-circle" href="service.html">
+                          <i className="fa-solid fa-arrow-right"></i>
+                        </a>
+                        <a
+                          className="td-btn-2 td-btn-primary"
+                          href="service.html"
+                        >
+                          Contactez-nous
+                        </a>
+                        <a className="td-btn-circle" href="service.html">
+                          <i className="fa-solid fa-arrow-right"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="col-lg-7">
+                    <div className="td-service-content">
+                      <a
+                        className="td-service-item pt-0"
+                        href="service-details.html"
+                      >
+                        Conception créative
+                        <span>
+                          <svg
+                            width="25"
+                            height="25"
+                            viewBox="0 0 25 25"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M23.5853 0.21498C23.9612 0.160838 24.2991 0.257578 24.5256 0.48404C24.752 0.710503 24.8488 1.04839 24.7946 1.42432L22.1319 19.3631C22.068 19.7386 21.8634 20.1177 21.5604 20.4225C21.408 20.5739 21.236 20.7028 21.0532 20.8023C20.7801 20.9458 20.4931 21.0143 20.2286 20.9994C19.9642 20.9844 19.734 20.8866 19.5672 20.7184L12.7779 13.9291L2.47712 24.2298C2.17357 24.5334 1.79306 24.7351 1.41925 24.7906C1.04545 24.846 0.709012 24.7508 0.483922 24.5257C0.25885 24.3006 0.163565 23.9641 0.219059 23.5904C0.274536 23.2166 0.47625 22.836 0.779796 22.5325L11.0806 12.2317L4.29122 5.44239C4.12296 5.27556 4.0252 5.04541 4.01025 4.78096C3.9953 4.51651 4.06385 4.22958 4.20722 3.95636C4.35748 3.68382 4.5724 3.43787 4.82713 3.24697C5.08184 3.05609 5.36593 2.92807 5.64654 2.87772L23.5853 0.21498Z"
+                              fill="currentColor"
+                            />
+                          </svg>
+                        </span>
+                      </a>
+                      <a
+                        className="td-service-item"
+                        href="service-details.html"
+                      >
+                        Identité de marque
+                        <span>
+                          <svg
+                            width="25"
+                            height="25"
+                            viewBox="0 0 25 25"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M23.5853 0.21498C23.9612 0.160838 24.2991 0.257578 24.5256 0.48404C24.752 0.710503 24.8488 1.04839 24.7946 1.42432L22.1319 19.3631C22.068 19.7386 21.8634 20.1177 21.5604 20.4225C21.408 20.5739 21.236 20.7028 21.0532 20.8023C20.7801 20.9458 20.4931 21.0143 20.2286 20.9994C19.9642 20.9844 19.734 20.8866 19.5672 20.7184L12.7779 13.9291L2.47712 24.2298C2.17357 24.5334 1.79306 24.7351 1.41925 24.7906C1.04545 24.846 0.709012 24.7508 0.483922 24.5257C0.25885 24.3006 0.163565 23.9641 0.219059 23.5904C0.274536 23.2166 0.47625 22.836 0.779796 22.5325L11.0806 12.2317L4.29122 5.44239C4.12296 5.27556 4.0252 5.04541 4.01025 4.78096C3.9953 4.51651 4.06385 4.22958 4.20722 3.95636C4.35748 3.68382 4.5724 3.43787 4.82713 3.24697C5.08184 3.05609 5.36593 2.92807 5.64654 2.87772L23.5853 0.21498Z"
+                              fill="currentColor"
+                            />
+                          </svg>
+                        </span>
+                      </a>
+                      <a
+                        className="td-service-item"
+                        href="service-details.html"
+                      >
+                        Design e-commerce
+                        <span>
+                          <svg
+                            width="25"
+                            height="25"
+                            viewBox="0 0 25 25"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M23.5853 0.21498C23.9612 0.160838 24.2991 0.257578 24.5256 0.48404C24.752 0.710503 24.8488 1.04839 24.7946 1.42432L22.1319 19.3631C22.068 19.7386 21.8634 20.1177 21.5604 20.4225C21.408 20.5739 21.236 20.7028 21.0532 20.8023C20.7801 20.9458 20.4931 21.0143 20.2286 20.9994C19.9642 20.9844 19.734 20.8866 19.5672 20.7184L12.7779 13.9291L2.47712 24.2298C2.17357 24.5334 1.79306 24.7351 1.41925 24.7906C1.04545 24.846 0.709012 24.7508 0.483922 24.5257C0.25885 24.3006 0.163565 23.9641 0.219059 23.5904C0.274536 23.2166 0.47625 22.836 0.779796 22.5325L11.0806 12.2317L4.29122 5.44239C4.12296 5.27556 4.0252 5.04541 4.01025 4.78096C3.9953 4.51651 4.06385 4.22958 4.20722 3.95636C4.35748 3.68382 4.5724 3.43787 4.82713 3.24697C5.08184 3.05609 5.36593 2.92807 5.64654 2.87772L23.5853 0.21498Z"
+                              fill="currentColor"
+                            />
+                          </svg>
+                        </span>
+                      </a>
+                      <a
+                        className="td-service-item"
+                        href="service-details.html"
+                      >
+                        Digital Marketing
+                        <span>
+                          <svg
+                            width="25"
+                            height="25"
+                            viewBox="0 0 25 25"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M23.5853 0.21498C23.9612 0.160838 24.2991 0.257578 24.5256 0.48404C24.752 0.710503 24.8488 1.04839 24.7946 1.42432L22.1319 19.3631C22.068 19.7386 21.8634 20.1177 21.5604 20.4225C21.408 20.5739 21.236 20.7028 21.0532 20.8023C20.7801 20.9458 20.4931 21.0143 20.2286 20.9994C19.9642 20.9844 19.734 20.8866 19.5672 20.7184L12.7779 13.9291L2.47712 24.2298C2.17357 24.5334 1.79306 24.7351 1.41925 24.7906C1.04545 24.846 0.709012 24.7508 0.483922 24.5257C0.25885 24.3006 0.163565 23.9641 0.219059 23.5904C0.274536 23.2166 0.47625 22.836 0.779796 22.5325L11.0806 12.2317L4.29122 5.44239C4.12296 5.27556 4.0252 5.04541 4.01025 4.78096C3.9953 4.51651 4.06385 4.22958 4.20722 3.95636C4.35748 3.68382 4.5724 3.43787 4.82713 3.24697C5.08184 3.05609 5.36593 2.92807 5.64654 2.87772L23.5853 0.21498Z"
+                              fill="currentColor"
+                            />
+                          </svg>
+                        </span>
+                      </a>
+                      <a
+                        className="td-service-item"
+                        href="service-details.html"
+                      >
+                        Stratégie de communication
+                        <span>
+                          <svg
+                            width="25"
+                            height="25"
+                            viewBox="0 0 25 25"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M23.5853 0.21498C23.9612 0.160838 24.2991 0.257578 24.5256 0.48404C24.752 0.710503 24.8488 1.04839 24.7946 1.42432L22.1319 19.3631C22.068 19.7386 21.8634 20.1177 21.5604 20.4225C21.408 20.5739 21.236 20.7028 21.0532 20.8023C20.7801 20.9458 20.4931 21.0143 20.2286 20.9994C19.9642 20.9844 19.734 20.8866 19.5672 20.7184L12.7779 13.9291L2.47712 24.2298C2.17357 24.5334 1.79306 24.7351 1.41925 24.7906C1.04545 24.846 0.709012 24.7508 0.483922 24.5257C0.25885 24.3006 0.163565 23.9641 0.219059 23.5904C0.274536 23.2166 0.47625 22.836 0.779796 22.5325L11.0806 12.2317L4.29122 5.44239C4.12296 5.27556 4.0252 5.04541 4.01025 4.78096C3.9953 4.51651 4.06385 4.22958 4.20722 3.95636C4.35748 3.68382 4.5724 3.43787 4.82713 3.24697C5.08184 3.05609 5.36593 2.92807 5.64654 2.87772L23.5853 0.21498Z"
+                              fill="currentColor"
+                            />
+                          </svg>
+                        </span>
+                      </a>
+                      <a
+                        className="td-service-item"
+                        href="service-details.html"
+                      >
+                        Animation 3D & Vidéo
+                        <span>
+                          <svg
+                            width="25"
+                            height="25"
+                            viewBox="0 0 25 25"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M23.5853 0.21498C23.9612 0.160838 24.2991 0.257578 24.5256 0.48404C24.752 0.710503 24.8488 1.04839 24.7946 1.42432L22.1319 19.3631C22.068 19.7386 21.8634 20.1177 21.5604 20.4225C21.408 20.5739 21.236 20.7028 21.0532 20.8023C20.7801 20.9458 20.4931 21.0143 20.2286 20.9994C19.9642 20.9844 19.734 20.8866 19.5672 20.7184L12.7779 13.9291L2.47712 24.2298C2.17357 24.5334 1.79306 24.7351 1.41925 24.7906C1.04545 24.846 0.709012 24.7508 0.483922 24.5257C0.25885 24.3006 0.163565 23.9641 0.219059 23.5904C0.274536 23.2166 0.47625 22.836 0.779796 22.5325L11.0806 12.2317L4.29122 5.44239C4.12296 5.27556 4.0252 5.04541 4.01025 4.78096C3.9953 4.51651 4.06385 4.22958 4.20722 3.95636C4.35748 3.68382 4.5724 3.43787 4.82713 3.24697C5.08184 3.05609 5.36593 2.92807 5.64654 2.87772L23.5853 0.21498Z"
+                              fill="currentColor"
+                            />
+                          </svg>
+                        </span>
+                      </a>
+                      <a
+                        className="td-service-item"
+                        href="service-details.html"
+                      >
+                        Développement de clientèle
+                        <span>
+                          <svg
+                            width="25"
+                            height="25"
+                            viewBox="0 0 25 25"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M23.5853 0.21498C23.9612 0.160838 24.2991 0.257578 24.5256 0.48404C24.752 0.710503 24.8488 1.04839 24.7946 1.42432L22.1319 19.3631C22.068 19.7386 21.8634 20.1177 21.5604 20.4225C21.408 20.5739 21.236 20.7028 21.0532 20.8023C20.7801 20.9458 20.4931 21.0143 20.2286 20.9994C19.9642 20.9844 19.734 20.8866 19.5672 20.7184L12.7779 13.9291L2.47712 24.2298C2.17357 24.5334 1.79306 24.7351 1.41925 24.7906C1.04545 24.846 0.709012 24.7508 0.483922 24.5257C0.25885 24.3006 0.163565 23.9641 0.219059 23.5904C0.274536 23.2166 0.47625 22.836 0.779796 22.5325L11.0806 12.2317L4.29122 5.44239C4.12296 5.27556 4.0252 5.04541 4.01025 4.78096C3.9953 4.51651 4.06385 4.22958 4.20722 3.95636C4.35748 3.68382 4.5724 3.43787 4.82713 3.24697C5.08184 3.05609 5.36593 2.92807 5.64654 2.87772L23.5853 0.21498Z"
+                              fill="currentColor"
+                            />
+                          </svg>
+                        </span>
+                      </a>
+                      <div className="td-service-counter mt-80">
+                        <div className="row">
+                          <div className="col-lg-6 col-md-6">
+                            <div className="td-service-counter-item mb-30">
+                              <h2>
+                                {/* <span className="odometer" data-count="72">
+                                  0
+                                </span> */}
+                                <Odometer value={72} />+
+                              </h2>
+                              <span>Projets accomplis</span>
+                            </div>
+                          </div>
+                          <div className="col-lg-6 col-md-6">
+                            <div className="td-service-counter-item mb-30">
+                              <h2>
+                                {/* <span className="odometer" data-count="17">
+                                  0
+                                </span> */}
+                                <Odometer value={17} />+
+                              </h2>
+                              <span>Années d’expérience</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              className="td-project-area td-fixed-title-wrap z-index-1 p-relative pt-155 pb-95"
+              data-background={bgImage}
+              style={{
+                backgroundImage: "url(${bgImage})",
+                backgroundSize: "cover",
+                backgroundPosition: "center",
+              }}
+            >
+              <div className="container">
+                <div className="row">
+                  <div className="col-lg-12">
+                    <div className="td-project-title text-center pb-80 td-fixed-title z-index-m-1">
+                      <span className="subtitle d-inline-block mb-15">
+                        NOS RÉALISATIONS
+                      </span>
+                      <h2 className="title">
+                        Découvrez nos projets
+                        <br />
+                        <span>récents</span>
+                      </h2>
+                    </div>
+                  </div>
+                  <div className="col-lg-4 col-md-6">
+                    <div className="td-project-item mb-30 mr-30">
+                      <div className="td-project-thumb mb-25">
+                        <img className="w-100" src={product1} alt="" />
+                      </div>
+                      <div className="td-project-content">
+                        <a href="portfolio-details.html">
+                          <span className="mr-40">
+                            Création de designs visionnaires avec des idées
+                            spectaculaires
+                          </span>
+                          <span className="icon">
+                            <svg
+                              width="14"
+                              height="14"
+                              viewBox="0 0 14 14"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M1 13L13 1"
+                                stroke="currentColor"
+                                strokeWidth="1.5"
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                              />
+                              <path
+                                d="M1 1H13V13"
+                                stroke="currentColor"
+                                strokeWidth="1.5"
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                              />
+                            </svg>
+                          </span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="col-lg-4 col-md-6">
+                    <div className="td-project-item two pt-195 mb-30 ml-100 mr-100">
+                      <div className="td-project-thumb mb-25">
+                        <img className="w-100" src={product2} alt="" />
+                      </div>
+                      <div className="td-project-content">
+                        <a href="portfolio-details.html">
+                          <span className="mr-40">
+                            Le design produit est le processus par lequel une
+                            marque est créée
+                          </span>
+                          <span className="icon">
+                            <svg
+                              width="14"
+                              height="14"
+                              viewBox="0 0 14 14"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M1 13L13 1"
+                                stroke="currentColor"
+                                strokeWidth="1.5"
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                              />
+                              <path
+                                d="M1 1H13V13"
+                                stroke="currentColor"
+                                strokeWidth="1.5"
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                              />
+                            </svg>
+                          </span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="col-lg-4 col-md-6">
+                    <div className="td-project-item three pt-175 ml-70 mb-30">
+                      <div className="td-project-thumb mb-25">
+                        <img className="w-100" src={product3} alt="" />
+                      </div>
+                      <div className="td-project-content">
+                        <a href="portfolio-details.html">
+                          <span className="mr-40">
+                            Le branding est essentiel pour la tech
+                          </span>
+                          <span className="icon">
+                            <svg
+                              width="14"
+                              height="14"
+                              viewBox="0 0 14 14"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M1 13L13 1"
+                                stroke="currentColor"
+                                strokeWidth="1.5"
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                              />
+                              <path
+                                d="M1 1H13V13"
+                                stroke="currentColor"
+                                strokeWidth="1.5"
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                              />
+                            </svg>
+                          </span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="col-lg-6 col-md-6">
+                    <div className="td-project-item four pt-85 mb-30">
+                      <div className="td-project-thumb mb-25">
+                        <img className="w-100" src={product5} alt="" />
+                      </div>
+                      <div className="td-project-content">
+                        <a href="portfolio-details.html">
+                          <span className="mr-40">
+                            Le design graphique est le processus par lequel une
+                            marque est créée
+                          </span>
+                          <span className="icon">
+                            <svg
+                              width="14"
+                              height="14"
+                              viewBox="0 0 14 14"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M1 13L13 1"
+                                stroke="currentColor"
+                                strokeWidth="1.5"
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                              />
+                              <path
+                                d="M1 1H13V13"
+                                stroke="currentColor"
+                                strokeWidth="1.5"
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                              />
+                            </svg>
+                          </span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="col-lg-6 col-md-12">
+                    <div className="td-project-item five mb-30">
+                      <div className="td-project-thumb mb-25">
+                        <img className="w-100" src={product4} alt="" />
+                      </div>
+                      <div className="td-project-content">
+                        <a href="portfolio-details.html">
+                          <span className="mr-40">
+                            La créativité naît lorsque nous donnons le meilleur
+                            de nous-mêmes
+                          </span>
+                          <span className="icon">
+                            <svg
+                              width="14"
+                              height="14"
+                              viewBox="0 0 14 14"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M1 13L13 1"
+                                stroke="currentColor"
+                                strokeWidth="1.5"
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                              />
+                              <path
+                                d="M1 1H13V13"
+                                stroke="currentColor"
+                                strokeWidth="1.5"
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                              />
+                            </svg>
+                          </span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="td-process-area pt-130 pb-160">
+              <div className="container">
+                <div className="row">
+                  <div className="col-12">
+                    <div className="td-service-title-wrap pb-10">
+                      <h2 className="td-section-title mb-0 td-text-invert">
+                        Travail
+                      </h2>
+                      <h3 className="td-section-title-capi td-text-invert">
+                        Processus
+                      </h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="container">
+                <div className="td-process-border td-fixed-thumb-wrap">
+                  <div className="row">
+                    <div className="col-lg-3">
+                      <div className="td-process-thumb pt-80 pb-80 td-fixed-thumb">
+                        <img src={thumbProcess} alt="" />
+                      </div>
+                    </div>
+                    <div className="col-lg-9">
+                      <div className="row">
+                        <div className="col-lg-2 col-md-3 col-3">
+                          <div className="td-process-count">
+                            <span>01</span>
+                          </div>
+                        </div>
+                        <div className="col-lg-6 col-md-4 col-9">
+                          <div className="td-process-title">
+                            <h3 className="mb-0">
+                              Recherche & <br /> <span>Planification</span>
+                            </h3>
+                          </div>
+                        </div>
+                        <div className="col-lg-4 col-md-5">
+                          <div className="td-process-list">
+                            <ul>
+                              <li>Recherche de l’audience cible</li>
+                              <li>Création de plan de site</li>
+                              <li>Stratégie de contenu</li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                      <div className="row">
+                        <div className="col-lg-2 col-md-3 col-3">
+                          <div className="td-process-count">
+                            <span>02</span>
+                          </div>
+                        </div>
+                        <div className="col-lg-6 col-md-4 col-9">
+                          <div className="td-process-title">
+                            <h3 className="mb-0">
+                              Design & <br /> <span>Conception</span>
+                            </h3>
+                          </div>
+                        </div>
+                        <div className="col-lg-4 col-md-5">
+                          <div className="td-process-list">
+                            <ul>
+                              <li>Recherche de l’audience cible</li>
+                              <li>Création de plan de site</li>
+                              <li>Stratégie de contenu</li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                      <div className="row">
+                        <div className="col-lg-2 col-md-3 col-3">
+                          <div className="td-process-count">
+                            <span>03</span>
+                          </div>
+                        </div>
+                        <div className="col-lg-6 col-md-4 col-9">
+                          <div className="td-process-title">
+                            <h3 className="mb-0">
+                              Testing & <br /> <span>Garantie de qualité</span>
+                            </h3>
+                          </div>
+                        </div>
+                        <div className="col-lg-4 col-md-5">
+                          <div className="td-process-list">
+                            <ul>
+                              <li>Recherche de l’audience cible</li>
+                              <li>Création de plan de site</li>
+                              <li>Stratégie de contenu</li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                      <div className="row">
+                        <div className="col-lg-2 col-md-3 col-3">
+                          <div className="td-process-count no-border">
+                            <span>04</span>
+                          </div>
+                        </div>
+                        <div className="col-lg-6 col-md-4 col-9">
+                          <div className="td-process-title no-border">
+                            <h3 className="mb-0">
+                              Project & <br /> <span>Lancement</span>
+                            </h3>
+                          </div>
+                        </div>
+                        <div className="col-lg-4 col-md-5">
+                          <div className="td-process-list no-border">
+                            <ul>
+                              <li>Stratégie de communication</li>
+                              <li>Pré-Lancement - Teasing</li>
+                              <li>Lancement</li>
+                              <li>Post-Lancement</li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="td-testimonial-area grey-bg-2 pt-155 pb-120">
+              <div className="container">
+                <div className="row">
+                  <div className="col-lg-3 col-md-4">
+                    <div
+                      className="td-testimonial-left mb-40 wow fadeInLeft"
+                      data-wow-delay=".3s"
+                      data-wow-duration="1s"
+                    >
+                      <span className="td-section-subtitle mb-185 d-inline-block">
+                        AVIS CLIENTS
+                      </span>
+                      <img className="mb-20" src={user} alt="" />
+                      <p>
+                        Animé par la créativité,
+                        <br />
+                        ready to fly
+                      </p>
+                    </div>
+                  </div>
+                  <div className="col-lg-9 col-md-8">
+                    <div
+                      className="td-testimonial-content ml-80 mb-50 wow fadeInRight"
+                      data-wow-delay=".3s"
+                      data-wow-duration="1s"
+                    >
+                      <h2 className="td-testimonial-title mb-65 td-text-invert">
+                        Ce que nos Clients
+                        <br /> <span>disent de nous</span>
+                      </h2>
+                      <div className="row">
+                        <div className="col-lg-4">
+                          <div className="td-testimonial-thumb mb-40">
+                            <img
+                              className="w-100 td-rounded-10"
+                              src={thumbTest}
+                              alt=""
+                            />
+                          </div>
+                        </div>
+                        <div className="col-lg-8">
+                          <div className="td-testimonial-slide-content ml-25 mb-40">
+                            <div className="swiper-container td-testimonial-slider mb-120">
+                              <div className="swiper-wrapper">
+                                <div className="swiper-slide">
+                                  <div className="td-testimonial-slide-content">
+                                    <p className="mb-40">
+                                      J’ai récemment eu le plaisir de travailler
+                                      avec SOON sur mes outils de communication,
+                                      et je ne peux que recommander leurs
+                                      services ! Dès notre premier contact,
+                                      l’équipe s’est montrée extrêmement
+                                      professionnelle et accueillante. Ils ont
+                                      parfaitement compris mes besoins et ont
+                                      proposé des idées créatives qui
+                                      reflétaient exactement ce que je
+                                      souhaitais transmettre. La qualité de leur
+                                      écoute et leur attention à mes attentes
+                                      ont été exceptionnelles. Leur sens du
+                                      détail et leur passion pour le design sont
+                                      évidents à chaque étape du processus. De
+                                      plus, leur service client est réellement
+                                      attentif et n’hésite pas à apporter des
+                                      ajustements jusqu’à ce que le résultat
+                                      soit parfait. Je suis ravie du résultat
+                                      final et j’ai déjà reçu de nombreux
+                                      compliments sur mes nouveaux visuels ! Un
+                                      grand merci pour leur travail remarquable.
+                                      Je ferai sans aucun doute de nouveau appel
+                                      à eux pour mes futurs projets.
+                                    </p>
+                                    <h6>Julien Foret</h6>
+                                    <span>Local Guide</span>
+                                  </div>
+                                </div>
+                                <div className="swiper-slide">
+                                  <div className="td-testimonial-slide-content">
+                                    <p className="mb-40">
+                                      We are excited for our work and how it
+                                      positively impacts clients. With over 12
+                                      years of experience we have been
+                                      constantly providing solutions. We are
+                                      committed to deliver unique digital media
+                                      solutions from web design
+                                    </p>
+                                    <h6>David Backhum</h6>
+                                    <span>Designer</span>
+                                  </div>
+                                </div>
+                                <div className="swiper-slide">
+                                  <div className="td-testimonial-slide-content">
+                                    <p className="mb-40">
+                                      We are excited for our work and how it
+                                      positively impacts clients. With over 12
+                                      years of experience we have been
+                                      constantly providing solutions. We are
+                                      committed to deliver unique digital media
+                                      solutions from web design
+                                    </p>
+                                    <h6>David Backhum</h6>
+                                    <span>Designer</span>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div className="td-testimonial-navigation mb-30">
+                              <span className="td-testimonial-prev d-inline-block">
+                                <svg
+                                  width="31"
+                                  height="24"
+                                  viewBox="0 0 31 24"
+                                  fill="none"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                >
+                                  <path
+                                    d="M30.8699 12.2679L0.014612 12.4214"
+                                    stroke="currentColor"
+                                    strokeWidth="1.5"
+                                    strokeMiterlimit="10"
+                                  />
+                                  <path
+                                    d="M11.5445 0C11.5445 6.63283 6.38111 12 2.56383e-05 12"
+                                    stroke="currentColor"
+                                    strokeWidth="1.5"
+                                    strokeMiterlimit="10"
+                                  />
+                                  <path
+                                    d="M4.08971e-05 12C6.38112 12 11.5446 17.3671 11.5446 24"
+                                    stroke="currentColor"
+                                    strokeWidth="1.5"
+                                    strokeMiterlimit="10"
+                                  />
+                                </svg>
+                              </span>
+                              <span className="td-testimonial-next ml-15 d-inline-block">
+                                <svg
+                                  width="31"
+                                  height="24"
+                                  viewBox="0 0 31 24"
+                                  fill="none"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                >
+                                  <path
+                                    d="M-0.000234102 12.2679L30.855 12.4214"
+                                    stroke="currentColor"
+                                    strokeWidth="1.5"
+                                    strokeMiterlimit="10"
+                                  />
+                                  <path
+                                    d="M19.3251 0C19.3251 6.63283 24.4886 12 30.8696 12"
+                                    stroke="currentColor"
+                                    strokeWidth="1.5"
+                                    strokeMiterlimit="10"
+                                  />
+                                  <path
+                                    d="M30.8696 12C24.4885 12 19.3251 17.3671 19.3251 24"
+                                    stroke="currentColor"
+                                    strokeWidth="1.5"
+                                    strokeMiterlimit="10"
+                                  />
+                                </svg>
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="col-12">
+                    <div className="td-brand-wrap">
+                      <div className="swiper-container td-brand-slide-active">
+                        <div className="swiper-wrapper slide-transtion">
+                          <div className="swiper-slide">
+                            <div className="td-brand-item">
+                              <img src={logoBrand1} alt="" />
+                            </div>
+                          </div>
+                          <div className="swiper-slide">
+                            <div className="td-brand-item">
+                              <img src={logoBrand2} alt="" />
+                            </div>
+                          </div>
+                          <div className="swiper-slide">
+                            <div className="td-brand-item">
+                              <img src={logoBrand3} alt="" />
+                            </div>
+                          </div>
+                          <div className="swiper-slide">
+                            <div className="td-brand-item">
+                              <img src={logoBrand4} alt="" />
+                            </div>
+                          </div>
+                          <div className="swiper-slide">
+                            <div className="td-brand-item">
+                              <img src={logoBrand5} alt="" />
+                            </div>
+                          </div>
+                          <div className="swiper-slide">
+                            <div className="td-brand-item">
+                              <img src={logoBrand3} alt="" />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="td-blog-area pt-155 pb-130">
+              <div className="container">
+                <div className="row mb-50">
+                  <div className="col-lg-3">
+                    <div className="mb-20">
+                      <span className="td-section-subtitle">
+                        Notre dernier blog
+                      </span>
+                    </div>
+                  </div>
+                  <div className="col-lg-5">
+                    <div>
+                      <h2 className="td-testimonial-title mb-30 td-text-invert">
+                        Actualités de <br /> <span>Soon</span>
+                      </h2>
+                    </div>
+                  </div>
+                  <div className="col-lg-4">
+                    <div className="mb-30">
+                      <p className="mb-35">
+                        Nous sommes enthousiastes à propos de notre travail et
+                        de l’impact positif qu’il a sur nos clients. Forts de
+                        plus de 12 ans d’expérience, nous fournissons
+                        constamment des solutions adaptées.
+                      </p>
+                      <div className="td-btn-group">
+                        <a className="td-btn-circle" href="blog.html">
+                          <i className="fa-solid fa-arrow-right"></i>
+                        </a>
+                        <a className="td-btn-2 td-btn-primary" href="blog.html">
+                          Voir tous les articles
+                        </a>
+                        <a className="td-btn-circle" href="blog.html">
+                          <i className="fa-solid fa-arrow-right"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="row">
+                  <div className="col-xl-4 col-lg-6 col-md-6">
+                    <div
+                      className="td-blog-wrap mb-30 wow fadeInLeft"
+                      data-wow-delay=".3s"
+                      data-wow-duration="1s"
+                    >
+                      <div className="td-blog-thumb fix mb-25">
+                        <img className="w-100" src={thumBlog1} alt="" />
+                      </div>
+                      <div className="td-blog-content">
+                        <h3 className="td-blog-title mb-30">
+                          <a href="blog-details.html">
+                            Notre planification stratégique garantit que la
+                            vision de votre marque s’aligne sur les opportunités
+                            du marché.
+                          </a>
+                        </h3>
+                        <div className="td-blog-cetagory d-flex align-items-center">
+                          <span className="cetagory">Branding</span>
+                          <span className="td-border ml-20 mr-15 d-inline-block"></span>
+                          <span className="dates">Septembre 12, 2025</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="col-xl-4 col-lg-6 col-md-6">
+                    <div
+                      className="td-blog-wrap mb-30 wow fadeInUp"
+                      data-wow-delay=".3s"
+                      data-wow-duration="1s"
+                    >
+                      <div className="td-blog-thumb fix mb-25">
+                        <img className="w-100" src={thumBlog2} alt="" />
+                      </div>
+                      <div className="td-blog-content">
+                        <h3 className="td-blog-title mb-30">
+                          <a href="blog-details.html">
+                            Le CSS border-image, bien que complexe, offre des
+                            possibilités incroyables et créatives, parfaites
+                            pour une agence de design web souhaitant apporter
+                            des détails uniques et percutants à ses projets.
+                          </a>
+                        </h3>
+                        <div className="td-blog-cetagory d-flex align-items-center">
+                          <span className="cetagory">Digital</span>
+                          <span className="td-border ml-20 mr-15 d-inline-block"></span>
+                          <span className="dates">Septembre 12, 2025</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="col-xl-4 col-lg-6 col-md-6">
+                    <div
+                      className="td-blog-wrap mb-30 wow fadeInRight"
+                      data-wow-delay=".3s"
+                      data-wow-duration="1s"
+                    >
+                      <div className="td-blog-thumb fix mb-25">
+                        <img className="w-100" src={thumBlog3} alt="" />
+                      </div>
+                      <div className="td-blog-content">
+                        <h3 className="td-blog-title mb-30">
+                          <a href="blog-details.html">
+                            Grâce à notre planification stratégique, la vision
+                            de votre marque rencontre parfaitement les
+                            opportunités du marché.
+                          </a>
+                        </h3>
+                        <div className="td-blog-cetagory d-flex align-items-center">
+                          <span className="cetagory">Stratégie</span>
+                          <span className="td-border ml-20 mr-15 d-inline-block"></span>
+                          <span className="dates">Septembre 12, 2025</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="td-cta-area">
+              <div className="container">
+                <div className="col-lg-12">
+                  <div
+                    className="td-cta-wrap p-relative z-index-1 text-center pt-135 pb-135 include-bg"
+                    data-background="assets/img/cta/bg.jpg"
+                  >
+                    <img
+                      className="td-cta-shape d-none d-xl-block"
+                      src={cta1}
+                      alt=""
+                    />
+                    <h2 className="title p-relative d-inline-block">
+                      <img
+                        className="td-cta-shape-2 d-none d-md-block"
+                        src={cta2}
+                        alt=""
+                      />
+                      <a className="td-text-invert" href="contact.html">
+                        VOUS AVEZ
+                        <br />
+                        DES PROJETS
+                        <br />
+                        EN TÊTE
+                      </a>
+                    </h2>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </main>
+          <Footer />
+        </div>
+      </div>
+    </>
+  );
+}
+
+export default Home;
