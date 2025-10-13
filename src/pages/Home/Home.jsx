@@ -49,8 +49,6 @@ import bgImage from "../../assets/img/project/bg.jpg";
 import cta1 from "../../assets/img/cta/cta.png";
 import cta2 from "../../assets/img/cta/cta-2.png";
 
-import bgCta from "../../assets/img/cta/bg.jpg";
-
 // COMPONENTS
 import Odometer from "../../components/Odometer";
 import Header from "./../../layouts/Header/Header";
@@ -1385,7 +1383,9 @@ function Home() {
                       </a>
                     </h2>
 
-                    <div className="td-btn-group mb-35" style = {{marginLeft: "39%", marginBottom: "5%", marginTop: "2%"}}>
+                    <div className="td-btn-group mb-35"  style={{
+    padding: "2% 3% 14% 20%"
+  }}>
                         <a className="td-btn-circle" href="about.html">
                           <i className="fa-solid fa-arrow-right"></i>
                         </a>
