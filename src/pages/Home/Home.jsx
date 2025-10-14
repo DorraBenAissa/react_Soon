@@ -67,6 +67,7 @@ import FixedTitleAnimation from "../../components/FixedTitleAnimation";
 import TestimonialSlider from "../../components/TestimonialSlider";
 import BrandSlider from "../../components/BrandSlider";
 import ScrollToTopAutomatic from "../../components/ScrollToTopAutomatic";
+import AutoCloseMenu from "../../components/AutoCloseMenu";
 
 function Home() {
   return (
@@ -85,6 +86,7 @@ function Home() {
       <StickyHeader />
       <SmoothScroll />
       <WowInit />
+      <AutoCloseMenu />
 
       <div className="search__popup">
         <div className="container">
@@ -1374,13 +1376,20 @@ function Home() {
                         src={cta2}
                         alt=""
                       />
-                      <a className="td-text-invert" href="contact.html">
+                      {/* <a className="td-text-invert" href="contact.html">
                         VOUS AVEZ
                         <br />
                         DES PROJETS
                         <br />
                         EN TÊTE
-                      </a>
+                      </a> */}
+                      <Link className="td-text-invert" to="/contact">
+                        VOUS AVEZ
+                        <br />
+                        DES PROJETS
+                        <br />
+                        EN TÊTE
+                      </Link>
                     </h2>
 
                     <div

@@ -60,7 +60,8 @@ function Header() {
                           <a href="#">Pages</a>
                           <ul className="sub-menu">
                             <li>
-                              <a href="about.html">À propos</a>
+                              {/* <a href="about.html">À propos</a> */}
+                              <Link to="/about">À propos</Link>
                             </li>
                             <li>
                               <a href="service.html">Service</a>
@@ -129,7 +130,8 @@ function Header() {
                           </ul>
                         </li>
                         <li>
-                          <a href="contact.html">Contact</a>
+                          {/* <a href="contact.html">Contact</a> */}
+                          <Link to="/contact">Contact</Link>
                         </li>
                       </ul>
                     </div>
@@ -223,7 +225,7 @@ function Header() {
             </div>
             <div className="tdmobile__menu-outer"></div>
             <div className="mt-30 ml-25 mr-25">
-              <a
+              {/* <a
                 href="contact.html"
                 className="td-btn td-btn-menu-black w-100 d-inline-block td-btn-switch-animation ml-10"
               >
@@ -236,7 +238,21 @@ function Header() {
                     <i className="fa-sharp fa-solid fa-angle-right"></i>
                   </span>
                 </span>
-              </a>
+              </a> */}
+              <Link
+                to="/contact"
+                className="td-btn td-btn-menu-black w-100 d-inline-block td-btn-switch-animation ml-10"
+              >
+                <span className="d-flex align-items-center justify-content-center">
+                  <span className="btn-text">Nous contacter</span>
+                  <span className="btn-icon">
+                    <i className="fa-sharp fa-solid fa-angle-right"></i>
+                  </span>
+                  <span className="btn-icon">
+                    <i className="fa-sharp fa-solid fa-angle-right"></i>
+                  </span>
+                </span>
+              </Link>
             </div>
             <link
               rel="stylesheet"

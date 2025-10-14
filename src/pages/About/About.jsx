@@ -35,6 +35,7 @@ import ScrollToTopAutomatic from "../../components/ScrollToTopAutomatic";
 import TitleAnimation from "../../components/TitleAnimation";
 import SmoothScroll from "../../components/SmoothScroll";
 import Menu from "../../components/Menu";
+import AutoCloseMenu from "../../components/AutoCloseMenu";
 
 function Home() {
   return (
@@ -51,6 +52,7 @@ function Home() {
       <TitleAnimation />
       <WowInit />
       <Menu />
+      <AutoCloseMenu />
 
       <header>
         <div
@@ -75,10 +77,12 @@ function Home() {
                     <div className="tdmenu__navbar-wrap tdmenu__main-menu">
                       <ul className="navigation">
                         <li className="active menu-item-has-children">
-                          <a href="index.html">Accueil</a>
+                          {/* <a href="index.html">Accueil</a> */}
+                          <Link to="/">Accueil</Link>
                           <ul className="sub-menu">
                             <li className="active">
-                              <a href="index.html">L’agence</a>
+                              {/* <a href="index.html">L’agence</a> */}
+                              <Link to="/">L’agence</Link>
                             </li>
                             <li>
                               <a href="index-2.html">Vos besoins</a>
@@ -173,7 +177,8 @@ function Home() {
                           </ul>
                         </li>
                         <li>
-                          <a href="contact.html">Contact</a>
+                          {/* <a href="contact.html">Contact</a> */}
+                          <Link to="/contact">Contact</Link>
                         </li>
                       </ul>
                     </div>
@@ -182,9 +187,12 @@ function Home() {
               </div>
               <div className="col-xxl-2 col-xl-3 col-8">
                 <div className="td-header-right text-end">
-                  <a className="td-btn-12" href="contact.html">
+                  {/* <a className="td-btn-12" href="contact.html">
                     Let’s Talk
-                  </a>
+                  </a> */}
+                  <Link className="td-btn-12" to="/contact">
+                    Let’s Talk
+                  </Link>
                   <div className="d-inline-block ml-10">
                     <div className="tdmenu-offcanvas-open-btn mobile-nav-toggler">
                       <div className="tdmenu-offcanvas-open-bar d-inline-block">
@@ -206,9 +214,12 @@ function Home() {
               <i className="fa-solid fa-xmark"></i>
             </div>
             <div className="nav-logo">
-              <a href="index.html">
+              {/* <a href="index.html">
                 <img style = {{width:"96px"}} src={logoBlack} alt="logo" />
-              </a>
+              </a> */}
+              <Link to="/">
+                <img style={{ width: "96px" }} src={logoBlack} alt="logo" />
+              </Link>
             </div>
             <div className="tdmobile__search">
               <form action="#">
@@ -238,7 +249,7 @@ function Home() {
               </div>
             </div>
             <div className="mt-30 ml-25 mr-25">
-              <a
+              {/* <a
                 href="contact.html"
                 className="td-btn td-btn-menu-black w-100 d-inline-block td-btn-switch-animation ml-10"
               >
@@ -251,7 +262,21 @@ function Home() {
                     <i className="fa-sharp fa-solid fa-angle-right"></i>
                   </span>
                 </span>
-              </a>
+              </a> */}
+              <Link
+                to="/contact"
+                className="td-btn td-btn-menu-black w-100 d-inline-block td-btn-switch-animation ml-10"
+              >
+                <span className="d-flex align-items-center justify-content-center">
+                  <span className="btn-text"> Contact Us </span>
+                  <span className="btn-icon">
+                    <i className="fa-sharp fa-solid fa-angle-right"></i>
+                  </span>
+                  <span className="btn-icon">
+                    <i className="fa-sharp fa-solid fa-angle-right"></i>
+                  </span>
+                </span>
+              </Link>
             </div>
             <link
               rel="stylesheet"
@@ -342,8 +367,7 @@ function Home() {
                     <div className="td-about-main-wrapper pb-90">
                       <h2 className="td-section-page-title td-title-anim text-center">
                         Agence créative et digitale à 360°, à service complet
-                        collaborant à l’échelle 
-                        mondiale avec
+                        collaborant à l’échelle mondiale avec
                         <br />
                         <span>les plus grandes marques. </span>
                       </h2>
@@ -389,7 +413,7 @@ function Home() {
                               innover.
                             </p>
                             <div className="td-btn-group">
-                              <a className="td-btn-circle" href="contact.html">
+                              {/* <a className="td-btn-circle" href="contact.html">
                                 <i className="fa-solid fa-arrow-right"></i>
                               </a>
                               <a
@@ -400,7 +424,21 @@ function Home() {
                               </a>
                               <a className="td-btn-circle" href="contact.html">
                                 <i className="fa-solid fa-arrow-right"></i>
-                              </a>
+                              </a> */}
+                              <Link className="td-btn-circle" to="/contact">
+                                <i className="fa-solid fa-arrow-right"></i>
+                              </Link>
+
+                              <Link
+                                className="td-btn-2 td-btn-primary"
+                                to="/contact"
+                              >
+                                EN SAVOIR PLUS
+                              </Link>
+
+                              <Link className="td-btn-circle" to="/contact">
+                                <i className="fa-solid fa-arrow-right"></i>
+                              </Link>
                             </div>
                           </div>
                         </div>
@@ -659,11 +697,7 @@ function Home() {
                   <div className="col-lg-3 col-md-6 col-sm-6">
                     <div className="td-team-4-wrap p-relative mb-30">
                       <div className="td-team-4-thumb">
-                        <img
-                          className="w-100"
-                          src={thumbTeam}
-                          alt=""
-                        />
+                        <img className="w-100" src={thumbTeam} alt="" />
                       </div>
                       <div className="td-team-4-content text-center">
                         <span className="td-team-4-subtitle">
@@ -761,11 +795,7 @@ function Home() {
                   <div className="col-lg-3 col-md-6 col-sm-6">
                     <div className="td-team-4-wrap p-relative mb-30">
                       <div className="td-team-4-thumb">
-                        <img
-                          className="w-100"
-                          src={thumbTeam2}
-                          alt=""
-                        />
+                        <img className="w-100" src={thumbTeam2} alt="" />
                       </div>
                       <div className="td-team-4-content text-center">
                         <span className="td-team-4-subtitle">
@@ -863,11 +893,7 @@ function Home() {
                   <div className="col-lg-3 col-md-6 col-sm-6">
                     <div className="td-team-4-wrap p-relative mb-30">
                       <div className="td-team-4-thumb">
-                        <img
-                          className="w-100"
-                          src={thumbTeam3}
-                          alt=""
-                        />
+                        <img className="w-100" src={thumbTeam3} alt="" />
                       </div>
                       <div className="td-team-4-content text-center">
                         <span className="td-team-4-subtitle">
@@ -965,11 +991,7 @@ function Home() {
                   <div className="col-lg-3 col-md-6 col-sm-6">
                     <div className="td-team-4-wrap p-relative mb-30">
                       <div className="td-team-4-thumb">
-                        <img
-                          className="w-100"
-                          src={thumbTeam4}
-                          alt=""
-                        />
+                        <img className="w-100" src={thumbTeam4} alt="" />
                       </div>
                       <div className="td-team-4-content text-center">
                         <span className="td-team-4-subtitle">
@@ -1067,11 +1089,7 @@ function Home() {
                   <div className="col-lg-3 col-md-6 col-sm-6">
                     <div className="td-team-4-wrap p-relative mb-30">
                       <div className="td-team-4-thumb">
-                        <img
-                          className="w-100"
-                          src={thumbTeam4}
-                          alt=""
-                        />
+                        <img className="w-100" src={thumbTeam4} alt="" />
                       </div>
                       <div className="td-team-4-content text-center">
                         <span className="td-team-4-subtitle">
@@ -1169,11 +1187,7 @@ function Home() {
                   <div className="col-lg-3 col-md-6 col-sm-6">
                     <div className="td-team-4-wrap p-relative mb-30">
                       <div className="td-team-4-thumb">
-                        <img
-                          className="w-100"
-                          src={thumbTeam4}
-                          alt=""
-                        />
+                        <img className="w-100" src={thumbTeam4} alt="" />
                       </div>
                       <div className="td-team-4-content text-center">
                         <span className="td-team-4-subtitle">
@@ -1271,11 +1285,7 @@ function Home() {
                   <div className="col-lg-3 col-md-6 col-sm-6">
                     <div className="td-team-4-wrap p-relative mb-30">
                       <div className="td-team-4-thumb">
-                        <img
-                          className="w-100"
-                          src={thumbTeam4}
-                          alt=""
-                        />
+                        <img className="w-100" src={thumbTeam4} alt="" />
                       </div>
                       <div className="td-team-4-content text-center">
                         <span className="td-team-4-subtitle">
@@ -1373,11 +1383,7 @@ function Home() {
                   <div className="col-lg-3 col-md-6 col-sm-6">
                     <div className="td-team-4-wrap p-relative mb-30">
                       <div className="td-team-4-thumb">
-                        <img
-                          className="w-100"
-                          src={thumbTeam4}
-                          alt=""
-                        />
+                        <img className="w-100" src={thumbTeam4} alt="" />
                       </div>
                       <div className="td-team-4-content text-center">
                         <span className="td-team-4-subtitle">Graphiste</span>
@@ -1473,11 +1479,7 @@ function Home() {
                   <div className="col-lg-3 col-md-6 col-sm-6">
                     <div className="td-team-4-wrap p-relative mb-30">
                       <div className="td-team-4-thumb">
-                        <img
-                          className="w-100"
-                          src={thumbTeam4}
-                          alt=""
-                        />
+                        <img className="w-100" src={thumbTeam4} alt="" />
                       </div>
                       <div className="td-team-4-content text-center">
                         <span className="td-team-4-subtitle">
@@ -1575,11 +1577,7 @@ function Home() {
                   <div className="col-lg-3 col-md-6 col-sm-6">
                     <div className="td-team-4-wrap p-relative mb-30">
                       <div className="td-team-4-thumb">
-                        <img
-                          className="w-100"
-                          src={thumbTeam4}
-                          alt=""
-                        />
+                        <img className="w-100" src={thumbTeam4} alt="" />
                       </div>
                       <div className="td-team-4-content text-center">
                         <span className="td-team-4-subtitle">
@@ -1677,11 +1675,7 @@ function Home() {
                   <div className="col-lg-3 col-md-6 col-sm-6">
                     <div className="td-team-4-wrap p-relative mb-30">
                       <div className="td-team-4-thumb">
-                        <img
-                          className="w-100"
-                          src={thumbTeam4}
-                          alt=""
-                        />
+                        <img className="w-100" src={thumbTeam4} alt="" />
                       </div>
                       <div className="td-team-4-content text-center">
                         <span className="td-team-4-subtitle">

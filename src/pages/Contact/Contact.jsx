@@ -14,6 +14,7 @@ import ScrollToTop from "../../components/ScrollToTop";
 import StickyHeader from "../../components/StickyHeader";
 import WowInit from "../../components/WowInit";
 import Menu from "../../components/Menu";
+import AutoCloseMenu from "../../components/AutoCloseMenu";
 
 function Contact() {
   return (
@@ -25,6 +26,7 @@ function Contact() {
       <StickyHeader />
       <WowInit />
       <Menu />
+      <AutoCloseMenu />
 
       <header>
         <div
@@ -49,10 +51,12 @@ function Contact() {
                     <div className="tdmenu__navbar-wrap tdmenu__main-menu">
                       <ul className="navigation">
                         <li className="menu-item-has-children">
-                          <a href="index.html">Accueil</a>
+                          {/* <a href="index.html">Accueil</a> */}
+                          <Link to="/">Accueil</Link>
                           <ul className="sub-menu">
                             <li className="active">
-                              <a href="index.html">L’agence</a>
+                              {/* <a href="index.html">L’agence</a> */}
+                              <Link to="/">L’agence</Link>
                             </li>
                             <li>
                               <a href="index-2.html">Vos besoins</a>
@@ -78,7 +82,8 @@ function Contact() {
                           <a href="#">Pages</a>
                           <ul className="sub-menu">
                             <li>
-                              <a href="about.html">À propos</a>
+                              {/* <a href="about.html">À propos</a> */}
+                              <Link to="/about">À propos</Link>
                             </li>
                             <li>
                               <a href="service.html">Service</a>
@@ -172,9 +177,12 @@ function Contact() {
               <i className="fa-solid fa-xmark"></i>
             </div>
             <div className="nav-logo">
-              <a href="index.html">
+              {/* <a href="index.html">
                 <img style={{ width: "96px" }} src={logoBlack} alt="logo" />
-              </a>
+              </a> */}
+              <Link to="/">
+                <img style={{ width: "96px" }} src={logoBlack} alt="logo" />
+              </Link>
             </div>
             <div className="tdmobile__search">
               <form action="#">
@@ -290,15 +298,16 @@ function Contact() {
                     <div className="td-contact-map p-relative">
                       <div className="td-contact-map-wrap">
                         <img className="mb-100" src={logoWhiteBlack} alt="" />
-                        <h6 className="mb-25">Contact info:</h6>
-                        <a href="tel:0185492288">01 85 49 22 88</a>
+                        <h6 className="mb-25" style= {{color:"white"}}>Contact info:</h6>
+                        <a href="tel:0185492288" style= {{color:"white"}}>01 85 49 22 88</a>
                         <a
                           className="mb-10"
                           href="mailto:hello@soon-agency.com"
+                          style= {{color:"white"}}
                         >
                           hello@parodyagency.com
                         </a>
-                        <a href="#">
+                        <a href="#" style= {{color:"white"}}>
                           Jazz Building, 26 avenue Hergé, 77700 Chessy – Val
                           d'Europe - France
                         </a>
