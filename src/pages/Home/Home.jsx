@@ -388,7 +388,7 @@ function Home() {
                 <div className="row">
                   <div className="col-lg-6">
                     <div className="td-service-title-wrap">
-                      <h2 className="td-section-title mb-30 td-text-invert">
+                      <h2 className="td-section-title mb-30" style = {{color:"#e26F57",}}>
                         Service
                       </h2>
 
@@ -574,9 +574,9 @@ function Home() {
                                 {/* <span className="odometer" data-count="72">
                                   0
                                 </span> */}
-                                <Odometer value={72} />+
+                                <Odometer value={400} />+
                               </h2>
-                              <span>Projets accomplis</span>
+                              <span>Clients</span>
                             </div>
                           </div>
                           <div className="col-lg-6 col-md-6">
@@ -585,9 +585,9 @@ function Home() {
                                 {/* <span className="odometer" data-count="17">
                                   0
                                 </span> */}
-                                <Odometer value={17} />+
+                                <Odometer value={15} />+
                               </h2>
-                              <span>Années d’expérience</span>
+                              <span>Collaborateurs</span>
                             </div>
                           </div>
                         </div>
@@ -826,10 +826,10 @@ function Home() {
                 <div className="row">
                   <div className="col-12">
                     <div className="td-service-title-wrap pb-10">
-                      <h2 className="td-section-title mb-0 td-text-invert">
+                      <h2 className="td-section-title mb-0" style = {{color:"#e26F57",}}>
                         Travail
                       </h2>
-                      <h3 className="td-section-title-capi td-text-invert">
+                      <h3 className="td-section-title-capi" style = {{color:"#e26F57",}}>
                         Processus
                       </h3>
                     </div>
@@ -970,9 +970,9 @@ function Home() {
                       data-wow-delay=".3s"
                       data-wow-duration="1s"
                     >
-                      <h2 className="td-testimonial-title mb-65 td-text-invert">
+                      <h2 className="td-testimonial-title mb-65" style = {{color:"#e26F57",}}>
                         Ce que nos Clients
-                        <br /> <span>disent de nous</span>
+                        <br /> <span style = {{color:"#e26F57",}}>disent de nous</span>
                       </h2>
                       <div className="row">
                         <div className="col-lg-4">
@@ -1250,8 +1250,8 @@ function Home() {
                   </div>
                   <div className="col-lg-5">
                     <div>
-                      <h2 className="td-testimonial-title mb-30 td-text-invert">
-                        Actualités de <br /> <span>Soon</span>
+                      <h2 className="td-testimonial-title mb-30" style = {{color:"#e26F57",}}>
+                        Actualités de <br /> <span style = {{color:"#e26F57",}}>Soon</span>
                       </h2>
                     </div>
                   </div>

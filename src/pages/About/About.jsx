@@ -188,10 +188,10 @@ function Home() {
               <div className="col-xxl-2 col-xl-3 col-8">
                 <div className="td-header-right text-end">
                   {/* <a className="td-btn-12" href="contact.html">
-                    Let’s Talk
+                    SEE YOU SOON !
                   </a> */}
                   <Link className="td-btn-12" to="/contact">
-                    Let’s Talk
+                    SEE YOU SOON !
                   </Link>
                   <div className="d-inline-block ml-10">
                     <div className="tdmenu-offcanvas-open-btn mobile-nav-toggler">
@@ -471,9 +471,9 @@ function Home() {
                   </div>
                   <div className="col-lg-9 col-md-8">
                     <div className="td-testimonial-content ml-80 mb-50">
-                      <h2 className="td-testimonial-title mb-65 td-text-invert">
+                      <h2 className="td-testimonial-title mb-65" style = {{color:"#e26F57",}}>
                         CE QUE DISENT NOS CLIENTS
-                        <br /> <span>À NOTRE SUJET</span>
+                        <br /> <span style = {{color:"#e26F57",}}>À NOTRE SUJET</span>
                       </h2>
                       <div
                         className="row  wow fadeInRight"

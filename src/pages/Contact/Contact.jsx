@@ -154,7 +154,7 @@ function Contact() {
               <div className="col-xxl-2 col-xl-3 col-8">
                 <div className="td-header-right text-end">
                   <a className="td-btn-12" href="contact.html">
-                    Let’s Talk
+                    SEE YOU SOON !
                   </a>
                   <div className="d-inline-block ml-10">
                     <div className="tdmenu-offcanvas-open-btn mobile-nav-toggler">
@@ -338,10 +338,10 @@ function Contact() {
                       data-wow-delay=".5s"
                       data-wow-duration="1s"
                     >
-                      <h2 className="td-contact-main-title">
+                      <h2 className="td-contact-main-title" style = {{color:"#e26F57",}}>
                         Contactons-nous pour
                         <br />
-                        meilleurs <span>résultats</span>
+                        meilleurs <span style = {{color:"#e26F57",}}>résultats</span>
                       </h2>
                     </div>
                   </div>

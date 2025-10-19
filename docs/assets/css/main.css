@@ -148,7 +148,7 @@ a:focus,
 
 a:hover,
 button:hover {
-  color: var(--td-common-black);
+  color: var(--td-common-white);
   text-decoration: none;
 }
 
@@ -724,7 +724,7 @@ textarea {
   font-weight: 700;
   font-size: 16px;
   text-transform: uppercase;
-  color: var(--td-common-black);
+  color: var(--td-common-white);
   border-radius: 30px;
   padding: 20px 35px;
   line-height: 1;
@@ -817,7 +817,7 @@ textarea {
 .td-btn-group-border:hover .td-btn-circle {
   border: 1px solid var(--td-theme-primary) !important;
   background: var(--td-theme-primary) !important;
-  color: var(--td-common-black) !important;
+  color: var(--td-common-white) !important;
 }
 .td-btn-group-border .td-btn-2 {
   border: 1px solid rgba(255, 255, 255, 0.25);
@@ -869,7 +869,7 @@ textarea {
   align-items: center;
   justify-content: center;
   background-color: #e26F57;
-  color: var(--td-common-black);
+  color: var(--td-common-white);
 }
 .td-btn-group .td-btn-circle i {
   transform: rotate(-45deg);
@@ -5670,7 +5670,7 @@ textarea {
 .td-project-title .subtitle {
   font-weight: 600;
   font-size: 18px;
-  color: var(--td-theme-primary);
+  color: var(--td-common-black);
 }
 .td-project-title .title {
   font-weight: 800;

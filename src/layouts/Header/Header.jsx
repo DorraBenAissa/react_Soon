@@ -176,7 +176,7 @@ function Header() {
                     className="td-btn td-btn-lg d-none d-md-inline-block td-btn-switch-animation ml-10"
                   >
                     <span className="d-flex align-items-center justify-content-center">
-                      <span className="btn-text">Let’s Talk</span>
+                      <span className="btn-text">SEE YOU SOON !</span>
                       <span className="btn-icon">
                         <i className="fa-sharp fa-solid fa-angle-right"></i>
                       </span>
@@ -190,7 +190,7 @@ function Header() {
                     className="td-btn td-btn-lg d-none d-md-inline-block td-btn-switch-animation ml-10"
                   >
                     <span className="d-flex align-items-center justify-content-center">
-                      <span className="btn-text">Let’s Talk</span>
+                      <span className="btn-text">SEE YOU SOON !</span>
                       <span className="btn-icon">
                         <i className="fa-sharp fa-solid fa-angle-right"></i>
                       </span>
