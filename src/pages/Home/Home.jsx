@@ -382,44 +382,6 @@ function Home() {
                 </div>
               </div>
             </div>
-            <div className="col-12">
-              <div className="td-brand-wrap">
-                <div className="swiper-container td-brand-slide-active">
-                  <div className="swiper-wrapper slide-transtion">
-                    <div className="swiper-slide">
-                      <div className="td-brand-item">
-                        <img src={logoBrand1} alt="" />
-                      </div>
-                    </div>
-                    <div className="swiper-slide">
-                      <div className="td-brand-item">
-                        <img src={logoBrand2} alt="" />
-                      </div>
-                    </div>
-                    <div className="swiper-slide">
-                      <div className="td-brand-item">
-                        <img src={logoBrand3} alt="" />
-                      </div>
-                    </div>
-                    <div className="swiper-slide">
-                      <div className="td-brand-item">
-                        <img src={logoBrand4} alt="" />
-                      </div>
-                    </div>
-                    <div className="swiper-slide">
-                      <div className="td-brand-item">
-                        <img src={logoBrand5} alt="" />
-                      </div>
-                    </div>
-                    <div className="swiper-slide">
-                      <div className="td-brand-item">
-                        <img src={logoBrand3} alt="" />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
 
             <div className="td-service-area pb-100 pt-100">
               <div className="container">

@@ -649,9 +649,22 @@ function Home() {
                   <div className="col-xl-9">
                     <div className="td-about-main-feature-wrap">
                       <h2 className="td-about-main-feature-title mb-70 td-text-invert">
-                        La Team Soon réunit des talents complémentaires, alliant créativité, stratégie 
+                        {/* La Team Soon réunit des talents complémentaires, alliant créativité, stratégie 
                         & expertise technique pour donner vie à vos projets. Ensemble, nous concevons 
-                        des solutions sur mesure avec passion et engagement.
+                        des solutions sur mesure avec passion et engagement. */}
+                        La Team Soon, c’est avant tout une équipe soudée,
+                        composée de talents complémentaires couvrant un large
+                        éventail de compétences, du graphisme créatif à la
+                        stratégie digitale en passant par le développement web.
+                        Chaque membre apporte une expertise unique et un
+                        savoir-faire pointu, nous permettant non seulement de
+                        relever les défis les plus ambitieux, mais aussi
+                        d’apporter des solutions sur-mesure à chacun de vos
+                        besoins. Explorez les profils qui façonnent notre équipe
+                        et découvrez les visages derrière la création de votre
+                        image de marque, la conception de votre site internet,
+                        et bien plus encore, toujours avec passion et
+                        engagement.
                       </h2>
                       <div className="row">
                         <div className="col-lg-5 d-none d-md-block">
