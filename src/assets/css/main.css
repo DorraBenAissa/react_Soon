@@ -148,8 +148,17 @@ a:focus,
 
 a:hover,
 button:hover {
+  color: var(--td-common-black);
+  text-decoration: none;
+}
+
+.td-btn-group a:hover {
   color: var(--td-common-white);
   text-decoration: none;
+}
+
+.td-testimonial-thumb .w-100 {
+  width: 85% !important;
 }
 
 ul {
@@ -879,7 +888,7 @@ textarea {
   font-weight: 400;
   padding: 0 24px;
   background-color: var(--td-theme-primary);
-  color: var(--td-common-white);
+  color: var(--td-common-black);
 }
 .td-btn-group-black .td-btn-2 {
   background: var(--td-common-black);
@@ -2428,7 +2437,7 @@ textarea {
   background: transparent;
 }
 .search-close-btn:hover {
-  color: var(--td-theme-primary);
+  color: var(--td-theme-5);
 }
 .search-popup-overlay {
   position: fixed;
@@ -2460,7 +2469,7 @@ textarea {
   right: 0;
   width: 0;
   height: 1px;
-  background-color: var(--td-theme-primary);
+  background-color: var(--td-theme-5);
   transition: all 0.5s;
   z-index: 1;
 }
@@ -5925,24 +5934,24 @@ textarea {
 ===============================*/
 .td-testimonial-title {
   font-weight: 800;
-  font-size: 80px;
+  font-size: 60px;
   letter-spacing: -0.03em;
   color: var(--td-common-black);
   line-height: 1;
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .td-testimonial-title {
-    font-size: 60px;
+    font-size: 40px;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px) {
   .td-testimonial-title {
-    font-size: 50px;
+    font-size: 30px;
   }
 }
 @media (max-width: 575px) {
   .td-testimonial-title {
-    font-size: 40px;
+    font-size: 20px;
   }
 }
 .td-testimonial-title span {
@@ -7195,7 +7204,7 @@ textarea {
   color: rgba(255, 255, 255, 0.65);
 }
 .td-footer-widget-list li a:hover {
-  color: var(--td-theme-primary);
+  color: var(--td-common-white);
 }
 .td-footer-form input {
   font-family: var(--td-ff-body);
@@ -7234,7 +7243,7 @@ textarea {
   color: rgba(255, 255, 255, 0.65);
 }
 .td-footer-copyright p a {
-  color: var(--td-theme-primary);
+  color: var(--td-common-white);
 }
 .td-footer-social a {
   border: 1px solid rgba(255, 255, 255, 0.12);
@@ -8894,7 +8903,7 @@ textarea {
   border-radius: 10px;
 }
 .td-awards-about-wrap .td-awards-5-list-item::before {
-  background: var(--td-theme-primary);
+  background: var( --td-theme-5);
 }
 .td-awards-about-wrap .td-awards-5-list-item span {
   color: var(--td-common-black);
