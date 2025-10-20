@@ -382,13 +382,51 @@ function Home() {
                 </div>
               </div>
             </div>
+            <div className="col-12">
+              <div className="td-brand-wrap">
+                <div className="swiper-container td-brand-slide-active">
+                  <div className="swiper-wrapper slide-transtion">
+                    <div className="swiper-slide">
+                      <div className="td-brand-item">
+                        <img src={logoBrand1} alt="" />
+                      </div>
+                    </div>
+                    <div className="swiper-slide">
+                      <div className="td-brand-item">
+                        <img src={logoBrand2} alt="" />
+                      </div>
+                    </div>
+                    <div className="swiper-slide">
+                      <div className="td-brand-item">
+                        <img src={logoBrand3} alt="" />
+                      </div>
+                    </div>
+                    <div className="swiper-slide">
+                      <div className="td-brand-item">
+                        <img src={logoBrand4} alt="" />
+                      </div>
+                    </div>
+                    <div className="swiper-slide">
+                      <div className="td-brand-item">
+                        <img src={logoBrand5} alt="" />
+                      </div>
+                    </div>
+                    <div className="swiper-slide">
+                      <div className="td-brand-item">
+                        <img src={logoBrand3} alt="" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
 
             <div className="td-service-area pb-100 pt-100">
               <div className="container">
                 <div className="row">
                   <div className="col-lg-6">
                     <div className="td-service-title-wrap">
-                      <h2 className="td-section-title mb-30" style = {{color:"#e26F57",}}>
+                      <h2 className="td-section-title mb-30" style={{ color: "#e26F57", }}>
                         Service
                       </h2>
 
@@ -826,10 +864,10 @@ function Home() {
                 <div className="row">
                   <div className="col-12">
                     <div className="td-service-title-wrap pb-10">
-                      <h2 className="td-section-title mb-0" style = {{color:"#e26F57",}}>
+                      <h2 className="td-section-title mb-0" style={{ color: "#e26F57", }}>
                         Travail
                       </h2>
-                      <h3 className="td-section-title-capi" style = {{color:"#e26F57",}}>
+                      <h3 className="td-section-title-capi" style={{ color: "#e26F57", }}>
                         Processus
                       </h3>
                     </div>
@@ -970,9 +1008,9 @@ function Home() {
                       data-wow-delay=".3s"
                       data-wow-duration="1s"
                     >
-                      <h2 className="td-testimonial-title mb-65" style = {{color:"#e26F57",}}>
+                      <h2 className="td-testimonial-title mb-65" style={{ color: "#e26F57", }}>
                         Ce que nos Clients
-                        <br /> <span style = {{color:"#e26F57",}}>disent de nous</span>
+                        <br /> <span style={{ color: "#e26F57", }}>disent de nous</span>
                       </h2>
                       <div className="row">
                         <div className="col-lg-4">
@@ -1250,8 +1288,8 @@ function Home() {
                   </div>
                   <div className="col-lg-5">
                     <div>
-                      <h2 className="td-testimonial-title mb-30" style = {{color:"#e26F57",}}>
-                        Actualités de <br /> <span style = {{color:"#e26F57",}}>Soon</span>
+                      <h2 className="td-testimonial-title mb-30" style={{ color: "#e26F57", }}>
+                        Actualités de <br /> <span style={{ color: "#e26F57", }}>Soon</span>
                       </h2>
                     </div>
                   </div>
