@@ -320,7 +320,7 @@ function Home() {
                     <div className="td-about-left mb-30">
                       <span>QUI NOUS SOMMES</span>
                       <div className="td-about-left-thumb ml-60 fix td-rounded-10">
-                        <img data-speed=".9" src={thumbAbout} alt="" />
+                        <img data-speed=".9" src={thumbAbout} alt="" style ={{borderTopRightRadius: "84px",}}/>
                       </div>
                     </div>
                   </div>
