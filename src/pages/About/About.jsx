@@ -2,7 +2,9 @@
 import { Link } from "react-router-dom";
 
 // ASSETS
-import logoBlack from "../../assets/img/logo/logo-black.png";
+// import logoBlack from "../../assets/img/logo/logo-black.png";
+import logoBlack from "../../assets/img/logo/BLACK2.webp";
+
 import thumbMain from "../../assets/img/about/main/thumb.jpg";
 import usertestimonial from "../../assets/img/testimonial/user.png";
 import thumbTestimonial from "../../assets/img/testimonial/thumb.jpg";

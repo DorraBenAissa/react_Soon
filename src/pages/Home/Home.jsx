@@ -49,6 +49,10 @@ import bgImage from "../../assets/img/project/bg.jpg";
 import cta1 from "../../assets/img/cta/cta.png";
 import cta2 from "../../assets/img/cta/cta-2.png";
 
+import heroVideo from "../../assets/video/hero3.mp4";
+import heroVideo2 from "../../assets/video/hero2.mp4";
+import bgThumb23 from "../../assets/video/bg-thumb3.mp4";
+
 // COMPONENTS
 import Odometer from "../../components/Odometer";
 import Header from "./../../layouts/Header/Header";
@@ -180,17 +184,37 @@ function Home() {
                       >
                         <h2 className="title">MAKE YOUR </h2>
                         <h2 className="title mb-0 d-flex align-items-center justify-content-center">
-                          <img
+                          <video
                             className="mr-30 d-none d-sm-block"
-                            src={thumb1}
-                            alt=""
-                          />
+                            autoPlay
+                            muted
+                            loop
+                            playsInline
+                            style={{
+                              width: "178px",
+                              borderRadius: "30px",
+                              marginRight: "50px",
+                            }}
+                          >
+                            <source src={heroVideo} type="video/mp4" />
+                            Ton navigateur ne supporte pas la vidéo.
+                          </video>
                           BRAND
-                          <img
-                            className="ml-35 d-none d-sm-block"
-                            src={thumb2}
-                            alt=""
-                          />
+                          <video
+                            className="mr-30 d-none d-sm-block"
+                            autoPlay
+                            muted
+                            loop
+                            playsInline
+                            style={{
+                              width: "178px",
+                              borderRadius: "30px",
+                              marginLeft: "50px",
+                            }}
+                          >
+                            <source src={heroVideo2} type="video/mp4" />
+                            Ton navigateur ne supporte pas la vidéo.
+                          </video>
                         </h2>
                         <h2 className="title">FLY</h2>
                       </div>
@@ -301,12 +325,24 @@ function Home() {
                 <div className="row">
                   <div className="col-12">
                     <div className="td-hero-bottom-thumb">
-                      <img
+                      <video
                         data-speed="0.6"
                         className="w-100 round-2"
-                        src={bgThumb3}
-                        alt=""
-                      />
+                        autoPlay
+                        muted
+                        loop
+                        playsInline
+                        style={{
+                          width: "100%",
+                          height: "auto",
+                          objectFit: "cover",
+                          borderRadius: "40px",
+                        }}
+                      >
+                        <source src={bgThumb23} type="video/mp4" />
+
+                        Ton navigateur ne supporte pas la vidéo.
+                      </video>
                     </div>
                   </div>
                 </div>
@@ -320,7 +356,12 @@ function Home() {
                     <div className="td-about-left mb-30">
                       <span>QUI NOUS SOMMES</span>
                       <div className="td-about-left-thumb ml-60 fix td-rounded-10">
-                        <img data-speed=".9" src={thumbAbout} alt="" style ={{borderTopRightRadius: "84px",}}/>
+                        <img
+                          data-speed=".9"
+                          src={thumbAbout}
+                          alt=""
+                          style={{ borderTopRightRadius: "84px" }}
+                        />
                       </div>
                     </div>
                   </div>
@@ -388,7 +429,10 @@ function Home() {
                 <div className="row">
                   <div className="col-lg-6">
                     <div className="td-service-title-wrap">
-                      <h2 className="td-section-title mb-30" style={{ color: "#e26F57", }}>
+                      <h2
+                        className="td-section-title mb-30"
+                        style={{ color: "#e26F57" }}
+                      >
                         Service
                       </h2>
 
@@ -826,10 +870,16 @@ function Home() {
                 <div className="row">
                   <div className="col-12">
                     <div className="td-service-title-wrap pb-10">
-                      <h2 className="td-section-title mb-0" style={{ color: "#e26F57", }}>
+                      <h2
+                        className="td-section-title mb-0"
+                        style={{ color: "#e26F57" }}
+                      >
                         Travail
                       </h2>
-                      <h3 className="td-section-title-capi" style={{ color: "#e26F57", }}>
+                      <h3
+                        className="td-section-title-capi"
+                        style={{ color: "#e26F57" }}
+                      >
                         Processus
                       </h3>
                     </div>
@@ -970,9 +1020,13 @@ function Home() {
                       data-wow-delay=".3s"
                       data-wow-duration="1s"
                     >
-                      <h2 className="td-testimonial-title mb-65" style={{ color: "#e26F57", }}>
+                      <h2
+                        className="td-testimonial-title mb-65"
+                        style={{ color: "#e26F57" }}
+                      >
                         Ce que nos Clients
-                        <br /> <span style={{ color: "#e26F57", }}>disent de nous</span>
+                        <br />{" "}
+                        <span style={{ color: "#e26F57" }}>disent de nous</span>
                       </h2>
                       <div className="row">
                         <div className="col-lg-4">
@@ -1250,8 +1304,12 @@ function Home() {
                   </div>
                   <div className="col-lg-5">
                     <div>
-                      <h2 className="td-testimonial-title mb-30" style={{ color: "#e26F57", }}>
-                        Actualités de <br /> <span style={{ color: "#e26F57", }}>Soon</span>
+                      <h2
+                        className="td-testimonial-title mb-30"
+                        style={{ color: "#e26F57" }}
+                      >
+                        Actualités de <br />{" "}
+                        <span style={{ color: "#e26F57" }}>Soon</span>
                       </h2>
                     </div>
                   </div>

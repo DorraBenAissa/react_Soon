@@ -2,8 +2,9 @@
 import { Link } from "react-router-dom";
 
 // ASSETS
-import logoBlack from "../../assets/img/logo/logo-black.png";
-import logoWhiteBlack from "../../assets/img/logo/logo-white-black.png";
+// import logoBlack from "../../assets/img/logo/logo-black.png";
+import logoWhiteBlack from "../../assets/img/logo/BLACK2.webp";
+import soonWhiteLogo from "../../assets/img/logo/WHITH3.webp";
 
 // COMPONENTS
 import Footer from "./../../layouts/Footer/Footer";
@@ -41,7 +42,7 @@ function Contact() {
                     <img style={{ width: "96px" }} src={logoBlack} alt="Logo" />
                   </a> */}
                   <Link to="/" className="logo-1">
-                    <img style={{ width: "96px" }} src={logoBlack} alt="Logo" />
+                    <img style={{ width: "96px" }} src={logoWhiteBlack} alt="Logo" />
                   </Link>
                 </div>
               </div>
@@ -181,7 +182,7 @@ function Contact() {
                 <img style={{ width: "96px" }} src={logoBlack} alt="logo" />
               </a> */}
               <Link to="/">
-                <img style={{ width: "96px" }} src={logoBlack} alt="logo" />
+                <img style={{ width: "96px" }} src={logoWhiteBlack} alt="logo" />
               </Link>
             </div>
             <div className="tdmobile__search">
@@ -297,17 +298,28 @@ function Contact() {
                   <div className="col-12">
                     <div className="td-contact-map p-relative">
                       <div className="td-contact-map-wrap">
-                        <img className="mb-100" src={logoWhiteBlack} alt="" />
-                        <h6 className="mb-25" style= {{color:"white"}}>Contact info:</h6>
-                        <a href="tel:0185492288" style= {{color:"white"}}>01 85 49 22 88</a>
+                        <img className="mb-100" width= "119px"src={soonWhiteLogo} alt="" />
+                        <h6 className="mb-25" style={{ color: "white" }}>
+                          Contact info:
+                        </h6>
+                        <a
+                          href="tel:0185492288"
+                          style={{
+                            color: "white",
+                            display: "block",
+                            width: "142px",
+                          }}
+                        >
+                          01 85 49 22 88
+                        </a>
                         <a
                           className="mb-10"
                           href="mailto:hello@soon-agency.com"
-                          style= {{color:"white"}}
+                          style={{ color: "white", display: "block" }}
                         >
-                          hello@parodyagency.com
+                          hello@soon-agency.com
                         </a>
-                        <a href="#" style= {{color:"white"}}>
+                        <a href="#" style={{ color: "white" }}>
                           Jazz Building, 26 avenue Hergé, 77700 Chessy – Val
                           d'Europe - France
                         </a>
@@ -338,10 +350,14 @@ function Contact() {
                       data-wow-delay=".5s"
                       data-wow-duration="1s"
                     >
-                      <h2 className="td-contact-main-title" style = {{color:"#e26F57",}}>
+                      <h2
+                        className="td-contact-main-title"
+                        style={{ color: "#e26F57" }}
+                      >
                         Contactons-nous pour
                         <br />
-                        meilleurs <span style = {{color:"#e26F57",}}>résultats</span>
+                        meilleurs{" "}
+                        <span style={{ color: "#e26F57" }}>résultats</span>
                       </h2>
                     </div>
                   </div>

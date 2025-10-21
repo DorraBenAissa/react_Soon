@@ -3,7 +3,9 @@ import { Link } from "react-router-dom";
 //import './footer.css'
 
 // ASSETS
-import soonWhiteLogo from "../../assets/img/logo/WHITE2.webp";
+//import soonWhiteLogo from "../../assets/img/logo/WHITE2.webp";
+//import soonWhiteLogo from "../../assets/img/logo/WHITE2.webp";
+import soonWhiteLogo from "../../assets/img/logo/WHITH3.webp";
 
 // Layout Footer
 function Footer() {
