@@ -2,7 +2,7 @@
 import { Link, NavLink } from "react-router-dom";
 
 // ASSETS
-import logoBlack from "../../assets/img/logo/logo-black.png";
+import logoBlack from "../../assets/img/logo/BLACK.webp";
 
 //Components
 import Menu from "../../components/Menu";

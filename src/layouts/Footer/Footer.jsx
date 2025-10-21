@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 //import './footer.css'
 
 // ASSETS
-import soonWhiteLogo from "../../assets/img/logo/logo-white.png";
+import soonWhiteLogo from "../../assets/img/logo/WHITE2.webp";
 
 // Layout Footer
 function Footer() {
@@ -19,7 +19,7 @@ function Footer() {
                         <img src={soonWhiteLogo} alt="" />
                       </a> */}
                   <Link to="/">
-                    <img src={soonWhiteLogo} alt="Logo Soon" />
+                    <img style={{ width: "96px" }} src={soonWhiteLogo} alt="Logo Soon" />
                   </Link>
                 </div>
               </div>
