@@ -16,10 +16,17 @@ import logoBrand4 from "../../assets/img/brand/logo-4.png";
 import logoBrand5 from "../../assets/img/brand/logo-5.png";
 import shapeMain from "../../assets/img/about/main/shape.png";
 
-import thumbTeam from "../../assets/img/team/thumb.jpg";
-import thumbTeam2 from "../../assets/img/team/thumb-2.jpg";
-import thumbTeam3 from "../../assets/img/team/thumb-3.jpg";
-import thumbTeam4 from "../../assets/img/team/thumb-4.jpg";
+import thumbTeam from "../../assets/img/team/gautier.jpg";
+import thumbTeam2 from "../../assets/img/team/Marie.jpg";
+import thumbTeam3 from "../../assets/img/team/marion.jpg";
+import thumbTeam4 from "../../assets/img/team/jeff.jpg";
+import thumbTeam5 from "../../assets/img/team/morgan.jpg";
+import thumbTeam6 from "../../assets/img/team/Geraldine.jpg";
+import thumbTeam7 from "../../assets/img/team/0S6A3224.jpg";
+import thumbTeam8 from "../../assets/img/team/0S6A3308.jpg";
+import thumbTeam9 from "../../assets/img/team/0S6A3321.jpg";
+import thumbTeam10 from "../../assets/img/team/lisa.jpg";
+import thumbTeam11 from "../../assets/img/team/julie.jpg";
 
 import award from "../../assets/img/awards/awards-5/award.png";
 
@@ -396,7 +403,7 @@ function Home() {
                       data-wow-duration="1s"
                     >
                       <h3 className="td-about-main-title mb-20">
-                         Favoriser l’innovation grâce au conseil stratégique 
+                        Favoriser l’innovation grâce au conseil stratégique
                       </h3>
                       <div className="row">
                         <div className="col-lg-5 col-md-5">
@@ -450,223 +457,15 @@ function Home() {
                 </div>
               </div>
             </div>
-
-            <div className="td-testimonial-area grey-bg-2 pt-155 pb-120">
-              <div className="container">
-                <div className="row">
-                  <div className="col-lg-3 col-md-4">
-                    <div
-                      className="td-testimonial-left mb-40  wow fadeInLeft"
-                      data-wow-delay=".5s"
-                      data-wow-duration="1s"
-                    >
-                      <span className="td-section-subtitle mb-185 d-inline-block">
-                        AVIS CLIENTS
-                      </span>
-                      <img className="mb-20" src={usertestimonial} alt="" />
-                      <p>
-                        More than 25k clients all
-                        <br />
-                        over the world
-                      </p>
-                    </div>
-                  </div>
-                  <div className="col-lg-9 col-md-8">
-                    <div className="td-testimonial-content ml-80 mb-50">
-                      <h2 className="td-testimonial-title mb-65" style = {{color:"#e26F57",}}>
-                        CE QUE DISENT NOS CLIENTS
-                        <br /> <span style = {{color:"#e26F57",}}>À NOTRE SUJET</span>
-                      </h2>
-                      <div
-                        className="row  wow fadeInRight"
-                        data-wow-delay=".5s"
-                        data-wow-duration="1s"
-                      >
-                        <div className="col-lg-4">
-                          <div className="td-testimonial-thumb fix td-rounded-10 mb-40">
-                            <img
-                              data-speed=".9"
-                              className="w-100 td-rounded-10"
-                              src={thumbTestimonial}
-                              alt=""
-                            />
-                          </div>
-                        </div>
-                        <div className="col-lg-8">
-                          <div className="td-testimonial-slide-content ml-25 mb-40">
-                            <div className="swiper-container td-testimonial-slider mb-120">
-                              <div className="swiper-wrapper">
-                                <div className="swiper-slide">
-                                  <div className="td-testimonial-slide-content">
-                                    <p className="mb-40">
-                                      We are excited for our work and how it
-                                      positively impacts clients. With over 12
-                                      years of experience we have been
-                                      constantly providing solutions. We are
-                                      committed to deliver unique digital media
-                                      solutions from web design
-                                    </p>
-                                    <h6>David Backhum</h6>
-                                    <span>Designer</span>
-                                  </div>
-                                </div>
-                                <div className="swiper-slide">
-                                  <div className="td-testimonial-slide-content">
-                                    <p className="mb-40">
-                                      We are excited for our work and how it
-                                      positively impacts clients. With over 12
-                                      years of experience we have been
-                                      constantly providing solutions. We are
-                                      committed to deliver unique digital media
-                                      solutions from web design
-                                    </p>
-                                    <h6>David Backhum</h6>
-                                    <span>Designer</span>
-                                  </div>
-                                </div>
-                                <div className="swiper-slide">
-                                  <div className="td-testimonial-slide-content">
-                                    <p className="mb-40">
-                                      We are excited for our work and how it
-                                      positively impacts clients. With over 12
-                                      years of experience we have been
-                                      constantly providing solutions. We are
-                                      committed to deliver unique digital media
-                                      solutions from web design
-                                    </p>
-                                    <h6>David Backhum</h6>
-                                    <span>Designer</span>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                            <div className="td-testimonial-navigation mb-30">
-                              <span className="td-testimonial-prev d-inline-block">
-                                <svg
-                                  width="31"
-                                  height="24"
-                                  viewBox="0 0 31 24"
-                                  fill="none"
-                                  xmlns="http://www.w3.org/2000/svg"
-                                >
-                                  <path
-                                    d="M30.8699 12.2679L0.014612 12.4214"
-                                    stroke="currentColor"
-                                    strokeWidth="1.5"
-                                    strokeMiterlimit="10"
-                                  />
-                                  <path
-                                    d="M11.5445 0C11.5445 6.63283 6.38111 12 2.56383e-05 12"
-                                    stroke="currentColor"
-                                    strokeWidth="1.5"
-                                    strokeMiterlimit="10"
-                                  />
-                                  <path
-                                    d="M4.08971e-05 12C6.38112 12 11.5446 17.3671 11.5446 24"
-                                    stroke="currentColor"
-                                    strokeWidth="1.5"
-                                    strokeMiterlimit="10"
-                                  />
-                                </svg>
-                              </span>
-                              <span className="td-testimonial-next ml-15 d-inline-block">
-                                <svg
-                                  width="31"
-                                  height="24"
-                                  viewBox="0 0 31 24"
-                                  fill="none"
-                                  xmlns="http://www.w3.org/2000/svg"
-                                >
-                                  <path
-                                    d="M-0.000234102 12.2679L30.855 12.4214"
-                                    stroke="currentColor"
-                                    strokeWidth="1.5"
-                                    strokeMiterlimit="10"
-                                  />
-                                  <path
-                                    d="M19.3251 0C19.3251 6.63283 24.4886 12 30.8696 12"
-                                    stroke="currentColor"
-                                    strokeWidth="1.5"
-                                    strokeMiterlimit="10"
-                                  />
-                                  <path
-                                    d="M30.8696 12C24.4885 12 19.3251 17.3671 19.3251 24"
-                                    stroke="currentColor"
-                                    strokeWidth="1.5"
-                                    strokeMiterlimit="10"
-                                  />
-                                </svg>
-                              </span>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="col-12">
-                    <div className="td-brand-wrap">
-                      <div className="swiper-container td-brand-slide-active">
-                        <div className="swiper-wrapper slide-transtion">
-                          <div className="swiper-slide">
-                            <div className="td-brand-item">
-                              <img src={logoBrand1} alt="" />
-                            </div>
-                          </div>
-                          <div className="swiper-slide">
-                            <div className="td-brand-item">
-                              <img src={logoBrand2} alt="" />
-                            </div>
-                          </div>
-                          <div className="swiper-slide">
-                            <div className="td-brand-item">
-                              <img src={logoBrand3} alt="" />
-                            </div>
-                          </div>
-                          <div className="swiper-slide">
-                            <div className="td-brand-item">
-                              <img src={logoBrand4} alt="" />
-                            </div>
-                          </div>
-                          <div className="swiper-slide">
-                            <div className="td-brand-item">
-                              <img src={logoBrand5} alt="" />
-                            </div>
-                          </div>
-                          <div className="swiper-slide">
-                            <div className="td-brand-item">
-                              <img src={logoBrand3} alt="" />
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
             <div className="td-about-main-feature-area pt-150 pb-165">
               <div className="container">
                 <div className="row">
                   <div className="col-xl-9">
                     <div className="td-about-main-feature-wrap">
                       <h2 className="td-about-main-feature-title mb-70 td-text-invert">
-                        La Team Soon réunit des talents complémentaires, alliant créativité, stratégie 
-                        & expertise technique pour donner vie à vos projets. Ensemble, nous concevons 
+                        La Team Soon réunit des talents complémentaires, alliant créativité, stratégie
+                        & expertise technique pour donner vie à vos projets. Ensemble, nous concevons
                         des solutions sur mesure avec passion et engagement.
-                        {/* La Team Soon, c’est avant tout une équipe soudée,
-                        composée de talents complémentaires couvrant un large
-                        éventail de compétences, du graphisme créatif à la
-                        stratégie digitale en passant par le développement web.
-                        Chaque membre apporte une expertise unique et un
-                        savoir-faire pointu, nous permettant non seulement de
-                        relever les défis les plus ambitieux, mais aussi
-                        d’apporter des solutions sur-mesure à chacun de vos
-                        besoins. Explorez les profils qui façonnent notre équipe
-                        et découvrez les visages derrière la création de votre
-                        image de marque, la conception de votre site internet,
-                        et bien plus encore, toujours avec passion et
-                        engagement. */}
                       </h2>
                       <div className="row">
                         <div className="col-lg-5 d-none d-md-block">
@@ -1094,7 +893,7 @@ function Home() {
                   <div className="col-lg-3 col-md-6 col-sm-6">
                     <div className="td-team-4-wrap p-relative mb-30">
                       <div className="td-team-4-thumb">
-                        <img className="w-100" src={thumbTeam4} alt="" />
+                        <img className="w-100" src={thumbTeam5} alt="" />
                       </div>
                       <div className="td-team-4-content text-center">
                         <span className="td-team-4-subtitle">
@@ -1192,7 +991,7 @@ function Home() {
                   <div className="col-lg-3 col-md-6 col-sm-6">
                     <div className="td-team-4-wrap p-relative mb-30">
                       <div className="td-team-4-thumb">
-                        <img className="w-100" src={thumbTeam4} alt="" />
+                        <img className="w-100" src={thumbTeam6} alt="" />
                       </div>
                       <div className="td-team-4-content text-center">
                         <span className="td-team-4-subtitle">
@@ -1290,7 +1089,7 @@ function Home() {
                   <div className="col-lg-3 col-md-6 col-sm-6">
                     <div className="td-team-4-wrap p-relative mb-30">
                       <div className="td-team-4-thumb">
-                        <img className="w-100" src={thumbTeam4} alt="" />
+                        <img className="w-100" src={thumbTeam7} alt="" />
                       </div>
                       <div className="td-team-4-content text-center">
                         <span className="td-team-4-subtitle">
@@ -1388,7 +1187,7 @@ function Home() {
                   <div className="col-lg-3 col-md-6 col-sm-6">
                     <div className="td-team-4-wrap p-relative mb-30">
                       <div className="td-team-4-thumb">
-                        <img className="w-100" src={thumbTeam4} alt="" />
+                        <img className="w-100" src={thumbTeam8} alt="" />
                       </div>
                       <div className="td-team-4-content text-center">
                         <span className="td-team-4-subtitle">Graphiste</span>
@@ -1484,7 +1283,7 @@ function Home() {
                   <div className="col-lg-3 col-md-6 col-sm-6">
                     <div className="td-team-4-wrap p-relative mb-30">
                       <div className="td-team-4-thumb">
-                        <img className="w-100" src={thumbTeam4} alt="" />
+                        <img className="w-100" src={thumbTeam9} alt="" />
                       </div>
                       <div className="td-team-4-content text-center">
                         <span className="td-team-4-subtitle">
@@ -1582,7 +1381,7 @@ function Home() {
                   <div className="col-lg-3 col-md-6 col-sm-6">
                     <div className="td-team-4-wrap p-relative mb-30">
                       <div className="td-team-4-thumb">
-                        <img className="w-100" src={thumbTeam4} alt="" />
+                        <img className="w-100" src={thumbTeam10} alt="" />
                       </div>
                       <div className="td-team-4-content text-center">
                         <span className="td-team-4-subtitle">
@@ -1680,7 +1479,7 @@ function Home() {
                   <div className="col-lg-3 col-md-6 col-sm-6">
                     <div className="td-team-4-wrap p-relative mb-30">
                       <div className="td-team-4-thumb">
-                        <img className="w-100" src={thumbTeam4} alt="" />
+                        <img className="w-100" src={thumbTeam11} alt="" />
                       </div>
                       <div className="td-team-4-content text-center">
                         <span className="td-team-4-subtitle">
@@ -1778,6 +1577,201 @@ function Home() {
                 </div>
               </div>
             </div>
+            <div className="td-testimonial-area grey-bg-2 pt-155 pb-120">
+              <div className="container">
+                <div className="row">
+                  <div className="col-lg-3 col-md-4">
+                    <div
+                      className="td-testimonial-left mb-40  wow fadeInLeft"
+                      data-wow-delay=".5s"
+                      data-wow-duration="1s"
+                    >
+                      <span className="td-section-subtitle mb-185 d-inline-block">
+                        AVIS CLIENTS
+                      </span>
+                      <img className="mb-20" src={usertestimonial} alt="" />
+                      <p>
+                        More than 25k clients all
+                        <br />
+                        over the world
+                      </p>
+                    </div>
+                  </div>
+                  <div className="col-lg-9 col-md-8">
+                    <div className="td-testimonial-content ml-80 mb-50">
+                      <h2 className="td-testimonial-title mb-65" style={{ color: "#e26F57", }}>
+                        CE QUE DISENT NOS CLIENTS
+                        <br /> <span style={{ color: "#e26F57", }}>À NOTRE SUJET</span>
+                      </h2>
+                      <div
+                        className="row  wow fadeInRight"
+                        data-wow-delay=".5s"
+                        data-wow-duration="1s"
+                      >
+                        <div className="col-lg-4">
+                          <div className="td-testimonial-thumb fix td-rounded-10 mb-40">
+                            <img
+                              data-speed=".9"
+                              className="w-100 td-rounded-10"
+                              src={thumbTestimonial}
+                              alt=""
+                            />
+                          </div>
+                        </div>
+                        <div className="col-lg-8">
+                          <div className="td-testimonial-slide-content ml-25 mb-40">
+                            <div className="swiper-container td-testimonial-slider mb-120">
+                              <div className="swiper-wrapper">
+                                <div className="swiper-slide">
+                                  <div className="td-testimonial-slide-content">
+                                    <p className="mb-40">
+                                      We are excited for our work and how it
+                                      positively impacts clients. With over 12
+                                      years of experience we have been
+                                      constantly providing solutions. We are
+                                      committed to deliver unique digital media
+                                      solutions from web design
+                                    </p>
+                                    <h6>David Backhum</h6>
+                                    <span>Designer</span>
+                                  </div>
+                                </div>
+                                <div className="swiper-slide">
+                                  <div className="td-testimonial-slide-content">
+                                    <p className="mb-40">
+                                      We are excited for our work and how it
+                                      positively impacts clients. With over 12
+                                      years of experience we have been
+                                      constantly providing solutions. We are
+                                      committed to deliver unique digital media
+                                      solutions from web design
+                                    </p>
+                                    <h6>David Backhum</h6>
+                                    <span>Designer</span>
+                                  </div>
+                                </div>
+                                <div className="swiper-slide">
+                                  <div className="td-testimonial-slide-content">
+                                    <p className="mb-40">
+                                      We are excited for our work and how it
+                                      positively impacts clients. With over 12
+                                      years of experience we have been
+                                      constantly providing solutions. We are
+                                      committed to deliver unique digital media
+                                      solutions from web design
+                                    </p>
+                                    <h6>David Backhum</h6>
+                                    <span>Designer</span>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div className="td-testimonial-navigation mb-30">
+                              <span className="td-testimonial-prev d-inline-block">
+                                <svg
+                                  width="31"
+                                  height="24"
+                                  viewBox="0 0 31 24"
+                                  fill="none"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                >
+                                  <path
+                                    d="M30.8699 12.2679L0.014612 12.4214"
+                                    stroke="currentColor"
+                                    strokeWidth="1.5"
+                                    strokeMiterlimit="10"
+                                  />
+                                  <path
+                                    d="M11.5445 0C11.5445 6.63283 6.38111 12 2.56383e-05 12"
+                                    stroke="currentColor"
+                                    strokeWidth="1.5"
+                                    strokeMiterlimit="10"
+                                  />
+                                  <path
+                                    d="M4.08971e-05 12C6.38112 12 11.5446 17.3671 11.5446 24"
+                                    stroke="currentColor"
+                                    strokeWidth="1.5"
+                                    strokeMiterlimit="10"
+                                  />
+                                </svg>
+                              </span>
+                              <span className="td-testimonial-next ml-15 d-inline-block">
+                                <svg
+                                  width="31"
+                                  height="24"
+                                  viewBox="0 0 31 24"
+                                  fill="none"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                >
+                                  <path
+                                    d="M-0.000234102 12.2679L30.855 12.4214"
+                                    stroke="currentColor"
+                                    strokeWidth="1.5"
+                                    strokeMiterlimit="10"
+                                  />
+                                  <path
+                                    d="M19.3251 0C19.3251 6.63283 24.4886 12 30.8696 12"
+                                    stroke="currentColor"
+                                    strokeWidth="1.5"
+                                    strokeMiterlimit="10"
+                                  />
+                                  <path
+                                    d="M30.8696 12C24.4885 12 19.3251 17.3671 19.3251 24"
+                                    stroke="currentColor"
+                                    strokeWidth="1.5"
+                                    strokeMiterlimit="10"
+                                  />
+                                </svg>
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="col-12">
+                    <div className="td-brand-wrap">
+                      <div className="swiper-container td-brand-slide-active">
+                        <div className="swiper-wrapper slide-transtion">
+                          <div className="swiper-slide">
+                            <div className="td-brand-item">
+                              <img src={logoBrand1} alt="" />
+                            </div>
+                          </div>
+                          <div className="swiper-slide">
+                            <div className="td-brand-item">
+                              <img src={logoBrand2} alt="" />
+                            </div>
+                          </div>
+                          <div className="swiper-slide">
+                            <div className="td-brand-item">
+                              <img src={logoBrand3} alt="" />
+                            </div>
+                          </div>
+                          <div className="swiper-slide">
+                            <div className="td-brand-item">
+                              <img src={logoBrand4} alt="" />
+                            </div>
+                          </div>
+                          <div className="swiper-slide">
+                            <div className="td-brand-item">
+                              <img src={logoBrand5} alt="" />
+                            </div>
+                          </div>
+                          <div className="swiper-slide">
+                            <div className="td-brand-item">
+                              <img src={logoBrand3} alt="" />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
 
             <div className="td-awards-area td-awards-about-wrap pt-120 pb-130">
               <div className="container">

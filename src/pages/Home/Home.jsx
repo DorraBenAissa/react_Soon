@@ -9,6 +9,7 @@ import bgThumb3 from "../../assets/img/hero/bg-thumb3.jpg";
 import thumbAbout from "../../assets/img/about/thumb.jpg";
 import shapeAbout from "../../assets/img/about/shape.png";
 import thumb2About from "../../assets/img/about/thumb-2.jpg";
+import thumb3About from "../../assets/img/about/site-web.jpg";
 
 import product1 from "../../assets/img/project/product.jpg";
 import product2 from "../../assets/img/project/product-2.jpg";
