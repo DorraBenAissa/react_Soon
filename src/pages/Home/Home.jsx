@@ -53,6 +53,7 @@ import cta2 from "../../assets/img/cta/cta-2.png";
 import heroVideo from "../../assets/video/hero3.mp4";
 import heroVideo2 from "../../assets/video/hero2.mp4";
 import bgThumb23 from "../../assets/video/bg-thumb3.mp4";
+import showReel01 from "../../assets/video/Show_reel_1080x1080_33s_01.mp4";
 
 // COMPONENTS
 import Odometer from "../../components/Odometer";
@@ -183,9 +184,54 @@ function Home() {
                         data-wow-delay=".5s"
                         data-wow-duration="1s"
                       >
-                        <h2 className="title">MAKE YOUR </h2>
+                        <video
+                          className="mr-30 d-none d-sm-block"
+                          autoPlay
+                          muted
+                          loop
+                          playsInline
+                          style={{
+                            position: "absolute",
+                            top: "97px",
+                            left: 0,
+                            width: "50%",      // mets "50%" si tu veux qu’elle prenne la moitié de la page
+                            height: "100vh",    // prend toute la hauteur de l’écran
+                            objectFit: "cover", // ajuste sans déformation
+                            margin: 0,
+                            padding: 0,
+                            display: "block",
+                            borderBottomRightRadius: "142px",
+                            zIndex: 1,
+                          }}
+
+                        >
+                          <source src={showReel01} type="video/mp4" />
+                          Ton navigateur ne supporte pas la vidéo.
+                        </video>
+
+                        <div>
+                          <h2 style={{ textAlign: 'right', color: 'black' }} >MAKE YOUR BRAND FLY</h2>
+
+                          <p className="mb-45" style={{ textAlign: 'left', marginLeft: 'auto', width: '413px' }} >
+                            Vous cherchez une agence de communication digitale qui ne se contente pas
+                            du statu quo ? Chez Soon, nous faisons les choses autrement.
+                            Nous repoussons sans cesse les limites de la créativité pour
+                            vous offrir des solutions innovantes, sur-mesure et parfaitement
+                            adaptées à votre marque.
+<br></br>
+                            Notre approche va au-delà de l’esthétique :
+                            nous combinons stratégie, design et technologie pour
+                            générer des résultats concrets et mesurables,
+                            tout en respectant des délais records.
+                            Que vous souhaitiez booster votre visibilité,
+                            dynamiser votre image ou transformer vos idées en projets impactants,
+                            Soon est votre partenaire pour donner des ailes à votre marque.
+
+                          </p>
+                        </div>
+
                         <h2 className="title mb-0 d-flex align-items-center justify-content-center">
-                          <video
+                          {/* <video
                             className="mr-30 d-none d-sm-block"
                             autoPlay
                             muted
@@ -196,12 +242,12 @@ function Home() {
                               borderRadius: "30px",
                               marginRight: "50px",
                             }}
-                          >
-                            <source src={heroVideo} type="video/mp4" />
+                          > */}
+                          {/* <source src={heroVideo} type="video/mp4" />
                             Ton navigateur ne supporte pas la vidéo.
-                          </video>
-                          BRAND
-                          <video
+                          </video> */}
+                          {/* BRAND */}
+                          {/* <video
                             className="mr-30 d-none d-sm-block"
                             autoPlay
                             muted
@@ -215,9 +261,8 @@ function Home() {
                           >
                             <source src={heroVideo2} type="video/mp4" />
                             Ton navigateur ne supporte pas la vidéo.
-                          </video>
+                          </video> */}
                         </h2>
-                        <h2 className="title">FLY</h2>
                       </div>
                     </div>
                   </div>
@@ -228,7 +273,7 @@ function Home() {
                 data-wow-delay=".7s"
                 data-wow-duration="1s"
               >
-                <div className="container-fluid">
+                {/* <div className="container-fluid">
                   <div className="row">
                     <div className="swiper-container td-hero-text-slide-active">
                       <div className="swiper-wrapper slide-transtion">
@@ -255,7 +300,19 @@ function Home() {
                       </div>
                     </div>
                   </div>
-                </div>
+                </div> */}
+              </div>
+              <br></br>
+              <h1 style={{ justifyContent: "right" }} ></h1>
+              <div style={{
+                position: "relative",
+                width: "100vw",
+                height: "100vh",
+                overflow: "hidden",
+                zIndex: -1,
+                backgroundColor: "#ffff", // pour être sûr qu'il n'y ait rien derrière
+              }}>
+
               </div>
               <div className="pb-60">
                 <div className="container">
@@ -334,10 +391,14 @@ function Home() {
                         loop
                         playsInline
                         style={{
-                          width: "100%",
-                          height: "auto",
+                          position: "absolute",
+                          top: 0,
+                          left: 0,
+                          width: "100vw",        // la vidéo prend toute la largeur de l’écran
+                          height: "100vh",       // et toute la hauteur
                           objectFit: "cover",
-                          borderRadius: "40px",
+                          borderTopLeftRadius: "142px",
+                          borderBottomRightRadius: "142px",
                         }}
                       >
                         <source src={bgThumb23} type="video/mp4" />
@@ -671,7 +732,9 @@ function Home() {
                   <div className="col-lg-4 col-md-6">
                     <div className="td-project-item mb-30 mr-30">
                       <div className="td-project-thumb mb-25">
-                        <img className="w-100" src={product1} alt="" />
+                        <img className="w-100" style={{
+                          borderTopRightRadius: "142px",
+                        }} src={product1} alt="" />
                       </div>
                       <div className="td-project-content">
                         <a href="portfolio-details.html">
@@ -710,7 +773,9 @@ function Home() {
                   <div className="col-lg-4 col-md-6">
                     <div className="td-project-item two pt-195 mb-30 ml-100 mr-100">
                       <div className="td-project-thumb mb-25">
-                        <img className="w-100" src={product2} alt="" />
+                        <img className="w-100" style={{
+                          borderTopRightRadius: "80px",
+                        }} src={product2} alt="" />
                       </div>
                       <div className="td-project-content">
                         <a href="portfolio-details.html">
@@ -749,7 +814,9 @@ function Home() {
                   <div className="col-lg-4 col-md-6">
                     <div className="td-project-item three pt-175 ml-70 mb-30">
                       <div className="td-project-thumb mb-25">
-                        <img className="w-100" src={product3} alt="" />
+                        <img className="w-100" style={{
+                          borderTopRightRadius: "142px",
+                        }} src={product3} alt="" />
                       </div>
                       <div className="td-project-content">
                         <a href="portfolio-details.html">
@@ -787,7 +854,9 @@ function Home() {
                   <div className="col-lg-6 col-md-6">
                     <div className="td-project-item four pt-85 mb-30">
                       <div className="td-project-thumb mb-25">
-                        <img className="w-100" src={product5} alt="" />
+                        <img className="w-100" style={{
+                          borderTopRightRadius: "142px",
+                        }} src={product5} alt="" />
                       </div>
                       <div className="td-project-content">
                         <a href="portfolio-details.html">
@@ -826,7 +895,9 @@ function Home() {
                   <div className="col-lg-6 col-md-12">
                     <div className="td-project-item five mb-30">
                       <div className="td-project-thumb mb-25">
-                        <img className="w-100" src={product4} alt="" />
+                        <img className="w-100" style={{
+                          borderTopRightRadius: "80px",
+                        }} src={product4} alt="" />
                       </div>
                       <div className="td-project-content">
                         <a href="portfolio-details.html">
@@ -1045,7 +1116,7 @@ function Home() {
                               <div className="swiper-wrapper">
                                 <div className="swiper-slide">
                                   <div className="td-testimonial-slide-content">
-                                    <p className="mb-40">
+                                    <p className="mb-40" style={{ fontSize: "11px", lineHeight: "23px" }} >
                                       J’ai récemment eu le plaisir de travailler
                                       avec SOON sur mes outils de communication,
                                       et je ne peux que recommander leurs
