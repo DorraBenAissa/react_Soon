@@ -913,6 +913,7 @@ textarea {
 /*=============================
     10. Preloader
 ===============================*/
+
 .preloader {
   align-items: center;
   cursor: default;
@@ -926,6 +927,14 @@ textarea {
   z-index: 9999999;
   background-color: #e26F57;
 }
+/*=============================
+  Loader fond orange
+===============================*/
+.preloader,
+.preloader .loader-section .bg {
+  background-color: #E26F57 !important;
+}
+
 .preloader .animation-preloader {
   z-index: 1000;
 }
@@ -1048,9 +1057,9 @@ textarea {
   background: #f2f7f7;
 }
 
-.grey-bg-2 {
+/* .grey-bg-2 {
   background: var(--td-grey-2);
-}
+} */
 
 .grey-bg-3 {
   background: #eee;
@@ -3906,7 +3915,7 @@ textarea {
   position: relative;
   width: auto;
   height: 650px;
-  border-radius: 10px;
+  /* border-radius: 10px; */
 }
 @media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
   .td-hero-bottom-thumb {
@@ -3919,7 +3928,7 @@ textarea {
   }
 }
 .td-hero-bottom-thumb img {
-  border-radius: 10px;
+  /* border-radius: 10px; */
 }
 .td-hero-2-title {
   font-family: var(--td-ff-dm-sans);

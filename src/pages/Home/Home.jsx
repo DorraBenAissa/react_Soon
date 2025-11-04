@@ -10,6 +10,7 @@ import thumbAbout from "../../assets/img/about/thumb.jpg";
 import shapeAbout from "../../assets/img/about/shape.png";
 import thumb2About from "../../assets/img/about/thumb-2.jpg";
 import thumb3About from "../../assets/img/about/site-web.jpg";
+import photoHeader from "../../assets/img/body/image.png";
 
 import product1 from "../../assets/img/project/product.jpg";
 import product2 from "../../assets/img/project/product-2.jpg";
@@ -74,6 +75,7 @@ import TestimonialSlider from "../../components/TestimonialSlider";
 import BrandSlider from "../../components/BrandSlider";
 import ScrollToTopAutomatic from "../../components/ScrollToTopAutomatic";
 import AutoCloseMenu from "../../components/AutoCloseMenu";
+import AutoVideo from "../../components/AutoVideo";
 
 function Home() {
   return (
@@ -174,13 +176,13 @@ function Home() {
         <div id="smooth-content">
           <main>
             <div className="td-hero-area td-hero-spacing p-relative fix z-index-1">
-              <img className="td-hero-shape p-absolute" src={shapeImg} alt="" />
+              {/* <img className="td-hero-shape p-absolute" src={shapeImg} alt="" /> */}
               <div className="container">
                 <div className="row justify-content-center">
                   <div className="col-lg-10">
                     <div className="td-hero-content">
                       <div
-                        className="td-hero-title text-center  wow fadeInUp"
+                        className="td-hero-title text-center  wow fadeInUp "
                         data-wow-delay=".5s"
                         data-wow-duration="1s"
                       >
@@ -201,7 +203,6 @@ function Home() {
                             padding: 0,
                             display: "block",
                             borderBottomRightRadius: "142px",
-                            zIndex: 1,
                           }}
 
                         >
@@ -209,16 +210,33 @@ function Home() {
                           Ton navigateur ne supporte pas la vidéo.
                         </video>
 
-                        <div>
-                          <h2 style={{ textAlign: 'right', color: 'black' }} >MAKE YOUR BRAND FLY</h2>
+                        <div style={{ position: "relative" }}>
+                          <h2 style={{ textAlign: 'right', color: 'black', }} >MAKE YOUR BRAND FLY</h2>
+                          <img 
+                            style={{
+                              width: "178px",
+                              bottom:"500px",
+                              float: "left",
+                              marginTop: "100px",
+                              sharpeMargin:"5rem",
+                              borderTopRightRadius: "50px",
+                              marginLeft: "700px",
+                              marginRight: "20px", 
+                              marginBottom: "20px",
+                              objectFit: "cover",
+                              shapeOutsite: "rectangle()",
+                            }}
+                            src={photoHeader}
+                            alt=""
+                          />
 
-                          <p className="mb-45" style={{ textAlign: 'left', marginLeft: 'auto', width: '413px' }} >
+                          <p className="mb-45" style={{ textAlign: 'justify', marginLeft: 'auto', width: '413px', lineHeight: "1.6", }} >
                             Vous cherchez une agence de communication digitale qui ne se contente pas
                             du statu quo ? Chez Soon, nous faisons les choses autrement.
                             Nous repoussons sans cesse les limites de la créativité pour
                             vous offrir des solutions innovantes, sur-mesure et parfaitement
                             adaptées à votre marque.
-<br></br>
+                            <br></br>
                             Notre approche va au-delà de l’esthétique :
                             nous combinons stratégie, design et technologie pour
                             générer des résultats concrets et mesurables,
@@ -228,6 +246,11 @@ function Home() {
                             Soon est votre partenaire pour donner des ailes à votre marque.
 
                           </p>
+                          <img
+                            className="td-live-anim-spin"
+                            src={shapeAbout}
+                            alt=""
+                          />
                         </div>
 
                         <h2 className="title mb-0 d-flex align-items-center justify-content-center">
@@ -307,18 +330,50 @@ function Home() {
               <div style={{
                 position: "relative",
                 width: "100vw",
-                height: "100vh",
+                height: "26vw",
                 overflow: "hidden",
                 zIndex: -1,
-                backgroundColor: "#ffff", // pour être sûr qu'il n'y ait rien derrière
+                // backgroundColor: "#ffff", // pour être sûr qu'il n'y ait rien derrière
               }}>
 
+              </div>
+              <div className=" ">
+                <div className="">
+                  <div className="">
+                    <div className="td-hero-bottom-thumb">
+                      <video
+                        data-speed="0.6"
+                        className="w-100 round-2"
+                        autoPlay
+                        muted
+                        loop
+                        playsInline
+                        style={{
+                          position: "absolute",
+                          top: 0,
+                          left: 0,
+                          width: "100vw",        // la vidéo prend toute la largeur de l’écran
+                          height: "100vh",       // et toute la hauteur
+                          objectFit: "cover",
+                          borderTopLeftRadius: "142px",
+                          borderBottomRightRadius: "142px",
+                        }}
+                      >
+                        <source src={bgThumb23} type="video/mp4" />
+
+                        Ton navigateur ne supporte pas la vidéo.
+                      </video>
+                    </div>
+                  </div>
+                </div>
               </div>
               <div className="pb-60">
                 <div className="container">
                   <div className="row">
                     <div className="col-12">
-                      <div className="td-hero-feature">
+                      <div className="td-hero-feature" style={{
+                        padding: "60px",
+                      }}>
                         <ul>
                           <li>
                             <span>
@@ -379,36 +434,7 @@ function Home() {
                   </div>
                 </div>
               </div>
-              <div className="container container-1680">
-                <div className="row">
-                  <div className="col-12">
-                    <div className="td-hero-bottom-thumb">
-                      <video
-                        data-speed="0.6"
-                        className="w-100 round-2"
-                        autoPlay
-                        muted
-                        loop
-                        playsInline
-                        style={{
-                          position: "absolute",
-                          top: 0,
-                          left: 0,
-                          width: "100vw",        // la vidéo prend toute la largeur de l’écran
-                          height: "100vh",       // et toute la hauteur
-                          objectFit: "cover",
-                          borderTopLeftRadius: "142px",
-                          borderBottomRightRadius: "142px",
-                        }}
-                      >
-                        <source src={bgThumb23} type="video/mp4" />
 
-                        Ton navigateur ne supporte pas la vidéo.
-                      </video>
-                    </div>
-                  </div>
-                </div>
-              </div>
             </div>
 
             <div className="td-about-area">
@@ -417,14 +443,14 @@ function Home() {
                   <div className="col-lg-4">
                     <div className="td-about-left mb-30">
                       <span>QUI NOUS SOMMES</span>
-                      <div className="td-about-left-thumb ml-60 fix td-rounded-10">
+                      {/* <div className="td-about-left-thumb ml-60 fix td-rounded-10">
                         <img
                           data-speed=".9"
                           src={thumbAbout}
                           alt=""
                           style={{ borderTopRightRadius: "84px" }}
                         />
-                      </div>
+                      </div> */}
                     </div>
                   </div>
                   <div className="col-lg-8">
@@ -468,7 +494,7 @@ function Home() {
                           <i className="fa-solid fa-arrow-right"></i>
                         </a> */}
                       </div>
-                      <div className="td-about-thumb-wrap d-flex align-items-center justify-content-end">
+                      {/* <div className="td-about-thumb-wrap d-flex align-items-center justify-content-end">
                         <div className="mr-150 td-about-shape">
                           <img
                             className="td-live-anim-spin"
@@ -479,7 +505,7 @@ function Home() {
                         <div className="td-about-thumb fix td-rounded-10">
                           <img data-speed=".9" src={thumb2About} alt="" />
                         </div>
-                      </div>
+                      </div> */}
                     </div>
                   </div>
                 </div>
@@ -1544,6 +1570,7 @@ function Home() {
             </div>
           </main>
           <Footer />
+
         </div>
       </div>
     </>
