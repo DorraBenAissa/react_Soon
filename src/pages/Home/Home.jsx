@@ -209,50 +209,50 @@ function Home() {
                           <source src={showReel01} type="video/mp4" />
                           Ton navigateur ne supporte pas la vidéo.
                         </video>
+                        <div>
+                          <div style={{ position: "relative", right:"50px", }}>
+                            <h2 style={{ textAlign: 'right', color: 'black', }} >MAKE YOUR BRAND FLY</h2>
+                            <img
+                              style={{
+                                width: "178px",
+                                bottom: "500px",
+                                float: "left",
+                                margin: "127px 20px 20px 635px",
+                                sharpeMargin: "5rem",
+                                borderTopRightRadius: "50px",
+                                marginLeft: "700px",
+                                marginRight: "20px",
+                                marginBottom: "20px",
+                                objectFit: "cover",
+                              }}
+                              src={photoHeader}
+                              alt=""
+                            />
 
-                        <div style={{ position: "relative" }}>
-                          <h2 style={{ textAlign: 'right', color: 'black', }} >MAKE YOUR BRAND FLY</h2>
-                          <img 
-                            style={{
-                              width: "178px",
-                              bottom:"500px",
-                              float: "left",
-                              marginTop: "100px",
-                              sharpeMargin:"5rem",
-                              borderTopRightRadius: "50px",
-                              marginLeft: "700px",
-                              marginRight: "20px", 
-                              marginBottom: "20px",
-                              objectFit: "cover",
-                            }}
-                            src={photoHeader}
-                            alt=""
-                          />
+                            <p className="mb-45" style={{ textAlign: 'left', marginLeft: 'auto', width: '413px', lineHeight: "1.6", }} >
+                              Vous cherchez une agence de communication digitale qui ne se contente pas
+                              du statu quo ?
+                              Chez Soon, nous faisons les choses autrement.
+                              Nous repoussons sans cesse les limites de la créativité pour
+                              vous offrir des solutions innovantes, sur-mesure et parfaitement
+                              adaptées à votre marque.
+                              Notre approche va au-delà de l’esthétique :
+                              nous combinons stratégie, design et technologie pour
+                              générer des résultats concrets et mesurables,
+                              tout en respectant des délais records.
+                              Que vous souhaitiez booster votre visibilité,
+                              dynamiser votre image ou transformer vos idées en projets impactants,
+                              Soon est votre partenaire pour donner des ailes à votre marque.
 
-                          <p className="mb-45" style={{ textAlign: 'left', marginLeft: 'auto', width: '413px', lineHeight: "1.6", }} >
-                            Vous cherchez une agence de communication digitale qui ne se contente pas
-                            du statu quo ? Chez Soon, nous faisons les choses autrement.
-                            Nous repoussons sans cesse les limites de la créativité pour
-                            vous offrir des solutions innovantes, sur-mesure et parfaitement
-                            adaptées à votre marque.
-                            <br></br>
-                            Notre approche va au-delà de l’esthétique :
-                            nous combinons stratégie, design et technologie pour
-                            générer des résultats concrets et mesurables,
-                            tout en respectant des délais records.
-                            Que vous souhaitiez booster votre visibilité,
-                            dynamiser votre image ou transformer vos idées en projets impactants,
-                            Soon est votre partenaire pour donner des ailes à votre marque.
-
-                          </p>
-                          {/* <img
-                            className="td-live-anim-spin"
-                            style={{  top: '200', }}
-                            src={shapeAbout}
-                            alt=""
-                          /> */}
+                            </p>
+                            <img
+                              className="td-live-anim-spin"
+                              style={{ top: '200', margin: "13px 33px 39px 20px", }}
+                              src={shapeAbout}
+                              alt=""
+                            />
+                          </div>
                         </div>
-
                         <h2 className="title mb-0 d-flex align-items-center justify-content-center">
                           {/* <video
                             className="mr-30 d-none d-sm-block"
@@ -989,7 +989,7 @@ function Home() {
                   <div className="row">
                     <div className="col-lg-3">
                       <div className="td-process-thumb pt-80 pb-80 td-fixed-thumb">
-                        <img src={thumbProcess} alt="" />
+                        <img style={{ borderTopRightRadius: "142px" }} src={thumbProcess} alt="" />
                       </div>
                     </div>
                     <div className="col-lg-9">
@@ -1128,13 +1128,13 @@ function Home() {
                       </h2>
                       <div className="row">
                         <div className="col-lg-4">
-                          <div className="td-testimonial-thumb mb-40">
+                          {/* <div className="td-testimonial-thumb mb-40" style=  {{display: "flex", flex: "1",  justifyContent: "space-between"}}>
                             <img
-                              className="w-100 td-rounded-10"
+                              className="w-100 td-rounded-10" style={{   borderRadius: "28px"}}
                               src={thumbTest}
                               alt=""
                             />
-                          </div>
+                          </div> */}
                         </div>
                         <div className="col-lg-8">
                           <div className="td-testimonial-slide-content ml-25 mb-40">
@@ -1441,7 +1441,7 @@ function Home() {
                       data-wow-duration="1s"
                     >
                       <div className="td-blog-thumb fix mb-25">
-                        <img className="w-100" src={thumBlog1} alt="" />
+                        <img className="w-100" style={{ borderTopRightRadius: "142px", borderBottomLeftRadius: "142px", }} src={thumBlog1} alt="" />
                       </div>
                       <div className="td-blog-content">
                         <h3 className="td-blog-title mb-30">
@@ -1466,7 +1466,7 @@ function Home() {
                       data-wow-duration="1s"
                     >
                       <div className="td-blog-thumb fix mb-25">
-                        <img className="w-100" src={thumBlog2} alt="" />
+                        <img className="w-100" style={{ borderTopRightRadius: "142px", borderBottomLeftRadius: "142px", }} src={thumBlog2} alt="" />
                       </div>
                       <div className="td-blog-content">
                         <h3 className="td-blog-title mb-30">
@@ -1492,7 +1492,7 @@ function Home() {
                       data-wow-duration="1s"
                     >
                       <div className="td-blog-thumb fix mb-25">
-                        <img className="w-100" src={thumBlog3} alt="" />
+                        <img className="w-100" style={{ borderTopRightRadius: "142px", borderBottomLeftRadius: "142px", }} src={thumBlog3} alt="" />
                       </div>
                       <div className="td-blog-content">
                         <h3 className="td-blog-title mb-30">
