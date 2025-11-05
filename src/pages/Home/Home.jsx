@@ -224,13 +224,12 @@ function Home() {
                               marginRight: "20px", 
                               marginBottom: "20px",
                               objectFit: "cover",
-                              shapeOutsite: "rectangle()",
                             }}
                             src={photoHeader}
                             alt=""
                           />
 
-                          <p className="mb-45" style={{ textAlign: 'justify', marginLeft: 'auto', width: '413px', lineHeight: "1.6", }} >
+                          <p className="mb-45" style={{ textAlign: 'left', marginLeft: 'auto', width: '413px', lineHeight: "1.6", }} >
                             Vous cherchez une agence de communication digitale qui ne se contente pas
                             du statu quo ? Chez Soon, nous faisons les choses autrement.
                             Nous repoussons sans cesse les limites de la créativité pour
@@ -246,11 +245,12 @@ function Home() {
                             Soon est votre partenaire pour donner des ailes à votre marque.
 
                           </p>
-                          <img
+                          {/* <img
                             className="td-live-anim-spin"
+                            style={{  top: '200', }}
                             src={shapeAbout}
                             alt=""
-                          />
+                          /> */}
                         </div>
 
                         <h2 className="title mb-0 d-flex align-items-center justify-content-center">
