@@ -1,8 +1,9 @@
 {
   "files": {
     "main.css": "/react_Soon/static/css/main.ce8e1c58.css",
-    "main.js": "/react_Soon/static/js/main.2707ce59.js",
+    "main.js": "/react_Soon/static/js/main.cdbe84ee.js",
     "static/media/bg-thumb3.mp4": "/react_Soon/static/media/bg-thumb3.8282d9ce82d8eb5b47bb.mp4",
+    "static/media/Show_reel_1080x1080_33s_01.mp4": "/react_Soon/static/media/Show_reel_1080x1080_33s_01.6331387f848802860dd3.mp4",
     "static/media/hero3.mp4": "/react_Soon/static/media/hero3.a7abece2cae8cc82b5b8.mp4",
     "static/media/hero2.mp4": "/react_Soon/static/media/hero2.75c6833b3ed184fa2fc4.mp4",
     "static/media/0S6A3321.jpg": "/react_Soon/static/media/0S6A3321.fe8779b22339860d37b7.jpg",
@@ -16,6 +17,8 @@
     "static/media/jeff.jpg": "/react_Soon/static/media/jeff.fbc02631a181b6ab1252.jpg",
     "static/media/gautier.jpg": "/react_Soon/static/media/gautier.13cc7770246fe770ef49.jpg",
     "static/media/marion.jpg": "/react_Soon/static/media/marion.38acfcb49363d2da3b1f.jpg",
+    "static/media/image.png": "/react_Soon/static/media/image.c7ef9cf50c3ce0dd1ef4.png",
+    "static/media/AdobeStock_1533669189_Video_HD_Preview.mov": "/react_Soon/static/media/AdobeStock_1533669189_Video_HD_Preview.73a36e43b0945667d3fe.mov",
     "static/media/site-web.jpg": "/react_Soon/static/media/site-web.b03f6bf83ee087904a28.jpg",
     "static/media/thumb-2.jpg": "/react_Soon/static/media/thumb-2.ab191628e1a9a51fa229.jpg",
     "static/media/thumb.jpg": "/react_Soon/static/media/thumb.35e1c7b17cea25031b23.jpg",
@@ -31,10 +34,10 @@
     "static/media/product-2.jpg": "/react_Soon/static/media/product-2.913033b01f3ee8aea3b2.jpg",
     "index.html": "/react_Soon/index.html",
     "main.ce8e1c58.css.map": "/react_Soon/static/css/main.ce8e1c58.css.map",
-    "main.2707ce59.js.map": "/react_Soon/static/js/main.2707ce59.js.map"
+    "main.cdbe84ee.js.map": "/react_Soon/static/js/main.cdbe84ee.js.map"
   },
   "entrypoints": [
     "static/css/main.ce8e1c58.css",
-    "static/js/main.2707ce59.js"
+    "static/js/main.cdbe84ee.js"
   ]
 }

@@ -1013,7 +1013,8 @@ textarea {
   padding: 0px;
 }
 .preloader .loader .loader-section .bg {
-  background-color: #000;
+  /* background-color: #000; */
+  background-color: var(--td-theme-5);
   height: 100%;
   left: 0;
   width: 100%;
