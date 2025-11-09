@@ -1,6 +1,5 @@
 // IMPORTS
 import { Link } from "react-router-dom";
-import AutoVideo from "../../components/AutoVideo";
 //import './footer.css'
 
 // ASSETS
@@ -13,7 +12,6 @@ function Footer() {
   return (
     <>
       <footer>
-                  <AutoVideo />
         <div className="td-footer-area td-footer-spacing them5-bg">
           <div className="container">
             <div className="row">

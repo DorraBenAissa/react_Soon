@@ -196,21 +196,131 @@ function Home() {
                             position: "absolute",
                             top: "97px",
                             left: 0,
-                            width: "50%",      // mets "50%" si tu veux qu’elle prenne la moitié de la page
-                            height: "100vh",    // prend toute la hauteur de l’écran
+                            width: "50%", // mets "50%" si tu veux qu’elle prenne la moitié de la page
+                            height: "100vh", // prend toute la hauteur de l’écran
                             objectFit: "cover", // ajuste sans déformation
                             margin: 0,
                             padding: 0,
                             display: "block",
                             borderBottomRightRadius: "142px",
                           }}
-
                         >
                           <source src={showReel01} type="video/mp4" />
                           Ton navigateur ne supporte pas la vidéo.
                         </video>
+
+                        {/* <video
+                          autoPlay
+                          muted
+                          loop
+                          playsInline
+                          style={{
+                            position: "absolute",
+                            top: "97px",
+                            left: 0,
+                            width: "50vw", // plus stable que 50%
+                            height: "100vh",
+                            objectFit: "cover",
+                            borderBottomRightRadius: "142px",
+                            display: "block",
+                            backgroundColor: "black", // évite un flash blanc pendant le chargement
+                          }}
+                        >
+                          <source src={showReel01} type="video/mp4" />
+                          Ton navigateur ne supporte pas la vidéo.
+                        </video> */}
+
                         <div>
-                          <div style={{ position: "relative", right:"50px", }}>
+                          {/* section à developer */}
+
+                          <div
+                            style={{ position: "relative", padding: "1rem" }}
+                          >
+                            <h2
+                              style={{
+                                textAlign: "right",
+                                color: "black",
+                                fontWeight: "700",
+                                marginBottom: "1rem",
+                              }}
+                            >
+                              MAKE YOUR BRAND FLY
+                            </h2>
+
+                            <div
+                              style={{
+                                maxWidth: "800px",
+                                margin: "0 auto",
+                                marginLeft: "61%",
+                              }}
+                            >
+                              {/* 🖼️ Image avec forme d’enroulement */}
+                              <img
+                                src={photoHeader}
+                                alt="Header"
+                                style={{
+                                  width: "250px",
+                                  float: "left",
+                                  borderTopRightRadius: "50px",
+                                  //borderBottomRightRadius: "50px",
+                                  // borderBottomLeftRadius: "50px",
+                                  objectFit: "cover",
+                                  marginRight: "20px",
+                                  //marginBottom: "20px",
+                                  shapeOutside: "rectangle(50%)",
+                                  clipPath: "rectangle(50%)",
+                                }}
+                              />
+
+                              <p
+                                style={{
+                                  textAlign: "justify",
+                                  lineHeight: "1.6",
+                                  color: "#333",
+                                  fontSize: "1rem",
+                                }}
+                              >
+                                Vous cherchez une agence de communication
+                                digitale qui ne se contente pas du statu quo ?
+                                Chez <strong>Soon</strong>, nous faisons les
+                                choses autrement. Nous repoussons sans cesse les
+                                limites de la créativité pour vous offrir des
+                                solutions innovantes, sur-mesure et parfaitement
+                                adaptées à votre marque. Notre approche va
+                                au-delà de l’esthétique : nous combinons
+                                stratégie, design et technologie pour générer
+                                des résultats concrets et mesurables, tout en
+                                respectant des délais records. Que vous
+                                souhaitiez booster votre visibilité, dynamiser
+                                votre image ou transformer vos idées en projets
+                                impactants, Soon est votre partenaire pour
+                                donner des ailes à votre marque. <br />
+                                <br />
+                                L’équipe Soon met son savoir-faire au service de
+                                votre vision, en vous accompagnant à chaque
+                                étape du processus créatif, de la réflexion
+                                stratégique à la concrétisation de projets
+                                audacieux. Avec notre regard neuf et notre
+                                énergie, nous donnons vie à vos idées pour
+                                qu’elles marquent durablement les esprits.
+                              </p>
+
+                              <div style={{ clear: "both" }}></div>
+                            </div>
+
+                            <img
+                              className="td-live-anim-spin"
+                              src={shapeAbout}
+                              alt="Décor"
+                              style={{
+                                display: "block",
+                                margin: "30px auto 0",
+                                width: "80px",
+                              }}
+                            />
+                          </div>
+
+                          {/* <div style={{ position: "relative", right:"50px", }}>
                             <h2 style={{ textAlign: 'right', color: 'black', }} >MAKE YOUR BRAND FLY</h2>
                             <img
                               style={{
@@ -251,7 +361,7 @@ function Home() {
                               src={shapeAbout}
                               alt=""
                             />
-                          </div>
+                          </div> */}
                         </div>
                         <h2 className="title mb-0 d-flex align-items-center justify-content-center">
                           {/* <video
@@ -326,17 +436,17 @@ function Home() {
                 </div> */}
               </div>
               <br></br>
-              <h1 style={{ justifyContent: "right" }} ></h1>
-              <div style={{
-                position: "relative",
-                width: "100vw",
-                height: "26vw",
-                overflow: "hidden",
-                zIndex: -1,
-                // backgroundColor: "#ffff", // pour être sûr qu'il n'y ait rien derrière
-              }}>
-
-              </div>
+              <h1 style={{ justifyContent: "right" }}></h1>
+              <div
+                style={{
+                  position: "relative",
+                  width: "100vw",
+                  height: "26vw",
+                  overflow: "hidden",
+                  zIndex: -1,
+                  // backgroundColor: "#ffff", // pour être sûr qu'il n'y ait rien derrière
+                }}
+              ></div>
               <div className=" ">
                 <div className="">
                   <div className="">
@@ -352,15 +462,14 @@ function Home() {
                           position: "absolute",
                           top: 0,
                           left: 0,
-                          width: "100vw",        // la vidéo prend toute la largeur de l’écran
-                          height: "100vh",       // et toute la hauteur
+                          width: "100vw", // la vidéo prend toute la largeur de l’écran
+                          height: "100vh", // et toute la hauteur
                           objectFit: "cover",
                           borderTopLeftRadius: "142px",
                           borderBottomRightRadius: "142px",
                         }}
                       >
                         <source src={bgThumb23} type="video/mp4" />
-
                         Ton navigateur ne supporte pas la vidéo.
                       </video>
                     </div>
@@ -371,9 +480,12 @@ function Home() {
                 <div className="container">
                   <div className="row">
                     <div className="col-12">
-                      <div className="td-hero-feature" style={{
-                        padding: "60px",
-                      }}>
+                      <div
+                        className="td-hero-feature"
+                        style={{
+                          padding: "60px",
+                        }}
+                      >
                         <ul>
                           <li>
                             <span>
@@ -434,7 +546,6 @@ function Home() {
                   </div>
                 </div>
               </div>
-
             </div>
 
             <div className="td-about-area">
@@ -758,9 +869,14 @@ function Home() {
                   <div className="col-lg-4 col-md-6">
                     <div className="td-project-item mb-30 mr-30">
                       <div className="td-project-thumb mb-25">
-                        <img className="w-100" style={{
-                          borderTopRightRadius: "142px",
-                        }} src={product1} alt="" />
+                        <img
+                          className="w-100"
+                          style={{
+                            borderTopRightRadius: "142px",
+                          }}
+                          src={product1}
+                          alt=""
+                        />
                       </div>
                       <div className="td-project-content">
                         <a href="portfolio-details.html">
@@ -799,9 +915,14 @@ function Home() {
                   <div className="col-lg-4 col-md-6">
                     <div className="td-project-item two pt-195 mb-30 ml-100 mr-100">
                       <div className="td-project-thumb mb-25">
-                        <img className="w-100" style={{
-                          borderTopRightRadius: "80px",
-                        }} src={product2} alt="" />
+                        <img
+                          className="w-100"
+                          style={{
+                            borderTopRightRadius: "80px",
+                          }}
+                          src={product2}
+                          alt=""
+                        />
                       </div>
                       <div className="td-project-content">
                         <a href="portfolio-details.html">
@@ -840,9 +961,14 @@ function Home() {
                   <div className="col-lg-4 col-md-6">
                     <div className="td-project-item three pt-175 ml-70 mb-30">
                       <div className="td-project-thumb mb-25">
-                        <img className="w-100" style={{
-                          borderTopRightRadius: "142px",
-                        }} src={product3} alt="" />
+                        <img
+                          className="w-100"
+                          style={{
+                            borderTopRightRadius: "142px",
+                          }}
+                          src={product3}
+                          alt=""
+                        />
                       </div>
                       <div className="td-project-content">
                         <a href="portfolio-details.html">
@@ -880,9 +1006,14 @@ function Home() {
                   <div className="col-lg-6 col-md-6">
                     <div className="td-project-item four pt-85 mb-30">
                       <div className="td-project-thumb mb-25">
-                        <img className="w-100" style={{
-                          borderTopRightRadius: "142px",
-                        }} src={product5} alt="" />
+                        <img
+                          className="w-100"
+                          style={{
+                            borderTopRightRadius: "142px",
+                          }}
+                          src={product5}
+                          alt=""
+                        />
                       </div>
                       <div className="td-project-content">
                         <a href="portfolio-details.html">
@@ -921,9 +1052,14 @@ function Home() {
                   <div className="col-lg-6 col-md-12">
                     <div className="td-project-item five mb-30">
                       <div className="td-project-thumb mb-25">
-                        <img className="w-100" style={{
-                          borderTopRightRadius: "80px",
-                        }} src={product4} alt="" />
+                        <img
+                          className="w-100"
+                          style={{
+                            borderTopRightRadius: "80px",
+                          }}
+                          src={product4}
+                          alt=""
+                        />
                       </div>
                       <div className="td-project-content">
                         <a href="portfolio-details.html">
@@ -989,7 +1125,11 @@ function Home() {
                   <div className="row">
                     <div className="col-lg-3">
                       <div className="td-process-thumb pt-80 pb-80 td-fixed-thumb">
-                        <img style={{ borderTopRightRadius: "142px" }} src={thumbProcess} alt="" />
+                        <img
+                          style={{ borderTopRightRadius: "142px" }}
+                          src={thumbProcess}
+                          alt=""
+                        />
                       </div>
                     </div>
                     <div className="col-lg-9">
@@ -1142,7 +1282,13 @@ function Home() {
                               <div className="swiper-wrapper">
                                 <div className="swiper-slide">
                                   <div className="td-testimonial-slide-content">
-                                    <p className="mb-40" style={{ fontSize: "11px", lineHeight: "23px" }} >
+                                    <p
+                                      className="mb-40"
+                                      style={{
+                                        fontSize: "11px",
+                                        lineHeight: "23px",
+                                      }}
+                                    >
                                       J’ai récemment eu le plaisir de travailler
                                       avec SOON sur mes outils de communication,
                                       et je ne peux que recommander leurs
@@ -1441,7 +1587,15 @@ function Home() {
                       data-wow-duration="1s"
                     >
                       <div className="td-blog-thumb fix mb-25">
-                        <img className="w-100" style={{ borderTopRightRadius: "142px", borderBottomLeftRadius: "142px", }} src={thumBlog1} alt="" />
+                        <img
+                          className="w-100"
+                          style={{
+                            borderTopRightRadius: "142px",
+                            borderBottomLeftRadius: "142px",
+                          }}
+                          src={thumBlog1}
+                          alt=""
+                        />
                       </div>
                       <div className="td-blog-content">
                         <h3 className="td-blog-title mb-30">
@@ -1466,7 +1620,15 @@ function Home() {
                       data-wow-duration="1s"
                     >
                       <div className="td-blog-thumb fix mb-25">
-                        <img className="w-100" style={{ borderTopRightRadius: "142px", borderBottomLeftRadius: "142px", }} src={thumBlog2} alt="" />
+                        <img
+                          className="w-100"
+                          style={{
+                            borderTopRightRadius: "142px",
+                            borderBottomLeftRadius: "142px",
+                          }}
+                          src={thumBlog2}
+                          alt=""
+                        />
                       </div>
                       <div className="td-blog-content">
                         <h3 className="td-blog-title mb-30">
@@ -1492,7 +1654,15 @@ function Home() {
                       data-wow-duration="1s"
                     >
                       <div className="td-blog-thumb fix mb-25">
-                        <img className="w-100" style={{ borderTopRightRadius: "142px", borderBottomLeftRadius: "142px", }} src={thumBlog3} alt="" />
+                        <img
+                          className="w-100"
+                          style={{
+                            borderTopRightRadius: "142px",
+                            borderBottomLeftRadius: "142px",
+                          }}
+                          src={thumBlog3}
+                          alt=""
+                        />
                       </div>
                       <div className="td-blog-content">
                         <h3 className="td-blog-title mb-30">
@@ -1570,7 +1740,6 @@ function Home() {
             </div>
           </main>
           <Footer />
-
         </div>
       </div>
     </>

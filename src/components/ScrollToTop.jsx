@@ -1,4 +1,6 @@
 import { useEffect } from "react";
+import AutoVideo from "../components/AutoVideo";
+
 
 export default function ScrollToTop() {
   useEffect(() => {
@@ -55,6 +57,9 @@ export default function ScrollToTop() {
       <button className="scroll__top scroll-to-target" data-target="html">
         <i className="fa-solid fa-arrow-up"></i>
       </button>
+
+      <AutoVideo />
+
     </>
   );
 }

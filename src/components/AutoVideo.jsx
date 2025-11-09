@@ -92,7 +92,7 @@ const AutoVideo = ({ width = 160, height = 285 }) => {
           style={{
             position: "fixed",
             right: "20px",
-            bottom: "40px",
+            bottom: "96px",
             width: `${width}px`,
             height: `${height}px`,
             zIndex: 99,
