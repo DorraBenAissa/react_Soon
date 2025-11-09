@@ -1,7 +1,6 @@
 import { useEffect } from "react";
 import AutoVideo from "../components/AutoVideo";
 
-
 export default function ScrollToTop() {
   useEffect(() => {
     const handleScroll = () => {
