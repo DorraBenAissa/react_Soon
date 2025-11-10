@@ -75,7 +75,7 @@ import TestimonialSlider from "../../components/TestimonialSlider";
 import BrandSlider from "../../components/BrandSlider";
 import ScrollToTopAutomatic from "../../components/ScrollToTopAutomatic";
 import AutoCloseMenu from "../../components/AutoCloseMenu";
-import AutoVideo from "../../components/AutoVideo";
+// import AutoVideo from "../../components/AutoVideo";
 
 function Home() {
   return (
@@ -211,8 +211,6 @@ function Home() {
                           Ton navigateur ne supporte pas la vidéo.
                         </video>
 
-
-
                         <div>
                           {/* section à developer */}
 
@@ -229,7 +227,7 @@ function Home() {
                             >
                               MAKE YOUR BRAND FLY
                             </h2>
-                                                  
+
 
                             <div
                               style={{
@@ -264,7 +262,7 @@ function Home() {
                                   fontSize: "1rem",
                                 }}
                               >
-                                 Vous cherchez une agence de communication
+                                Vous cherchez une agence de communication
                                 digitale qui ne se contente pas du statu quo ?
                                 Chez <strong>Soon</strong>, nous faisons les
                                 choses autrement. Nous repoussons sans cesse les
@@ -291,16 +289,6 @@ function Home() {
                               <div style={{ clear: "both" }}></div>
                             </div>
 
-                            {/* <img
-                              className="td-live-anim-spin"
-                              src={shapeAbout}
-                              alt="Décor"
-                              style={{
-                                display: "block",
-                                margin: "30px auto 0",
-                                width: "80px",
-                              }}
-                            /> */}
                           </div>
 
                           {/* <div style={{ position: "relative", right:"50px", }}>
