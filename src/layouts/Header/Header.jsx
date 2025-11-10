@@ -1,12 +1,10 @@
 // IMPORTS
-import { Link, NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 // ASSETS
-// import logoBlack from "../../assets/img/logo/BLACK.webp";
 import logoBlack from "../../assets/img/logo/BLACK2.webp";
 
-
-//Components
+// Components
 import Menu from "../../components/Menu";
 
 function Header() {
@@ -14,12 +12,23 @@ function Header() {
     <>
       <Menu />
       <header>
+        {/* Header principal */}
         <div
           id="header-sticky"
           className="td-header__area td-header-spacing p-relative z-index-1"
+          style={{
+            position: "fixed", // reste toujours en haut
+            top: 0,
+            left: 0,
+            width: "100%",
+            zIndex: 9999,
+            backgroundColor: "#fff",
+            boxShadow: "0 2px 5px rgba(0,0,0,0.1)"
+          }}
         >
           <div className="container container-1750">
             <div className="row align-items-center">
+              {/* Menu mobile */}
               <div className="col-lg-4 col-md-4 col-sm-4 col-5">
                 <div className="tdmenu__wrap">
                   <div className="tdmenu-offcanvas-open-btn mobile-nav-toggler d-flex align-items-center justify-content-center">
@@ -35,111 +44,53 @@ function Header() {
                         <li className="active menu-item-has-children">
                           <a href="index.html">Accueil</a>
                           <ul className="sub-menu">
-                            <li className="active">
-                              <a href="index.html">L’agence</a>
-                            </li>
-                            <li>
-                              <a href="index-2.html">Vos besoins</a>
-                            </li>
-                            <li>
-                              <a href="index-3.html">Portfolio</a>
-                            </li>
-                            <li>
-                              <a href="index-4.html">Vous informer</a>
-                            </li>
-                            <li>
-                              <a href="index-5.html">Nous rejoindre</a>
-                            </li>
-                            <li>
-                              <a href="index-6.html">Nous contacter</a>
-                            </li>
-                            <li>
-                              <a href="index-7.html">Prendre Rendez-vous</a>
-                            </li>
+                            <li className="active"><a href="index.html">L’agence</a></li>
+                            <li><a href="index-2.html">Vos besoins</a></li>
+                            <li><a href="index-3.html">Portfolio</a></li>
+                            <li><a href="index-4.html">Vous informer</a></li>
+                            <li><a href="index-5.html">Nous rejoindre</a></li>
+                            <li><a href="index-6.html">Nous contacter</a></li>
+                            <li><a href="index-7.html">Prendre Rendez-vous</a></li>
                           </ul>
                         </li>
                         <li className="menu-item-has-children">
                           <a href="#">Pages</a>
                           <ul className="sub-menu">
-                            <li>
-                              {/* <a href="about.html">À propos</a> */}
-                              <Link to="/about">À propos</Link>
-                            </li>
-                            <li>
-                              <a href="service.html">Service</a>
-                            </li>
-                            <li>
-                              <a href="service-details.html">Service Details</a>
-                            </li>
-                            <li>
-                              <a href="team.html">Équipe</a>
-                            </li>
-                            <li>
-                              <a href="team-details.html">Équipe Details</a>
-                            </li>
+                            <li><Link to="/about">À propos</Link></li>
+                            <li><a href="service.html">Service</a></li>
+                            <li><a href="service-details.html">Service Details</a></li>
+                            <li><a href="team.html">Équipe</a></li>
+                            <li><a href="team-details.html">Équipe Details</a></li>
                           </ul>
                         </li>
                         <li className="menu-item-has-children">
                           <a href="portfolio-two-columns.html">Portfolio</a>
                           <ul className="sub-menu">
-                            <li>
-                              <a href="portfolio-two-columns.html">
-                                Conception créative & Print
-                              </a>
-                            </li>
-                            <li>
-                              <a href="portfolio-two-columns.html">
-                                Branding & Identité de marques
-                              </a>
-                            </li>
-                            <li>
-                              <a href="portfolio-three-columns.html">
-                                Stratégie de communication
-                              </a>
-                            </li>
-                            <li>
-                              <a href="portfolio-random.html">
-                                Animation 3D & Vidéo
-                              </a>
-                            </li>
-                            <li>
-                              <a href="portfolio-details.html">
-                                Acquisition de leads
-                              </a>
-                            </li>
-                            <li>
-                              <a href="portfolio-four-columns.html">Site web</a>
-                            </li>
-                            <li>
-                              <a href="portfolio-details.html">
-                                Réseaux sociaux
-                              </a>
-                            </li>
+                            <li><a href="portfolio-two-columns.html">Conception créative & Print</a></li>
+                            <li><a href="portfolio-two-columns.html">Branding & Identité de marques</a></li>
+                            <li><a href="portfolio-three-columns.html">Stratégie de communication</a></li>
+                            <li><a href="portfolio-random.html">Animation 3D & Vidéo</a></li>
+                            <li><a href="portfolio-details.html">Acquisition de leads</a></li>
+                            <li><a href="portfolio-four-columns.html">Site web</a></li>
+                            <li><a href="portfolio-details.html">Réseaux sociaux</a></li>
                           </ul>
                         </li>
                         <li className="menu-item-has-children">
                           <a href="blog.html">Blog</a>
                           <ul className="sub-menu">
-                            <li>
-                              <a href="blog.html">Blog</a>
-                            </li>
-                            <li>
-                              <a href="blog-sidebar.html">Blog Web</a>
-                            </li>
-                            <li>
-                              <a href="blog-details.html">Blog Communication</a>
-                            </li>
+                            <li><a href="blog.html">Blog</a></li>
+                            <li><a href="blog-sidebar.html">Blog Web</a></li>
+                            <li><a href="blog-details.html">Blog Communication</a></li>
                           </ul>
                         </li>
-                        <li>
-                          {/* <a href="contact.html">Contact</a> */}
-                          <Link to="/contact">Contact</Link>
-                        </li>
+                        <li><Link to="/contact">Contact</Link></li>
                       </ul>
                     </div>
                   </nav>
                 </div>
               </div>
+
+              {/* Logo */}
               <div className="col-lg-4 col-md-4 col-sm-4 col-5">
                 <div className="logo text-center">
                   <a className="logo-1" href="index.html">
@@ -147,6 +98,8 @@ function Header() {
                   </a>
                 </div>
               </div>
+
+              {/* Bouton contact / recherche */}
               <div className="col-lg-4 col-md-4 col-sm-4 col-2">
                 <div className="td-header-right text-end">
                   <button className="td-header-search search-open-btn">
@@ -173,20 +126,6 @@ function Header() {
                       />
                     </svg>
                   </button>
-                  {/* <a
-                    href="contact.html"
-                    className="td-btn td-btn-lg d-none d-md-inline-block td-btn-switch-animation ml-10"
-                  >
-                    <span className="d-flex align-items-center justify-content-center">
-                      <span className="btn-text">SEE YOU SOON !</span>
-                      <span className="btn-icon">
-                        <i className="fa-sharp fa-solid fa-angle-right"></i>
-                      </span>
-                      <span className="btn-icon">
-                        <i className="fa-sharp fa-solid fa-angle-right"></i>
-                      </span>
-                    </span>
-                  </a> */}
                   <Link
                     to="/contact"
                     className="td-btn td-btn-lg d-none d-md-inline-block td-btn-switch-animation ml-10"
@@ -207,6 +146,7 @@ function Header() {
           </div>
         </div>
 
+        {/* Menu mobile */}
         <div className="tdmobile__menu td-menu-large">
           <nav className="tdmobile__menu-box">
             <div className="close-btn">
@@ -220,115 +160,21 @@ function Header() {
             <div className="tdmobile__search">
               <form action="#">
                 <input type="text" placeholder="Rechercher..." />
-                <button>
-                  <i className="fas fa-search"></i>
-                </button>
+                <button><i className="fas fa-search"></i></button>
               </form>
             </div>
             <div className="tdmobile__menu-outer"></div>
             <div className="mt-30 ml-25 mr-25">
-              {/* <a
-                href="contact.html"
-                className="td-btn td-btn-menu-black w-100 d-inline-block td-btn-switch-animation ml-10"
-              >
-                <span className="d-flex align-items-center justify-content-center">
-                  <span className="btn-text"> Nous contacter </span>
-                  <span className="btn-icon">
-                    <i className="fa-sharp fa-solid fa-angle-right"></i>
-                  </span>
-                  <span className="btn-icon">
-                    <i className="fa-sharp fa-solid fa-angle-right"></i>
-                  </span>
-                </span>
-              </a> */}
               <Link
                 to="/contact"
                 className="td-btn td-btn-menu-black w-100 d-inline-block td-btn-switch-animation ml-10"
               >
                 <span className="d-flex align-items-center justify-content-center">
                   <span className="btn-text">Nous contacter</span>
-                  <span className="btn-icon">
-                    <i className="fa-sharp fa-solid fa-angle-right"></i>
-                  </span>
-                  <span className="btn-icon">
-                    <i className="fa-sharp fa-solid fa-angle-right"></i>
-                  </span>
+                  <span className="btn-icon"><i className="fa-sharp fa-solid fa-angle-right"></i></span>
+                  <span className="btn-icon"><i className="fa-sharp fa-solid fa-angle-right"></i></span>
                 </span>
               </Link>
-            </div>
-            <link
-              rel="stylesheet"
-              href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-              integrity="sha512-p1Cm7X7V0+... (truncated) ..."
-              crossOrigin="anonymous"
-              referrerPolicy="no-referrer"
-            />
-
-            <div
-              className="social-links"
-              style={{ textAlign: "center", margin: "20px 0" }}
-            >
-              <ul
-                style={{
-                  listStyle: "none",
-                  padding: "0",
-                  margin: "0",
-                  display: "flex",
-                  justifyContent: "center",
-                  gap: "15px",
-                }}
-              >
-                <li>
-                  <a
-                    href="https://www.facebook.com/Graphissime/?locale=fr_FR"
-                    target="_blank"
-                    rel="noopener"
-                    style={{ color: "#000000", fontSize: "20px" }}
-                  >
-                    <i className="fab fa-facebook-f"></i>
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="https://www.instagram.com/soon_feed/#"
-                    target="_blank"
-                    rel="noopener"
-                    style={{ color: "#000000", fontSize: "20px" }}
-                  >
-                    <i className="fab fa-instagram"></i>
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="https://www.linkedin.com/company/soon-agency-making-your-brand-fly/?originalSubdomain=fr"
-                    target="_blank"
-                    rel="noopener"
-                    style={{ color: "#000000", fontSize: "20px" }}
-                  >
-                    <i className="fab fa-linkedin-in"></i>
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="https://www.tiktok.com/@soon_agency"
-                    target="_blank"
-                    rel="noopener"
-                    style={{ color: "#000000", fontSize: "20px" }}
-                  >
-                    <i className="fab fa-tiktok"></i>
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="https://www.youtube.com/"
-                    target="_blank"
-                    rel="noopener"
-                    style={{ color: "#000000", fontSize: "20px" }}
-                  >
-                    <i className="fab fa-youtube"></i>
-                  </a>
-                </li>
-              </ul>
             </div>
           </nav>
         </div>

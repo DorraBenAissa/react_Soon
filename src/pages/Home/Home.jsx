@@ -196,9 +196,11 @@ function Home() {
                             position: "absolute",
                             top: "97px",
                             left: 0,
-                            width: "50%", // mets "50%" si tu veux qu’elle prenne la moitié de la page
-                            height: "100vh", // prend toute la hauteur de l’écran
-                            objectFit: "cover", // ajuste sans déformation
+                            width: "50%",
+                            height: "100vh",
+                            minWidth: "50%",
+                            minHeight: "100vh",
+                            objectFit: "cover",
                             margin: 0,
                             padding: 0,
                             display: "block",
@@ -209,26 +211,7 @@ function Home() {
                           Ton navigateur ne supporte pas la vidéo.
                         </video>
 
-                        {/* <video
-                          autoPlay
-                          muted
-                          loop
-                          playsInline
-                          style={{
-                            position: "absolute",
-                            top: "97px",
-                            left: 0,
-                            width: "50vw", // plus stable que 50%
-                            height: "100vh",
-                            objectFit: "cover",
-                            borderBottomRightRadius: "142px",
-                            display: "block",
-                            backgroundColor: "black", // évite un flash blanc pendant le chargement
-                          }}
-                        >
-                          <source src={showReel01} type="video/mp4" />
-                          Ton navigateur ne supporte pas la vidéo.
-                        </video> */}
+
 
                         <div>
                           {/* section à developer */}
@@ -246,6 +229,7 @@ function Home() {
                             >
                               MAKE YOUR BRAND FLY
                             </h2>
+                                                  
 
                             <div
                               style={{
@@ -280,23 +264,22 @@ function Home() {
                                   fontSize: "1rem",
                                 }}
                               >
-                                Vous cherchez une agence de communication
+                                 Vous cherchez une agence de communication
                                 digitale qui ne se contente pas du statu quo ?
                                 Chez <strong>Soon</strong>, nous faisons les
                                 choses autrement. Nous repoussons sans cesse les
                                 limites de la créativité pour vous offrir des
                                 solutions innovantes, sur-mesure et parfaitement
                                 adaptées à votre marque. Notre approche va
-                                au-delà de l’esthétique : nous combinons
+                                au-delà de l’esthétique :nous combinons
                                 stratégie, design et technologie pour générer
                                 des résultats concrets et mesurables, tout en
                                 respectant des délais records. Que vous
                                 souhaitiez booster votre visibilité, dynamiser
                                 votre image ou transformer vos idées en projets
                                 impactants, Soon est votre partenaire pour
-                                donner des ailes à votre marque. <br />
-                                <br />
-                                L’équipe Soon met son savoir-faire au service de
+                                donner des ailes à votre marque.
+                                L’équipe <strong>Soon</strong> met son savoir-faire au service de
                                 votre vision, en vous accompagnant à chaque
                                 étape du processus créatif, de la réflexion
                                 stratégique à la concrétisation de projets
@@ -308,7 +291,7 @@ function Home() {
                               <div style={{ clear: "both" }}></div>
                             </div>
 
-                            <img
+                            {/* <img
                               className="td-live-anim-spin"
                               src={shapeAbout}
                               alt="Décor"
@@ -317,7 +300,7 @@ function Home() {
                                 margin: "30px auto 0",
                                 width: "80px",
                               }}
-                            />
+                            /> */}
                           </div>
 
                           {/* <div style={{ position: "relative", right:"50px", }}>
