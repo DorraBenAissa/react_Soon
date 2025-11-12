@@ -17,6 +17,9 @@ import WowInit from "../../components/WowInit";
 import Menu from "../../components/Menu";
 import AutoCloseMenu from "../../components/AutoCloseMenu";
 
+
+import Header from "./../../layouts/Header/Header";
+
 function Contact() {
   return (
     <>
@@ -29,237 +32,7 @@ function Contact() {
       <Menu />
       <AutoCloseMenu />
 
-      <header>
-        <div
-          id="header-sticky"
-          className="td-header__area td-header-spacing td-header-5-wrapper td-header-about-wrapper p-relative z-index-1"
-        >
-          <div className="container-fluid container-1710">
-            <div className="row align-items-center">
-              <div className="col-xxl-2 col-xl-2 col-4">
-                <div className="logo">
-                  {/* <a className="logo-1" href="index.html">
-                    <img style={{ width: "96px" }} src={logoBlack} alt="Logo" />
-                  </a> */}
-                  <Link to="/" className="logo-1">
-                    <img style={{ width: "96px" }} src={logoWhiteBlack} alt="Logo" />
-                  </Link>
-                </div>
-              </div>
-              <div className="col-xxl-8 col-xl-7 d-none d-xl-block">
-                <div className="tdmenu__wrap tdmenu-2-wrap text-center">
-                  <nav className="tdmenu__nav">
-                    <div className="tdmenu__navbar-wrap tdmenu__main-menu">
-                      <ul className="navigation">
-                        <li className="menu-item-has-children">
-                          {/* <a href="index.html">Accueil</a> */}
-                          <Link to="/">Accueil</Link>
-                          <ul className="sub-menu">
-                            <li className="active">
-                              {/* <a href="index.html">L’agence</a> */}
-                              <Link to="/">L’agence</Link>
-                            </li>
-                            <li>
-                              <a href="index-2.html">Vos besoins</a>
-                            </li>
-                            <li>
-                              <a href="index-3.html">Portfolio</a>
-                            </li>
-                            <li>
-                              <a href="index-4.html">Vous informer</a>
-                            </li>
-                            <li>
-                              <a href="index-5.html">Nous rejoindre</a>
-                            </li>
-                            <li>
-                              <a href="index-6.html">Nous contacter</a>
-                            </li>
-                            <li>
-                              <a href="index-7.html">Prendre Rendez-vous</a>
-                            </li>
-                          </ul>
-                        </li>
-                        <li className="menu-item-has-children">
-                          <a href="#">Pages</a>
-                          <ul className="sub-menu">
-                            <li>
-                              {/* <a href="about.html">À propos</a> */}
-                              <Link to="/about">À propos</Link>
-                            </li>
-                            <li>
-                              <a href="service.html">Service</a>
-                            </li>
-                            <li>
-                              <a href="service-details.html">Service Details</a>
-                            </li>
-                            <li>
-                              <a href="team.html">Team</a>
-                            </li>
-                            <li>
-                              <a href="team-details.html">Team Details</a>
-                            </li>
-                          </ul>
-                        </li>
-                        <li className="menu-item-has-children">
-                          <a href="portfolio-two-columns.html">Portfolio</a>
-                          <ul className="sub-menu">
-                            <li>
-                              <a href="portfolio-two-columns.html">
-                                Two Columns
-                              </a>
-                            </li>
-                            <li>
-                              <a href="portfolio-three-columns.html">
-                                three Columns
-                              </a>
-                            </li>
-                            <li>
-                              <a href="portfolio-four-columns.html">
-                                four Columns
-                              </a>
-                            </li>
-                            <li>
-                              <a href="portfolio-random.html">
-                                Portfolio Random
-                              </a>
-                            </li>
-                            <li>
-                              <a href="portfolio-details.html">
-                                Portfolio Details
-                              </a>
-                            </li>
-                          </ul>
-                        </li>
-                        <li className="menu-item-has-children">
-                          <a href="blog.html">Blog</a>
-                          <ul className="sub-menu">
-                            <li>
-                              <a href="blog.html">Blog</a>
-                            </li>
-                            <li>
-                              <a href="blog-sidebar.html">Blog Sidebar</a>
-                            </li>
-                            <li>
-                              <a href="blog-details.html">Blog Details</a>
-                            </li>
-                          </ul>
-                        </li>
-                        <li className="active">
-                          <a href="contact.html">Contact</a>
-                        </li>
-                      </ul>
-                    </div>
-                  </nav>
-                </div>
-              </div>
-              <div className="col-xxl-2 col-xl-3 col-8">
-                <div className="td-header-right text-end">
-                  <a className="td-btn-12" href="contact.html">
-                    SEE YOU SOON !
-                  </a>
-                  <div className="d-inline-block ml-10">
-                    <div className="tdmenu-offcanvas-open-btn mobile-nav-toggler">
-                      <div className="tdmenu-offcanvas-open-bar d-inline-block">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div className="tdmobile__menu td-menu-large">
-          <nav className="tdmobile__menu-box">
-            <div className="close-btn">
-              <i className="fa-solid fa-xmark"></i>
-            </div>
-            <div className="nav-logo">
-              {/* <a href="index.html">
-                <img style={{ width: "96px" }} src={logoBlack} alt="logo" />
-              </a> */}
-              <Link to="/">
-                <img style={{ width: "96px" }} src={logoWhiteBlack} alt="logo" />
-              </Link>
-            </div>
-            <div className="tdmobile__search">
-              <form action="#">
-                <input type="text" placeholder="Rechercher..." />
-                <button>
-                  <i className="fas fa-search"></i>
-                </button>
-              </form>
-            </div>
-            <div className="tdmobile__menu-outer d-xl-none"></div>
-            <div className="offCanvas__side-info mb-30 d-none ml-25 mr-25 d-xl-block">
-              <div className="contact-list mb-30">
-                <h4>Adresse du bureau</h4>
-                <p>
-                  Immeuble Jazz, 26 avenue Hergé
-                  <br /> 77700 Chessy - Val d'Europe
-                </p>
-              </div>
-              <div className="contact-list mb-30">
-                <h4>Numéro de téléphone</h4>
-                <p>01 85 49 22 88</p>
-              </div>
-              <div className="contact-list mb-30">
-                <h4>Adresse e-mail</h4>
-                <p>info@example.com</p>
-              </div>
-            </div>
-            <div className="mt-30 ml-25 mr-25">
-              <a
-                href="contact.html"
-                className="td-btn td-btn-menu-black w-100 d-inline-block td-btn-switch-animation ml-10"
-              >
-                <span className="d-flex align-items-center justify-content-center">
-                  <span className="btn-text"> Contact </span>
-                  <span className="btn-icon">
-                    <i className="fa-sharp fa-solid fa-angle-right"></i>
-                  </span>
-                  <span className="btn-icon">
-                    <i className="fa-sharp fa-solid fa-angle-right"></i>
-                  </span>
-                </span>
-              </a>
-            </div>
-            <div className="social-links">
-              <ul className="list-wrap">
-                <li>
-                  <a href="#">
-                    <i className="fab fa-facebook-f"></i>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <i className="fab fa-twitter"></i>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <i className="fab fa-instagram"></i>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <i className="fab fa-linkedin-in"></i>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <i className="fab fa-youtube"></i>
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </nav>
-        </div>
-        <div className="tdmobile__menu-backdrop"></div>
-      </header>
+      <Header />
 
       <div id="smooth-wrapper">
         <div id="smooth-content">
@@ -298,7 +71,7 @@ function Contact() {
                   <div className="col-12">
                     <div className="td-contact-map p-relative">
                       <div className="td-contact-map-wrap">
-                        <img className="mb-100" width= "119px"src={soonWhiteLogo} alt="" />
+                        <img className="mb-100" width="119px" src={soonWhiteLogo} alt="" />
                         <h6 className="mb-25" style={{ color: "white" }}>
                           Contact info:
                         </h6>

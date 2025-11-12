@@ -45,17 +45,9 @@ export default function Loader() {
         </div>
         <div className="loader">
           <div className="row">
-            <div className="col-3 loader-section section-left">
+            <div className="loader-section">
               <div className="bg"></div>
-            </div>
-            <div className="col-3 loader-section section-left">
-              <div className="bg"></div>
-            </div>
-            <div className="col-3 loader-section section-right">
-              <div className="bg"></div>
-            </div>
-            <div className="col-3 loader-section section-right">
-              <div className="bg"></div>
+            
             </div>
           </div>
         </div>

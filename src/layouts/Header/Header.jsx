@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 
 // ASSETS
 import logoBlack from "../../assets/img/logo/BLACK2.webp";
+import soonWhiteLogo from "../../assets/img/logo/WHITH3.webp";
 
 // Components
 import Menu from "../../components/Menu";
@@ -22,7 +23,7 @@ function Header() {
             left: 0,
             width: "100%",
             zIndex: 9999,
-            backgroundColor: "#fff",
+            backgroundColor: "#e26F57",
             boxShadow: "0 2px 5px rgba(0,0,0,0.1)"
           }}
         >
@@ -31,9 +32,9 @@ function Header() {
               {/* Menu mobile */}
               <div className="col-lg-4 col-md-4 col-sm-4 col-5">
                 <div className="tdmenu__wrap">
-                  <div className="tdmenu-offcanvas-open-btn mobile-nav-toggler d-flex align-items-center justify-content-center">
-                    <span className="text mr-5">menu</span>
-                    <div className="tdmenu-offcanvas-open-bar">
+                  <div className="tdmenu-offcanvas-open-btn mobile-nav-toggler d-flex align-items-center justify-content-center"  style={{ backgroundColor: '#fff' }}>
+                    <span className="text mr-5" style={{ color: "#e26F57" }} >menu</span>
+                    <div className="tdmenu-offcanvas-open-bar" >
                       <span></span>
                       <span></span>
                     </div>
@@ -94,7 +95,7 @@ function Header() {
               <div className="col-lg-4 col-md-4 col-sm-4 col-5">
                 <div className="logo text-center">
                   <a className="logo-1" href="index.html">
-                    <img width={96} src={logoBlack} alt="Logo" />
+                    <img width={96} src={soonWhiteLogo} alt="Logo" />
                   </a>
                 </div>
               </div>
@@ -112,14 +113,14 @@ function Header() {
                     >
                       <path
                         d="M9.00004 17.0001C13.4183 17.0001 17.0001 13.4183 17.0001 9.00004C17.0001 4.58174 13.4183 1 9.00004 1C4.58174 1 1 4.58174 1 9.00004C1 13.4183 4.58174 17.0001 9.00004 17.0001Z"
-                        stroke="#1C1D1F"
+                        stroke="#FFF"
                         strokeWidth="2"
                         strokeLinecap="round"
                         strokeLinejoin="round"
                       />
                       <path
                         d="M19.0004 18.9999L14.6504 14.6499"
-                        stroke="#1C1D1F"
+                        stroke="#FFF"
                         strokeWidth="2"
                         strokeLinecap="round"
                         strokeLinejoin="round"
@@ -128,15 +129,15 @@ function Header() {
                   </button>
                   <Link
                     to="/contact"
-                    className="td-btn td-btn-lg d-none d-md-inline-block td-btn-switch-animation ml-10"
+                    className="td-btn td-btn-lg d-none d-md-inline-block td-btn-switch-animation ml-10"  style={{ backgroundColor: '#fff' }}
                   >
                     <span className="d-flex align-items-center justify-content-center">
-                      <span className="btn-text">SEE YOU SOON !</span>
+                      <span className="btn-text" style={{ color: "#e26F57" }}>SEE YOU SOON ?</span>
                       <span className="btn-icon">
-                        <i className="fa-sharp fa-solid fa-angle-right"></i>
+                        <i className="fa-sharp fa-solid fa-angle-right" style={{ color: "#e26F57" }}></i>
                       </span>
                       <span className="btn-icon">
-                        <i className="fa-sharp fa-solid fa-angle-right"></i>
+                        <i className="fa-sharp fa-solid fa-angle-right" style={{ color: "#e26F57" }}></i>
                       </span>
                     </span>
                   </Link>

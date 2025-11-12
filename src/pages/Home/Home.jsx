@@ -57,7 +57,7 @@ import bgThumb23 from "../../assets/video/bg-thumb3.mp4";
 import showReel01 from "../../assets/video/Show_reel_1080x1080_33s_01.mp4";
 
 // COMPONENTS
-import Odometer from "../../components/Odometer";
+// import Odometer from "../../components/Odometer";
 import Header from "./../../layouts/Header/Header";
 import Footer from "./../../layouts/Footer/Footer";
 import Loader from "../../components/Loader";
@@ -182,7 +182,7 @@ function Home() {
                   <div className="col-lg-10">
                     <div className="td-hero-content">
                       <div
-                        className="td-hero-title text-center  wow fadeInUp "
+                        className="td-hero-title text-center  wow fadeInU "
                         data-wow-delay=".5s"
                         data-wow-duration="1s"
                       >
@@ -196,9 +196,9 @@ function Home() {
                             position: "absolute",
                             top: "97px",
                             left: 0,
-                            width: "50%",
+                            width: "65%",
                             height: "100vh",
-                            minWidth: "50%",
+                            minWidth: "65%",
                             minHeight: "100vh",
                             objectFit: "cover",
                             margin: 0,
@@ -285,6 +285,12 @@ function Home() {
                                 énergie, nous donnons vie à vos idées pour
                                 qu’elles marquent durablement les esprits.
                               </p>
+                              <img
+                              className="td-live-anim-spin"
+                              style={{ top: '200', margin: "13px 33px 39px 20px", }}
+                              src={shapeAbout}
+                              alt=""
+                            />
 
                               <div style={{ clear: "both" }}></div>
                             </div>
@@ -524,7 +530,7 @@ function Home() {
                 <div className="row">
                   <div className="col-lg-4">
                     <div className="td-about-left mb-30">
-                      <span>QUI NOUS SOMMES</span>
+
                       {/* <div className="td-about-left-thumb ml-60 fix td-rounded-10">
                         <img
                           data-speed=".9"
@@ -537,6 +543,7 @@ function Home() {
                   </div>
                   <div className="col-lg-8">
                     <div className="td-about-content mb-30">
+                                            <h6>QUI NOUS SOMMES</h6>
                       <h2 className="td-about-title mb-30 td-text-invert">
                         Nous créons et mettons en œuvre votre stratégie de
                         communication
@@ -553,6 +560,7 @@ function Home() {
                         engageantes qui permettent aux entreprises de se
                         démarquer et de se développer.
                       </p>
+                      
                       <div className="td-btn-group mb-35">
                         {/* <a className="td-btn-circle" href="about.html">
                           <i className="fa-solid fa-arrow-right"></i>
@@ -572,11 +580,11 @@ function Home() {
                         <Link to="/about" className="td-btn-circle">
                           <i className="fa-solid fa-arrow-right"></i>
                         </Link>
-                        {/* <a className="td-btn-circle" href="about.html">
+                        <a className="td-btn-circle" href="about.html">
                           <i className="fa-solid fa-arrow-right"></i>
-                        </a> */}
+                        </a>
                       </div>
-                      {/* <div className="td-about-thumb-wrap d-flex align-items-center justify-content-end">
+                      <div className="td-about-thumb-wrap d-flex align-items-center justify-content-end">
                         <div className="mr-150 td-about-shape">
                           <img
                             className="td-live-anim-spin"
@@ -587,7 +595,8 @@ function Home() {
                         <div className="td-about-thumb fix td-rounded-10">
                           <img data-speed=".9" src={thumb2About} alt="" />
                         </div>
-                      </div> */}
+                      </div>
+                      
                     </div>
                   </div>
                 </div>
@@ -782,12 +791,10 @@ function Home() {
                       </a>
                       <div className="td-service-counter mt-80">
                         <div className="row">
-                          <div className="col-lg-6 col-md-6">
+                          {/* <div className="col-lg-6 col-md-6">
                             <div className="td-service-counter-item mb-30">
                               <h2>
-                                {/* <span className="odometer" data-count="72">
-                                  0
-                                </span> */}
+                  
                                 <Odometer value={400} />+
                               </h2>
                               <span>Clients</span>
@@ -796,14 +803,12 @@ function Home() {
                           <div className="col-lg-6 col-md-6">
                             <div className="td-service-counter-item mb-30">
                               <h2>
-                                {/* <span className="odometer" data-count="17">
-                                  0
-                                </span> */}
+                           
                                 <Odometer value={15} />+
                               </h2>
                               <span>Collaborateurs</span>
                             </div>
-                          </div>
+                          </div> */}
                         </div>
                       </div>
                     </div>
@@ -843,7 +848,7 @@ function Home() {
                         <img
                           className="w-100"
                           style={{
-                            borderTopRightRadius: "142px",
+                            borderTopLeftRadius: "142px",
                           }}
                           src={product1}
                           alt=""
@@ -888,9 +893,9 @@ function Home() {
                       <div className="td-project-thumb mb-25">
                         <img
                           className="w-100"
-                          style={{
-                            borderTopRightRadius: "80px",
-                          }}
+                          // style={{
+                          //   borderTopRightRadius: "80px",
+                          // }}
                           src={product2}
                           alt=""
                         />
@@ -935,7 +940,7 @@ function Home() {
                         <img
                           className="w-100"
                           style={{
-                            borderTopRightRadius: "142px",
+                            borderBottomRightRadius: "142px",
                           }}
                           src={product3}
                           alt=""
@@ -980,7 +985,7 @@ function Home() {
                         <img
                           className="w-100"
                           style={{
-                            borderTopRightRadius: "142px",
+                            borderBottomLeftRadius: "142px",
                           }}
                           src={product5}
                           alt=""
@@ -1025,9 +1030,9 @@ function Home() {
                       <div className="td-project-thumb mb-25">
                         <img
                           className="w-100"
-                          style={{
-                            borderTopRightRadius: "80px",
-                          }}
+                          // style={{
+                          //   borderTopRightRadius: "80px",
+                          // }}
                           src={product4}
                           alt=""
                         />
@@ -1202,7 +1207,7 @@ function Home() {
                 </div>
               </div>
             </div>
-
+            {/* //AVIS CLIENTS// */}
             <div className="td-testimonial-area grey-bg-2 pt-155 pb-120">
               <div className="container">
                 <div className="row">
@@ -1239,13 +1244,13 @@ function Home() {
                       </h2>
                       <div className="row">
                         <div className="col-lg-4">
-                          {/* <div className="td-testimonial-thumb mb-40" style=  {{display: "flex", flex: "1",  justifyContent: "space-between"}}>
+                          <div className="td-testimonial-thumb mb-40" style={{ display: "flex", flex: "1", justifyContent: "space-between" }}>
                             <img
-                              className="w-100 td-rounded-10" style={{   borderRadius: "28px"}}
+                              className="w-100 td-rounded-10" style={{ borderRadius: "28px" }}
                               src={thumbTest}
                               alt=""
                             />
-                          </div> */}
+                          </div>
                         </div>
                         <div className="col-lg-8">
                           <div className="td-testimonial-slide-content ml-25 mb-40">
@@ -1381,8 +1386,19 @@ function Home() {
                       </div>
                     </div>
                   </div>
+                  <div style={{
+    backgroundColor: '#e26F57',
+    padding: '20px 0',
+    borderTopRightRadius: '140px',
+    borderBottomLeftRadius: '140px',
+    width: '100vw',      // prend toute la largeur de l'écran
+    position: 'relative'
+  }}>
                   <div className="col-12">
-                    <div className="td-brand-wrap">
+                    <div
+                      className="td-brand-wrap"
+                      // style={{ backgroundColor: '#e26F57', padding: '20px 0', borderRadius: '10px', }}
+                    >
                       <div className="swiper-container td-brand-slide-active">
                         <div className="swiper-wrapper slide-transtion">
                           <div className="swiper-slide">
@@ -1419,12 +1435,14 @@ function Home() {
                       </div>
                     </div>
                   </div>
-                  <br />
-                  <br />
-                  <br />
-                  <br />
+
+                  <br /><br /><br /><br />
+
                   <div className="col-12">
-                    <div className="td-brand-wrap">
+                    <div
+                      className="td-brand-wrap"
+                      // style={{ backgroundColor: '#e26F57', padding: '20px 0', borderRadius: '10px' }}
+                    >
                       <div className="swiper-container td-brand-slide-active">
                         <div className="swiper-wrapper slide-transtion">
                           <div className="swiper-slide">
@@ -1461,12 +1479,14 @@ function Home() {
                       </div>
                     </div>
                   </div>
-                  <br />
-                  <br />
-                  <br />
-                  <br />
+
+                  <br /><br /><br /><br />
+
                   <div className="col-12">
-                    <div className="td-brand-wrap">
+                    <div
+                      className="td-brand-wrap"
+                      // style={{ backgroundColor: '#e26F57', padding: '20px 0', borderRadius: '10px' }}
+                    >
                       <div className="swiper-container td-brand-slide-active">
                         <div className="swiper-wrapper slide-transtion">
                           <div className="swiper-slide">
@@ -1503,10 +1523,11 @@ function Home() {
                       </div>
                     </div>
                   </div>
+
                 </div>
               </div>
             </div>
-
+</div>
             <div className="td-blog-area pt-155 pb-130">
               <div className="container">
                 <div className="row mb-50">

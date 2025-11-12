@@ -3423,7 +3423,7 @@ textarea {
   color: var(--td-common-black);
 }
 .td-header-sticky-white.header-sticky .tdmenu-offcanvas-open-bar span {
-  background-color: var(--td-common-black);
+  background-color: #e26F57;
 }
 .td-header-sticky-white.header-sticky .td-btn-4 {
   border: 1px solid rgba(48, 49, 51, 0.15);
@@ -3747,7 +3747,7 @@ textarea {
 .tdmenu-offcanvas-open-bar span {
   height: 2px;
   width: 24px;
-  background-color: var(--td-common-black);
+  background-color: #e26F57;
   display: block;
   border-radius: 6px;
   transition: all 0.4s ease;

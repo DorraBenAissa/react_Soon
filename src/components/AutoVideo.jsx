@@ -12,7 +12,6 @@ const AutoVideo = ({ width = 160, height = 285 }) => {
     },
   ]);
   const [input, setInput] = useState("");
-
   const chatRef = useRef(null);
 
   // 🎯 Scroll automatique vers le bas à chaque nouveau message
@@ -96,6 +95,9 @@ const AutoVideo = ({ width = 160, height = 285 }) => {
             width: `${width}px`,
             height: `${height}px`,
             zIndex: 99,
+            transition: "all 0.4s ease-in-out", // 🎬 transition fluide
+            transform: isVisible ? "scale(1)" : "scale(0.8)",
+            opacity: isVisible ? 1 : 0,
           }}
         >
           {/* 🎥 Vidéo */}
@@ -109,7 +111,10 @@ const AutoVideo = ({ width = 160, height = 285 }) => {
               borderTopLeftRadius: "60px",
               borderBottomRightRadius: "60px",
               cursor: "pointer",
+              transition: "transform 0.3s ease", // effet au survol
             }}
+            onMouseEnter={(e) => (e.currentTarget.style.transform = "scale(1.03)")}
+            onMouseLeave={(e) => (e.currentTarget.style.transform = "scale(1)")}
             onClick={() => setIsChatOpen(true)}
           >
             <source src={AutoPopUp} type="video/mp4" />
@@ -153,6 +158,7 @@ const AutoVideo = ({ width = 160, height = 285 }) => {
               maxWidth: "150px",
               textAlign: "center",
               boxShadow: "0 2px 6px rgba(0,0,0,0.2)",
+              transition: "opacity 0.3s ease-in-out",
             }}
           >
             Hello
@@ -188,6 +194,7 @@ const AutoVideo = ({ width = 160, height = 285 }) => {
                 padding: "10px",
                 display: "flex",
                 flexDirection: "column",
+                transition: "all 0.3s ease-in-out",
               }}
             >
               <div style={{ textAlign: "right" }}>
@@ -306,7 +313,7 @@ const AutoVideo = ({ width = 160, height = 285 }) => {
         </div>
       )}
 
-      {/* Animation CSS pour les points */}
+      {/* Animation CSS */}
       <style>{`
         .dot {
           animation: blink 1s infinite;
