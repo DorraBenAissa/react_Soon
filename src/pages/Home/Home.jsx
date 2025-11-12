@@ -1689,11 +1689,11 @@ function Home() {
                       alt=""
                     />
                     <h2 className="title p-relative d-inline-block">
-                      <img
+                      {/* <img
                         className="td-cta-shape-2 d-none d-md-block"
                         src={cta2}
                         alt=""
-                      />
+                      /> */}
                       {/* <a className="td-text-invert" href="contact.html">
                         VOUS AVEZ
                         <br />
