@@ -175,10 +175,16 @@ function Home() {
       <div id="smooth-wrapper">
         <div id="smooth-content">
           <main>
-            <div className="td-hero-area td-hero-spacing p-relative fix z-index-1">
+            <div
+              style={{ paddingBottom: "0px" }}
+              className="td-hero-area td-hero-spacing p-relative fix z-index-1"
+            >
               {/* <img className="td-hero-shape p-absolute" src={shapeImg} alt="" /> */}
               <div className="container">
-                <div className="row justify-content-center">
+                <div
+                  style={{ marginRight: "-31%" }}
+                  className="row justify-content-center"
+                >
                   <div className="col-lg-10">
                     <div className="td-hero-content">
                       <div
@@ -228,7 +234,6 @@ function Home() {
                               MAKE YOUR BRAND FLY
                             </h2>
 
-
                             <div
                               style={{
                                 maxWidth: "800px",
@@ -276,25 +281,27 @@ function Home() {
                                 souhaitiez booster votre visibilité, dynamiser
                                 votre image ou transformer vos idées en projets
                                 impactants, Soon est votre partenaire pour
-                                donner des ailes à votre marque.
-                                L’équipe <strong>Soon</strong> met son savoir-faire au service de
-                                votre vision, en vous accompagnant à chaque
-                                étape du processus créatif, de la réflexion
-                                stratégique à la concrétisation de projets
-                                audacieux. Avec notre regard neuf et notre
-                                énergie, nous donnons vie à vos idées pour
+                                donner des ailes à votre marque. L’équipe{" "}
+                                <strong>Soon</strong> met son savoir-faire au
+                                service de votre vision, en vous accompagnant à
+                                chaque étape du processus créatif, de la
+                                réflexion stratégique à la concrétisation de
+                                projets audacieux. Avec notre regard neuf et
+                                notre énergie, nous donnons vie à vos idées pour
                                 qu’elles marquent durablement les esprits.
                               </p>
                               <img
-                              className="td-live-anim-spin"
-                              style={{ top: '200', margin: "13px 33px 39px 20px", }}
-                              src={shapeAbout}
-                              alt=""
-                            />
+                                className="td-live-anim-spin"
+                                style={{
+                                  top: "200",
+                                  margin: "13px 33px 39px 20px",
+                                }}
+                                src={shapeAbout}
+                                alt=""
+                              />
 
                               <div style={{ clear: "both" }}></div>
                             </div>
-
                           </div>
 
                           {/* <div style={{ position: "relative", right:"50px", }}>
@@ -418,7 +425,7 @@ function Home() {
                 style={{
                   position: "relative",
                   width: "100vw",
-                  height: "26vw",
+                  height: "16.6vw",
                   overflow: "hidden",
                   zIndex: -1,
                   // backgroundColor: "#ffff", // pour être sûr qu'il n'y ait rien derrière
@@ -529,21 +536,37 @@ function Home() {
               <div className="container">
                 <div className="row">
                   <div className="col-lg-4">
-                    <div className="td-about-left mb-30">
-
-                      {/* <div className="td-about-left-thumb ml-60 fix td-rounded-10">
+                    <div
+                      style={{
+                        height: "100%",
+                        marginLeft: "0%",
+                        width: "100%",
+                      }}
+                      className="td-about-left mb-30"
+                    >
+                      <div
+                        style={{
+                          height: "100%",
+                          marginLeft: "0%",
+                          width: "100%",
+                        }}
+                        className="td-about-left-thumb ml-60 fix td-rounded-10"
+                      >
                         <img
                           data-speed=".9"
                           src={thumbAbout}
                           alt=""
-                          style={{ borderTopRightRadius: "84px" }}
+                          style={{
+                            borderTopRightRadius: "84px",
+                            height: "100%",
+                          }}
                         />
-                      </div> */}
+                      </div>
                     </div>
                   </div>
                   <div className="col-lg-8">
                     <div className="td-about-content mb-30">
-                                            <h6>QUI NOUS SOMMES</h6>
+                      <h6>QUI NOUS SOMMES</h6>
                       <h2 className="td-about-title mb-30 td-text-invert">
                         Nous créons et mettons en œuvre votre stratégie de
                         communication
@@ -560,7 +583,7 @@ function Home() {
                         engageantes qui permettent aux entreprises de se
                         démarquer et de se développer.
                       </p>
-                      
+
                       <div className="td-btn-group mb-35">
                         {/* <a className="td-btn-circle" href="about.html">
                           <i className="fa-solid fa-arrow-right"></i>
@@ -580,9 +603,9 @@ function Home() {
                         <Link to="/about" className="td-btn-circle">
                           <i className="fa-solid fa-arrow-right"></i>
                         </Link>
-                        <a className="td-btn-circle" href="about.html">
+                        {/* <a className="td-btn-circle" href="about.html">
                           <i className="fa-solid fa-arrow-right"></i>
-                        </a>
+                        </a> */}
                       </div>
                       <div className="td-about-thumb-wrap d-flex align-items-center justify-content-end">
                         <div className="mr-150 td-about-shape">
@@ -596,7 +619,6 @@ function Home() {
                           <img data-speed=".9" src={thumb2About} alt="" />
                         </div>
                       </div>
-                      
                     </div>
                   </div>
                 </div>
@@ -626,28 +648,26 @@ function Home() {
                         en expériences visuelles concrètes et innovantes.
                       </p>
                     </div>
-                  </div>
-                </div>
-                <div className="row">
-                  <div className="col-lg-5">
-                    <div className="td-service-btn mt-35 ml-110 mb-30">
-                      <div className="td-btn-group mb-35">
-                        <a className="td-btn-circle" href="service.html">
-                          <i className="fa-solid fa-arrow-right"></i>
-                        </a>
-                        <a
-                          className="td-btn-2 td-btn-primary"
-                          href="service.html"
-                        >
-                          Contactez-nous
-                        </a>
-                        <a className="td-btn-circle" href="service.html">
-                          <i className="fa-solid fa-arrow-right"></i>
-                        </a>
+                    <div style={{ width: "60.666667%" }} className="col-lg-5">
+                      <div className="td-service-btn mt-35 ml-110 mb-30">
+                        <div className="td-btn-group mb-35">
+                          <a className="td-btn-circle" href="service.html">
+                            <i className="fa-solid fa-arrow-right"></i>
+                          </a>
+                          <a
+                            className="td-btn-2 td-btn-primary"
+                            href="service.html"
+                          >
+                            Contactez-nous
+                          </a>
+                          <a className="td-btn-circle" href="service.html">
+                            <i className="fa-solid fa-arrow-right"></i>
+                          </a>
+                        </div>
                       </div>
                     </div>
                   </div>
-                  <div className="col-lg-7">
+                  <div style={{ width: "49.333333%" }} className="col-lg-7">
                     <div className="td-service-content">
                       <a
                         className="td-service-item pt-0"
@@ -814,6 +834,7 @@ function Home() {
                     </div>
                   </div>
                 </div>
+                <div className="row"></div>
               </div>
             </div>
 
@@ -1244,9 +1265,17 @@ function Home() {
                       </h2>
                       <div className="row">
                         <div className="col-lg-4">
-                          <div className="td-testimonial-thumb mb-40" style={{ display: "flex", flex: "1", justifyContent: "space-between" }}>
+                          <div
+                            className="td-testimonial-thumb mb-40"
+                            style={{
+                              display: "flex",
+                              flex: "1",
+                              justifyContent: "space-between",
+                            }}
+                          >
                             <img
-                              className="w-100 td-rounded-10" style={{ borderRadius: "28px" }}
+                              className="w-100 td-rounded-10"
+                              style={{ borderRadius: "28px" }}
                               src={thumbTest}
                               alt=""
                             />
@@ -1386,13 +1415,31 @@ function Home() {
                       </div>
                     </div>
                   </div>
+                </div>
+              </div>
+            </div>
+
+
+            <div
+              className="td-project-area td-fixed-title-wrap z-index-1 p-relative pt-155 pb-95"
+              data-background={bgImage}
+              style={{
+                backgroundImage: "url(${bgImage})",
+                backgroundSize: "cover",
+                backgroundPosition: "center",
+                borderTopRightRadius: "142px",
+                borderBottomLeftRadius: "142px",
+              }}
+            >
                   <div style={{
     backgroundColor: '#e26F57',
     padding: '20px 0',
     borderTopRightRadius: '140px',
     borderBottomLeftRadius: '140px',
-    width: '100vw',      // prend toute la largeur de l'écran
-    position: 'relative'
+    width: '87vw',      // prend toute la largeur de l'écran
+    position: 'relative',
+    marginLeft: "6%",
+    marginTop: "-46px"
   }}>
                   <div className="col-12">
                     <div
@@ -1525,9 +1572,8 @@ function Home() {
                   </div>
 
                 </div>
-              </div>
-            </div>
-</div>
+                </div>
+
             <div className="td-blog-area pt-155 pb-130">
               <div className="container">
                 <div className="row mb-50">
