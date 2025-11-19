@@ -21,30 +21,32 @@ import thumbProcess from "../../assets/img/process/thumb.jpg";
 import user from "../../assets/img/testimonial/user.png";
 import thumbTest from "../../assets/img/testimonial/thumb.jpg";
 
-import logoBrand1 from "../../assets/img/brand/logo-1.png";
-import logoBrand2 from "../../assets/img/brand/logo-2.png";
-import logoBrand3 from "../../assets/img/brand/logo-3.png";
-import logoBrand4 from "../../assets/img/brand/logo-4.png";
-import logoBrand5 from "../../assets/img/brand/logo-5.png";
-import logoBrand6 from "../../assets/img/brand/logo-6.png";
+import logoBrand1 from "../../assets/img/brand/westfield-blanc-400px.png";
+import logoBrand2 from "../../assets/img/brand/viparis-4.png";
+import logoBrand3 from "../../assets/img/brand/sea-4.png";
+import logoBrand4 from "../../assets/img/brand/covivo-4.png";
+import logoBrand5 from "../../assets/img/brand/disney-blnc-400px.png";
+import logoBrand6 from "../../assets/img/brand/canal+-400px.png";
 
-import logoBrand7 from "../../assets/img/brand/logo-7.png";
-import logoBrand8 from "../../assets/img/brand/logo-8.png";
-import logoBrand9 from "../../assets/img/brand/logo-9.png";
-import logoBrand10 from "../../assets/img/brand/logo-10.png";
-import logoBrand11 from "../../assets/img/brand/logo-11.png";
-import logoBrand12 from "../../assets/img/brand/logo-12.png";
+import logoBrand7 from "../../assets/img/brand/armani-400px.png";
+import logoBrand8 from "../../assets/img/brand/victoria-400px.png";
+import logoBrand9 from "../../assets/img/brand/bic-400px.png";
+import logoBrand10 from "../../assets/img/brand/poly-400px.png";
+import logoBrand11 from "../../assets/img/brand/fives-400px.png";
+import logoBrand12 from "../../assets/img/brand/fenty-400px.png";
 
-import logoBrand13 from "../../assets/img/brand/logo-13.png";
-import logoBrand14 from "../../assets/img/brand/logo-14.png";
-import logoBrand15 from "../../assets/img/brand/logo-15.png";
-import logoBrand16 from "../../assets/img/brand/logo-16.png";
-import logoBrand17 from "../../assets/img/brand/logo-17.png";
-import logoBrand18 from "../../assets/img/brand/logo-18.png";
+import logoBrand13 from "../../assets/img/brand/b&b-400px.png";
+import logoBrand14 from "../../assets/img/brand/radisson-400px.png";
+import logoBrand15 from "../../assets/img/brand/leo&go-400px.png";
+import logoBrand16 from "../../assets/img/brand/val-400px.png";
+import logoBrand17 from "../../assets/img/brand/fib-400px.png";
+import logoBrand18 from "../../assets/img/brand/ww-blnc-400px.png";
 
 import thumBlog1 from "../../assets/img/blog/thumb.jpg";
 import thumBlog2 from "../../assets/img/blog/thumb-2.jpg";
 import thumBlog3 from "../../assets/img/blog/thumb-3.jpg";
+import photoColor from "../../assets/img/blog/8770c5cd3ed2382fc5beb57d4cf0c022343fceb0.jpg";
+
 
 import bgImage from "../../assets/img/project/bg.jpg";
 
@@ -53,12 +55,12 @@ import cta2 from "../../assets/img/cta/cta-2.png";
 
 import heroVideo from "../../assets/video/hero3.mp4";
 import heroVideo2 from "../../assets/video/hero2.mp4";
-import bgThumb23 from "../../assets/video/bg-thumb3.mp4";
-import showReel01 from "../../assets/video/Show_reel_1080x1080_33s_01.mp4";
+import bgThumb23 from "../../assets/video/Show_reel_1920x1080_33s_01.mp4";
+import showReel01 from "../../assets/video/bg-thumb3.mp4";
 
 // COMPONENTS
 // import Odometer from "../../components/Odometer";
-import Header from "./../../layouts/Header/Header";
+// import Header from "./../../layouts/Header/Header";
 import Footer from "./../../layouts/Footer/Footer";
 import Loader from "../../components/Loader";
 import StickyHeader from "../../components/StickyHeader";
@@ -75,7 +77,12 @@ import TestimonialSlider from "../../components/TestimonialSlider";
 import BrandSlider from "../../components/BrandSlider";
 import ScrollToTopAutomatic from "../../components/ScrollToTopAutomatic";
 import AutoCloseMenu from "../../components/AutoCloseMenu";
+import ClientReview from "../../components/ClientReview";
+import Faq from "../../components/Faq";
 // import AutoVideo from "../../components/AutoVideo";
+
+import '../../assets/css/main.css';
+import '../../assets/css/animate.css';
 
 function Home() {
   return (
@@ -170,13 +177,13 @@ function Home() {
       </div>
       <div className="search-popup-overlay"></div>
 
-      <Header />
+      {/* <Header /> */}
 
       <div id="smooth-wrapper">
         <div id="smooth-content">
           <main>
             <div
-              style={{ paddingBottom: "0px" }}
+              style={{ paddingBottom: "0px", backgroundColor: '#e26F57', }}
               className="td-hero-area td-hero-spacing p-relative fix z-index-1"
             >
               {/* <img className="td-hero-shape p-absolute" src={shapeImg} alt="" /> */}
@@ -185,6 +192,82 @@ function Home() {
                   style={{ marginRight: "-31%" }}
                   className="row justify-content-center"
                 >
+                  <div
+                    style={{
+                      position: "fixed",
+                      top: "20px",
+                      right: "80px",
+                      width: "200px",
+                      height: "60px",
+                      display: "flex",
+                      alignItems: "center",
+                      justifyContent: "center",
+                      border: "1px solid white",
+                      // borderRadius: "6px",
+                      backgroundColor: "transparent",
+                      cursor: "pointer",
+                      zIndex: 10000,
+                      textAlign: "center",
+                    }}
+                  >
+
+                    <span
+                      style={{
+                        color: "white",
+                        Top: "80px",
+                        fontSize: 16,
+                        fontFamily: "'Plus Jakarta Sans', sans-serif", // <- ici
+                        fontWeight: 700,
+                        textTransform: "uppercase",
+                        lineHeight: "26px",
+                        wordWrap: "break-word",
+                      }}
+                    >
+                      SEE YOU SOON ?
+                    </span>
+                  </div>
+                  <header
+                    style={{
+                      width: "100%",
+                      top: "60px",
+                      paddingLeft: "40px", // espace entre le bord gauche et le premier bouton
+                      display: "flex",
+                      justifyContent: "flex-start",
+                      position: "fixed",
+                      top: 0,
+                      left: 0,
+                      top: "20px",
+                      zIndex: 10000,
+                      backgroundColor: "transparent",
+                      fontFamily: "'SF Pro', sans-serif",
+                    }}
+                  >
+                    {["ACCUEIL", "SERVICES", "À PROPOS"].map((item, index) => (
+                      <button
+                        key={index}
+                        style={{
+                          padding: "10px 20px",
+                          border: "none",            // plus de contour
+                          borderRadius: 0,            // coins droits
+                          backgroundColor: "transparent",
+                          color: "white",
+                          fontWeight: 700,
+                          fontSize: 16,
+                          textTransform: "uppercase",
+                          cursor: "pointer",
+                          transition: "0.3s",
+                        }}
+                        onMouseEnter={(e) => (e.target.style.backgroundColor = "rgba(255,255,255,0.2)")}
+                        onMouseLeave={(e) => (e.target.style.backgroundColor = "transparent")}
+                      >
+                        {item}
+                      </button>
+                    ))}
+
+                  </header>
+
+
+
                   <div className="col-lg-10">
                     <div className="td-hero-content">
                       <div
@@ -192,6 +275,51 @@ function Home() {
                         data-wow-delay=".5s"
                         data-wow-duration="1s"
                       >
+                        <img
+                          src={photoColor}
+                          alt="Header"
+                          style={{
+                            width: "200px",
+                            borderRadius: "142px",
+                            position: "absolute",
+                            zIndex: "9000",
+                            top: "60%",       // supprime l’espace après 50
+                            left: "40%",      // supprime l’espace après 50
+                            transform: "translate(-50%, -50%)", // supprime les espaces
+                          }}
+                        />
+                        <div
+                          style={{
+                            color: "white",
+                             position: "absolute",
+                            fontSize: 70,
+                            fontFamily: "Aboreto, sans-serif",
+                            fontWeight: 400,
+                            top: "160px",       // supprime l’espace après 50
+                            left: "40%",  
+                            lineHeight: "59px",
+                            wordWrap: "break-word",
+                             zIndex: "10000",
+                          }}
+                        >
+                          Make your
+                        </div>
+                                                <div
+                          style={{
+                            color: "white",
+                             position: "absolute",
+                            fontSize: 70,
+                            fontFamily: "Aboreto, sans-serif",
+                            fontWeight: 400,
+                            top: "250px",       // supprime l’espace après 50
+                            left: "35%",  
+                            lineHeight: "59px",
+                            wordWrap: "break-word",
+                             zIndex: "10000",
+                          }}
+                        >
+                          Brand Fly
+                        </div>
                         <video
                           className="mr-30 d-none d-sm-block"
                           autoPlay
@@ -201,24 +329,100 @@ function Home() {
                           style={{
                             position: "absolute",
                             top: "97px",
-                            left: 0,
-                            width: "65%",
-                            height: "100vh",
-                            minWidth: "65%",
-                            minHeight: "100vh",
+                            left: 800,
+                            width: "96vh",
+                            height: "92vh",
+                            minWidth: "50%",
+                            minHeight: "60vh",
                             objectFit: "cover",
                             margin: 0,
                             padding: 0,
                             display: "block",
-                            borderBottomRightRadius: "142px",
+                            borderTopLeftRadius: "800px",
+                            zIndex: "",
                           }}
                         >
                           <source src={showReel01} type="video/mp4" />
                           Ton navigateur ne supporte pas la vidéo.
                         </video>
+                        
+
+                        <div
+                          style={{
+                            position: "absolute",       // positionné par rapport à son parent
+                            top: "500px",                 // centre vertical approximatif
+                            left: "80px",              // distance depuis le bord droit
+                            transform: "translateY(-50%)", // centre exact verticalement
+                            maxWidth: "400px",          // limite la largeur du texte
+                            color: "white",
+                            fontSize: 28,
+                            fontFamily: " 'Aboreto', 'SF Pro', 'Plus Jakarta Sans', sans-serif",
+                            fontWeight: 400,
+                            lineHeight: "32px",
+                            wordWrap: "break-word",
+                            textTransform: "uppercase", // majuscules
+                            textAlign: "left",          // aligné à gauche         // texte aligné à droite à l’intérieur du bloc
+                          }}
+                        >
+                          notre espace créatif est un véritable laboratoire d’idées où chaque projet prend vie
+                        </div>
+
+                        <div
+                          style={{
+                            position: "absolute",       // positionné par rapport à son parent
+                            top: "50%",                 // centre vertical approximatif
+                            left: "80px",              // distance depuis le bord droit
+                            transform: "translateY(-50%)", // centre exact verticalement
+                            maxWidth: "400px",          // limite la largeur du texte
+                            color: "white",
+                            fontSize: 15,
+                            fontFamily: "SF Pro, sans-serif",
+                            fontWeight: 400,
+                            lineHeight: "20px",
+                            wordWrap: "break-word",
+                            fontFamily: " 'SF Pro', sans-serif",
+                            textAlign: "left",
+                          }}
+                        >
+                          Entre briefing précis, brainstorming intense, visuels inspirants, croquis et maquettes, nous explorons sans cesse de nouvelles pistes pour créer des concepts uniques et percutants.
+                        </div>
+
+                        <div
+                          style={{
+                            position: "fixed",
+                            top: "800px",
+                            left: "80px",
+                            width: "200px",
+                            height: "60px",
+                            display: "flex",
+                            alignItems: "center",
+                            justifyContent: "center",
+                            border: "1px solid white",
+                            // borderRadius: "6px",
+                            backgroundColor: "transparent",
+                            cursor: "pointer",
+                            zIndex: 10000,
+                            textAlign: "center",
+                          }}
+                        >
+                          <span
+                            style={{
+                              color: "white",
+                              Top: "80px",
+                              fontSize: 16,
+                              fontFamily: "'Plus Jakarta Sans', sans-serif", // <- ici
+                              fontWeight: 700,
+                              textTransform: "uppercase",
+                              lineHeight: "26px",
+                              wordWrap: "break-word",
+                            }}
+                          >
+                            DEMANDE DE DEVIS
+                          </span>
+                        </div>
 
                         <div>
-                          {/* section à developer */}
+                          {/* section à developer
 
                           <div
                             style={{ position: "relative", padding: "1rem" }}
@@ -232,17 +436,17 @@ function Home() {
                               }}
                             >
                               MAKE YOUR BRAND FLY
-                            </h2>
+                            </h2> */}
 
-                            <div
-                              style={{
-                                maxWidth: "800px",
-                                margin: "0 auto",
-                                marginLeft: "61%",
-                              }}
-                            >
-                              {/* 🖼️ Image avec forme d’enroulement */}
-                              <img
+                          <div
+                            style={{
+                              maxWidth: "800px",
+                              margin: "0 auto",
+                              marginLeft: "61%",
+                            }}
+                          >
+                            {/* 🖼️ Image avec forme d’enroulement */}
+                            {/* <img
                                 src={photoHeader}
                                 alt="Header"
                                 style={{
@@ -298,11 +502,11 @@ function Home() {
                                 }}
                                 src={shapeAbout}
                                 alt=""
-                              />
+                              /> */}
 
-                              <div style={{ clear: "both" }}></div>
-                            </div>
+                            <div style={{ clear: "both" }}></div>
                           </div>
+                          {/* </div> */}
 
                           {/* <div style={{ position: "relative", right:"50px", }}>
                             <h2 style={{ textAlign: 'right', color: 'black', }} >MAKE YOUR BRAND FLY</h2>
@@ -444,18 +648,22 @@ function Home() {
                         playsInline
                         style={{
                           position: "absolute",
-                          top: 0,
+                          top: "5000px",
                           left: 0,
                           width: "100vw", // la vidéo prend toute la largeur de l’écran
                           height: "100vh", // et toute la hauteur
                           objectFit: "cover",
-                          borderTopLeftRadius: "142px",
+                          borderTopRightRadius: "142px",
                           borderBottomRightRadius: "142px",
+                          overflow: "hidden",
                         }}
                       >
                         <source src={bgThumb23} type="video/mp4" />
                         Ton navigateur ne supporte pas la vidéo.
                       </video>
+
+                      {/* <img style={{ width: '100%', height: '100%', transform: 'rotate(-90deg)', transformOrigin: 'top left', borderRadius: 138 }} src={photoColor} /> */}
+
                     </div>
                   </div>
                 </div>
@@ -467,7 +675,7 @@ function Home() {
                       <div
                         className="td-hero-feature"
                         style={{
-                          padding: "60px",
+                          padding: "130px",
                         }}
                       >
                         <ul>
@@ -1228,9 +1436,10 @@ function Home() {
                 </div>
               </div>
             </div>
-            {/* //AVIS CLIENTS// */}
+            <div className="container"></div>
+            {/* //AVIS CLIENTS//
             <div className="td-testimonial-area grey-bg-2 pt-155 pb-120">
-              <div className="container">
+
                 <div className="row">
                   <div className="col-lg-3 col-md-4">
                     <div
@@ -1417,7 +1626,7 @@ function Home() {
                   </div>
                 </div>
               </div>
-            </div>
+            </div> */}
 
 
             <div
@@ -1431,148 +1640,148 @@ function Home() {
                 borderBottomLeftRadius: "142px",
               }}
             >
-                  <div style={{
-    backgroundColor: '#e26F57',
-    padding: '20px 0',
-    borderTopRightRadius: '140px',
-    borderBottomLeftRadius: '140px',
-    width: '87vw',      // prend toute la largeur de l'écran
-    position: 'relative',
-    marginLeft: "6%",
-    marginTop: "-46px"
-  }}>
-                  <div className="col-12">
-                    <div
-                      className="td-brand-wrap"
-                      // style={{ backgroundColor: '#e26F57', padding: '20px 0', borderRadius: '10px', }}
-                    >
-                      <div className="swiper-container td-brand-slide-active">
-                        <div className="swiper-wrapper slide-transtion">
-                          <div className="swiper-slide">
-                            <div className="td-brand-item">
-                              <img src={logoBrand1} alt="" />
-                            </div>
+              <div style={{
+                backgroundColor: '#e26F57',
+                padding: '20px 0',
+                borderTopRightRadius: '140px',
+                borderBottomLeftRadius: '140px',
+                width: '87vw',      // prend toute la largeur de l'écran
+                position: 'relative',
+                marginLeft: "6%",
+                marginTop: "-46px"
+              }}>
+                <div className="col-12">
+                  <div
+                    className="td-brand-wrap"
+
+                  >
+                    <div className="swiper-container td-brand-slide-active">
+                      <div className="swiper-wrapper slide-transtion">
+                        <div className="swiper-slide">
+                          <div className="td-brand-item brandLogo">
+                            <img src={logoBrand1} alt="" />
                           </div>
-                          <div className="swiper-slide">
-                            <div className="td-brand-item">
-                              <img src={logoBrand2} alt="" />
-                            </div>
+                        </div>
+                        <div className="swiper-slide">
+                          <div className="td-brand-item">
+                            <img src={logoBrand2} alt="" />
                           </div>
-                          <div className="swiper-slide">
-                            <div className="td-brand-item">
-                              <img src={logoBrand3} alt="" />
-                            </div>
+                        </div>
+                        <div className="swiper-slide">
+                          <div className="td-brand-item">
+                            <img src={logoBrand3} alt="" />
                           </div>
-                          <div className="swiper-slide">
-                            <div className="td-brand-item">
-                              <img src={logoBrand4} alt="" />
-                            </div>
+                        </div>
+                        <div className="swiper-slide">
+                          <div className="td-brand-item">
+                            <img src={logoBrand4} alt="" />
                           </div>
-                          <div className="swiper-slide">
-                            <div className="td-brand-item">
-                              <img src={logoBrand5} alt="" />
-                            </div>
+                        </div>
+                        <div className="swiper-slide">
+                          <div className="td-brand-item">
+                            <img src={logoBrand5} alt="" />
                           </div>
-                          <div className="swiper-slide">
-                            <div className="td-brand-item">
-                              <img src={logoBrand6} alt="" />
-                            </div>
+                        </div>
+                        <div className="swiper-slide">
+                          <div className="td-brand-item">
+                            <img src={logoBrand6} alt="" />
                           </div>
                         </div>
                       </div>
                     </div>
                   </div>
-
-                  <br /><br /><br /><br />
-
-                  <div className="col-12">
-                    <div
-                      className="td-brand-wrap"
-                      // style={{ backgroundColor: '#e26F57', padding: '20px 0', borderRadius: '10px' }}
-                    >
-                      <div className="swiper-container td-brand-slide-active">
-                        <div className="swiper-wrapper slide-transtion">
-                          <div className="swiper-slide">
-                            <div className="td-brand-item">
-                              <img src={logoBrand7} alt="" />
-                            </div>
-                          </div>
-                          <div className="swiper-slide">
-                            <div className="td-brand-item">
-                              <img src={logoBrand8} alt="" />
-                            </div>
-                          </div>
-                          <div className="swiper-slide">
-                            <div className="td-brand-item">
-                              <img src={logoBrand9} alt="" />
-                            </div>
-                          </div>
-                          <div className="swiper-slide">
-                            <div className="td-brand-item">
-                              <img src={logoBrand10} alt="" />
-                            </div>
-                          </div>
-                          <div className="swiper-slide">
-                            <div className="td-brand-item">
-                              <img src={logoBrand11} alt="" />
-                            </div>
-                          </div>
-                          <div className="swiper-slide">
-                            <div className="td-brand-item">
-                              <img src={logoBrand12} alt="" />
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <br /><br /><br /><br />
-
-                  <div className="col-12">
-                    <div
-                      className="td-brand-wrap"
-                      // style={{ backgroundColor: '#e26F57', padding: '20px 0', borderRadius: '10px' }}
-                    >
-                      <div className="swiper-container td-brand-slide-active">
-                        <div className="swiper-wrapper slide-transtion">
-                          <div className="swiper-slide">
-                            <div className="td-brand-item">
-                              <img src={logoBrand13} alt="" />
-                            </div>
-                          </div>
-                          <div className="swiper-slide">
-                            <div className="td-brand-item">
-                              <img src={logoBrand14} alt="" />
-                            </div>
-                          </div>
-                          <div className="swiper-slide">
-                            <div className="td-brand-item">
-                              <img src={logoBrand15} alt="" />
-                            </div>
-                          </div>
-                          <div className="swiper-slide">
-                            <div className="td-brand-item">
-                              <img src={logoBrand16} alt="" />
-                            </div>
-                          </div>
-                          <div className="swiper-slide">
-                            <div className="td-brand-item">
-                              <img src={logoBrand17} alt="" />
-                            </div>
-                          </div>
-                          <div className="swiper-slide">
-                            <div className="td-brand-item">
-                              <img src={logoBrand18} alt="" />
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
                 </div>
+
+                <br /><br /><br /><br />
+
+                <div className="col-12">
+                  <div
+                    className="td-brand-wrap"
+                  // style={{ backgroundColor: '#e26F57', padding: '20px 0', borderRadius: '10px' }}
+                  >
+                    <div className="swiper-container td-brand-slide-active">
+                      <div className="swiper-wrapper slide-transtion">
+                        <div className="swiper-slide">
+                          <div className="td-brand-item brandLogo">
+                            <img src={logoBrand7} alt="" />
+                          </div>
+                        </div>
+                        <div className="swiper-slide">
+                          <div className="td-brand-item">
+                            <img src={logoBrand8} alt="" />
+                          </div>
+                        </div>
+                        <div className="swiper-slide">
+                          <div className="td-brand-item">
+                            <img src={logoBrand9} alt="" />
+                          </div>
+                        </div>
+                        <div className="swiper-slide">
+                          <div className="td-brand-item">
+                            <img src={logoBrand10} alt="" />
+                          </div>
+                        </div>
+                        <div className="swiper-slide">
+                          <div className="td-brand-item">
+                            <img src={logoBrand11} alt="" />
+                          </div>
+                        </div>
+                        <div className="swiper-slide">
+                          <div className="td-brand-item">
+                            <img src={logoBrand12} alt="" />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
+
+                <br /><br /><br /><br />
+
+                <div className="col-12">
+                  <div
+                    className="td-brand-wrap"
+                  // style={{ backgroundColor: '#e26F57', padding: '20px 0', borderRadius: '10px' }}
+                  >
+                    <div className="swiper-container td-brand-slide-active">
+                      <div className="swiper-wrapper slide-transtion">
+                        <div className="swiper-slide">
+                          <div className="td-brand-item">
+                            <img src={logoBrand13} alt="" />
+                          </div>
+                        </div>
+                        <div className="swiper-slide">
+                          <div className="td-brand-item">
+                            <img src={logoBrand14} alt="" />
+                          </div>
+                        </div>
+                        <div className="swiper-slide">
+                          <div className="td-brand-item">
+                            <img src={logoBrand15} alt="" />
+                          </div>
+                        </div>
+                        <div className="swiper-slide">
+                          <div className="td-brand-item">
+                            <img src={logoBrand16} alt="" />
+                          </div>
+                        </div>
+                        <div className="swiper-slide">
+                          <div className="td-brand-item">
+                            <img src={logoBrand17} alt="" />
+                          </div>
+                        </div>
+                        <div className="swiper-slide">
+                          <div className="td-brand-item">
+                            <img src={logoBrand18} alt="" />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
 
             <div className="td-blog-area pt-155 pb-130">
               <div className="container">
@@ -1721,7 +1930,8 @@ function Home() {
                 </div>
               </div>
             </div>
-
+            <ClientReview />
+            <Faq />
             <div className="td-cta-area">
               <div className="container">
                 <div className="col-lg-12">
