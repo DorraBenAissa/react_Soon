@@ -70,6 +70,20 @@ body {
   font-family: 'Aboreto', sans-serif;
 }
 
+@font-face {
+  font-family: "Amelaryas";
+  src: url("https://ton-site.com/fonts/Amelaryas-Regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "ContaxProLightSC";
+  src: url("https://ton-site.com/fonts/ContaxPro-LightSC.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "FuturaRound";
+  src: url("https://ton-site.com/fonts/FuturaRound-Regular.woff2") format("woff2");
+}
 
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bellefair&family=Roboto:ital,wght@0,100..900;1,100..900&family=DM+Serif+Display:ital@0;1&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&family=Rethink+Sans:ital,wght@0,400..800;1,400..800&family=Teko:wght@300..700&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
 :root {

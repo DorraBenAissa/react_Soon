@@ -60,8 +60,7 @@ const GoogleReviewsCarousel = () => {
     margin: "0 0.5rem",
     border: "none",
     borderRadius: "6px",
-    backgroundColor: "#4285F4",
-    color: "#fff",
+  
     cursor: "pointer",
   };
 
@@ -69,8 +68,66 @@ const GoogleReviewsCarousel = () => {
     <div style={{ maxWidth: "1000px", margin: "0 auto", textAlign: "center" }}>
       <h2>Avis de nos clients</h2>
       <div style={{ marginBottom: "1rem" }}>
-        <button style={buttonStyle} onClick={() => scroll("left")}>◀</button>
-        <button style={buttonStyle} onClick={() => scroll("right")}>▶</button>
+        <span className="td-testimonial-prev d-inline-block">
+                                <svg
+                                  width="31"
+                                  height="24"
+                                  viewBox="0 0 31 24"
+                                  fill="none"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  onClick={() => scroll("right")}
+                                >
+                                  <path
+                                    d="M30.8699 12.2679L0.014612 12.4214"
+                                    stroke="currentColor"
+                                    strokeWidth="1.5"
+                                    strokeMiterlimit="10"
+                                  />
+                                  <path
+                                    d="M11.5445 0C11.5445 6.63283 6.38111 12 2.56383e-05 12"
+                                    stroke="currentColor"
+                                    strokeWidth="1.5"
+                                    strokeMiterlimit="10"
+                                  />
+                                  <path
+                                    d="M4.08971e-05 12C6.38112 12 11.5446 17.3671 11.5446 24"
+                                    stroke="currentColor"
+                                    strokeWidth="1.5"
+                                    strokeMiterlimit="10"
+                                  />
+                                </svg>
+                              </span>
+                              <span className="td-testimonial-next ml-15 d-inline-block">
+                                <svg
+                                  width="31"
+                                  height="24"
+                                  viewBox="0 0 31 24"
+                                  fill="none"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  onClick={() => scroll("left")}
+                                >
+                                  <path
+                                    d="M-0.000234102 12.2679L30.855 12.4214"
+                                    stroke="currentColor"
+                                    strokeWidth="1.5"
+                                    strokeMiterlimit="10"
+                                  />
+                                  <path
+                                    d="M19.3251 0C19.3251 6.63283 24.4886 12 30.8696 12"
+                                    stroke="currentColor"
+                                    strokeWidth="1.5"
+                                    strokeMiterlimit="10"
+                                  />
+                                  <path
+                                    d="M30.8696 12C24.4885 12 19.3251 17.3671 19.3251 24"
+                                    stroke="currentColor"
+                                    strokeWidth="1.5"
+                                    strokeMiterlimit="10"
+                                  />
+                                </svg>
+                              </span>
+        {/* <button style={buttonStyle} onClick={() => scroll("left")}>◀</button>
+        <button style={buttonStyle} onClick={() => scroll("right")}>▶</button> */}
       </div>
       <div style={containerStyle} ref={carouselRef}>
         {googleReviews.map((review, index) => (

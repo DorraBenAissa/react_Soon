@@ -52,11 +52,13 @@ import bgImage from "../../assets/img/project/bg.jpg";
 
 import cta1 from "../../assets/img/cta/cta.png";
 import cta2 from "../../assets/img/cta/cta-2.png";
+import soonWhiteLogo from "../../assets/img/logo/WHITH3.webp";
 
 import heroVideo from "../../assets/video/hero3.mp4";
 import heroVideo2 from "../../assets/video/hero2.mp4";
 import bgThumb23 from "../../assets/video/Show_reel_1920x1080_33s_01.mp4";
 import showReel01 from "../../assets/video/bg-thumb3.mp4";
+import videoSource from "../../assets/video/AdobeStock_1729280486_Video_HD_Preview.mov";
 
 // COMPONENTS
 // import Odometer from "../../components/Odometer";
@@ -79,6 +81,7 @@ import ScrollToTopAutomatic from "../../components/ScrollToTopAutomatic";
 import AutoCloseMenu from "../../components/AutoCloseMenu";
 import ClientReview from "../../components/ClientReview";
 import Faq from "../../components/Faq";
+// import GoogleReviews from "../../components/GoogleReviews";
 // import AutoVideo from "../../components/AutoVideo";
 
 import '../../assets/css/main.css';
@@ -214,9 +217,9 @@ function Home() {
                     <span
                       style={{
                         color: "white",
-                        Top: "80px",
+                        top: "80px",
                         fontSize: 16,
-                        fontFamily: "'Plus Jakarta Sans', sans-serif", // <- ici
+                        fontFamily: " 'Aboreto', 'SF Pro', 'Plus Jakarta Sans', sans-serif",
                         fontWeight: 700,
                         textTransform: "uppercase",
                         lineHeight: "26px",
@@ -226,46 +229,52 @@ function Home() {
                       SEE YOU SOON ?
                     </span>
                   </div>
-                  <header
-                    style={{
-                      width: "100%",
-                      top: "60px",
-                      paddingLeft: "40px", // espace entre le bord gauche et le premier bouton
-                      display: "flex",
-                      justifyContent: "flex-start",
-                      position: "fixed",
-                      top: 0,
-                      left: 0,
-                      top: "20px",
-                      zIndex: 10000,
-                      backgroundColor: "transparent",
-                      fontFamily: "'SF Pro', sans-serif",
-                    }}
-                  >
-                    {["ACCUEIL", "SERVICES", "À PROPOS"].map((item, index) => (
-                      <button
-                        key={index}
-                        style={{
-                          padding: "10px 20px",
-                          border: "none",            // plus de contour
-                          borderRadius: 0,            // coins droits
-                          backgroundColor: "transparent",
-                          color: "white",
-                          fontWeight: 700,
-                          fontSize: 16,
-                          textTransform: "uppercase",
-                          cursor: "pointer",
-                          transition: "0.3s",
-                        }}
-                        onMouseEnter={(e) => (e.target.style.backgroundColor = "rgba(255,255,255,0.2)")}
-                        onMouseLeave={(e) => (e.target.style.backgroundColor = "transparent")}
-                      >
+
+<header
+  style={{
+    width: "100%",
+    paddingLeft: "40px",
+    display: "flex",
+    alignItems: "center",
+    fontFamily: "'Aboreto', 'SF Pro', 'Plus Jakarta Sans', sans-serif",
+    position: "fixed",
+    top: "20px",
+    left: 0,
+    zIndex: 10000,
+    backgroundColor: "transparent",
+  }}
+>
+  {/* Logo à gauche */}
+  <Link to="/" style={{ marginRight: "20px" }}>
+    <img src={soonWhiteLogo} alt="Logo Soon" style={{ width: "96px" }} />
+  </Link>
+
+  {/* Menu */}
+  {["ACCUEIL", "SERVICES", "À PROPOS"].map((item, index) => (
+    <button
+      key={index}
+      style={{
+        padding: "10px 20px",
+        border: "none",
+        borderRadius: 0,
+        backgroundColor: "transparent",
+        color: "white",
+        fontWeight: 700,
+        fontFamily: "'Aboreto', 'SF Pro', 'Plus Jakarta Sans', sans-serif",
+        fontSize: 16,
+        textTransform: "uppercase",
+        cursor: "pointer",
+        transition: "0.3s",
+      }}
+      onMouseEnter={(e) => (e.target.style.backgroundColor = "rgba(255,255,255,0.2)")}
+      onMouseLeave={(e) => (e.target.style.backgroundColor = "transparent")}
+    >
                         {item}
                       </button>
                     ))}
 
                   </header>
-
+                  
 
 
                   <div className="col-lg-10">
@@ -275,47 +284,36 @@ function Home() {
                         data-wow-delay=".5s"
                         data-wow-duration="1s"
                       >
-                        <img
-                          src={photoColor}
-                          alt="Header"
-                          style={{
-                            width: "200px",
-                            borderRadius: "142px",
-                            position: "absolute",
-                            zIndex: "9000",
-                            top: "60%",       // supprime l’espace après 50
-                            left: "40%",      // supprime l’espace après 50
-                            transform: "translate(-50%, -50%)", // supprime les espaces
-                          }}
-                        />
+
+                        
                         <div
                           style={{
                             color: "white",
-                             position: "absolute",
+                            position: "absolute",
                             fontSize: 70,
                             fontFamily: "Aboreto, sans-serif",
                             fontWeight: 400,
                             top: "160px",       // supprime l’espace après 50
-                            left: "40%",  
+                            left: "40%",
                             lineHeight: "59px",
                             wordWrap: "break-word",
-                             zIndex: "10000",
+                            zIndex: "10000",
                           }}
                         >
                           Make your
                         </div>
-                                                <div
+                        <div
                           style={{
                             color: "white",
-                             position: "absolute",
+                            position: "absolute",
                             fontSize: 70,
                             fontFamily: "Aboreto, sans-serif",
                             fontWeight: 400,
                             top: "250px",       // supprime l’espace après 50
-                            left: "35%",  
+                            left: "35%",
                             lineHeight: "59px",
                             wordWrap: "break-word",
-                             zIndex: "10000",
+                            zIndex: "10000",
                           }}
                         >
                           Brand Fly
@@ -345,7 +343,19 @@ function Home() {
                           <source src={showReel01} type="video/mp4" />
                           Ton navigateur ne supporte pas la vidéo.
                         </video>
-                        
+<img
+                          src={photoColor}
+                          alt="Header"
+                          style={{
+                            width: "170px",
+                            borderRadius: "142px",
+                            position: "absolute",
+                            zIndex: "9000",
+                            top: "34%",       // supprime l’espace après 50
+                            left: "40%",      // supprime l’espace après 50
+                            transform: "translate(-50%, -50%)", // supprime les espaces
+                          }}
+                        />
 
                         <div
                           style={{
@@ -370,7 +380,7 @@ function Home() {
                         <div
                           style={{
                             position: "absolute",       // positionné par rapport à son parent
-                            top: "50%",                 // centre vertical approximatif
+                            top: "25%",                 // centre vertical approximatif
                             left: "80px",              // distance depuis le bord droit
                             transform: "translateY(-50%)", // centre exact verticalement
                             maxWidth: "400px",          // limite la largeur du texte
@@ -412,6 +422,8 @@ function Home() {
                               fontSize: 16,
                               fontFamily: "'Plus Jakarta Sans', sans-serif", // <- ici
                               fontWeight: 700,
+                              fontFamily: " 'Aboreto', 'SF Pro', 'Plus Jakarta Sans', sans-serif",
+
                               textTransform: "uppercase",
                               lineHeight: "26px",
                               wordWrap: "break-word",
@@ -639,7 +651,7 @@ function Home() {
                 <div className="">
                   <div className="">
                     <div className="td-hero-bottom-thumb">
-                      <video
+                      {/* <video
                         data-speed="0.6"
                         className="w-100 round-2"
                         autoPlay
@@ -660,7 +672,7 @@ function Home() {
                       >
                         <source src={bgThumb23} type="video/mp4" />
                         Ton navigateur ne supporte pas la vidéo.
-                      </video>
+                      </video> */}
 
                       {/* <img style={{ width: '100%', height: '100%', transform: 'rotate(-90deg)', transformOrigin: 'top left', borderRadius: 138 }} src={photoColor} /> */}
 
@@ -668,6 +680,29 @@ function Home() {
                   </div>
                 </div>
               </div>
+
+              {/* Vidéo après le bouton */}
+<div style={{ width: "100%", marginTop: "120px" }}>
+  <video
+    autoPlay
+    muted
+    loop
+    playsInline
+    style={{
+      width: "100%",
+      height: "auto",
+      display: "block",
+      objectFit: "cover",
+      borderTopLeftRadius: "142px",
+      display : "flex",
+                          borderBottomRightRadius: "142px",
+    }}
+  >
+    <source src={bgThumb23} type="video/mp4" />
+    Votre navigateur ne supporte pas la vidéo.
+  </video>
+</div>
+
               <div className="pb-60">
                 <div className="container">
                   <div className="row">
@@ -675,7 +710,7 @@ function Home() {
                       <div
                         className="td-hero-feature"
                         style={{
-                          padding: "130px",
+                          padding: "30px",
                         }}
                       >
                         <ul>
@@ -753,14 +788,14 @@ function Home() {
                       className="td-about-left mb-30"
                     >
                       <div
-                        style={{
-                          height: "100%",
-                          marginLeft: "0%",
-                          width: "100%",
-                        }}
+                        // style={{
+                        //   height: "100%",
+                        //   marginLeft: "0%",
+                        //   width: "100%",
+                        // }}
                         className="td-about-left-thumb ml-60 fix td-rounded-10"
                       >
-                        <img
+                        {/* <img
                           data-speed=".9"
                           src={thumbAbout}
                           alt=""
@@ -768,7 +803,22 @@ function Home() {
                             borderTopRightRadius: "84px",
                             height: "100%",
                           }}
-                        />
+                        /> */}
+                        <video
+  data-speed=".9"
+  src={videoSource} // Remplace videoSource par ton fichier vidéo ou URL
+  autoPlay
+  loop
+  muted
+  playsInline
+  style={{
+    borderTopRightRadius: "84px",
+    height: "100%",
+    width: "100%", // optionnel, pour que la vidéo remplisse le conteneur
+    objectFit: "cover", // pour que la vidéo garde le ratio et remplisse le conteneur
+  }}
+/>
+
                       </div>
                     </div>
                   </div>
@@ -1930,6 +1980,7 @@ function Home() {
                 </div>
               </div>
             </div>
+
             <ClientReview />
             <Faq />
             <div className="td-cta-area">
