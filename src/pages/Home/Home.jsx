@@ -230,51 +230,51 @@ function Home() {
                     </span>
                   </div>
 
-<header
-  style={{
-    width: "100%",
-    paddingLeft: "40px",
-    display: "flex",
-    alignItems: "center",
-    fontFamily: "'Aboreto', 'SF Pro', 'Plus Jakarta Sans', sans-serif",
-    position: "fixed",
-    top: "20px",
-    left: 0,
-    zIndex: 10000,
-    backgroundColor: "transparent",
-  }}
->
-  {/* Logo à gauche */}
-  <Link to="/" style={{ marginRight: "20px" }}>
-    <img src={soonWhiteLogo} alt="Logo Soon" style={{ width: "96px" }} />
-  </Link>
+                  <header
+                    style={{
+                      width: "100%",
+                      paddingLeft: "40px",
+                      display: "flex",
+                      alignItems: "center",
+                      fontFamily: "'Aboreto', 'SF Pro', 'Plus Jakarta Sans', sans-serif",
+                      position: "fixed",
+                      top: "20px",
+                      left: 0,
+                      zIndex: 10000,
+                      backgroundColor: "transparent",
+                    }}
+                  >
+                    {/* Logo à gauche */}
+                    <Link to="/" style={{ marginRight: "20px" }}>
+                      <img src={soonWhiteLogo} alt="Logo Soon" style={{ width: "96px" }} />
+                    </Link>
 
-  {/* Menu */}
-  {["ACCUEIL", "SERVICES", "À PROPOS"].map((item, index) => (
-    <button
-      key={index}
-      style={{
-        padding: "10px 20px",
-        border: "none",
-        borderRadius: 0,
-        backgroundColor: "transparent",
-        color: "white",
-        fontWeight: 700,
-        fontFamily: "'Aboreto', 'SF Pro', 'Plus Jakarta Sans', sans-serif",
-        fontSize: 16,
-        textTransform: "uppercase",
-        cursor: "pointer",
-        transition: "0.3s",
-      }}
-      onMouseEnter={(e) => (e.target.style.backgroundColor = "rgba(255,255,255,0.2)")}
-      onMouseLeave={(e) => (e.target.style.backgroundColor = "transparent")}
-    >
+                    {/* Menu */}
+                    {["ACCUEIL", "SERVICES", "À PROPOS"].map((item, index) => (
+                      <button
+                        key={index}
+                        style={{
+                          padding: "10px 20px",
+                          border: "none",
+                          borderRadius: 0,
+                          backgroundColor: "transparent",
+                          color: "white",
+                          fontWeight: 700,
+                          fontFamily: "'Aboreto', 'SF Pro', 'Plus Jakarta Sans', sans-serif",
+                          fontSize: 16,
+                          textTransform: "uppercase",
+                          cursor: "pointer",
+                          transition: "0.3s",
+                        }}
+                        onMouseEnter={(e) => (e.target.style.backgroundColor = "rgba(255,255,255,0.2)")}
+                        onMouseLeave={(e) => (e.target.style.backgroundColor = "transparent")}
+                      >
                         {item}
                       </button>
                     ))}
 
                   </header>
-                  
+
 
 
                   <div className="col-lg-10">
@@ -285,7 +285,7 @@ function Home() {
                         data-wow-duration="1s"
                       >
 
-                        
+
                         <div
                           style={{
                             color: "white",
@@ -300,7 +300,7 @@ function Home() {
                             zIndex: "10000",
                           }}
                         >
-                          Make your
+                          Making your
                         </div>
                         <div
                           style={{
@@ -327,7 +327,7 @@ function Home() {
                           style={{
                             position: "absolute",
                             top: "97px",
-                            left: 800,
+                            left: 1100,
                             width: "96vh",
                             height: "92vh",
                             minWidth: "50%",
@@ -343,7 +343,7 @@ function Home() {
                           <source src={showReel01} type="video/mp4" />
                           Ton navigateur ne supporte pas la vidéo.
                         </video>
-<img
+                        <img
                           src={photoColor}
                           alt="Header"
                           style={{
@@ -352,7 +352,7 @@ function Home() {
                             position: "absolute",
                             zIndex: "9000",
                             top: "34%",       // supprime l’espace après 50
-                            left: "40%",      // supprime l’espace après 50
+                            left: "55%",      // supprime l’espace après 50
                             transform: "translate(-50%, -50%)", // supprime les espaces
                           }}
                         />
@@ -682,26 +682,26 @@ function Home() {
               </div>
 
               {/* Vidéo après le bouton */}
-<div style={{ width: "100%", marginTop: "120px" }}>
-  <video
-    autoPlay
-    muted
-    loop
-    playsInline
-    style={{
-      width: "100%",
-      height: "auto",
-      display: "block",
-      objectFit: "cover",
-      borderTopLeftRadius: "142px",
-      display : "flex",
-                          borderBottomRightRadius: "142px",
-    }}
-  >
-    <source src={bgThumb23} type="video/mp4" />
-    Votre navigateur ne supporte pas la vidéo.
-  </video>
-</div>
+              <div style={{ width: "100%", marginTop: "120px" }}>
+                <video
+                  autoPlay
+                  muted
+                  loop
+                  playsInline
+                  style={{
+                    width: "100%",
+                    height: "auto",
+                    display: "block",
+                    objectFit: "cover",
+                    borderTopLeftRadius: "142px",
+                    display: "flex",
+                    borderBottomRightRadius: "142px",
+                  }}
+                >
+                  <source src={bgThumb23} type="video/mp4" />
+                  Votre navigateur ne supporte pas la vidéo.
+                </video>
+              </div>
 
               <div className="pb-60">
                 <div className="container">
@@ -805,19 +805,19 @@ function Home() {
                           }}
                         /> */}
                         <video
-  data-speed=".9"
-  src={videoSource} // Remplace videoSource par ton fichier vidéo ou URL
-  autoPlay
-  loop
-  muted
-  playsInline
-  style={{
-    borderTopRightRadius: "84px",
-    height: "100%",
-    width: "100%", // optionnel, pour que la vidéo remplisse le conteneur
-    objectFit: "cover", // pour que la vidéo garde le ratio et remplisse le conteneur
-  }}
-/>
+                          data-speed=".9"
+                          src={videoSource} // Remplace videoSource par ton fichier vidéo ou URL
+                          autoPlay
+                          loop
+                          muted
+                          playsInline
+                          style={{
+                            borderTopRightRadius: "84px",
+                            height: "100%",
+                            width: "100%", // optionnel, pour que la vidéo remplisse le conteneur
+                            objectFit: "cover", // pour que la vidéo garde le ratio et remplisse le conteneur
+                          }}
+                        />
 
                       </div>
                     </div>
