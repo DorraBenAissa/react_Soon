@@ -186,7 +186,7 @@ function Home() {
         <div id="smooth-content">
           <main>
             <div
-              style={{ paddingBottom: "0px", backgroundColor: '#e26F57', }}
+              style={{ paddingBottom: "0px", backgroundColor: '#e26F57',  }}
               className="td-hero-area td-hero-spacing p-relative fix z-index-1"
             >
               {/* <img className="td-hero-shape p-absolute" src={shapeImg} alt="" /> */}
@@ -195,6 +195,7 @@ function Home() {
                   style={{ marginRight: "-31%" }}
                   className="row justify-content-center"
                 >
+                  
                   <div
                     style={{
                       position: "fixed",
@@ -380,7 +381,7 @@ function Home() {
                         <div
                           style={{
                             position: "absolute",       // positionné par rapport à son parent
-                            top: "25%",                 // centre vertical approximatif
+                            top: "27%",                 // centre vertical approximatif
                             left: "80px",              // distance depuis le bord droit
                             transform: "translateY(-50%)", // centre exact verticalement
                             maxWidth: "400px",          // limite la largeur du texte
@@ -843,15 +844,7 @@ function Home() {
                       </p>
 
                       <div className="td-btn-group mb-35">
-                        {/* <a className="td-btn-circle" href="about.html">
-                          <i className="fa-solid fa-arrow-right"></i>
-                        </a> */}
-                        {/* <a
-                          className="td-btn-2 td-btn-primary"
-                          href="about.html"
-                        >
-                          À PROPOS
-                        </a> */}
+             
                         <Link to="/about" className="td-btn-circle">
                           <i className="fa-solid fa-arrow-right"></i>
                         </Link>
