@@ -2,7 +2,7 @@ import { useState, useRef, useEffect } from "react";
 import AutoPopUp from "../assets/video/AdobeStock_1533669189_Video_HD_Preview.mov";
 
 const AutoVideo = ({ width = 160, height = 285 }) => {
-  const [isVisible, setIsVisible] = useState(true);
+  const [isVisible, setIsVisible] = useState(false); // ⛔ Fermé au chargement
   const [isChatOpen, setIsChatOpen] = useState(false);
   const [isTyping, setIsTyping] = useState(false);
   const [messages, setMessages] = useState([
@@ -14,12 +14,44 @@ const AutoVideo = ({ width = 160, height = 285 }) => {
   const [input, setInput] = useState("");
   const chatRef = useRef(null);
 
-  // 🎯 Scroll automatique vers le bas à chaque nouveau message
+  // 📌 Auto-scroll dans le chat
   useEffect(() => {
     if (chatRef.current) {
       chatRef.current.scrollTop = chatRef.current.scrollHeight;
     }
   }, [messages, isTyping]);
+
+  // 📌 Ouvre en scroll bas, ferme en scroll haut
+  useEffect(() => {
+    let lastScroll = 0;
+
+    const handleScroll = () => {
+      const currentScroll = window.scrollY;
+
+      const scrollingDown = currentScroll > lastScroll;
+      const scrollingUp = currentScroll < lastScroll;
+
+      const atBottom =
+        window.innerHeight + currentScroll >=
+        document.body.offsetHeight - 200;
+
+      // 🔽 Ouvre quand on atteint le bas
+      if (scrollingDown && atBottom) {
+        setIsVisible(true);
+      }
+
+      // 🔼 Ferme quand on remonte assez
+      if (scrollingUp && currentScroll < document.body.offsetHeight - 800) {
+        setIsVisible(false);
+        setIsChatOpen(false); // ferme aussi le chat
+      }
+
+      lastScroll = currentScroll;
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   // 🤖 Réponses automatiques
   const getBotReply = (msg) => {
@@ -29,23 +61,19 @@ const AutoVideo = ({ width = 160, height = 285 }) => {
     if (message.includes("aide") || message.includes("question"))
       return "Bien sûr 💡 Posez-moi votre question, je suis là pour vous aider.";
     if (message.includes("prix") || message.includes("tarif") || message.includes("devis"))
-      return "Nos tarifs varient selon la nature du projet 💼. Souhaitez-vous que je vous envoie une estimation gratuite ?";
-    if (message.includes("contact") || message.includes("email") || message.includes("téléphone"))
-      return "Vous pouvez nous contacter via le formulaire sur notre site 🌐 ou simplement continuer ici, je transmettrai votre message.";
+      return "Nos tarifs varient selon le projet 💼. Voulez-vous une estimation gratuite ?";
+    if (message.includes("contact") || message.includes("email"))
+      return "Vous pouvez nous contacter via notre site 🌐 ou continuer ici.";
     if (message.includes("site") || message.includes("portfolio"))
-      return "Notre site présente nos dernières réalisations 🌟 Souhaitez-vous que je vous envoie le lien ?";
-    if (message.includes("merci") || message.includes("thanks"))
-      return "Avec grand plaisir 😄 ! C’est toujours un bonheur de vous aider.";
+      return "Souhaitez-vous que je vous partage le lien du site ?";
+    if (message.includes("merci"))
+      return "Avec plaisir 😄 !";
     if (message.includes("nom") || message.includes("qui es-tu"))
-      return "Je m’appelle Léa 🤖, votre assistante virtuelle dédiée à répondre à vos questions et à vous guider !";
-    if (message.includes("horaire") || message.includes("ouvert"))
-      return "Notre équipe est disponible du lundi au vendredi, de 8h à 20h 🕗.";
-    if (message.includes("bye") || message.includes("au revoir"))
-      return "À bientôt 👋 Passez une merveilleuse journée !";
-    return "Je n’ai pas bien compris 🤔 Pouvez-vous reformuler ou préciser votre demande ?";
+      return "Je m’appelle Léa 🤖, votre assistante virtuelle !";
+    return "Je n’ai pas bien compris 🤔 Pouvez-vous reformuler ?";
   };
 
-  // ✉️ Gestion de l’envoi de message
+  // ✉️ Envoi message
   const handleSend = (e) => {
     e.preventDefault();
     if (!input.trim()) return;
@@ -64,7 +92,7 @@ const AutoVideo = ({ width = 160, height = 285 }) => {
 
   return (
     <>
-      {/* Bouton pour rouvrir la vidéo */}
+      {/* Bouton + pour rouvrir */}
       {!isVisible && (
         <button
           onClick={() => setIsVisible(true)}
@@ -86,6 +114,7 @@ const AutoVideo = ({ width = 160, height = 285 }) => {
         </button>
       )}
 
+      {/* AUTO VIDEO */}
       {isVisible && (
         <div
           style={{
@@ -95,12 +124,11 @@ const AutoVideo = ({ width = 160, height = 285 }) => {
             width: `${width}px`,
             height: `${height}px`,
             zIndex: 99,
-            transition: "all 0.4s ease-in-out", // 🎬 transition fluide
+            transition: "all 0.4s ease-in-out",
             transform: isVisible ? "scale(1)" : "scale(0.8)",
             opacity: isVisible ? 1 : 0,
           }}
         >
-          {/* 🎥 Vidéo */}
           <video
             autoPlay
             loop
@@ -111,7 +139,7 @@ const AutoVideo = ({ width = 160, height = 285 }) => {
               borderTopLeftRadius: "60px",
               borderBottomRightRadius: "60px",
               cursor: "pointer",
-              transition: "transform 0.3s ease", // effet au survol
+              transition: "transform 0.3s ease",
             }}
             onMouseEnter={(e) => (e.currentTarget.style.transform = "scale(1.03)")}
             onMouseLeave={(e) => (e.currentTarget.style.transform = "scale(1)")}
@@ -120,7 +148,7 @@ const AutoVideo = ({ width = 160, height = 285 }) => {
             <source src={AutoPopUp} type="video/mp4" />
           </video>
 
-          {/* ❌ Fermer la vidéo */}
+          {/* Fermer la vidéo */}
           <button
             onClick={() => setIsVisible(false)}
             style={{
@@ -134,9 +162,6 @@ const AutoVideo = ({ width = 160, height = 285 }) => {
               width: "30px",
               height: "30px",
               cursor: "pointer",
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
               color: "#fff",
               fontWeight: "bold",
             }}
@@ -144,7 +169,7 @@ const AutoVideo = ({ width = 160, height = 285 }) => {
             ×
           </button>
 
-          {/* 💬 Bulle Hello */}
+          {/* Bulle Hello */}
           <h5
             style={{
               position: "absolute",
@@ -158,7 +183,6 @@ const AutoVideo = ({ width = 160, height = 285 }) => {
               maxWidth: "150px",
               textAlign: "center",
               boxShadow: "0 2px 6px rgba(0,0,0,0.2)",
-              transition: "opacity 0.3s ease-in-out",
             }}
           >
             Hello
@@ -168,8 +192,6 @@ const AutoVideo = ({ width = 160, height = 285 }) => {
                 top: "100%",
                 left: "50%",
                 transform: "translateX(-50%)",
-                width: 0,
-                height: 0,
                 borderLeft: "10px solid transparent",
                 borderRight: "10px solid transparent",
                 borderTop: "10px solid #e26F57",
@@ -177,7 +199,7 @@ const AutoVideo = ({ width = 160, height = 285 }) => {
             ></span>
           </h5>
 
-          {/* 💬 Fenêtre du chat */}
+          {/* CHAT */}
           {isChatOpen && (
             <div
               style={{
@@ -194,7 +216,6 @@ const AutoVideo = ({ width = 160, height = 285 }) => {
                 padding: "10px",
                 display: "flex",
                 flexDirection: "column",
-                transition: "all 0.3s ease-in-out",
               }}
             >
               <div style={{ textAlign: "right" }}>
@@ -212,28 +233,15 @@ const AutoVideo = ({ width = 160, height = 285 }) => {
                 </button>
               </div>
 
-              {/* Zone des messages */}
               <div
                 ref={chatRef}
-                style={{
-                  flex: 1,
-                  overflowY: "auto",
-                  padding: "5px",
-                  scrollBehavior: "smooth",
-                }}
+                style={{ flex: 1, overflowY: "auto", padding: "5px" }}
               >
                 {messages.map((msg, i) => (
-                  <div
-                    key={i}
-                    style={{
-                      textAlign: msg.from === "user" ? "right" : "left",
-                      margin: "5px 0",
-                    }}
-                  >
+                  <div key={i} style={{ textAlign: msg.from === "user" ? "right" : "left", margin: "5px 0" }}>
                     <span
                       style={{
-                        backgroundColor:
-                          msg.from === "user" ? "#e26F57" : "#f1f1f1",
+                        backgroundColor: msg.from === "user" ? "#e26F57" : "#f1f1f1",
                         color: msg.from === "user" ? "#fff" : "#000",
                         padding: "8px 12px",
                         borderRadius: "18px",
@@ -246,7 +254,6 @@ const AutoVideo = ({ width = 160, height = 285 }) => {
                   </div>
                 ))}
 
-                {/* Animation "Léa écrit..." */}
                 {isTyping && (
                   <div style={{ textAlign: "left", margin: "5px 0" }}>
                     <span
@@ -261,24 +268,13 @@ const AutoVideo = ({ width = 160, height = 285 }) => {
                         fontStyle: "italic",
                       }}
                     >
-                      Léa est en train d’écrire
-                      <span className="dot">.</span>
-                      <span className="dot">.</span>
-                      <span className="dot">.</span>
+                      Léa est en train d’écrire...
                     </span>
                   </div>
                 )}
               </div>
 
-              {/* Barre d’envoi */}
-              <form
-                onSubmit={handleSend}
-                style={{
-                  display: "flex",
-                  gap: "6px",
-                  marginTop: "5px",
-                }}
-              >
+              <form onSubmit={handleSend} style={{ display: "flex", gap: "6px" }}>
                 <input
                   type="text"
                   value={input}
@@ -289,8 +285,6 @@ const AutoVideo = ({ width = 160, height = 285 }) => {
                     padding: "10px 12px",
                     borderRadius: "25px",
                     border: "1px solid #ccc",
-                    outline: "none",
-                    fontSize: "14px",
                   }}
                 />
                 <button
@@ -312,23 +306,6 @@ const AutoVideo = ({ width = 160, height = 285 }) => {
           )}
         </div>
       )}
-
-      {/* Animation CSS */}
-      <style>{`
-        .dot {
-          animation: blink 1s infinite;
-        }
-        .dot:nth-child(2) {
-          animation-delay: 0.2s;
-        }
-        .dot:nth-child(3) {
-          animation-delay: 0.4s;
-        }
-        @keyframes blink {
-          0%, 80%, 100% { opacity: 0; }
-          40% { opacity: 1; }
-        }
-      `}</style>
     </>
   );
 };

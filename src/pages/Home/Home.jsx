@@ -186,7 +186,7 @@ function Home() {
         <div id="smooth-content">
           <main>
             <div
-              style={{ paddingBottom: "0px", backgroundColor: '#e26F57',  }}
+              style={{ paddingBottom: "0px", backgroundColor: '#e26F57', }}
               className="td-hero-area td-hero-spacing p-relative fix z-index-1"
             >
               {/* <img className="td-hero-shape p-absolute" src={shapeImg} alt="" /> */}
@@ -195,43 +195,33 @@ function Home() {
                   style={{ marginRight: "-31%" }}
                   className="row justify-content-center"
                 >
-                  
+<header>
+                                    <div class="col-lg-4 col-md-4 col-sm-4 col-2">
+                        <div class="td-header-right text-end">
+                            <button class="td-header-search search-open-btn">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg" >
+                                    <path
+                                        d="M9.00004 17.0001C13.4183 17.0001 17.0001 13.4183 17.0001 9.00004C17.0001 4.58174 13.4183 1 9.00004 1C4.58174 1 1 4.58174 1 9.00004C1 13.4183 4.58174 17.0001 9.00004 17.0001Z"
+                                        stroke="#ffffffff" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M19.0004 18.9999L14.6504 14.6499" stroke="#ffffffff" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </button>
+                            <a href="contact.html"
+                                class="td-btn td-btn-lg d-none d-md-inline-block td-btn-switch-animation ml-10">
+                                <span class="d-flex align-items-center justify-content-center">
+                                    <span class="btn-text">Let’s Talk</span>
+                                    <span class="btn-icon"><i class="fa-sharp fa-solid fa-angle-right"></i></span>
+                                    <span class="btn-icon"><i class="fa-sharp fa-solid fa-angle-right"></i></span>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+
+
                   <div
-                    style={{
-                      position: "fixed",
-                      top: "20px",
-                      right: "80px",
-                      width: "200px",
-                      height: "60px",
-                      display: "flex",
-                      alignItems: "center",
-                      justifyContent: "center",
-                      border: "1px solid white",
-                      // borderRadius: "6px",
-                      backgroundColor: "transparent",
-                      cursor: "pointer",
-                      zIndex: 10000,
-                      textAlign: "center",
-                    }}
-                  >
-
-                    <span
-                      style={{
-                        color: "white",
-                        top: "80px",
-                        fontSize: 16,
-                        fontFamily: " 'Aboreto', 'SF Pro', 'Plus Jakarta Sans', sans-serif",
-                        fontWeight: 700,
-                        textTransform: "uppercase",
-                        lineHeight: "26px",
-                        wordWrap: "break-word",
-                      }}
-                    >
-                      SEE YOU SOON ?
-                    </span>
-                  </div>
-
-                  <header
                     style={{
                       width: "100%",
                       paddingLeft: "40px",
@@ -273,9 +263,8 @@ function Home() {
                         {item}
                       </button>
                     ))}
-
+</div>
                   </header>
-
 
 
                   <div className="col-lg-10">
@@ -295,7 +284,7 @@ function Home() {
                             fontFamily: "Aboreto, sans-serif",
                             fontWeight: 400,
                             top: "160px",       // supprime l’espace après 50
-                            left: "40%",
+                            left: "48%",
                             lineHeight: "59px",
                             wordWrap: "break-word",
                             zIndex: "10000",
@@ -311,7 +300,7 @@ function Home() {
                             fontFamily: "Aboreto, sans-serif",
                             fontWeight: 400,
                             top: "250px",       // supprime l’espace après 50
-                            left: "35%",
+                            left: "48%",
                             lineHeight: "59px",
                             wordWrap: "break-word",
                             zIndex: "10000",
@@ -409,7 +398,7 @@ function Home() {
                             alignItems: "center",
                             justifyContent: "center",
                             border: "1px solid white",
-                            // borderRadius: "6px",
+                            borderRadius: "30px",
                             backgroundColor: "transparent",
                             cursor: "pointer",
                             zIndex: 10000,
@@ -844,7 +833,7 @@ function Home() {
                       </p>
 
                       <div className="td-btn-group mb-35">
-             
+
                         <Link to="/about" className="td-btn-circle">
                           <i className="fa-solid fa-arrow-right"></i>
                         </Link>

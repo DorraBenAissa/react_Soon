@@ -21,6 +21,8 @@ import About from "./pages/About/About";
 
 import ScriptsLoader from "./components/ScriptsLoader";
 
+
+
 // Routes de l'application // Layouts de l'application
 function App() {
   return (
