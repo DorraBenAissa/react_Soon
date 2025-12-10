@@ -185,85 +185,86 @@ function Home() {
       <div id="smooth-wrapper">
         <div id="smooth-content">
           <main>
-            <div
-              style={{ paddingBottom: "0px", backgroundColor: '#e26F57', }}
-              className="td-hero-area td-hero-spacing p-relative fix z-index-1"
-            >
-              {/* <img className="td-hero-shape p-absolute" src={shapeImg} alt="" /> */}
-              <div className="container">
-                <div
-                  style={{ marginRight: "-31%" }}
-                  className="row justify-content-center"
-                >
+            
+              <div
+                style={{ paddingBottom: "0px", backgroundColor: '#e26F57', }}
+                className="td-hero-area td-hero-spacing p-relative fix z-index-1"
+              >
+                {/* <img className="td-hero-shape p-absolute" src={shapeImg} alt="" /> */}
+                <div className="container">
+                  <div
+                    style={{ marginRight: "-31%" }}
+                    className="row justify-content-center"
+                  >
 <header>
-                                    <div class="col-lg-4 col-md-4 col-sm-4 col-2">
-                        <div class="td-header-right text-end">
-                            <button class="td-header-search search-open-btn">
-                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg" >
-                                    <path
-                                        d="M9.00004 17.0001C13.4183 17.0001 17.0001 13.4183 17.0001 9.00004C17.0001 4.58174 13.4183 1 9.00004 1C4.58174 1 1 4.58174 1 9.00004C1 13.4183 4.58174 17.0001 9.00004 17.0001Z"
-                                        stroke="#ffffffff" stroke-width="2" stroke-linecap="round"
-                                        stroke-linejoin="round" />
-                                    <path d="M19.0004 18.9999L14.6504 14.6499" stroke="#ffffffff" stroke-width="2"
-                                        stroke-linecap="round" stroke-linejoin="round" />
-                                </svg>
-                            </button>
-                            <a href="contact.html"
-                                class="td-btn td-btn-lg d-none d-md-inline-block td-btn-switch-animation ml-10">
-                                <span class="d-flex align-items-center justify-content-center">
-                                    <span class="btn-text">Let’s Talk</span>
-                                    <span class="btn-icon"><i class="fa-sharp fa-solid fa-angle-right"></i></span>
-                                    <span class="btn-icon"><i class="fa-sharp fa-solid fa-angle-right"></i></span>
-                                </span>
-                            </a>
-                        </div>
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-2">
+                      <div class="td-header-right text-end">
+                        <button class="td-header-search search-open-btn">
+                          <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                            xmlns="http://www.w3.org/2000/svg" >
+                            <path
+                              d="M9.00004 17.0001C13.4183 17.0001 17.0001 13.4183 17.0001 9.00004C17.0001 4.58174 13.4183 1 9.00004 1C4.58174 1 1 4.58174 1 9.00004C1 13.4183 4.58174 17.0001 9.00004 17.0001Z"
+                              stroke="#ffffffff" stroke-width="2" stroke-linecap="round"
+                              stroke-linejoin="round" />
+                            <path d="M19.0004 18.9999L14.6504 14.6499" stroke="#ffffffff" stroke-width="2"
+                              stroke-linecap="round" stroke-linejoin="round" />
+                          </svg>
+                        </button>
+                        <a href="contact.html"
+                          class="td-btn td-btn-lg d-none d-md-inline-block td-btn-switch-animation ml-10">
+                          <span class="d-flex align-items-center justify-content-center">
+                            <span class="btn-text">SEE YOU SOON ?</span>
+                            <span class="btn-icon"><i class="fa-sharp fa-solid fa-angle-right"></i></span>
+                            <span class="btn-icon"><i class="fa-sharp fa-solid fa-angle-right"></i></span>
+                          </span>
+                        </a>
+                      </div>
                     </div>
 
 
-                  <div
-                    style={{
-                      width: "100%",
-                      paddingLeft: "40px",
-                      display: "flex",
-                      alignItems: "center",
-                      fontFamily: "'Aboreto', 'SF Pro', 'Plus Jakarta Sans', sans-serif",
-                      position: "fixed",
-                      top: "20px",
-                      left: 0,
-                      zIndex: 10000,
-                      backgroundColor: "transparent",
-                    }}
-                  >
-                    {/* Logo à gauche */}
-                    <Link to="/" style={{ marginRight: "20px" }}>
-                      <img src={soonWhiteLogo} alt="Logo Soon" style={{ width: "96px" }} />
-                    </Link>
+                    <div
+                      style={{
+                        width: "100%",
+                        paddingLeft: "40px",
+                        display: "flex",
+                        alignItems: "center",
+                        fontFamily: "'Aboreto', 'SF Pro', 'Plus Jakarta Sans', sans-serif",
+                        position: "fixed",
+                        top: "20px",
+                        left: 0,
+                        zIndex: 10000,
+                        backgroundColor: "transparent",
+                      }}
+                    >
+                      {/* Logo à gauche */}
+                      <Link to="/" style={{ marginRight: "20px" }}>
+                        <img src={soonWhiteLogo} alt="Logo Soon" style={{ width: "96px" }} />
+                      </Link>
 
-                    {/* Menu */}
-                    {["ACCUEIL", "SERVICES", "À PROPOS"].map((item, index) => (
-                      <button
-                        key={index}
-                        style={{
-                          padding: "10px 20px",
-                          border: "none",
-                          borderRadius: 0,
-                          backgroundColor: "transparent",
-                          color: "white",
-                          fontWeight: 700,
-                          fontFamily: "'Aboreto', 'SF Pro', 'Plus Jakarta Sans', sans-serif",
-                          fontSize: 16,
-                          textTransform: "uppercase",
-                          cursor: "pointer",
-                          transition: "0.3s",
-                        }}
-                        onMouseEnter={(e) => (e.target.style.backgroundColor = "rgba(255,255,255,0.2)")}
-                        onMouseLeave={(e) => (e.target.style.backgroundColor = "transparent")}
-                      >
-                        {item}
-                      </button>
-                    ))}
-</div>
+                      {/* Menu */}
+                      {["ACCUEIL", "SERVICES", "À PROPOS"].map((item, index) => (
+                        <button
+                          key={index}
+                          style={{
+                            padding: "10px 20px",
+                            border: "none",
+                            borderRadius: 0,
+                            backgroundColor: "transparent",
+                            color: "white",
+                            fontWeight: 700,
+                            fontFamily: "'Aboreto', 'SF Pro', 'Plus Jakarta Sans', sans-serif",
+                            fontSize: 16,
+                            textTransform: "uppercase",
+                            cursor: "pointer",
+                            transition: "0.3s",
+                          }}
+                          onMouseEnter={(e) => (e.target.style.backgroundColor = "rgba(255,255,255,0.2)")}
+                          onMouseLeave={(e) => (e.target.style.backgroundColor = "transparent")}
+                        >
+                          {item}
+                        </button>
+                      ))}
+                    </div>
                   </header>
 
 
