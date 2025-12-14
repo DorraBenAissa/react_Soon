@@ -47,7 +47,6 @@ import thumBlog2 from "../../assets/img/blog/thumb-2.jpg";
 import thumBlog3 from "../../assets/img/blog/thumb-3.jpg";
 import photoColor from "../../assets/img/blog/8770c5cd3ed2382fc5beb57d4cf0c022343fceb0.jpg";
 
-
 import bgImage from "../../assets/img/project/bg.jpg";
 
 import cta1 from "../../assets/img/cta/cta.png";
@@ -84,8 +83,8 @@ import Faq from "../../components/Faq";
 // import GoogleReviews from "../../components/GoogleReviews";
 // import AutoVideo from "../../components/AutoVideo";
 
-import '../../assets/css/main.css';
-import '../../assets/css/animate.css';
+import "../../assets/css/main.css";
+import "../../assets/css/animate.css";
 
 function Home() {
   return (
@@ -185,42 +184,23 @@ function Home() {
       <div id="smooth-wrapper">
         <div id="smooth-content">
           <main>
-            
-              <div
-                style={{ paddingBottom: "0px", backgroundColor: '#e26F57', }}
-                className="td-hero-area td-hero-spacing p-relative fix z-index-1"
-              >
-                {/* <img className="td-hero-shape p-absolute" src={shapeImg} alt="" /> */}
-                <div className="container">
-                  <div
-                    style={{ marginRight: "-31%" }}
-                    className="row justify-content-center"
-                  >
-<header>
-                    <div class="col-lg-4 col-md-4 col-sm-4 col-2">
+            <div
+              style={{ paddingBottom: "0px", backgroundColor: "#e26F57", height: "2016px",
+                borderBottomRightRadius: "141px"}}
+              className="td-hero-area td-hero-spacing p-relative fix z-index-1"
+            >
+              {/* <img className="td-hero-shape p-absolute" src={shapeImg} alt="" /> */}
+              <div className="container">
+                <div
+                  style={{ marginRight: "-31%" }}
+                  className="row justify-content-center"
+                >
+                  <header>
+                    {/* <div class="col-lg-4 col-md-4 col-sm-4 col-2">
                       <div class="td-header-right text-end">
-                        <button class="td-header-search search-open-btn">
-                          <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
-                            xmlns="http://www.w3.org/2000/svg" >
-                            <path
-                              d="M9.00004 17.0001C13.4183 17.0001 17.0001 13.4183 17.0001 9.00004C17.0001 4.58174 13.4183 1 9.00004 1C4.58174 1 1 4.58174 1 9.00004C1 13.4183 4.58174 17.0001 9.00004 17.0001Z"
-                              stroke="#ffffffff" stroke-width="2" stroke-linecap="round"
-                              stroke-linejoin="round" />
-                            <path d="M19.0004 18.9999L14.6504 14.6499" stroke="#ffffffff" stroke-width="2"
-                              stroke-linecap="round" stroke-linejoin="round" />
-                          </svg>
-                        </button>
-                        <a href="contact.html"
-                          class="td-btn td-btn-lg d-none d-md-inline-block td-btn-switch-animation ml-10">
-                          <span class="d-flex align-items-center justify-content-center">
-                            <span class="btn-text">SEE YOU SOON ?</span>
-                            <span class="btn-icon"><i class="fa-sharp fa-solid fa-angle-right"></i></span>
-                            <span class="btn-icon"><i class="fa-sharp fa-solid fa-angle-right"></i></span>
-                          </span>
-                        </a>
+                        
                       </div>
-                    </div>
-
+                    </div> */}
 
                     <div
                       style={{
@@ -228,7 +208,8 @@ function Home() {
                         paddingLeft: "40px",
                         display: "flex",
                         alignItems: "center",
-                        fontFamily: "'Aboreto', 'SF Pro', 'Plus Jakarta Sans', sans-serif",
+                        fontFamily:
+                          "'Aboreto', 'SF Pro', 'Plus Jakarta Sans', sans-serif",
                         position: "fixed",
                         top: "20px",
                         left: 0,
@@ -238,35 +219,96 @@ function Home() {
                     >
                       {/* Logo à gauche */}
                       <Link to="/" style={{ marginRight: "20px" }}>
-                        <img src={soonWhiteLogo} alt="Logo Soon" style={{ width: "96px" }} />
+                        <img
+                          src={soonWhiteLogo}
+                          alt="Logo Soon"
+                          style={{ width: "96px" }}
+                        />
                       </Link>
 
                       {/* Menu */}
-                      {["ACCUEIL", "SERVICES", "À PROPOS"].map((item, index) => (
-                        <button
-                          key={index}
-                          style={{
-                            padding: "10px 20px",
-                            border: "none",
-                            borderRadius: 0,
-                            backgroundColor: "transparent",
-                            color: "white",
-                            fontWeight: 700,
-                            fontFamily: "'Aboreto', 'SF Pro', 'Plus Jakarta Sans', sans-serif",
-                            fontSize: 16,
-                            textTransform: "uppercase",
-                            cursor: "pointer",
-                            transition: "0.3s",
-                          }}
-                          onMouseEnter={(e) => (e.target.style.backgroundColor = "rgba(255,255,255,0.2)")}
-                          onMouseLeave={(e) => (e.target.style.backgroundColor = "transparent")}
+                      {["ACCUEIL", "SERVICES", "À PROPOS"].map(
+                        (item, index) => (
+                          <button
+                            key={index}
+                            style={{
+                              padding: "10px 20px",
+                              border: "none",
+                              borderRadius: 0,
+                              backgroundColor: "transparent",
+                              color: "white",
+                              fontWeight: 700,
+                              fontFamily:
+                                "'Aboreto', 'SF Pro', 'Plus Jakarta Sans', sans-serif",
+                              fontSize: 16,
+                              textTransform: "uppercase",
+                              cursor: "pointer",
+                              transition: "0.3s",
+                            }}
+                            onMouseEnter={(e) =>
+                              (e.target.style.backgroundColor =
+                                "rgba(255,255,255,0.2)")
+                            }
+                            onMouseLeave={(e) =>
+                              (e.target.style.backgroundColor = "transparent")
+                            }
+                          >
+                            {item}
+                          </button>
+                        )
+                      )}
+                      <button
+                        class="td-header-search search-open-btn"
+                        style={{ marginLeft: "58%" }}
+                      >
+                        <svg
+                          width="20"
+                          height="20"
+                          viewBox="0 0 20 20"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
                         >
-                          {item}
-                        </button>
-                      ))}
+                          <path
+                            d="M9.00004 17.0001C13.4183 17.0001 17.0001 13.4183 17.0001 9.00004C17.0001 4.58174 13.4183 1 9.00004 1C4.58174 1 1 4.58174 1 9.00004C1 13.4183 4.58174 17.0001 9.00004 17.0001Z"
+                            stroke="#ffffffff"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M19.0004 18.9999L14.6504 14.6499"
+                            stroke="#ffffffff"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                      </button>
+                      <a
+                        href="contact.html"
+                        class="td-btn td-btn-lg d-none d-md-inline-block td-btn-switch-animation ml-10"
+                        style = {{borderColor: "white"}}
+                      >
+                        <span class="d-flex align-items-center justify-content-center">
+                          <span style={{ color: "white" }} class="btn-text">
+                            SEE YOU SOON ?
+                          </span>
+                          <span class="btn-icon">
+                            <i
+                              style={{ color: "white" }}
+                              class="fa-sharp fa-solid fa-angle-right"
+                            ></i>
+                          </span>
+                          <span class="btn-icon">
+                            <i
+                              style={{ color: "white" }}
+                              class="fa-sharp fa-solid fa-angle-right"
+                            ></i>
+                          </span>
+                        </span>
+                      </a>
                     </div>
                   </header>
-
 
                   <div className="col-lg-10">
                     <div className="td-hero-content">
@@ -275,8 +317,6 @@ function Home() {
                         data-wow-delay=".5s"
                         data-wow-duration="1s"
                       >
-
-
                         <div
                           style={{
                             color: "white",
@@ -284,7 +324,7 @@ function Home() {
                             fontSize: 70,
                             fontFamily: "Aboreto, sans-serif",
                             fontWeight: 400,
-                            top: "160px",       // supprime l’espace après 50
+                            top: "160px", // supprime l’espace après 50
                             left: "48%",
                             lineHeight: "59px",
                             wordWrap: "break-word",
@@ -300,7 +340,7 @@ function Home() {
                             fontSize: 70,
                             fontFamily: "Aboreto, sans-serif",
                             fontWeight: 400,
-                            top: "250px",       // supprime l’espace après 50
+                            top: "250px", // supprime l’espace après 50
                             left: "48%",
                             lineHeight: "59px",
                             wordWrap: "break-word",
@@ -342,53 +382,85 @@ function Home() {
                             borderRadius: "142px",
                             position: "absolute",
                             zIndex: "9000",
-                            top: "34%",       // supprime l’espace après 50
-                            left: "55%",      // supprime l’espace après 50
+                            top: "34%", // supprime l’espace après 50
+                            left: "55%", // supprime l’espace après 50
                             transform: "translate(-50%, -50%)", // supprime les espaces
                           }}
                         />
 
                         <div
                           style={{
-                            position: "absolute",       // positionné par rapport à son parent
-                            top: "500px",                 // centre vertical approximatif
-                            left: "80px",              // distance depuis le bord droit
+                            position: "absolute", // positionné par rapport à son parent
+                            top: "500px", // centre vertical approximatif
+                            left: "80px", // distance depuis le bord droit
                             transform: "translateY(-50%)", // centre exact verticalement
-                            maxWidth: "400px",          // limite la largeur du texte
+                            maxWidth: "400px", // limite la largeur du texte
                             color: "white",
                             fontSize: 28,
-                            fontFamily: " 'Aboreto', 'SF Pro', 'Plus Jakarta Sans', sans-serif",
+                            fontFamily:
+                              " 'Aboreto', 'SF Pro', 'Plus Jakarta Sans', sans-serif",
                             fontWeight: 400,
                             lineHeight: "32px",
                             wordWrap: "break-word",
                             textTransform: "uppercase", // majuscules
-                            textAlign: "left",          // aligné à gauche         // texte aligné à droite à l’intérieur du bloc
+                            textAlign: "left", // aligné à gauche         // texte aligné à droite à l’intérieur du bloc
                           }}
                         >
-                          notre espace créatif est un véritable laboratoire d’idées où chaque projet prend vie
+                          notre espace créatif est un véritable laboratoire
+                          d’idées où chaque projet prend vie
                         </div>
+                          <div
+                            style={{
+                              position: "absolute", // positionné par rapport à son parent
+                              top: "31%", // centre vertical approximatif
+                              left: "80px", // distance depuis le bord droit
+                              transform: "translateY(-50%)", // centre exact verticalement
+                              maxWidth: "400px", // limite la largeur du texte
+                              color: "white",
+                              fontSize: 15,
+                              fontFamily: "SF Pro, sans-serif",
+                              fontWeight: 400,
+                              lineHeight: "20px",
+                              wordWrap: "break-word",
+                              fontFamily: " 'SF Pro', sans-serif",
+                              textAlign: "left",
+                            }}
+                          >
+                            Entre briefing précis, brainstorming intense,
+                            visuels inspirants, croquis et maquettes, nous
+                            explorons sans cesse de nouvelles pistes pour créer
+                            des concepts uniques et percutants.
+                          </div>
+                          <div
+                            className="td-btn-group mb-35"
+                            style={{
+                              position: "absolute",
+                              marginLeft: "-19%",
+                              marginTop: "26%"
+                            }}
+                          >
+                            <a className="td-btn-circle" style = {{backgroundColor: "white",
+                              color: "#e26F57"}} href="about.html">
+                              <i className="fa-solid fa-arrow-right"></i>
+                            </a>
+                            <a
+                              className="td-btn-2 td-btn-primary"
+                              href="about.html"
+                              style = {{background: "white",
+                                color: "#e26F57"
+                              }}
+                            >
+                              Demander un devis
+                            </a>
+                            <a className="td-btn-circle"
+                            style = {{backgroundColor: "white",
+                              color: "#e26F57"
+                            }} href="about.html">
+                              <i className="fa-solid fa-arrow-right"></i>
+                            </a>
+                          </div>
 
-                        <div
-                          style={{
-                            position: "absolute",       // positionné par rapport à son parent
-                            top: "27%",                 // centre vertical approximatif
-                            left: "80px",              // distance depuis le bord droit
-                            transform: "translateY(-50%)", // centre exact verticalement
-                            maxWidth: "400px",          // limite la largeur du texte
-                            color: "white",
-                            fontSize: 15,
-                            fontFamily: "SF Pro, sans-serif",
-                            fontWeight: 400,
-                            lineHeight: "20px",
-                            wordWrap: "break-word",
-                            fontFamily: " 'SF Pro', sans-serif",
-                            textAlign: "left",
-                          }}
-                        >
-                          Entre briefing précis, brainstorming intense, visuels inspirants, croquis et maquettes, nous explorons sans cesse de nouvelles pistes pour créer des concepts uniques et percutants.
-                        </div>
-
-                        <div
+                        {/* <div
                           style={{
                             position: "fixed",
                             top: "800px",
@@ -413,7 +485,8 @@ function Home() {
                               fontSize: 16,
                               fontFamily: "'Plus Jakarta Sans', sans-serif", // <- ici
                               fontWeight: 700,
-                              fontFamily: " 'Aboreto', 'SF Pro', 'Plus Jakarta Sans', sans-serif",
+                              fontFamily:
+                                " 'Aboreto', 'SF Pro', 'Plus Jakarta Sans', sans-serif",
 
                               textTransform: "uppercase",
                               lineHeight: "26px",
@@ -422,7 +495,7 @@ function Home() {
                           >
                             DEMANDE DE DEVIS
                           </span>
-                        </div>
+                        </div> */}
 
                         <div>
                           {/* section à developer
@@ -666,14 +739,13 @@ function Home() {
                       </video> */}
 
                       {/* <img style={{ width: '100%', height: '100%', transform: 'rotate(-90deg)', transformOrigin: 'top left', borderRadius: 138 }} src={photoColor} /> */}
-
                     </div>
                   </div>
                 </div>
               </div>
 
               {/* Vidéo après le bouton */}
-              <div style={{ width: "100%", marginTop: "120px" }}>
+              <div style={{ width: "100%", marginTop: "-8px" }}>
                 <video
                   autoPlay
                   muted
@@ -694,7 +766,11 @@ function Home() {
                 </video>
               </div>
 
-              <div className="pb-60">
+              
+            </div>
+
+            <div style = {{marginTop: "5%"}} className="td-about-area">
+            <div className="pb-60">
                 <div className="container">
                   <div className="row">
                     <div className="col-12">
@@ -764,9 +840,6 @@ function Home() {
                   </div>
                 </div>
               </div>
-            </div>
-
-            <div className="td-about-area">
               <div className="container">
                 <div className="row">
                   <div className="col-lg-4">
@@ -809,7 +882,6 @@ function Home() {
                             objectFit: "cover", // pour que la vidéo garde le ratio et remplisse le conteneur
                           }}
                         />
-
                       </div>
                     </div>
                   </div>
@@ -834,7 +906,6 @@ function Home() {
                       </p>
 
                       <div className="td-btn-group mb-35">
-
                         <Link to="/about" className="td-btn-circle">
                           <i className="fa-solid fa-arrow-right"></i>
                         </Link>
@@ -1661,7 +1732,6 @@ function Home() {
               </div>
             </div> */}
 
-
             <div
               className="td-project-area td-fixed-title-wrap z-index-1 p-relative pt-155 pb-95"
               data-background={bgImage}
@@ -1673,21 +1743,20 @@ function Home() {
                 borderBottomLeftRadius: "142px",
               }}
             >
-              <div style={{
-                backgroundColor: '#e26F57',
-                padding: '20px 0',
-                borderTopRightRadius: '140px',
-                borderBottomLeftRadius: '140px',
-                width: '87vw',      // prend toute la largeur de l'écran
-                position: 'relative',
-                marginLeft: "6%",
-                marginTop: "-46px"
-              }}>
+              <div
+                style={{
+                  backgroundColor: "#e26F57",
+                  padding: "20px 0",
+                  borderTopRightRadius: "140px",
+                  borderBottomLeftRadius: "140px",
+                  width: "87vw", // prend toute la largeur de l'écran
+                  position: "relative",
+                  marginLeft: "6%",
+                  marginTop: "-46px",
+                }}
+              >
                 <div className="col-12">
-                  <div
-                    className="td-brand-wrap"
-
-                  >
+                  <div className="td-brand-wrap">
                     <div className="swiper-container td-brand-slide-active">
                       <div className="swiper-wrapper slide-transtion">
                         <div className="swiper-slide">
@@ -1725,12 +1794,15 @@ function Home() {
                   </div>
                 </div>
 
-                <br /><br /><br /><br />
+                <br />
+                <br />
+                <br />
+                <br />
 
                 <div className="col-12">
                   <div
                     className="td-brand-wrap"
-                  // style={{ backgroundColor: '#e26F57', padding: '20px 0', borderRadius: '10px' }}
+                    // style={{ backgroundColor: '#e26F57', padding: '20px 0', borderRadius: '10px' }}
                   >
                     <div className="swiper-container td-brand-slide-active">
                       <div className="swiper-wrapper slide-transtion">
@@ -1769,12 +1841,15 @@ function Home() {
                   </div>
                 </div>
 
-                <br /><br /><br /><br />
+                <br />
+                <br />
+                <br />
+                <br />
 
                 <div className="col-12">
                   <div
                     className="td-brand-wrap"
-                  // style={{ backgroundColor: '#e26F57', padding: '20px 0', borderRadius: '10px' }}
+                    // style={{ backgroundColor: '#e26F57', padding: '20px 0', borderRadius: '10px' }}
                   >
                     <div className="swiper-container td-brand-slide-active">
                       <div className="swiper-wrapper slide-transtion">
@@ -1812,7 +1887,6 @@ function Home() {
                     </div>
                   </div>
                 </div>
-
               </div>
             </div>
 
