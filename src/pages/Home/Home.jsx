@@ -104,6 +104,7 @@ function Home() {
       <SmoothScroll />
       <WowInit />
       <AutoCloseMenu />
+         {/* <Header /> */}
 
       <div className="search__popup">
         <div className="container">
