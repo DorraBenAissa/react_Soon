@@ -5,6 +5,7 @@ import { Routes, Route } from "react-router-dom";
 import Home from "./pages/Home/Home";
 import Contact from "./pages/Contact/Contact";
 import About from "./pages/About/About";
+import Services from "./pages/Services/Services";
 
 // import Error from './pages/Error/Error';
 
@@ -32,6 +33,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/services" element={<Services />} />
       </Routes>
 
       {/* <ScriptsLoader /> */}

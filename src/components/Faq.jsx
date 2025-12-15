@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import FaqVisuel from "./../assets/img/faq/faqVisuel.png";
+import videoSource2 from "../../src/assets/video/AdobeStock_1729815188_Video_HD_Preview.mov";
+// import FaqVisuel from "./../assets/img/faq/faqVisuel.png";
 // import '../assets/css/animate.css';
 // import '../assets/css/bootstrap.min.css';
 
@@ -41,11 +42,19 @@ const FaqSection = () => {
           {/* Image */}
           <div className="col-lg-6">
             <div className="td-faq-2-thumb mb-30 fix td-rounded-10">
-              <img
+              <video
                 data-speed=".9"
-                className="td-rounded-10"
-                src={FaqVisuel}
-                alt="FAQ visuel"
+                src={videoSource2} // Remplace videoSource par ton fichier vidéo ou URL
+                autoPlay
+                loop
+                muted
+                playsInline
+                style={{
+                  borderTopRightRadius: "84px",
+                  height: "100%",
+                  width: "100%", // optionnel, pour que la vidéo remplisse le conteneur
+                  objectFit: "cover", // pour que la vidéo garde le ratio et remplisse le conteneur
+                }}
               />
             </div>
           </div>

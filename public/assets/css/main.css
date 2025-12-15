@@ -98,6 +98,12 @@
   --td-theme-5: #e26F57;
   --td-border-1: rgba(28, 29, 31, 0.15);
 }
+@font-face {
+  font-family: 'Secret Code';
+  src: url('SecretCode.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
 
 /*=============================
 	Typography css start

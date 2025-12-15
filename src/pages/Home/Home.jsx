@@ -185,8 +185,10 @@ function Home() {
         <div id="smooth-content">
           <main>
             <div
-              style={{ paddingBottom: "0px", backgroundColor: "#e26F57", height: "2016px",
-                borderBottomRightRadius: "141px"}}
+              style={{
+                paddingBottom: "0px", backgroundColor: "#e26F57", height: "2016px",
+                borderBottomRightRadius: "141px"
+              }}
               className="td-hero-area td-hero-spacing p-relative fix z-index-1"
             >
               {/* <img className="td-hero-shape p-absolute" src={shapeImg} alt="" /> */}
@@ -246,8 +248,8 @@ function Home() {
                               transition: "0.3s",
                             }}
                             onMouseEnter={(e) =>
-                              (e.target.style.backgroundColor =
-                                "rgba(255,255,255,0.2)")
+                            (e.target.style.backgroundColor =
+                              "rgba(255,255,255,0.2)")
                             }
                             onMouseLeave={(e) =>
                               (e.target.style.backgroundColor = "transparent")
@@ -284,10 +286,10 @@ function Home() {
                           />
                         </svg>
                       </button>
-                      <a
+                      {/* <a
                         href="contact.html"
                         class="td-btn td-btn-lg d-none d-md-inline-block td-btn-switch-animation ml-10"
-                        style = {{borderColor: "white", background:"#ffff"}}
+                        style={{ borderColor: "white", background: "#ffff" }}
                       >
                         <span class="d-flex align-items-center justify-content-center">
                           <span style={{ color: "#e26757" }} class="btn-text">
@@ -306,7 +308,27 @@ function Home() {
                             ></i>
                           </span>
                         </span>
-                      </a>
+                      </a> */}
+                      <Link to="/contact" className="td-btn td-btn-lg d-none d-md-inline-block td-btn-switch-animation ml-10"
+                        style={{ borderColor: "white", background: "#ffff" }}>
+                        <span class="d-flex align-items-center justify-content-center">
+                          <span style={{ color: "#e26757" }} class="btn-text">
+                            SEE YOU SOON ?
+                          </span>
+                          <span class="btn-icon">
+                            <i
+                              style={{ color: "#e26757" }}
+                              class="fa-sharp fa-solid fa-angle-right"
+                            ></i>
+                          </span>
+                          <span class="btn-icon">
+                            <i
+                              style={{ color: "#e26757" }}
+                              class="fa-sharp fa-solid fa-angle-right"
+                            ></i>
+                          </span>
+                        </span>
+                      </Link>
                     </div>
                   </header>
 
@@ -323,14 +345,14 @@ function Home() {
                             position: "absolute",
                             fontSize: 70,
                             // fontFamily: "Aboreto, sans-serif",
-                                 fontFamily: "SF Pro, sans-serif",
+                            fontFamily: "SF Pro, sans-serif",
                             fontWeight: 400,
                             top: "160px", // supprime l’espace après 50
                             left: "35%",
                             lineHeight: "59px",
                             wordWrap: "break-word",
                             zIndex: "10000",
-                               textTransform: "uppercase", // majuscules
+                            textTransform: "uppercase", // majuscules
                           }}
                         >
                           Making your
@@ -341,14 +363,14 @@ function Home() {
                             position: "absolute",
                             fontSize: 70,
                             // fontFamily: "Aboreto, sans-serif",
-                                 fontFamily: "SF Pro, sans-serif",
+                            fontFamily: "SF Pro, sans-serif",
                             fontWeight: 400,
                             top: "250px", // supprime l’espace après 50
                             left: "37%",
                             lineHeight: "59px",
                             wordWrap: "break-word",
                             zIndex: "10000",
-                               textTransform: "uppercase", // majuscules
+                            textTransform: "uppercase", // majuscules
                           }}
                         >
                           Brand Fly
@@ -401,7 +423,7 @@ function Home() {
                             maxWidth: "400px", // limite la largeur du texte
                             color: "white",
                             fontSize: 28,
-                                fontFamily: "SF Pro, sans-serif",
+                            fontFamily: "Secret Code, sans-serif",
                             fontWeight: 400,
                             lineHeight: "32px",
                             wordWrap: "break-word",
@@ -412,56 +434,72 @@ function Home() {
                           notre espace créatif est un véritable laboratoire
                           d’idées où chaque projet prend vie
                         </div>
-                          <div
+                        <div
+                          style={{
+                            position: "absolute", // positionné par rapport à son parent
+                            top: "31%", // centre vertical approximatif
+                            left: "80px", // distance depuis le bord droit
+                            transform: "translateY(-50%)", // centre exact verticalement
+                            maxWidth: "400px", // limite la largeur du texte
+                            color: "white",
+                            fontSize: 15,
+                            fontFamily: "SF Pro, sans-serif",
+                            fontWeight: 400,
+                            lineHeight: "20px",
+                            wordWrap: "break-word",
+                            fontFamily: " 'SF Pro', sans-serif",
+                            textAlign: "left",
+                          }}
+                        >
+                          Entre briefing précis, brainstorming intense,
+                          visuels inspirants, croquis et maquettes, nous
+                          explorons sans cesse de nouvelles pistes pour créer
+                          des concepts uniques et percutants.
+                        </div>
+                        <div
+                          className="td-btn-group mb-35"
+                          style={{
+                            position: "absolute",
+                            marginLeft: "-19%",
+                            marginTop: "26%"
+                          }}
+                        >
+                          <Link className="td-btn-circle" style={{
+                            backgroundColor: "white",
+                            color: "#e26F57"
+                          }} to="/about">
+                            <i className="fa-solid fa-arrow-right"></i>
+                          </Link>
+                          <Link
+                            className="td-btn-2 td-btn-primary"
+                            to="/about"
                             style={{
-                              position: "absolute", // positionné par rapport à son parent
-                              top: "31%", // centre vertical approximatif
-                              left: "80px", // distance depuis le bord droit
-                              transform: "translateY(-50%)", // centre exact verticalement
-                              maxWidth: "400px", // limite la largeur du texte
-                              color: "white",
-                              fontSize: 15,
-                              fontFamily: "SF Pro, sans-serif",
-                              fontWeight: 400,
-                              lineHeight: "20px",
-                              wordWrap: "break-word",
-                              fontFamily: " 'SF Pro', sans-serif",
-                              textAlign: "left",
-                            }}
-                          >
-                            Entre briefing précis, brainstorming intense,
-                            visuels inspirants, croquis et maquettes, nous
-                            explorons sans cesse de nouvelles pistes pour créer
-                            des concepts uniques et percutants.
-                          </div>
-                          <div
-                            className="td-btn-group mb-35"
-                            style={{
-                              position: "absolute",
-                              marginLeft: "-19%",
-                              marginTop: "26%"
-                            }}
-                          >
-                            <a className="td-btn-circle" style = {{backgroundColor: "white",
-                              color: "#e26F57"}} href="about.html">
-                              <i className="fa-solid fa-arrow-right"></i>
-                            </a>
-                            <a
-                              className="td-btn-2 td-btn-primary"
-                              href="about.html"
-                              style = {{background: "white",
-                                color: "#e26F57"
-                              }}
-                            >
-                              Demander un devis
-                            </a>
-                            <a className="td-btn-circle"
-                            style = {{backgroundColor: "white",
+                              background: "white",
                               color: "#e26F57"
-                            }} href="about.html">
-                              <i className="fa-solid fa-arrow-right"></i>
-                            </a>
-                          </div>
+                            }}
+                          >
+                            Demander un devis
+                          </Link>
+                          <Link className="td-btn-circle"
+                            style={{
+                              backgroundColor: "white",
+                              color: "#e26F57"
+                            }} to="/about">
+                            <i className="fa-solid fa-arrow-right"></i>
+                          </Link>
+                          {/* 
+<Link to="/about" className="td-btn-circle">
+                          <i className="fa-solid fa-arrow-right"></i>
+                        </Link>
+                        <Link to="/about" className="td-btn-2 td-btn-primary">
+                          À PROPOS
+                        </Link>
+                        <Link to="/about" className="td-btn-circle">
+                          <i className="fa-solid fa-arrow-right"></i>
+                        </Link> */}
+
+
+                        </div>
 
                         {/* <div
                           style={{
@@ -769,11 +807,11 @@ function Home() {
                 </video>
               </div>
 
-              
+
             </div>
 
-            <div style = {{marginTop: "5%"}} className="td-about-area">
-            <div className="pb-60">
+            <div style={{ marginTop: "5%" }} className="td-about-area">
+              <div className="pb-60">
                 <div className="container">
                   <div className="row">
                     <div className="col-12">
@@ -966,27 +1004,36 @@ function Home() {
                     <div style={{ width: "60.666667%" }} className="col-lg-5">
                       <div className="td-service-btn mt-35 ml-110 mb-30">
                         <div className="td-btn-group mb-35">
-                          <a className="td-btn-circle" href="service.html">
+                          {/* <a className="" href="">
+                          
+                          </a> */}
+                          <Link to="/contact" className="td-btn-circle">
                             <i className="fa-solid fa-arrow-right"></i>
-                          </a>
-                          <a
+                          </Link>
+                          <Link
                             className="td-btn-2 td-btn-primary"
-                            href="service.html"
+                            to="/contact"
                           >
                             Contactez-nous
-                          </a>
-                          <a className="td-btn-circle" href="service.html">
+                          </Link>
+                          <Link className="td-btn-circle" to="/contact">
                             <i className="fa-solid fa-arrow-right"></i>
-                          </a>
+                          </Link>
+
+
+
+
+
+
                         </div>
                       </div>
                     </div>
                   </div>
                   <div style={{ width: "49.333333%" }} className="col-lg-7">
                     <div className="td-service-content">
-                      <a
+                      <Link
                         className="td-service-item pt-0"
-                        href="service-details.html"
+                        to="/services"
                       >
                         Conception créative
                         <span>
@@ -1003,10 +1050,10 @@ function Home() {
                             />
                           </svg>
                         </span>
-                      </a>
-                      <a
+                      </Link>
+                      <Link
                         className="td-service-item"
-                        href="service-details.html"
+                        to="/services"
                       >
                         Identité de marque
                         <span>
@@ -1023,10 +1070,10 @@ function Home() {
                             />
                           </svg>
                         </span>
-                      </a>
-                      <a
+                      </Link>
+                      <Link
                         className="td-service-item"
-                        href="service-details.html"
+                        to="/services"
                       >
                         Design e-commerce
                         <span>
@@ -1043,10 +1090,10 @@ function Home() {
                             />
                           </svg>
                         </span>
-                      </a>
-                      <a
+                      </Link>
+                      <Link
                         className="td-service-item"
-                        href="service-details.html"
+                        to="/services"
                       >
                         Digital Marketing
                         <span>
@@ -1063,10 +1110,10 @@ function Home() {
                             />
                           </svg>
                         </span>
-                      </a>
-                      <a
+                      </Link>
+                      <Link
                         className="td-service-item"
-                        href="service-details.html"
+                        to="/services"
                       >
                         Stratégie de communication
                         <span>
@@ -1083,10 +1130,10 @@ function Home() {
                             />
                           </svg>
                         </span>
-                      </a>
-                      <a
+                      </Link>
+                      <Link
                         className="td-service-item"
-                        href="service-details.html"
+                        to="/services"
                       >
                         Animation 3D & Vidéo
                         <span>
@@ -1103,10 +1150,10 @@ function Home() {
                             />
                           </svg>
                         </span>
-                      </a>
-                      <a
+                      </Link>
+                      <Link
                         className="td-service-item"
-                        href="service-details.html"
+                        to="/services"
                       >
                         Développement de clientèle
                         <span>
@@ -1123,7 +1170,7 @@ function Home() {
                             />
                           </svg>
                         </span>
-                      </a>
+                      </Link>
                       <div className="td-service-counter mt-80">
                         <div className="row">
                           {/* <div className="col-lg-6 col-md-6">
@@ -1191,7 +1238,7 @@ function Home() {
                         />
                       </div>
                       <div className="td-project-content">
-                        <a href="portfolio-details.html">
+                        <Link to="/portfolio">
                           <span className="mr-40">
                             Création de designs visionnaires avec des idées
                             spectaculaires
@@ -1220,7 +1267,7 @@ function Home() {
                               />
                             </svg>
                           </span>
-                        </a>
+                        </Link>
                       </div>
                     </div>
                   </div>
@@ -1237,7 +1284,7 @@ function Home() {
                         />
                       </div>
                       <div className="td-project-content">
-                        <a href="portfolio-details.html">
+                        <Link to="/portfolio">
                           <span className="mr-40">
                             Le design produit est le processus par lequel une
                             marque est créée
@@ -1266,7 +1313,7 @@ function Home() {
                               />
                             </svg>
                           </span>
-                        </a>
+                        </Link>
                       </div>
                     </div>
                   </div>
@@ -1283,7 +1330,7 @@ function Home() {
                         />
                       </div>
                       <div className="td-project-content">
-                        <a href="portfolio-details.html">
+                        <Link to="/portfolio">
                           <span className="mr-40">
                             Le branding est essentiel pour la tech
                           </span>
@@ -1311,7 +1358,7 @@ function Home() {
                               />
                             </svg>
                           </span>
-                        </a>
+                        </Link>
                       </div>
                     </div>
                   </div>
@@ -1328,7 +1375,7 @@ function Home() {
                         />
                       </div>
                       <div className="td-project-content">
-                        <a href="portfolio-details.html">
+                        <Link to="/portfolio">
                           <span className="mr-40">
                             Le design graphique est le processus par lequel une
                             marque est créée
@@ -1357,7 +1404,7 @@ function Home() {
                               />
                             </svg>
                           </span>
-                        </a>
+                        </Link>
                       </div>
                     </div>
                   </div>
@@ -1374,7 +1421,7 @@ function Home() {
                         />
                       </div>
                       <div className="td-project-content">
-                        <a href="portfolio-details.html">
+                        <Link to="/portfolio">
                           <span className="mr-40">
                             La créativité naît lorsque nous donnons le meilleur
                             de nous-mêmes
@@ -1403,7 +1450,7 @@ function Home() {
                               />
                             </svg>
                           </span>
-                        </a>
+                        </Link>
                       </div>
                     </div>
                   </div>
@@ -1805,7 +1852,7 @@ function Home() {
                 <div className="col-12">
                   <div
                     className="td-brand-wrap"
-                    // style={{ backgroundColor: '#e26F57', padding: '20px 0', borderRadius: '10px' }}
+                  // style={{ backgroundColor: '#e26F57', padding: '20px 0', borderRadius: '10px' }}
                   >
                     <div className="swiper-container td-brand-slide-active">
                       <div className="swiper-wrapper slide-transtion">
@@ -1852,7 +1899,7 @@ function Home() {
                 <div className="col-12">
                   <div
                     className="td-brand-wrap"
-                    // style={{ backgroundColor: '#e26F57', padding: '20px 0', borderRadius: '10px' }}
+                  // style={{ backgroundColor: '#e26F57', padding: '20px 0', borderRadius: '10px' }}
                   >
                     <div className="swiper-container td-brand-slide-active">
                       <div className="swiper-wrapper slide-transtion">
@@ -1923,15 +1970,15 @@ function Home() {
                         constamment des solutions adaptées.
                       </p>
                       <div className="td-btn-group">
-                        <a className="td-btn-circle" href="blog.html">
+                        <Link className="td-btn-circle" to="/blog">
                           <i className="fa-solid fa-arrow-right"></i>
-                        </a>
-                        <a className="td-btn-2 td-btn-primary" href="blog.html">
+                        </Link>
+                        <Link className="td-btn-2 td-btn-primary" to="/blog">
                           Voir tous les articles
-                        </a>
-                        <a className="td-btn-circle" href="blog.html">
+                        </Link>
+                        <Link className="td-btn-circle" to="/blog">
                           <i className="fa-solid fa-arrow-right"></i>
-                        </a>
+                        </Link>
                       </div>
                     </div>
                   </div>
@@ -1956,11 +2003,11 @@ function Home() {
                       </div>
                       <div className="td-blog-content">
                         <h3 className="td-blog-title mb-30">
-                          <a href="blog-details.html">
+                          <Link to="/blog">
                             Notre planification stratégique garantit que la
                             vision de votre marque s’aligne sur les opportunités
                             du marché.
-                          </a>
+                          </Link>
                         </h3>
                         <div className="td-blog-cetagory d-flex align-items-center">
                           <span className="cetagory">Branding</span>
@@ -1989,12 +2036,12 @@ function Home() {
                       </div>
                       <div className="td-blog-content">
                         <h3 className="td-blog-title mb-30">
-                          <a href="blog-details.html">
+                          <Link to="/blog">
                             Le CSS border-image, bien que complexe, offre des
                             possibilités incroyables et créatives, parfaites
                             pour une agence de design web souhaitant apporter
                             des détails uniques et percutants à ses projets.
-                          </a>
+                          </Link>
                         </h3>
                         <div className="td-blog-cetagory d-flex align-items-center">
                           <span className="cetagory">Digital</span>
@@ -2023,11 +2070,11 @@ function Home() {
                       </div>
                       <div className="td-blog-content">
                         <h3 className="td-blog-title mb-30">
-                          <a href="blog-details.html">
+                          <Link to="/blog">
                             Grâce à notre planification stratégique, la vision
                             de votre marque rencontre parfaitement les
                             opportunités du marché.
-                          </a>
+                          </Link>
                         </h3>
                         <div className="td-blog-cetagory d-flex align-items-center">
                           <span className="cetagory">Stratégie</span>
@@ -2083,15 +2130,15 @@ function Home() {
                         padding: "2% 3% 14% 20%",
                       }}
                     >
-                      <a className="td-btn-circle" href="about.html">
+                      <Link className="td-btn-circle" to="/about">
                         <i className="fa-solid fa-arrow-right"></i>
-                      </a>
-                      <a className="td-btn-2 td-btn-primary" href="about.html">
+                      </Link>
+                      <Link className="td-btn-2 td-btn-primary" to="/about">
                         Demander un devis
-                      </a>
-                      <a className="td-btn-circle" href="about.html">
+                      </Link>
+                      <Link className="td-btn-circle" to="/about">
                         <i className="fa-solid fa-arrow-right"></i>
-                      </a>
+                      </Link>
                     </div>
                   </div>
                 </div>
