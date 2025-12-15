@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import FaqVisuel from "./../assets/img/faq/Faq_visuel.webp";
+import FaqVisuel from "./../assets/img/faq/faqVisuel.png";
 // import '../assets/css/animate.css';
 // import '../assets/css/bootstrap.min.css';
 

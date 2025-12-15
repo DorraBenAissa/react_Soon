@@ -287,21 +287,21 @@ function Home() {
                       <a
                         href="contact.html"
                         class="td-btn td-btn-lg d-none d-md-inline-block td-btn-switch-animation ml-10"
-                        style = {{borderColor: "white"}}
+                        style = {{borderColor: "white", background:"#ffff"}}
                       >
                         <span class="d-flex align-items-center justify-content-center">
-                          <span style={{ color: "white" }} class="btn-text">
+                          <span style={{ color: "#e26757" }} class="btn-text">
                             SEE YOU SOON ?
                           </span>
                           <span class="btn-icon">
                             <i
-                              style={{ color: "white" }}
+                              style={{ color: "#e26757" }}
                               class="fa-sharp fa-solid fa-angle-right"
                             ></i>
                           </span>
                           <span class="btn-icon">
                             <i
-                              style={{ color: "white" }}
+                              style={{ color: "#e26757" }}
                               class="fa-sharp fa-solid fa-angle-right"
                             ></i>
                           </span>
@@ -322,13 +322,15 @@ function Home() {
                             color: "white",
                             position: "absolute",
                             fontSize: 70,
-                            fontFamily: "Aboreto, sans-serif",
+                            // fontFamily: "Aboreto, sans-serif",
+                                 fontFamily: "SF Pro, sans-serif",
                             fontWeight: 400,
                             top: "160px", // supprime l’espace après 50
-                            left: "48%",
+                            left: "35%",
                             lineHeight: "59px",
                             wordWrap: "break-word",
                             zIndex: "10000",
+                               textTransform: "uppercase", // majuscules
                           }}
                         >
                           Making your
@@ -338,13 +340,15 @@ function Home() {
                             color: "white",
                             position: "absolute",
                             fontSize: 70,
-                            fontFamily: "Aboreto, sans-serif",
+                            // fontFamily: "Aboreto, sans-serif",
+                                 fontFamily: "SF Pro, sans-serif",
                             fontWeight: 400,
                             top: "250px", // supprime l’espace après 50
-                            left: "48%",
+                            left: "37%",
                             lineHeight: "59px",
                             wordWrap: "break-word",
                             zIndex: "10000",
+                               textTransform: "uppercase", // majuscules
                           }}
                         >
                           Brand Fly
@@ -358,8 +362,8 @@ function Home() {
                           style={{
                             position: "absolute",
                             top: "97px",
-                            left: 1100,
-                            width: "96vh",
+                            left: 1000,
+                            width: "110vh",
                             height: "92vh",
                             minWidth: "50%",
                             minHeight: "60vh",
@@ -367,7 +371,7 @@ function Home() {
                             margin: 0,
                             padding: 0,
                             display: "block",
-                            borderTopLeftRadius: "800px",
+                            borderTopLeftRadius: "550px",
                             zIndex: "",
                           }}
                         >
@@ -383,7 +387,7 @@ function Home() {
                             position: "absolute",
                             zIndex: "9000",
                             top: "42%", // supprime l’espace après 50
-                            left: "55%", // supprime l’espace après 50
+                            left: "49%", // supprime l’espace après 50
                             transform: "translate(-50%, -50%)", // supprime les espaces
                           }}
                         />
@@ -397,8 +401,7 @@ function Home() {
                             maxWidth: "400px", // limite la largeur du texte
                             color: "white",
                             fontSize: 28,
-                            fontFamily:
-                              " 'Aboreto', 'SF Pro', 'Plus Jakarta Sans', sans-serif",
+                                fontFamily: "SF Pro, sans-serif",
                             fontWeight: 400,
                             lineHeight: "32px",
                             wordWrap: "break-word",
