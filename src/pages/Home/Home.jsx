@@ -382,7 +382,7 @@ function Home() {
                             borderRadius: "142px",
                             position: "absolute",
                             zIndex: "9000",
-                            top: "34%", // supprime l’espace après 50
+                            top: "42%", // supprime l’espace après 50
                             left: "55%", // supprime l’espace après 50
                             transform: "translate(-50%, -50%)", // supprime les espaces
                           }}
@@ -745,7 +745,7 @@ function Home() {
               </div>
 
               {/* Vidéo après le bouton */}
-              <div style={{ width: "100%", marginTop: "-8px" }}>
+              <div style={{ width: "100%", marginTop: "77px" }}>
                 <video
                   autoPlay
                   muted
