@@ -1592,6 +1592,7 @@ function Home() {
               </div>
             </div>
             <div className="container"></div>
+            
             {/* //AVIS CLIENTS//
             <div className="td-testimonial-area grey-bg-2 pt-155 pb-120">
 
