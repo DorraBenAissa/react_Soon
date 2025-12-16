@@ -986,7 +986,8 @@ function Home() {
                     <div className="td-service-title-wrap">
                       <h2
                         className="td-section-title mb-30"
-                        style={{ color: "#e26F57" }}
+                        style={{ color: "#e26F57" }} 
+                        to = "/services"
                       >
                         Service
                       </h2>
@@ -1591,6 +1592,7 @@ function Home() {
                 </div>
               </div>
             </div>
+            
             <div className="container"></div>
 
             {/* //AVIS CLIENTS//
@@ -2120,7 +2122,7 @@ function Home() {
   </video>
 
   {/* Texte sur la vidéo */}
-  <div
+  <div className="td-testimonial-title mb-20 td-text-invert"
     style={{
       position: "absolute",
       top: "50%",
@@ -2128,12 +2130,13 @@ function Home() {
       transform: "translate(-50%, -50%)",
       color: "#ffffff",
       fontSize: "100px",
-     color: "#EAEAEA",
+     color: "#2b2b2bff",
       // fontWeight: "600",
       textAlign: "center",
- lineHeight: "1.2", // 🔥 INTERLIGNE
+ lineHeight: "1", // 🔥 INTERLIGNE
       padding: "16px 28px",
       borderRadius: "12px",
+      
     }}
   >
     Chez Soon, l’IA est notre moteur <span style={{fontWeight: "600",}} >ultime d’innovation</span>, au service de concepts uniques et percutants.

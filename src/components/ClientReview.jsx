@@ -163,8 +163,14 @@ const GoogleReviewsCarousel = () => {
             <p>{"⭐".repeat(review.rating)}</p>
           </a>
         ))}
+        
       </div>
+      <svg width="100" height="72" viewBox="0 0 100 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M21.4286 41.8731H1V0.99707H41.8571V42.6371L27.9531 70.457H8.76046L22.3231 43.3201L23.0463 41.8731H21.4286Z" stroke="#0A1119" stroke-opacity="0.3" stroke-width="2"></path>
+        <path d="M78.5711 41.8731H58.1426V0.99707H98.9997V42.6371L85.0957 70.457H65.903L79.4656 43.3201L80.1888 41.8731H78.5711Z" stroke="#0A1119" stroke-opacity="0.3" stroke-width="2"></path>
+      </svg>
     </div>
+    
   );
 };
 
