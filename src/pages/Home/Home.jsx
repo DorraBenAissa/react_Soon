@@ -2090,7 +2090,29 @@ function Home() {
               </div>
             </div>
 
+                        <div style={{ width: "100%", marginTop: "57px", marginBottom: "77px", }}>
+                <video
+                  autoPlay
+                  muted
+                  loop
+                  playsInline
+                  style={{
+                    width: "100%",
+                    height: "auto",
+                    display: "block",
+                    objectFit: "cover",
+                    borderTopLeftRadius: "142px",
+                    display: "flex",
+                    borderBottomRightRadius: "142px",
+                  }}
+                >
+                  <source src={"https://themedox.com/videos/parody-video.mp4"} type="video/mp4" />
+                  Votre navigateur ne supporte pas la vidéo.
+                </video>
+              </div>
             <ClientReview />
+
+
             <Faq />
             <div className="td-cta-area">
               <div className="container">
