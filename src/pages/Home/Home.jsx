@@ -104,7 +104,7 @@ function Home() {
       <SmoothScroll />
       <WowInit />
       <AutoCloseMenu />
-         {/* <Header /> */}
+      {/* <Header /> */}
 
       <div className="search__popup">
         <div className="container">
@@ -365,7 +365,7 @@ function Home() {
                             fontSize: 70,
                             // fontFamily: "Aboreto, sans-serif",
                             fontFamily: "SF Pro, sans-serif",
-                            fontWeight: 400,
+                            // fontWeight: 400,
                             top: "250px", // supprime l’espace après 50
                             left: "37%",
                             lineHeight: "59px",
@@ -1592,7 +1592,7 @@ function Home() {
               </div>
             </div>
             <div className="container"></div>
-            
+
             {/* //AVIS CLIENTS//
             <div className="td-testimonial-area grey-bg-2 pt-155 pb-120">
 
@@ -2090,26 +2090,55 @@ function Home() {
               </div>
             </div>
 
-                        <div style={{ width: "100%", marginTop: "57px", marginBottom: "77px", }}>
-                <video
-                  autoPlay
-                  muted
-                  loop
-                  playsInline
-                  style={{
-                    width: "100%",
-                    height: "auto",
-                    display: "block",
-                    objectFit: "cover",
-                    borderTopLeftRadius: "142px",
-                    display: "flex",
-                    borderBottomRightRadius: "142px",
-                  }}
-                >
-                  <source src={"https://themedox.com/videos/parody-video.mp4"} type="video/mp4" />
-                  Votre navigateur ne supporte pas la vidéo.
-                </video>
-              </div>
+            <div
+  style={{
+    width: "100%",
+    marginTop: "57px",
+    marginBottom: "77px",
+    position: "relative",
+  }}
+>
+  <video
+    autoPlay
+    muted
+    loop
+    playsInline
+    style={{
+      width: "100%",
+      height: "auto",
+      display: "block",
+      objectFit: "cover",
+      borderTopLeftRadius: "142px",
+      borderBottomRightRadius: "142px",
+    }}
+  >
+    <source
+      src="https://themedox.com/videos/parody-video.mp4"
+      type="video/mp4"
+    />
+    Votre navigateur ne supporte pas la vidéo.
+  </video>
+
+  {/* Texte sur la vidéo */}
+  <div
+    style={{
+      position: "absolute",
+      top: "50%",
+      left: "50%",
+      transform: "translate(-50%, -50%)",
+      color: "#ffffff",
+      fontSize: "100px",
+     color: "#EAEAEA",
+      // fontWeight: "600",
+      textAlign: "center",
+ lineHeight: "1.2", // 🔥 INTERLIGNE
+      padding: "16px 28px",
+      borderRadius: "12px",
+    }}
+  >
+    Chez Soon, l’IA est notre moteur <span style={{fontWeight: "600",}} >ultime d’innovation</span>, au service de concepts uniques et percutants.
+  </div>
+</div>
             <ClientReview />
 
 
@@ -2154,13 +2183,13 @@ function Home() {
                         padding: "2% 3% 14% 20%",
                       }}
                     >
-                      <Link className="td-btn-circle" to="/about">
+                      <Link className="td-btn-circle" to="/contact">
                         <i className="fa-solid fa-arrow-right"></i>
                       </Link>
-                      <Link className="td-btn-2 td-btn-primary" to="/about">
+                      <Link className="td-btn-2 td-btn-primary" to="/contact">
                         Demander un devis
                       </Link>
-                      <Link className="td-btn-circle" to="/about">
+                      <Link className="td-btn-circle" to="/contact">
                         <i className="fa-solid fa-arrow-right"></i>
                       </Link>
                     </div>

@@ -67,7 +67,7 @@ const GoogleReviewsCarousel = () => {
 
   return (
     <div style={{ maxWidth: "1800px", margin: "0 auto", textAlign: "center" }} className="td-faq-4-wrap-right td-faq-2-wrap-right mb-30">
-      <h2 className="td-testimonial-title mb-20 td-text-invert" >Avis de <span>nos clients</span></h2>
+      <h2 className="td-testimonial-title mb-20 td-text-invert"  style={{ color: "#e26F57" }} >Avis de <span>nos clients</span></h2>
       <div style={{ marginBottom: "1rem" }}>
         <span className="td-testimonial-prev d-inline-block">
           <svg
