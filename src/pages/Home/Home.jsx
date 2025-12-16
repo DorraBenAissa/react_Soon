@@ -2129,7 +2129,7 @@ function Home() {
       left: "50%",
       transform: "translate(-50%, -50%)",
       color: "#ffffff",
-      fontSize: "100px",
+      fontSize: "80px",
      color: "#2b2b2bff",
       // fontWeight: "600",
       textAlign: "center",

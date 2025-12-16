@@ -149,6 +149,7 @@ const GoogleReviewsCarousel = () => {
                                     </div>
                                 </div> */}
                             </div>
+                            
       <div style={containerStyle} ref={carouselRef}>
         {googleReviews.map((review, index) => (
           <a
