@@ -155,6 +155,25 @@ function Contact() {
                               type="text"
                             />
                           </div>
+                          
+                          <div className="col-12 mb-25">
+                            <label for="Address">Adresse</label>
+                            <input
+                              className="td-input"
+                              name="website"
+                              id="website"
+                              type="text"
+                            />
+                          </div>
+                          <div className="col-12 mb-25">
+                            <label for="Society">Société</label>
+                            <input
+                              className="td-input"
+                              name="website"
+                              id="website"
+                              type="text"
+                            />
+                          </div>
                           <div className="col-md-6 mb-25">
                             <label for="email">Email</label>
                             <input
@@ -173,17 +192,8 @@ function Contact() {
                               type="text"
                             />
                           </div>
-                          <div className="col-12 mb-25">
-                            <label for="website">Site Web</label>
-                            <input
-                              className="td-input"
-                              name="website"
-                              id="website"
-                              type="text"
-                            />
-                          </div>
                           <div className="col-md-12 mb-30">
-                            <label for="message">Message</label>
+                            <label for="message">Quel est l'objet de votre demande ?</label>
                             <textarea
                               className="td-input message"
                               name="message"
@@ -192,6 +202,37 @@ function Contact() {
                               rows="10"
                             ></textarea>
                           </div>
+                          <div className="col-12 mb-25">
+                            <label for="Address">Quel est votre délai ?</label>
+                            <input
+                              className="td-input"
+                              name="website"
+                              id="website"
+                              type="text"
+                            />
+                          </div>
+                          <div className="col-12 mb-25">
+                            <label for="Society">Quelle est votre enveloppe budgétaire ?</label>
+                            <input
+                              className="td-input"
+                              name="website"
+                              id="website"
+                              type="text"
+                            />
+                          </div>
+                          <div className="col-12 mb-25">
+  <label htmlFor="fileUpload">Joindre un fichier</label>
+  <input
+    className="td-input"
+    type="file"
+    id="fileUpload"
+    name="fileUpload"
+    accept="*/*"
+  />
+  <small style={{ display: "block", marginTop: "5px", color: "#555" }}>
+    Déposer un fichier ici ou cliquer pour télécharger. Taille maximale : 128MB
+  </small>
+</div>
                           <div className="col-12">
                             <button type="submit" className="td-btn-group">
                               <span className="td-btn-circle">

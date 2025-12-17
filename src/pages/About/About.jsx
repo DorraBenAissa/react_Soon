@@ -46,6 +46,8 @@ import SmoothScroll from "../../components/SmoothScroll";
 import Menu from "../../components/Menu";
 import AutoCloseMenu from "../../components/AutoCloseMenu";
 
+import Header from "./../../layouts/Header/Header";
+
 function Home() {
   return (
     <>
@@ -62,6 +64,7 @@ function Home() {
       <WowInit />
       <Menu />
       <AutoCloseMenu />
+      <Header />
 
       <header>
         <div
@@ -1580,7 +1583,7 @@ function Home() {
             <div className="td-testimonial-area grey-bg-2 pt-155 pb-120">
               <div className="container">
                 <div className="row">
-                  <div className="col-lg-3 col-md-4">
+                  {/* <div className="col-lg-3 col-md-4">
                     <div
                       className="td-testimonial-left mb-40  wow fadeInLeft"
                       data-wow-delay=".5s"
@@ -1596,8 +1599,8 @@ function Home() {
                         over the world
                       </p>
                     </div>
-                  </div>
-                  <div className="col-lg-9 col-md-8">
+                  </div> */}
+                  {/* <div className="col-lg-9 col-md-8">
                     <div className="td-testimonial-content ml-80 mb-50">
                       <h2 className="td-testimonial-title mb-65" style={{ color: "#e26F57", }}>
                         CE QUE DISENT NOS CLIENTS
@@ -1727,9 +1730,9 @@ function Home() {
                           </div>
                         </div>
                       </div>
-                    </div>
-                  </div>
-                  <div className="col-12">
+                    </div> */}
+                  {/* </div> */}
+                  {/* <div className="col-12">
                     <div className="td-brand-wrap">
                       <div className="swiper-container td-brand-slide-active">
                         <div className="swiper-wrapper slide-transtion">
@@ -1766,7 +1769,7 @@ function Home() {
                         </div>
                       </div>
                     </div>
-                  </div>
+                  </div> */}
                 </div>
               </div>
             </div>
