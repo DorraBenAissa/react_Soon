@@ -104,6 +104,27 @@
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: 'Garet';
+  src: url('../fonts/garet-regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Garet';
+  src: url('../fonts/garet-bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'CreatoDisplay';
+  src: url('../fonts/creato-display.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+
 
 /*=============================
 	Typography css start

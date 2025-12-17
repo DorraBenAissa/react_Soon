@@ -188,7 +188,7 @@ function Home() {
             <div
               style={{
                 paddingBottom: "0px", backgroundColor: "#e26F57", height: "2016px",
-                borderBottomRightRadius: "141px"
+                borderBottomRightRadius: "142px"
               }}
               className="td-hero-area td-hero-spacing p-relative fix z-index-1"
             >
