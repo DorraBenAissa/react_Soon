@@ -122,7 +122,7 @@ function Contact() {
             </div>
             <div>
               {/* Les boutons en haut */}
-              <div className="td-contact-main pt-155 pb-120">
+              <div className="">
                 <div className="container">
                   <div className="row" >
                     <div class="col-lg-12 mb-50  wow fadeInUp" data-wow-delay=".5s" data-wow-duration="1s">
@@ -193,7 +193,7 @@ function Contact() {
               {/* Formulaires */}
               <div>
                 {activeForm === "devis" && (
-                  <div className="td-contact-main pt-155 pb-120">
+                  <div className="">
                     <div className="container">
                       <div className="row">
                         
@@ -342,7 +342,7 @@ function Contact() {
                 )}
 
                 {activeForm === "stage" && (
-                  <div className="td-contact-main pt-155 pb-120">
+                  <div className="">
                     <div className="container">
                       <div className="row">
                         
@@ -354,7 +354,7 @@ function Contact() {
                           >
                             <h2
                               className="td-contact-main-title"
-                              style={{ color: "#e26F57" }}
+                              style={{ color: "#f57860ff" }}
                             >
                               Postulez
                               <br />
@@ -510,7 +510,7 @@ function Contact() {
                 )}
 
                 {activeForm === "alternance" && (
-                  <div className="td-contact-main pt-155 pb-120">
+                  <div className="">
                     <div className="container">
                       <div className="row">
                         
@@ -679,7 +679,7 @@ function Contact() {
                 )}
 
                 {activeForm === "emploi" && (
-                  <div className="td-contact-main pt-155 pb-120">
+                  <div className="">
                     <div className="container">
 
                       <div className="row">
