@@ -17,6 +17,8 @@ import StickyHeader from "../../components/StickyHeader";
 import WowInit from "../../components/WowInit";
 import Menu from "../../components/Menu";
 import AutoCloseMenu from "../../components/AutoCloseMenu";
+// import ClientReview from "../../components/ClientReview";
+import Faq from "../../components/Faq";
 
 
 import Header from "./../../layouts/Header/Header";
@@ -681,8 +683,7 @@ function Contact() {
                     <div className="container">
 
                       <div className="row">
-                        
-
+                    
                         <div className="col-lg-5">
 
                           <div
@@ -724,6 +725,7 @@ function Contact() {
                                     name="name"
                                     id="name"
                                     type="text"
+                                    // style={{ borderBottomRightRadius: "141px", borderInline:"30px"}}
                                   />
                                 </div>
                                 <div className="col-md-6 mb-25">
@@ -858,6 +860,9 @@ function Contact() {
                 )}
               </div>
             </div>
+            
+            {/* <ClientReview /> */}
+            <Faq />
           </main>
           <Footer />
         </div>
