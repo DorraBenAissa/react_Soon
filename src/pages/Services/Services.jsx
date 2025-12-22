@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 // ASSETS
 // import logoBlack from "../../assets/img/logo/logo-black.png";
 import logoBlack from "../../assets/img/logo/BLACK2.webp";
+import logoWhith from "../../assets/img/logo/WHITH3.webp";
 
 import thumbMain from "../../assets/img/about/main/thumb.jpg";
 import usertestimonial from "../../assets/img/testimonial/user.png";
@@ -66,6 +67,7 @@ function Home() {
       <header>
         <div
           id="header-sticky"
+          style={{backgroundColor:"#E26F57"}}
           className="td-header__area td-header-spacing td-header-5-wrapper td-header-about-wrapper p-relative z-index-1"
         >
           <div className="container-fluid container-1710">
@@ -76,7 +78,7 @@ function Home() {
                     <img data-width="96" src={logoBlack} alt="Logo" />
                   </a> */}
                   <Link className="logo-1" to="/">
-                    <img style={{ width: "96px" }} src={logoBlack} alt="Logo" />
+                    <img style={{ width: "96px" }} src={logoWhith} alt="Logo" />
                   </Link>
                 </div>
               </div>
@@ -85,7 +87,7 @@ function Home() {
                   <nav className="tdmenu__nav">
                     <div className="tdmenu__navbar-wrap tdmenu__main-menu">
                       <ul className="navigation">
-                        <li className="active menu-item-has-children">
+                        <li className="active menu-item-has-children" >
                           {/* <a href="index.html">Accueil</a> */}
                           <Link to="/">Accueil</Link>
                           <ul className="sub-menu">
@@ -226,8 +228,11 @@ function Home() {
               {/* <a href="index.html">
                 <img style = {{width:"96px"}} src={logoBlack} alt="logo" />
               </a> */}
-              <Link to="/">
+              {/* <Link to="/">
                 <img style={{ width: "96px" }} src={logoBlack} alt="logo" />
+              </Link> */}
+                            <Link to="/Home.jsx">
+                <img style={{ width: "96px" }} src={logoWhith} alt="logo" />
               </Link>
             </div>
             <div className="tdmobile__search">
