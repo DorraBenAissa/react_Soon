@@ -137,7 +137,11 @@ function Contact() {
                           <button
                             onClick={() => setActiveForm("devis")}
                             style={{
-                              padding: "10px 20px",
+                              borderTopRightRadius: "30px",
+                              borderTopLeftRadius: "30px",
+                              borderBottomRightRadius: "30px",
+                              bordeBottomLeftRadius: "30px",
+                              padding: "20px 20px",
                               backgroundColor: activeForm === "devis" ? "#e26F57" : "#ffffffff",
                               color: activeForm === "devis" ? "#fff" : "#000",
                               border: "none",
@@ -150,7 +154,11 @@ function Contact() {
                           <button
                             onClick={() => setActiveForm("stage")}
                             style={{
-                              padding: "10px 20px",
+                              borderTopRightRadius: "30px",
+                              borderTopLeftRadius: "30px",
+                              borderBottomRightRadius: "30px",
+                              bordeBottomLeftRadius: "30px",
+                              padding: "20px 20px",
                               backgroundColor: activeForm === "stage" ? "#e26F57" : "#ffffffff",
                               color: activeForm === "stage" ? "#fff" : "#000",
                               border: "none",
@@ -162,7 +170,11 @@ function Contact() {
                           <button
                             onClick={() => setActiveForm("alternance")}
                             style={{
-                              padding: "10px 20px",
+                              borderTopRightRadius: "30px",
+                              borderTopLeftRadius: "30px",
+                              borderBottomRightRadius: "30px",
+                              bordeBottomLeftRadius: "30px",
+                              padding: "20px 20px",
                               backgroundColor: activeForm === "alternance" ? "#e26F57" : "#ffffffff",
                               color: activeForm === "alternance" ? "#fff" : "#000",
                               border: "none",
@@ -174,7 +186,11 @@ function Contact() {
                           <button
                             onClick={() => setActiveForm("emploi")}
                             style={{
-                              padding: "10px 20px",
+                              borderTopRightRadius: "30px",
+                              borderTopLeftRadius: "30px",
+                              borderBottomRightRadius: "30px",
+                              bordeBottomLeftRadius: "30px",
+                              padding: "20px 20px",
                               backgroundColor: activeForm === "emploi" ? "#e26F57" : "#ffffffff",
                               color: activeForm === "emploi" ? "#fff" : "#000",
                               border: "none",

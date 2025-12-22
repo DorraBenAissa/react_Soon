@@ -204,12 +204,13 @@ const Header = () => {
       <div
         style={{
           width: "100%",
+          padding: "10px",
           paddingLeft: "40px",
           display: "flex",
           alignItems: "center",
           fontFamily: "'Aboreto', 'SF Pro', 'Plus Jakarta Sans', sans-serif",
           position: "fixed",
-          top: "20px",
+          // top: "20px",
           left: 0,
           zIndex: 10000,
           backgroundColor: "#e26F57",
