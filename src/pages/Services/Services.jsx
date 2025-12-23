@@ -47,6 +47,9 @@ import SmoothScroll from "../../components/SmoothScroll";
 import Menu from "../../components/Menu";
 import AutoCloseMenu from "../../components/AutoCloseMenu";
 
+import ClientReview from "../../components/ClientReview";
+import Faq from "../../components/Faq";
+
 function Home() {
   return (
     <>
@@ -1582,7 +1585,7 @@ function Home() {
                 </div>
               </div>
             </div>
-            <div className="td-testimonial-area grey-bg-2 pt-155 pb-120">
+            {/* <div className="td-testimonial-area grey-bg-2 pt-155 pb-120">
               <div className="container">
                 <div className="row">
                   <div className="col-lg-3 col-md-4">
@@ -1733,8 +1736,8 @@ function Home() {
                         </div>
                       </div>
                     </div>
-                  </div>
-                  <div className="col-12">
+                  </div> */}
+                  {/* <div className="col-12">
                     <div className="td-brand-wrap">
                       <div className="swiper-container td-brand-slide-active">
                         <div className="swiper-wrapper slide-transtion">
@@ -1774,9 +1777,10 @@ function Home() {
                   </div>
                 </div>
               </div>
-            </div>
+            </div> */}
 
-
+<ClientReview />
+<Faq />
 
             <div className="td-awards-area td-awards-about-wrap pt-120 pb-130">
               <div className="container">
@@ -1784,7 +1788,7 @@ function Home() {
                   <div className="col-lg-6">
                     <div className="td-awards-5-title-wrap mb-30">
                       <h2 className="td-testimonial-title mb-25 td-text-invert">
-                        Honorable <span>awards</span>
+                        Nos  <span>engagements</span>
                       </h2>
                       <a className="td-awards-5-btn" href="#">
                         Direct from the heart
@@ -1798,10 +1802,7 @@ function Home() {
                   >
                     <div className="td-awards-5-text mt-140 mb-30 mr-80">
                       <p className="mb-0">
-                        We are excited for our work and how it positively
-                        impacts clients. With over 12 years of experience we
-                        have been constantly providing solutions. We are
-                        committed
+                        Faire de la complexité une force, au service de stratégies simples et de solutions responsables et durables.
                       </p>
                     </div>
                   </div>
@@ -1824,38 +1825,38 @@ function Home() {
                     <div className="td-awards-5-list mb-30">
                       <div className="td-awards-5-list-item d-flex justify-content-between">
                         <div className="d-flex align-items-center">
-                          <span className="mr-60">9x</span>
-                          <span>Sony world photography award</span>
+                          <span className="mr-60">1</span>
+                          <span>Notre approche repose sur une pensée et une action citoyennes, où l’humain et l’empathie occupent une place centrale.</span>
                         </div>
-                        <span>2021</span>
+                        <span></span>
                       </div>
                       <div className="td-awards-5-list-item d-flex justify-content-between">
                         <div className="d-flex align-items-center">
-                          <span className="mr-60">2x</span>
-                          <span>CSS Design award world</span>
+                          <span className="mr-60">2</span>
+                          <span>Nous transformons la complexité du monde en expériences simples.</span>
                         </div>
-                        <span>2021</span>
+                        <span></span>
                       </div>
                       <div className="td-awards-5-list-item d-flex justify-content-between">
                         <div className="d-flex align-items-center">
-                          <span className="mr-60">3x</span>
-                          <span>Featured design of the week</span>
+                          <span className="mr-60">3</span>
+                          <span>Nous privilégions l’écoute et l’apprentissage afin de traiter le fond avec justesse, avant de travailler la forme.</span>
                         </div>
-                        <span>2021</span>
+                        <span></span>
                       </div>
                       <div className="td-awards-5-list-item d-flex justify-content-between">
                         <div className="d-flex align-items-center">
-                          <span className="mr-60">6x</span>
-                          <span>Creative agency of the day</span>
+                          <span className="mr-60">4</span>
+                          <span>Au-delà des notions de bon ou de mauvais goût, nous cherchons avant tout à créer la surprise.</span>
                         </div>
-                        <span>2021</span>
+                        <span></span>
                       </div>
                       <div className="td-awards-5-list-item d-flex justify-content-between">
                         <div className="d-flex align-items-center">
-                          <span className="mr-60">9x</span>
-                          <span>Envato agency of the year</span>
+                          <span className="mr-60">5</span>
+                          <span>Ensemble, développons de nouveaux concepts et contribuons à la construction de futurs désirables.</span>
                         </div>
-                        <span>2021</span>
+                        <span></span>
                       </div>
                     </div>
                   </div>
