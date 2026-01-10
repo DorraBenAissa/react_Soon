@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/react_Soon/static/css/main.3908ea3b.css",
-    "main.js": "/react_Soon/static/js/main.13269a66.js",
+    "main.js": "/react_Soon/static/js/main.0efc8527.js",
     "static/media/bg-thumb3.mp4": "/react_Soon/static/media/bg-thumb3.8282d9ce82d8eb5b47bb.mp4",
     "static/media/Show_reel_1920x1080_33s_01.mp4": "/react_Soon/static/media/Show_reel_1920x1080_33s_01.d9939935f475c28382a4.mp4",
     "static/media/hero3.mp4": "/react_Soon/static/media/hero3.a7abece2cae8cc82b5b8.mp4",
@@ -22,10 +22,15 @@
     "static/media/AdobeStock_1533669189_Video_HD_Preview.mov": "/react_Soon/static/media/AdobeStock_1533669189_Video_HD_Preview.73a36e43b0945667d3fe.mov",
     "static/media/343fceb0.jpg": "/react_Soon/static/media/8770c5cd3ed2382fc5beb57d4cf0c022343fceb0.e2880a27a031326327b5.jpg",
     "static/media/AdobeStock_1729815188_Video_HD_Preview.mov": "/react_Soon/static/media/AdobeStock_1729815188_Video_HD_Preview.47711a81f341486b090a.mov",
+    "static/media/thumb-3.jpg": "/react_Soon/static/media/thumb-3.69d98905f0c84889eaca.jpg",
     "static/media/site-web.jpg": "/react_Soon/static/media/site-web.b03f6bf83ee087904a28.jpg",
+    "static/media/thumb.png": "/react_Soon/static/media/thumb.b5ed6b29ea5d87b3f6a8.png",
     "static/media/thumb-2.jpg": "/react_Soon/static/media/thumb-2.ab191628e1a9a51fa229.jpg",
     "static/media/thumb.jpg": "/react_Soon/static/media/thumb.35e1c7b17cea25031b23.jpg",
+    "static/media/bigthumb.jpg": "/react_Soon/static/media/bigthumb.eb0539730a79d41a83ee.jpg",
+    "static/media/thumb-4.jpg": "/react_Soon/static/media/thumb-4.47e2f083f045b32e8ed6.jpg",
     "static/media/bg-thumb3.jpg": "/react_Soon/static/media/bg-thumb3.ea52b7f6aca2d551d698.jpg",
+    "static/media/thumb-6.jpg": "/react_Soon/static/media/thumb-6.8c5186289d140efa537d.jpg",
     "static/media/product.jpg": "/react_Soon/static/media/product.67df6bba0269c2893343.jpg",
     "static/media/disney-blnc-400px.png": "/react_Soon/static/media/disney-blnc-400px.47deaabbc50aa365471d.png",
     "static/media/product-5.jpg": "/react_Soon/static/media/product-5.9cea12a6a8cec6d95130.jpg",
@@ -38,10 +43,8 @@
     "static/media/armani-400px.png": "/react_Soon/static/media/armani-400px.a765b973415a32cf5a39.png",
     "static/media/BLACK2.webp": "/react_Soon/static/media/BLACK2.663364899d4e27f655ec.webp",
     "static/media/WHITH3.webp": "/react_Soon/static/media/WHITH3.a9bb958a55d0be3cb5aa.webp",
-    "static/media/thumb-3.jpg": "/react_Soon/static/media/thumb-3.69d98905f0c84889eaca.jpg",
     "static/media/sea-4.png": "/react_Soon/static/media/sea-4.714afa35cbca4e1ebc82.png",
     "static/media/victoria-400px.png": "/react_Soon/static/media/victoria-400px.f45a761eeb3323eb2cec.png",
-    "static/media/award.png": "/react_Soon/static/media/award.584733b4d831f3c116d5.png",
     "static/media/fib-400px.png": "/react_Soon/static/media/fib-400px.3095fbb3000610ee3950.png",
     "static/media/b&b-400px.png": "/react_Soon/static/media/b&b-400px.614c38144847e738e8cc.png",
     "static/media/fenty-400px.png": "/react_Soon/static/media/fenty-400px.07e18051de6c772833a2.png",
@@ -49,16 +52,17 @@
     "static/media/val-400px.png": "/react_Soon/static/media/val-400px.e9be97f78b80a42c2019.png",
     "static/media/covivo-4.png": "/react_Soon/static/media/covivo-4.93f36fd6894739496bd3.png",
     "static/media/bg.jpg": "/react_Soon/static/media/bg.aeac8875a9032bd80cc1.jpg",
+    "static/media/thumb-5.jpg": "/react_Soon/static/media/thumb-5.731a9408ed1aee4d3f88.jpg",
     "static/media/product-2.jpg": "/react_Soon/static/media/product-2.913033b01f3ee8aea3b2.jpg",
     "static/media/viparis-4.png": "/react_Soon/static/media/viparis-4.7e4c8b3dd5b8d75de72f.png",
     "static/media/leo&go-400px.png": "/react_Soon/static/media/leo&go-400px.21511cb4dcbe390520ff.png",
     "index.html": "/react_Soon/index.html",
     "static/media/check.svg": "/react_Soon/static/media/check.f9d7a75506a857d86d35.svg",
     "main.3908ea3b.css.map": "/react_Soon/static/css/main.3908ea3b.css.map",
-    "main.13269a66.js.map": "/react_Soon/static/js/main.13269a66.js.map"
+    "main.0efc8527.js.map": "/react_Soon/static/js/main.0efc8527.js.map"
   },
   "entrypoints": [
     "static/css/main.3908ea3b.css",
-    "static/js/main.13269a66.js"
+    "static/js/main.0efc8527.js"
   ]
 }

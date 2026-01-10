@@ -1,5 +1,6 @@
 //imports
 import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 // ASSETS
 import shapeImg from "../../assets/img/hero/shape.png";
@@ -86,7 +87,19 @@ import Faq from "../../components/Faq";
 import "../../assets/css/main.css";
 import "../../assets/css/animate.css";
 
+
+
+
+
 function Home() {
+  const menuItems = [
+    { label: "ACCUEIL", path: "/" },
+    { label: "SERVICES", path: "/services" },
+    { label: "À PROPOS", path: "/about" },
+  ];
+
+  const navigate = useNavigate();
+
   return (
     <>
       <ScrollToTopAutomatic />
@@ -187,8 +200,10 @@ function Home() {
           <main>
             <div
               style={{
-                paddingBottom: "0px", backgroundColor: "#e26F57", height: "2016px",
-                borderBottomRightRadius: "142px"
+                paddingBottom: "0px",
+                backgroundColor: "#e26F57",
+                height: "2016px",
+                borderBottomRightRadius: "142px",
               }}
               className="td-hero-area td-hero-spacing p-relative fix z-index-1"
             >
@@ -230,7 +245,35 @@ function Home() {
                       </Link>
 
                       {/* Menu */}
-                      {["ACCUEIL", "SERVICES", "À PROPOS"].map(
+                      {menuItems.map((item, index) => (
+                        <button
+                          key={index}
+                          style={{
+                            padding: "10px 20px",
+                            border: "none",
+                            backgroundColor: "transparent",
+                            color: "white",
+                            fontWeight: 700,
+                            fontFamily:
+                              "'Aboreto', 'SF Pro', 'Plus Jakarta Sans', sans-serif",
+                            fontSize: 16,
+                            textTransform: "uppercase",
+                            cursor: "pointer",
+                            transition: "0.3s",
+                          }}
+                          onClick={() => navigate(item.path)}
+                          onMouseEnter={(e) =>
+                            (e.target.style.backgroundColor =
+                              "rgba(255,255,255,0.2)")
+                          }
+                          onMouseLeave={(e) =>
+                            (e.target.style.backgroundColor = "transparent")
+                          }
+                        >
+                          {item.label}
+                        </button>
+                      ))}
+                      {/* {["ACCUEIL", "SERVICES", "À PROPOS"].map(
                         (item, index) => (
                           <button
                             key={index}
@@ -259,7 +302,7 @@ function Home() {
                             {item}
                           </button>
                         )
-                      )}
+                      )} */}
                       <button
                         class="td-header-search search-open-btn"
                         style={{ marginLeft: "58%" }}
@@ -310,8 +353,11 @@ function Home() {
                           </span>
                         </span>
                       </a> */}
-                      <Link to="/contact" className="td-btn td-btn-lg d-none d-md-inline-block td-btn-switch-animation ml-10"
-                        style={{ borderColor: "white", background: "#ffff" }}>
+                      <Link
+                        to="/contact"
+                        className="td-btn td-btn-lg d-none d-md-inline-block td-btn-switch-animation ml-10"
+                        style={{ borderColor: "white", background: "#ffff" }}
+                      >
                         <span class="d-flex align-items-center justify-content-center">
                           <span style={{ color: "#e26757" }} class="btn-text">
                             SEE YOU SOON ?
@@ -452,40 +498,47 @@ function Home() {
                             textAlign: "left",
                           }}
                         >
-                          Entre briefing précis, brainstorming intense,
-                          visuels inspirants, croquis et maquettes, nous
-                          explorons sans cesse de nouvelles pistes pour créer
-                          des concepts uniques et percutants.
+                          Entre briefing précis, brainstorming intense, visuels
+                          inspirants, croquis et maquettes, nous explorons sans
+                          cesse de nouvelles pistes pour créer des concepts
+                          uniques et percutants.
                         </div>
                         <div
                           className="td-btn-group mb-35"
                           style={{
                             position: "absolute",
                             marginLeft: "-19%",
-                            marginTop: "26%"
+                            marginTop: "26%",
                           }}
                         >
-                          <Link className="td-btn-circle" style={{
-                            backgroundColor: "white",
-                            color: "#e26F57"
-                          }} to="/about">
+                          <Link
+                            className="td-btn-circle"
+                            style={{
+                              backgroundColor: "white",
+                              color: "#e26F57",
+                            }}
+                            to="/about"
+                          >
                             <i className="fa-solid fa-arrow-right"></i>
                           </Link>
                           <Link
                             className="td-btn-2 td-btn-primary"
-                            to="/about"
+                            to="/contact"
                             style={{
                               background: "white",
-                              color: "#e26F57"
+                              color: "#e26F57",
                             }}
                           >
                             Demander un devis
                           </Link>
-                          <Link className="td-btn-circle"
+                          <Link
+                            className="td-btn-circle"
                             style={{
                               backgroundColor: "white",
-                              color: "#e26F57"
-                            }} to="/about">
+                              color: "#e26F57",
+                            }}
+                            to="/about"
+                          >
                             <i className="fa-solid fa-arrow-right"></i>
                           </Link>
                           {/* 
@@ -498,8 +551,6 @@ function Home() {
                         <Link to="/about" className="td-btn-circle">
                           <i className="fa-solid fa-arrow-right"></i>
                         </Link> */}
-
-
                         </div>
 
                         {/* <div
@@ -807,8 +858,6 @@ function Home() {
                   Votre navigateur ne supporte pas la vidéo.
                 </video>
               </div>
-
-
             </div>
 
             <div style={{ marginTop: "5%" }} className="td-about-area">
@@ -986,8 +1035,8 @@ function Home() {
                     <div className="td-service-title-wrap">
                       <h2
                         className="td-section-title mb-30"
-                        style={{ color: "#e26F57" }} 
-                        to = "/services"
+                        style={{ color: "#e26F57" }}
+                        to="/services"
                       >
                         Service
                       </h2>
@@ -1021,22 +1070,13 @@ function Home() {
                           <Link className="td-btn-circle" to="/contact">
                             <i className="fa-solid fa-arrow-right"></i>
                           </Link>
-
-
-
-
-
-
                         </div>
                       </div>
                     </div>
                   </div>
                   <div style={{ width: "49.333333%" }} className="col-lg-7">
                     <div className="td-service-content">
-                      <Link
-                        className="td-service-item pt-0"
-                        to="/services"
-                      >
+                      <Link className="td-service-item pt-0" to="/service_details">
                         Conception créative
                         <span>
                           <svg
@@ -1053,10 +1093,7 @@ function Home() {
                           </svg>
                         </span>
                       </Link>
-                      <Link
-                        className="td-service-item"
-                        to="/services"
-                      >
+                      <Link className="td-service-item" to="/service_details">
                         Identité de marque
                         <span>
                           <svg
@@ -1073,10 +1110,7 @@ function Home() {
                           </svg>
                         </span>
                       </Link>
-                      <Link
-                        className="td-service-item"
-                        to="/services"
-                      >
+                      <Link className="td-service-item" to="/service_details">
                         Design e-commerce
                         <span>
                           <svg
@@ -1093,10 +1127,7 @@ function Home() {
                           </svg>
                         </span>
                       </Link>
-                      <Link
-                        className="td-service-item"
-                        to="/services"
-                      >
+                      <Link className="td-service-item" to="/service_details">
                         Digital Marketing
                         <span>
                           <svg
@@ -1113,10 +1144,7 @@ function Home() {
                           </svg>
                         </span>
                       </Link>
-                      <Link
-                        className="td-service-item"
-                        to="/services"
-                      >
+                      <Link className="td-service-item" to="/service_details">
                         Stratégie de communication
                         <span>
                           <svg
@@ -1133,10 +1161,7 @@ function Home() {
                           </svg>
                         </span>
                       </Link>
-                      <Link
-                        className="td-service-item"
-                        to="/services"
-                      >
+                      <Link className="td-service-item" to="/service_details">
                         Animation 3D & Vidéo
                         <span>
                           <svg
@@ -1153,10 +1178,7 @@ function Home() {
                           </svg>
                         </span>
                       </Link>
-                      <Link
-                        className="td-service-item"
-                        to="/services"
-                      >
+                      <Link className="td-service-item" to="/service_details">
                         Développement de clientèle
                         <span>
                           <svg
@@ -1240,7 +1262,7 @@ function Home() {
                         />
                       </div>
                       <div className="td-project-content">
-                        <Link to="/portfolio">
+                        <Link to="/portfolio_details">
                           <span className="mr-40">
                             Création de designs visionnaires avec des idées
                             spectaculaires
@@ -1286,7 +1308,7 @@ function Home() {
                         />
                       </div>
                       <div className="td-project-content">
-                        <Link to="/portfolio">
+                        <Link to="/portfolio_details">
                           <span className="mr-40">
                             Le design produit est le processus par lequel une
                             marque est créée
@@ -1332,7 +1354,7 @@ function Home() {
                         />
                       </div>
                       <div className="td-project-content">
-                        <Link to="/portfolio">
+                        <Link to="/portfolio_details">
                           <span className="mr-40">
                             Le branding est essentiel pour la tech
                           </span>
@@ -1377,7 +1399,7 @@ function Home() {
                         />
                       </div>
                       <div className="td-project-content">
-                        <Link to="/portfolio">
+                        <Link to="/portfolio_details">
                           <span className="mr-40">
                             Le design graphique est le processus par lequel une
                             marque est créée
@@ -1423,7 +1445,7 @@ function Home() {
                         />
                       </div>
                       <div className="td-project-content">
-                        <Link to="/portfolio">
+                        <Link to="/portfolio_details">
                           <span className="mr-40">
                             La créativité naît lorsque nous donnons le meilleur
                             de nous-mêmes
@@ -1592,7 +1614,7 @@ function Home() {
                 </div>
               </div>
             </div>
-            
+
             <div className="container"></div>
 
             {/* //AVIS CLIENTS//
@@ -1856,7 +1878,7 @@ function Home() {
                 <div className="col-12">
                   <div
                     className="td-brand-wrap"
-                  // style={{ backgroundColor: '#e26F57', padding: '20px 0', borderRadius: '10px' }}
+                    // style={{ backgroundColor: '#e26F57', padding: '20px 0', borderRadius: '10px' }}
                   >
                     <div className="swiper-container td-brand-slide-active">
                       <div className="swiper-wrapper slide-transtion">
@@ -1903,7 +1925,7 @@ function Home() {
                 <div className="col-12">
                   <div
                     className="td-brand-wrap"
-                  // style={{ backgroundColor: '#e26F57', padding: '20px 0', borderRadius: '10px' }}
+                    // style={{ backgroundColor: '#e26F57', padding: '20px 0', borderRadius: '10px' }}
                   >
                     <div className="swiper-container td-brand-slide-active">
                       <div className="swiper-wrapper slide-transtion">
@@ -2007,7 +2029,7 @@ function Home() {
                       </div>
                       <div className="td-blog-content">
                         <h3 className="td-blog-title mb-30">
-                          <Link to="/blog">
+                          <Link to="/blog_details">
                             Notre planification stratégique garantit que la
                             vision de votre marque s’aligne sur les opportunités
                             du marché.
@@ -2040,7 +2062,7 @@ function Home() {
                       </div>
                       <div className="td-blog-content">
                         <h3 className="td-blog-title mb-30">
-                          <Link to="/blog">
+                          <Link to="/blog_details">
                             Le CSS border-image, bien que complexe, offre des
                             possibilités incroyables et créatives, parfaites
                             pour une agence de design web souhaitant apporter
@@ -2074,7 +2096,7 @@ function Home() {
                       </div>
                       <div className="td-blog-content">
                         <h3 className="td-blog-title mb-30">
-                          <Link to="/blog">
+                          <Link to="/blog_details">
                             Grâce à notre planification stratégique, la vision
                             de votre marque rencontre parfaitement les
                             opportunités du marché.
@@ -2093,57 +2115,58 @@ function Home() {
             </div>
 
             <div
-  style={{
-    width: "100%",
-    marginTop: "57px",
-    marginBottom: "77px",
-    position: "relative",
-  }}
->
-  <video
-    autoPlay
-    muted
-    loop
-    playsInline
-    style={{
-      width: "100%",
-      height: "auto",
-      display: "block",
-      objectFit: "cover",
-      borderTopLeftRadius: "142px",
-      borderBottomRightRadius: "142px",
-    }}
-  >
-    <source
-      src="https://themedox.com/videos/parody-video.mp4"
-      type="video/mp4"
-    />
-    Votre navigateur ne supporte pas la vidéo.
-  </video>
+              style={{
+                width: "100%",
+                marginTop: "57px",
+                marginBottom: "77px",
+                position: "relative",
+              }}
+            >
+              <video
+                autoPlay
+                muted
+                loop
+                playsInline
+                style={{
+                  width: "100%",
+                  height: "auto",
+                  display: "block",
+                  objectFit: "cover",
+                  borderTopLeftRadius: "142px",
+                  borderBottomRightRadius: "142px",
+                }}
+              >
+                <source
+                  src="https://themedox.com/videos/parody-video.mp4"
+                  type="video/mp4"
+                />
+                Votre navigateur ne supporte pas la vidéo.
+              </video>
 
-  {/* Texte sur la vidéo */}
-  <div className="td-testimonial-title mb-20 td-text-invert"
-    style={{
-      position: "absolute",
-      top: "50%",
-      left: "50%",
-      transform: "translate(-50%, -50%)",
-      color: "#ffffff",
-      fontSize: "80px",
-     color: "#2b2b2bff",
-      // fontWeight: "600",
-      textAlign: "center",
- lineHeight: "1", // 🔥 INTERLIGNE
-      padding: "16px 28px",
-      borderRadius: "12px",
-      
-    }}
-  >
-    Chez Soon, l’IA est notre moteur <span style={{fontWeight: "600",}} >ultime d’innovation</span>, au service de concepts uniques et percutants.
-  </div>
-</div>
+              {/* Texte sur la vidéo */}
+              <div
+                className="td-testimonial-title mb-20 td-text-invert"
+                style={{
+                  position: "absolute",
+                  top: "50%",
+                  left: "50%",
+                  transform: "translate(-50%, -50%)",
+                  color: "#ffffff",
+                  fontSize: "80px",
+                  color: "#2b2b2bff",
+                  // fontWeight: "600",
+                  textAlign: "center",
+                  lineHeight: "1", // 🔥 INTERLIGNE
+                  padding: "16px 28px",
+                  borderRadius: "12px",
+                }}
+              >
+                Chez Soon, l’IA est notre moteur{" "}
+                <span style={{ fontWeight: "600" }}>ultime d’innovation</span>,
+                au service de concepts uniques et percutants.
+              </div>
+            </div>
             <ClientReview />
-
 
             <Faq />
             <div className="td-cta-area">

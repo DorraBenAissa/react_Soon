@@ -29,7 +29,7 @@ import thumbTeam9 from "../../assets/img/team/0S6A3321.jpg";
 import thumbTeam10 from "../../assets/img/team/lisa.jpg";
 import thumbTeam11 from "../../assets/img/team/julie.jpg";
 
-import award from "../../assets/img/awards/awards-5/award.png";
+//import award from "../../assets/img/awards/awards-5/award.png";
 
 // COMPONENTS
 import Footer from "./../../layouts/Footer/Footer";
@@ -1814,7 +1814,7 @@ function Home() {
                     data-wow-duration="1s"
                   >
                     <div className="td-awards-5-thumb text-center pt-70 mb-30">
-                      <img src={award} alt="" />
+                      {/* <img src={award} alt="" /> */}
                     </div>
                   </div>
                   <div
