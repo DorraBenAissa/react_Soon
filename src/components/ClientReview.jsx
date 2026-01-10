@@ -76,7 +76,7 @@ const GoogleReviewsCarousel = () => {
             viewBox="0 0 31 24"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
-            onClick={() => scroll("right")}
+            onClick={() => scroll("left")}
           >
             <path
               d="M30.8699 12.2679L0.014612 12.4214"
@@ -105,7 +105,7 @@ const GoogleReviewsCarousel = () => {
             viewBox="0 0 31 24"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
-            onClick={() => scroll("left")}
+            onClick={() => scroll("right")}
           >
             <path
               d="M-0.000234102 12.2679L30.855 12.4214"
