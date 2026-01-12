@@ -50,9 +50,12 @@ import AutoCloseMenu from "../../components/AutoCloseMenu";
 import ClientReview from "../../components/ClientReview";
 import Faq from "../../components/Faq";
 
+import Header from "./../../layouts/Header/Header";
+
 function Home() {
   return (
     <>
+          <Header />
       <ScrollToTopAutomatic />
       <Loader />
       <MouseFollower />
@@ -67,10 +70,12 @@ function Home() {
       <Menu />
       <AutoCloseMenu />
 
+
+
       <header>
         <div
           id="header-sticky"
-          style={{backgroundColor:"#E26F57"}}
+          style={{ backgroundColor: "#E26F57" }}
           className="td-header__area td-header-spacing td-header-5-wrapper td-header-about-wrapper p-relative z-index-1"
         >
           <div className="container-fluid container-1710">
@@ -234,7 +239,7 @@ function Home() {
               {/* <Link to="/">
                 <img style={{ width: "96px" }} src={logoBlack} alt="logo" />
               </Link> */}
-                            <Link to="/Home.jsx">
+              <Link to="/Home.jsx">
                 <img style={{ width: "96px" }} src={logoWhith} alt="logo" />
               </Link>
             </div>
@@ -1737,7 +1742,7 @@ function Home() {
                       </div>
                     </div>
                   </div> */}
-                  {/* <div className="col-12">
+            {/* <div className="col-12">
                     <div className="td-brand-wrap">
                       <div className="swiper-container td-brand-slide-active">
                         <div className="swiper-wrapper slide-transtion">
@@ -1779,8 +1784,8 @@ function Home() {
               </div>
             </div> */}
 
-<ClientReview />
-<Faq />
+            <ClientReview />
+            <Faq />
 
             <div className="td-awards-area td-awards-about-wrap pt-120 pb-130">
               <div className="container">

@@ -25,6 +25,9 @@ import Menu from "../../components/Menu";
 import AutoCloseMenu from "../../components/AutoCloseMenu";
 import Header from "../../layouts/Header/Header";
 
+import Faq from "../../components/Faq";
+import cta1 from "../../assets/img/cta/cta.png";
+
 function Home() {
   return (
     <>
@@ -93,8 +96,8 @@ function Home() {
                             <div className="col-lg-8">
                                 <div className="td-service-process-title-wrap text-center mb-50">
                                     <span className="inner-subtitle">//Soon working process</span>
-                                    <h2 className="td-testimonial-title td-text-invert">Notre Processus Standard
-                                        <span>de Design Thinking</span></h2>
+                                    <h2 className="td-testimonial-title td-text-invert">Notre Processus Standard de  
+                                       <span>Design Thinking</span></h2>
                                 </div>
                             </div>
                         </div>
@@ -203,99 +206,7 @@ function Home() {
                     </div>
                 </div>
 
-                <div className="td-faq-2-area pt-160">
-                    <div className="container">
-                        <div className="row">
-                            <div className="col-lg-6">
-                                <div className="td-faq-2-thumb mb-30 fix td-rounded-10">
-                                    <img data-speed=".9" className="td-rounded-10" src={thumbFaq} alt=""/>
-                                </div>
-                            </div>
-                            <div className="col-lg-6">
-                                <div className="td-faq-4-wrap-right td-faq-2-wrap-right mb-30">
-                                    <h2 className="td-testimonial-title mb-20 td-text-invert">Vos questions,<span>nos réponses</span></h2>
-                                    <div className="td-faq-4-accordion  wow fadeInRight" data-wow-delay=".5s" data-wow-duration="1s">
-                                        <div className="accordion" id="accordionExample">
-                                           <div className="accordion-items">
-                                              <h2 className="accordion-header">
-                                                 <button className="accordion-buttons collapsed" type="button" data-bs-toggle="collapse"
-                                                    data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                                                    Comment démarrer un projet ?
-                                                    <span className="plus-icon"></span>
-                                                 </button>
-                                              </h2>
-                                              <div id="collapseOne" className="accordion-collapse collapse"
-                                                 data-bs-parent="#accordionExample">
-                                                 <div className="accordion-body">
-                                                    <p>
-                                                        Le marketing ne se limite pas à satisfaire les besoins des clients, 
-                                                        il crée aussi de la valeur pour les actionnaires. Dans ce contexte, 
-                                                        il devient un levier de rentabilité, de compétitivité et de croissance durable.
-                                                    </p>
-                                                 </div>
-                                              </div>
-                                           </div>
-                                           <div className="accordion-items">
-                                              <h2>
-                                                 <button className="accordion-buttons" type="button" data-bs-toggle="collapse"
-                                                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                                    Comment fonctionne une agence en communication ?
-                                                    <span className="plus-icon"></span>
-                                                 </button>
-                                              </h2>
-                                              <div id="collapseTwo" className="accordion-collapse collapse show"
-                                                 data-bs-parent="#accordionExample">
-                                                 <div className="accordion-body">
-                                                    <p>
-                                                        Some definitions of marketing highlight marketing's ability to produce
-                                                        value to shareholders of the firm as well. In this context
-                                                    </p>
-                                                 </div>
-                                              </div>
-                                           </div>
-                                           <div className="accordion-items">
-                                              <h2 className="accordion-header">
-                                                 <button className="accordion-buttons collapsed" type="button" data-bs-toggle="collapse"
-                                                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                                    Créer une identité de marque distinctive pour votre startup ou votre agence
-                                                    <span className="plus-icon"></span>
-                                                 </button>
-                                              </h2>
-                                              <div id="collapseThree" className="accordion-collapse collapse"
-                                                 data-bs-parent="#accordionExample">
-                                                 <div className="accordion-body">
-                                                    <p>
-                                                        Some definitions of marketing highlight marketing's ability to produce
-                                                        value to shareholders of the firm as well. In this context
-                                                    </p>
-                                                 </div>
-                                              </div>
-                                           </div>
-                                           <div className="accordion-items">
-                                              <h2 className="accordion-header">
-                                                 <button className="accordion-buttons collapsed" type="button" data-bs-toggle="collapse"
-                                                    data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                                                    Pourquoi faire appel à une agence de communication est essentiel pour le succès de votre entreprise
-                                                    <span className="plus-icon"></span>
-                                                 </button>
-                                              </h2>
-                                              <div id="collapseFour" className="accordion-collapse collapse"
-                                                 data-bs-parent="#accordionExample">
-                                                 <div className="accordion-body">
-                                                    <p>
-                                                        Some definitions of marketing highlight marketing's ability to produce
-                                                        value to shareholders of the firm as well. In this context
-                                                    </p>
-                                                 </div>
-                                              </div>
-                                           </div>
-                                        </div>
-                                     </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <Faq />
 
                 <div className="td-service-replace-area pt-120 pb-130">
                     <div className="container">
@@ -341,22 +252,59 @@ function Home() {
                     </div>
                 </div>
 
-                <div className="td-cta-area">
-                    <div className="container">
-                        <div className="col-lg-12">
-                            <div className="td-cta-wrap p-relative z-index-1 text-center pt-135 pb-135 include-bg" data-background="assets/img/cta/bg.jpg">
-                                {/* <img className="td-cta-shape d-none d-xl-block" src="assets/img/cta/cta.png" alt=""/> */}
-                                <h2 className="title p-relative d-inline-block">
-                                    {/* <img className="td-cta-shape-2 d-none d-md-block" src="assets/img/cta/cta-2.png" alt=""/> */}
-                                    <a className="td-text-invert" href="contact.html">
-                                       VOUS AVEZ<br/>
-                                        DES PROJETS<br/>
-                                        EN TÊTE
-                                    </a>
-                                </h2>
-                            </div>
-                        </div>
+                 <div className="td-cta-area">
+              <div className="container">
+                <div className="col-lg-12">
+                  <div
+                    className="td-cta-wrap p-relative z-index-1 text-center pt-135 pb-135 include-bg"
+                    data-background="assets/img/cta/bg.jpg"
+                  >
+                    <img
+                      className="td-cta-shape d-none d-xl-block"
+                      src={cta1}
+                      alt=""
+                    />
+                    <h2 className="title p-relative d-inline-block">
+                      {/* <img
+                        className="td-cta-shape-2 d-none d-md-block"
+                        src={cta2}
+                        alt=""
+                      /> */}
+                      {/* <a className="td-text-invert" href="contact.html">
+                        VOUS AVEZ
+                        <br />
+                        DES PROJETS
+                        <br />
+                        EN TÊTE
+                      </a> */}
+                      <Link className="td-text-invert" to="/contact">
+                        VOUS AVEZ
+                        <br />
+                        DES PROJETS
+                        <br />
+                        EN TÊTE
+                      </Link>
+                    </h2>
+
+                    <div
+                      className="td-btn-group mb-35"
+                      style={{
+                        padding: "2% 3% 14% 20%",
+                      }}
+                    >
+                      <Link className="td-btn-circle" to="/contact">
+                        <i className="fa-solid fa-arrow-right"></i>
+                      </Link>
+                      <Link className="td-btn-2 td-btn-primary" to="/contact">
+                        Demander un devis
+                      </Link>
+                      <Link className="td-btn-circle" to="/contact">
+                        <i className="fa-solid fa-arrow-right"></i>
+                      </Link>
                     </div>
+                  </div>
+                </div>
+              </div>
                 </div>
 
             </main>
