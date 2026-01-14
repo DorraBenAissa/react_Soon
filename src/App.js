@@ -24,7 +24,7 @@ import Blog_details from "./pages/Blog_details/Blog_details";
 // GLOBAL STYLES
 // import './style/app.css';
 
-import ScriptsLoader from "./components/ScriptsLoader";
+// import ScriptsLoader from "./components/ScriptsLoader";
 
 
 
