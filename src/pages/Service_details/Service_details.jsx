@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import thumb_2 from "../../assets/img/service/hero/thumb-2.jpg";
 import thumb from "../../assets/img/service/hero/thumb.jpg";
 import thumbFaq from "../../assets/img/faq/faq-2/thumb.png";
-import shape from "../../assets/img/service/replace/shape.png";
+// import shape from "../../assets/img/service/replace/shape.png";
 import thumbReplace from "../../assets/img/service/replace/thumb.jpg";
 
 // COMPONENTS
@@ -218,11 +218,11 @@ function Home() {
                                         les mieux organisées.</h2>
                                 </div>
                             </div>
-                            <div className="col-lg-4">
+                            {/* <div className="col-lg-4">
                                 <div className="td-service-replace-shape pt-100 pb-30">
                                     <img src={shape} alt=""/>
                                 </div>
-                            </div>
+                            </div> */}
                             <div className="col-lg-8">
                                 <div className="td-service-replace-content">
                                     <div className="td-service-replace-thumb mb-50">
@@ -231,18 +231,16 @@ function Home() {
                                     <div className="row">
                                         <div className="col-lg-6 col-md-6">
                                             <div className="mb-20">
-                                                <p>Receive your design within a few business days
-                                                    and be updated on the process. Everything you
-                                                    need for a digitally driven brand. Defined
-                                                    proposition. Conceptual realization.</p>
+                                                <p>Chez Soon, l’intelligence artificielle enrichit notre processus créatif en accélérant 
+                                                  l’exploration d’idées, la création de mood boards et le prototypage. Elle nous permet 
+                                                  de concevoir des concepts innovants et percutants, tout en restant fidèles à une vision 
+                                                  créative exigeante.</p>
                                             </div>
                                         </div>
                                         <div className="col-lg-6 col-md-6">
                                             <div  className="mb-20">
-                                                <p>Receive your design within a few business days
-                                                    and be updated on the process. Everything you
-                                                    need for a digitally driven brand. Defined
-                                                    proposition. Conceptual realization.</p>
+                                                <p>Notre équipe passionnée combine expertise, collaboration et sens du détail pour donner 
+                                                  vie à vos projets. À partir de briefs précis et d’échanges constants, nous créons des expériences visuelles uniques, pensées sur mesure.</p>
                                             </div>
                                         </div>
                                     </div>

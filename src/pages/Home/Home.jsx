@@ -1042,14 +1042,12 @@ function Home() {
                       </h2>
 
                       <p className="td-section-text mr-200">
-                        Chez Soon, notre espace créatif est un véritable
-                        laboratoire d’idées où chaque projet prend vie. Entre
-                        briefing précis, brainstorming intense, visuels
-                        inspirants, croquis et maquettes, nous explorons sans
-                        cesse de nouvelles pistes pour créer des concepts
-                        uniques et percutants. Chaque mood board, prototype et
-                        élément de design est pensé pour transformer vos idées
-                        en expériences visuelles concrètes et innovantes.
+                        Chez <strong>Soon</strong>, notre espace créatif est un véritable laboratoire d’idées où chaque projet prend vie. 
+                        Entre briefing précis, brainstorming intense, visuels inspirants, croquis et maquettes, 
+                        nous intégrons <strong>l’intelligence artificielle à notre processus créatif</strong> pour explorer sans cesse 
+                        de nouvelles pistes et concevoir des concepts uniques et percutants. Chaque mood board, prototype 
+                        et élément de design est pensé pour transformer 
+                        vos idées en expériences visuelles concrètes, innovantes et enrichies par l’IA.
                       </p>
                     </div>
                     <div style={{ width: "60.666667%" }} className="col-lg-5">
@@ -1077,7 +1075,7 @@ function Home() {
                   <div style={{ width: "49.333333%" }} className="col-lg-7">
                     <div className="td-service-content">
                       <Link className="td-service-item pt-0" to="/service_details">
-                        Conception créative
+                        Branding & Design
                         <span>
                           <svg
                             width="25"
@@ -1094,7 +1092,7 @@ function Home() {
                         </span>
                       </Link>
                       <Link className="td-service-item" to="/service_details">
-                        Identité de marque
+                        Stratégie & Communication
                         <span>
                           <svg
                             width="25"
@@ -1111,7 +1109,7 @@ function Home() {
                         </span>
                       </Link>
                       <Link className="td-service-item" to="/service_details">
-                        Design e-commerce
+                        Digital & Technologie
                         <span>
                           <svg
                             width="25"
@@ -1128,7 +1126,7 @@ function Home() {
                         </span>
                       </Link>
                       <Link className="td-service-item" to="/service_details">
-                        Digital Marketing
+                        Audiovisuel & 3D
                         <span>
                           <svg
                             width="25"
@@ -1145,7 +1143,7 @@ function Home() {
                         </span>
                       </Link>
                       <Link className="td-service-item" to="/service_details">
-                        Stratégie de communication
+                        Social Media & Growth
                         <span>
                           <svg
                             width="25"
@@ -1162,7 +1160,7 @@ function Home() {
                         </span>
                       </Link>
                       <Link className="td-service-item" to="/service_details">
-                        Animation 3D & Vidéo
+                        Site web
                         <span>
                           <svg
                             width="25"
@@ -1179,7 +1177,7 @@ function Home() {
                         </span>
                       </Link>
                       <Link className="td-service-item" to="/service_details">
-                        Développement de clientèle
+                        Événementiel & Expériences
                         <span>
                           <svg
                             width="25"

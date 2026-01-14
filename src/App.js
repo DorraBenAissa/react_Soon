@@ -38,11 +38,17 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/services" element={<Services />} />
-        <Route path="/service_details" element={<Service_details />} />
+          <Route path="/service_details" element={<Service_details />} />
         <Route path="/portfolio_details" element={<Portfolio_details />} />
-              <Route path="/portfolio_details" element={<Portfolio_details />} />
+          <Route path="/blog_details" element={<Blog_details />} />
+          <Route path="/blog_details" element={<Blog_details />} />
+          <Route path="/blog_details" element={<Blog_details />} />
+          <Route path="/blog_details" element={<Blog_details />} />
+          <Route path="/blog_details" element={<Blog_details />} />
+          <Route path="/blog_details" element={<Blog_details />} />
+          <Route path="/blog_details" element={<Blog_details />} />
         <Route path="/blog" element={<Blog />} />
-        <Route path="/blog_details" element={<Blog_details />} />
+          <Route path="/blog_details" element={<Blog_details />} />
       </Routes>
 
       {/* <ScriptsLoader /> */}
