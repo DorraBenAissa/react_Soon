@@ -2,7 +2,7 @@
 import { Link } from "react-router-dom";
 
 // ASSETS
-// import thumb from "../../assets/img/portfolio/details/thumb.jpg";
+
 import avatar from "../../assets/img/blog/blog-details/avatar.jpg";
 import thumb_3 from "../../assets/img/blog/blog-details/thumb-3.jpg";
 import thumb_4 from "../../assets/img/blog/blog-details/thumb-4.jpg";
