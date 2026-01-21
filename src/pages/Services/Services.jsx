@@ -205,10 +205,13 @@ function Home() {
             <div className="td-team-area td-team-about-wrap">
               <div className="container-fluid">
                 <div className="row">
-                  <div className="col-lg-3 col-md-6 col-sm-6">
+                  <div className="col-lg-3 col-md-6 col-sm-6 " >
                     <div className="td-team-4-wrap p-relative mb-30">
                       <div className="td-team-4-thumb">
-                        <img className="w-100" src={thumbTeam} alt="" />
+                        <img className="w-100" style={{
+                                                    borderTopRightRadius: "142px",
+                                                    borderBottomLeftRadius: "142px",
+                                                }} src={thumbTeam} alt="" />
                       </div>
                       <div className="td-team-4-content text-center">
                         <span className="td-team-4-subtitle">
@@ -306,7 +309,10 @@ function Home() {
                   <div className="col-lg-3 col-md-6 col-sm-6">
                     <div className="td-team-4-wrap p-relative mb-30">
                       <div className="td-team-4-thumb">
-                        <img className="w-100" src={thumbTeam2} alt="" />
+                        <img className="w-100" style={{
+                                                    borderTopRightRadius: "142px",
+                                                    borderBottomLeftRadius: "142px",
+                                                }} src={thumbTeam2} alt="" />
                       </div>
                       <div className="td-team-4-content text-center">
                         <span className="td-team-4-subtitle">
@@ -404,7 +410,10 @@ function Home() {
                   <div className="col-lg-3 col-md-6 col-sm-6">
                     <div className="td-team-4-wrap p-relative mb-30">
                       <div className="td-team-4-thumb">
-                        <img className="w-100" src={thumbTeam3} alt="" />
+                        <img className="w-100" style={{
+                                                    borderTopRightRadius: "142px",
+                                                    borderBottomLeftRadius: "142px",
+                                                }} src={thumbTeam3} alt="" />
                       </div>
                       <div className="td-team-4-content text-center">
                         <span className="td-team-4-subtitle">
@@ -502,7 +511,10 @@ function Home() {
                   <div className="col-lg-3 col-md-6 col-sm-6">
                     <div className="td-team-4-wrap p-relative mb-30">
                       <div className="td-team-4-thumb">
-                        <img className="w-100" src={thumbTeam4} alt="" />
+                        <img className="w-100" style={{
+                                                    borderTopRightRadius: "142px",
+                                                    borderBottomLeftRadius: "142px",
+                                                }}src={thumbTeam4} alt="" />
                       </div>
                       <div className="td-team-4-content text-center">
                         <span className="td-team-4-subtitle">
@@ -600,7 +612,10 @@ function Home() {
                   <div className="col-lg-3 col-md-6 col-sm-6">
                     <div className="td-team-4-wrap p-relative mb-30">
                       <div className="td-team-4-thumb">
-                        <img className="w-100" src={thumbTeam5} alt="" />
+                        <img className="w-100" style={{
+                                                    borderTopRightRadius: "142px",
+                                                    borderBottomLeftRadius: "142px",
+                                                }} src={thumbTeam5} alt="" />
                       </div>
                       <div className="td-team-4-content text-center">
                         <span className="td-team-4-subtitle">
@@ -698,7 +713,10 @@ function Home() {
                   <div className="col-lg-3 col-md-6 col-sm-6">
                     <div className="td-team-4-wrap p-relative mb-30">
                       <div className="td-team-4-thumb">
-                        <img className="w-100" src={thumbTeam6} alt="" />
+                        <img className="w-100" style={{
+                                                    borderTopRightRadius: "142px",
+                                                    borderBottomLeftRadius: "142px",
+                                                }}src={thumbTeam6} alt="" />
                       </div>
                       <div className="td-team-4-content text-center">
                         <span className="td-team-4-subtitle">
@@ -796,7 +814,10 @@ function Home() {
                   <div className="col-lg-3 col-md-6 col-sm-6">
                     <div className="td-team-4-wrap p-relative mb-30">
                       <div className="td-team-4-thumb">
-                        <img className="w-100" src={thumbTeam7} alt="" />
+                        <img className="w-100" style={{
+                                                    borderTopRightRadius: "142px",
+                                                    borderBottomLeftRadius: "142px",
+                                                }} src={thumbTeam7} alt="" />
                       </div>
                       <div className="td-team-4-content text-center">
                         <span className="td-team-4-subtitle">
@@ -894,7 +915,10 @@ function Home() {
                   <div className="col-lg-3 col-md-6 col-sm-6">
                     <div className="td-team-4-wrap p-relative mb-30">
                       <div className="td-team-4-thumb">
-                        <img className="w-100" src={thumbTeam8} alt="" />
+                        <img className="w-100" style={{
+                                                    borderTopRightRadius: "142px",
+                                                    borderBottomLeftRadius: "142px",
+                                                }} src={thumbTeam8} alt="" />
                       </div>
                       <div className="td-team-4-content text-center">
                         <span className="td-team-4-subtitle">Graphiste</span>
@@ -990,7 +1014,10 @@ function Home() {
                   <div className="col-lg-3 col-md-6 col-sm-6">
                     <div className="td-team-4-wrap p-relative mb-30">
                       <div className="td-team-4-thumb">
-                        <img className="w-100" src={thumbTeam9} alt="" />
+                        <img className="w-100" style={{
+                                                    borderTopRightRadius: "142px",
+                                                    borderBottomLeftRadius: "142px",
+                                                }} src={thumbTeam9} alt="" />
                       </div>
                       <div className="td-team-4-content text-center">
                         <span className="td-team-4-subtitle">
@@ -1088,7 +1115,10 @@ function Home() {
                   <div className="col-lg-3 col-md-6 col-sm-6">
                     <div className="td-team-4-wrap p-relative mb-30">
                       <div className="td-team-4-thumb">
-                        <img className="w-100" src={thumbTeam10} alt="" />
+                        <img className="w-100" style={{
+                                                    borderTopRightRadius: "142px",
+                                                    borderBottomLeftRadius: "142px",
+                                                }} src={thumbTeam10} alt="" />
                       </div>
                       <div className="td-team-4-content text-center">
                         <span className="td-team-4-subtitle">
@@ -1186,7 +1216,10 @@ function Home() {
                   <div className="col-lg-3 col-md-6 col-sm-6">
                     <div className="td-team-4-wrap p-relative mb-30">
                       <div className="td-team-4-thumb">
-                        <img className="w-100" src={thumbTeam11} alt="" />
+                        <img className="w-100" style={{
+                                                    borderTopRightRadius: "142px",
+                                                    borderBottomLeftRadius: "142px",
+                                                }} src={thumbTeam11} alt="" />
                       </div>
                       <div className="td-team-4-content text-center">
                         <span className="td-team-4-subtitle">

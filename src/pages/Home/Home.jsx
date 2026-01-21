@@ -1159,7 +1159,7 @@ function Home() {
                           </svg>
                         </span>
                       </Link>
-                      <Link className="td-service-item" to="/service_details">
+                      {/* <Link className="td-service-item" to="/service_details">
                         Site web
                         <span>
                           <svg
@@ -1175,7 +1175,7 @@ function Home() {
                             />
                           </svg>
                         </span>
-                      </Link>
+                      </Link> */}
                       <Link className="td-service-item" to="/service_details">
                         Événementiel & Expériences
                         <span>
