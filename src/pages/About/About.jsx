@@ -123,6 +123,18 @@ function Home() {
                               saisissons chaque opportunité pour progresser et
                               innover.
                             </p>
+                              {/* <a className="td-btn-circle" href="contact.html">
+                                <i className="fa-solid fa-arrow-right"></i>
+                              </a>
+                              <a
+                                className="td-btn-2 td-btn-primary"
+                                href="contact.html"
+                              >
+                                EN SAVOIR PLUS
+                              </a>
+                              <a className="td-btn-circle" href="contact.html">
+                                <i className="fa-solid fa-arrow-right"></i>
+                              </a> */}
                             <div className="td-btn-group">
                               <Link className="td-btn-circle" to="/contact">
                                 <i className="fa-solid fa-arrow-right"></i>
