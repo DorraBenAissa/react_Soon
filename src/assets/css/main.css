@@ -1116,6 +1116,10 @@ textarea {
   background: var(--td-common-black);
 }
 
+.orange-bg {
+  background: var(--td-theme-5);
+}
+
 .them5-bg {
   background: var(--td-theme-5);
   border-top-right-radius: 150px;

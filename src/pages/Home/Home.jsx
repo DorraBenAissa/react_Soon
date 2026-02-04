@@ -1074,7 +1074,7 @@ function Home() {
                   </div>
                   <div style={{ width: "49.333333%" }} className="col-lg-7">
                     <div className="td-service-content">
-                      <Link className="td-service-item pt-0" to="/service_details">
+                      <Link className="td-service-item pt-0" to="/service_details_Brand">
                         Branding & Design
                         <span>
                           <svg
@@ -1091,7 +1091,7 @@ function Home() {
                           </svg>
                         </span>
                       </Link>
-                      <Link className="td-service-item" to="/service_details">
+                      <Link className="td-service-item" to="/service_details_Com">
                         Stratégie & Communication
                         <span>
                           <svg
@@ -1108,7 +1108,7 @@ function Home() {
                           </svg>
                         </span>
                       </Link>
-                      <Link className="td-service-item" to="/service_details">
+                      <Link className="td-service-item" to="/service_details_Digital">
                         Digital & Technologie
                         <span>
                           <svg
@@ -1125,7 +1125,7 @@ function Home() {
                           </svg>
                         </span>
                       </Link>
-                      <Link className="td-service-item" to="/service_details">
+                      <Link className="td-service-item" to="/service_details_3D">
                         Audiovisuel & 3D
                         <span>
                           <svg
@@ -1142,7 +1142,7 @@ function Home() {
                           </svg>
                         </span>
                       </Link>
-                      <Link className="td-service-item" to="/service_details">
+                      <Link className="td-service-item" to="/service_details_Growth">
                         Social Media & Growth
                         <span>
                           <svg
@@ -1176,7 +1176,7 @@ function Home() {
                           </svg>
                         </span>
                       </Link> */}
-                      <Link className="td-service-item" to="/service_details">
+                      <Link className="td-service-item" to="/service_details_Event">
                         Événementiel & Expériences
                         <span>
                           <svg
@@ -1306,7 +1306,7 @@ function Home() {
                         />
                       </div>
                       <div className="td-project-content">
-                        <Link to="/portfolio_details">
+                        <Link to="/portfolio_details_2">
                           <span className="mr-40">
                             Le design produit est le processus par lequel une
                             marque est créée
@@ -1352,7 +1352,7 @@ function Home() {
                         />
                       </div>
                       <div className="td-project-content">
-                        <Link to="/portfolio_details">
+                        <Link to="/portfolio_details_3">
                           <span className="mr-40">
                             Le branding est essentiel pour la tech
                           </span>
@@ -1397,7 +1397,7 @@ function Home() {
                         />
                       </div>
                       <div className="td-project-content">
-                        <Link to="/portfolio_details">
+                        <Link to="/portfolio_details_4">
                           <span className="mr-40">
                             Le design graphique est le processus par lequel une
                             marque est créée
@@ -1443,7 +1443,7 @@ function Home() {
                         />
                       </div>
                       <div className="td-project-content">
-                        <Link to="/portfolio_details">
+                        <Link to="/portfolio_details_5">
                           <span className="mr-40">
                             La créativité naît lorsque nous donnons le meilleur
                             de nous-mêmes
@@ -2060,7 +2060,7 @@ function Home() {
                       </div>
                       <div className="td-blog-content">
                         <h3 className="td-blog-title mb-30">
-                          <Link to="/blog_details">
+                          <Link to="/blog_details_2">
                             Le CSS border-image, bien que complexe, offre des
                             possibilités incroyables et créatives, parfaites
                             pour une agence de design web souhaitant apporter
@@ -2094,7 +2094,7 @@ function Home() {
                       </div>
                       <div className="td-blog-content">
                         <h3 className="td-blog-title mb-30">
-                          <Link to="/blog_details">
+                          <Link to="/blog_details_3">
                             Grâce à notre planification stratégique, la vision
                             de votre marque rencontre parfaitement les
                             opportunités du marché.
