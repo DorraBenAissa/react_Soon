@@ -98,8 +98,8 @@ const AutoVideo = ({ width = 160, height = 285 }) => {
           onClick={() => setIsVisible(true)}
           style={{
             position: "fixed",
-            right: "20px",
-            bottom: "40px",
+            right: "14px",
+            bottom: "30px",
             zIndex: 100,
             color: "#e26F57",
             background: "white",

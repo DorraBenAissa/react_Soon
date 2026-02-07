@@ -21,7 +21,11 @@ function Footer() {
                         <img src={soonWhiteLogo} alt="" />
                       </a> */}
                   <Link to="/">
-                    <img style={{ width: "96px" }} src={soonWhiteLogo} alt="Logo Soon" />
+                    <img
+                      style={{ width: "96px" }}
+                      src={soonWhiteLogo}
+                      alt="Logo Soon"
+                    />
                   </Link>
                 </div>
               </div>
@@ -115,27 +119,14 @@ function Footer() {
                     <div className="col-lg-6 col-md-8">
                       <div className="td-footer-copyright mb-20">
                         <p>
-                          © 2026 <a href="#">Soon.</a> Tous droits réservés.
+                          {/* © 2026 <a href="#">Soon.</a> Tous droits réservés. */}
+                          © 2026 •<a href="#"> Soon Agency </a>  – Agence de communication • Tous droits réservés
                         </p>
                       </div>
                     </div>
                     <div className="col-lg-6 col-md-4">
                       <div className="td-footer-social text-md-end mb-20">
-                        <a href="#">
-                          <svg
-                            width="13"
-                            height="13"
-                            viewBox="0 0 16 16"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
-                            <path
-                              d="M9.33161 6.77486L15.1688 0H13.7856L8.71722 5.8826L4.66907 0H0L6.12155 8.89546L0 16H1.38336L6.73581 9.78785L11.0109 16H15.68L9.33148 6.77486H9.33187H9.33161ZM7.43696 8.97374L6.81669 8.088L1.88171 1.03969H4.00634L7.98902 6.72789L8.60929 7.61362L13.7863 15.0074H11.6616L7.43709 8.974V8.97361L7.43696 8.97374Z"
-                              fill="currentColor"
-                            />
-                          </svg>
-                        </a>
-                        <a href="#">
+                        <a href="https://www.facebook.com/Graphissime/?locale=fr_FR">
                           <svg
                             width="17"
                             height="17"
@@ -149,7 +140,29 @@ function Footer() {
                             />
                           </svg>
                         </a>
-                        <a href="#">
+                        <a href="https://fr.linkedin.com/company/soon-agency-making-your-brand-fly">
+                          <svg
+                            width="15"
+                            height="15"
+                            viewBox="0 0 15 15"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M10.2579 4.7373C11.5141 4.7373 12.7188 5.23632 13.6071 6.12458C14.4954 7.01283 14.9944 8.21757 14.9944 9.47375V14.9996H11.8367V9.47375C11.8367 9.05502 11.6704 8.65344 11.3743 8.35736C11.0782 8.06127 10.6767 7.89493 10.2579 7.89493C9.8392 7.89493 9.43762 8.06127 9.14154 8.35736C8.84545 8.65344 8.67911 9.05502 8.67911 9.47375V14.9996H5.52148V9.47375C5.52148 8.21757 6.0205 7.01283 6.90876 6.12458C7.79701 5.23632 9.00174 4.7373 10.2579 4.7373Z"
+                              fill="currentColor"
+                            />
+                            <path
+                              d="M3.15763 5.52734H0V15.0002H3.15763V5.52734Z"
+                              fill="currentColor"
+                            />
+                            <path
+                              d="M1.57881 3.15763C2.45077 3.15763 3.15763 2.45077 3.15763 1.57881C3.15763 0.706859 2.45077 0 1.57881 0C0.706859 0 0 0.706859 0 1.57881C0 2.45077 0.706859 3.15763 1.57881 3.15763Z"
+                              fill="currentColor"
+                            />
+                          </svg>
+                        </a>
+                        <a href="https://www.instagram.com/soon_feed">
                           <svg
                             width="16"
                             height="16"
@@ -180,24 +193,16 @@ function Footer() {
                             />
                           </svg>
                         </a>
-                        <a href="#">
+                        <a href="https://www.tiktok.com/@soon_agency">
                           <svg
-                            width="15"
-                            height="15"
-                            viewBox="0 0 15 15"
+                            width="13"
+                            height="13"
+                            viewBox="0 0 16 16"
                             fill="none"
                             xmlns="http://www.w3.org/2000/svg"
                           >
                             <path
-                              d="M10.2579 4.7373C11.5141 4.7373 12.7188 5.23632 13.6071 6.12458C14.4954 7.01283 14.9944 8.21757 14.9944 9.47375V14.9996H11.8367V9.47375C11.8367 9.05502 11.6704 8.65344 11.3743 8.35736C11.0782 8.06127 10.6767 7.89493 10.2579 7.89493C9.8392 7.89493 9.43762 8.06127 9.14154 8.35736C8.84545 8.65344 8.67911 9.05502 8.67911 9.47375V14.9996H5.52148V9.47375C5.52148 8.21757 6.0205 7.01283 6.90876 6.12458C7.79701 5.23632 9.00174 4.7373 10.2579 4.7373Z"
-                              fill="currentColor"
-                            />
-                            <path
-                              d="M3.15763 5.52734H0V15.0002H3.15763V5.52734Z"
-                              fill="currentColor"
-                            />
-                            <path
-                              d="M1.57881 3.15763C2.45077 3.15763 3.15763 2.45077 3.15763 1.57881C3.15763 0.706859 2.45077 0 1.57881 0C0.706859 0 0 0.706859 0 1.57881C0 2.45077 0.706859 3.15763 1.57881 3.15763Z"
+                              d="M9.33161 6.77486L15.1688 0H13.7856L8.71722 5.8826L4.66907 0H0L6.12155 8.89546L0 16H1.38336L6.73581 9.78785L11.0109 16H15.68L9.33148 6.77486H9.33187H9.33161ZM7.43696 8.97374L6.81669 8.088L1.88171 1.03969H4.00634L7.98902 6.72789L8.60929 7.61362L13.7863 15.0074H11.6616L7.43709 8.974V8.97361L7.43696 8.97374Z"
                               fill="currentColor"
                             />
                           </svg>

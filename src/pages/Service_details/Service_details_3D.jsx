@@ -270,18 +270,29 @@ function Home() {
                   <div className="col-12">
                     <div className="d-flex justify-content-center mt-50">
                       <div className="td-btn-group">
-                        <a className="td-btn-circle" href="service.html">
+                        {/* <a className="td-btn-circle" href="service.html">
                           <i className="fa-solid fa-arrow-right"></i>
                         </a>
                         <a
                           className="td-btn-2 td-btn-primary"
                           href="service.html"
                         >
-                          SEE MORE PROJECT
+                          Découvrir plus de projets
                         </a>
                         <a className="td-btn-circle" href="service.html">
                           <i className="fa-solid fa-arrow-right"></i>
-                        </a>
+                        </a> */}
+                        <Link className="td-btn-circle" to="/Projects">
+                          <i className="fa-solid fa-arrow-right"></i>
+                        </Link>
+
+                        <Link className="td-btn-2 td-btn-primary" to="/Projects">
+                          Découvrir plus de projets
+                        </Link>
+
+                        <Link className="td-btn-circle" to="/Projects">
+                          <i className="fa-solid fa-arrow-right"></i>
+                        </Link>
                       </div>
                     </div>
                   </div>

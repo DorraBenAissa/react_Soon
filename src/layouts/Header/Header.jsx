@@ -205,7 +205,7 @@ const Header = () => {
         style={{
           width: "100%",
           padding: "10px",
-          paddingLeft: "40px",
+          paddingLeft: "82px",
           display: "flex",
           alignItems: "center",
           fontFamily: "'Aboreto', 'SF Pro', 'Plus Jakarta Sans', sans-serif",

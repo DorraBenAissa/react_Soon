@@ -62,7 +62,7 @@ import videoSource from "../../assets/video/AdobeStock_1729280486_Video_HD_Previ
 
 // COMPONENTS
 // import Odometer from "../../components/Odometer";
-// import Header from "./../../layouts/Header/Header";
+import Header from "./../../layouts/Header/Header";
 import Footer from "./../../layouts/Footer/Footer";
 import Loader from "../../components/Loader";
 import StickyHeader from "../../components/StickyHeader";
@@ -117,9 +117,9 @@ function Home() {
       <SmoothScroll />
       <WowInit />
       <AutoCloseMenu />
-      {/* <Header /> */}
+      <Header />
 
-      <div className="search__popup">
+      {/* <div className="search__popup">
         <div className="container">
           <div className="row">
             <div className="col-12">
@@ -191,7 +191,7 @@ function Home() {
           </div>
         </div>
       </div>
-      <div className="search-popup-overlay"></div>
+      <div className="search-popup-overlay"></div> */}
 
       {/* <Header /> */}
 
@@ -213,14 +213,14 @@ function Home() {
                   style={{ marginRight: "-31%" }}
                   className="row justify-content-center"
                 >
-                  <header>
+                  {/* <header> */}
                     {/* <div class="col-lg-4 col-md-4 col-sm-4 col-2">
                       <div class="td-header-right text-end">
                         
                       </div>
                     </div> */}
 
-                    <div
+                    {/* <div
                       style={{
                         width: "100%",
                         paddingLeft: "40px",
@@ -234,18 +234,18 @@ function Home() {
                         zIndex: 10000,
                         backgroundColor: "transparent",
                       }}
-                    >
+                    > */}
                       {/* Logo à gauche */}
-                      <Link to="/" style={{ marginRight: "20px" }}>
+                      {/* <Link to="/" style={{ marginRight: "20px" }}>
                         <img
                           src={soonWhiteLogo}
                           alt="Logo Soon"
                           style={{ width: "96px" }}
                         />
-                      </Link>
+                      </Link> */}
 
                       {/* Menu */}
-                      {menuItems.map((item, index) => (
+                      {/* {menuItems.map((item, index) => (
                         <button
                           key={index}
                           style={{
@@ -272,7 +272,7 @@ function Home() {
                         >
                           {item.label}
                         </button>
-                      ))}
+                      ))} */}
                       {/* {["ACCUEIL", "SERVICES", "À PROPOS"].map(
                         (item, index) => (
                           <button
@@ -303,7 +303,7 @@ function Home() {
                           </button>
                         )
                       )} */}
-                      <button
+                      {/* <button
                         class="td-header-search search-open-btn"
                         style={{ marginLeft: "58%" }}
                       >
@@ -329,7 +329,7 @@ function Home() {
                             stroke-linejoin="round"
                           />
                         </svg>
-                      </button>
+                      </button> */}
                       {/* <a
                         href="contact.html"
                         class="td-btn td-btn-lg d-none d-md-inline-block td-btn-switch-animation ml-10"
@@ -353,7 +353,7 @@ function Home() {
                           </span>
                         </span>
                       </a> */}
-                      <Link
+                      {/* <Link
                         to="/contact"
                         className="td-btn td-btn-lg d-none d-md-inline-block td-btn-switch-animation ml-10"
                         style={{ borderColor: "white", background: "#ffff" }}
@@ -377,7 +377,7 @@ function Home() {
                         </span>
                       </Link>
                     </div>
-                  </header>
+                  </header> */}
 
                   <div className="col-lg-10">
                     <div className="td-hero-content">
@@ -431,9 +431,9 @@ function Home() {
                           style={{
                             position: "absolute",
                             top: "97px",
-                            left: 1000,
+                            left: "934px",
                             width: "110vh",
-                            height: "92vh",
+                            height: "101.3vh",
                             minWidth: "50%",
                             minHeight: "60vh",
                             objectFit: "cover",

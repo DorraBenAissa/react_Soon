@@ -855,24 +855,24 @@ textarea {
   border-color: #e26F57;
 }
 .td-btn-group-border:hover .td-btn-2 {
-  border: 1px solid var(--td-theme-primary);
-  background: var(--td-theme-primary);
-  color: var(--td-common-black);
+  border: 1px solid var(--td-common-white);
+  background: var(--td-common-white);
+  color: var(--td-theme-5);
 }
 .td-btn-group-border:hover .td-btn-circle {
-  border: 1px solid var(--td-theme-primary) !important;
-  background: var(--td-theme-primary) !important;
-  color: var(--td-common-white) !important;
+  border: 1px solid var(--td-common-white) !important;
+  background: var(--td-common-white) !important;
+  color: var(--td-theme-5) !important;
 }
 .td-btn-group-border .td-btn-2 {
-  border: 1px solid rgba(255, 255, 255, 0.25);
-  background: var(--td-common-black);
-  color: var(--td-common-white);
+  border: 1px solid var(--td-common-white);
+  background: var(--td-common-white);
+  color: var(--td-theme-5);
 }
 .td-btn-group-border .td-btn-circle {
-  border: 1px solid rgba(255, 255, 255, 0.25) !important;
-  background-color: var(--td-common-black) !important;
-  color: var(--td-common-white) !important;
+  border: 1px solid var(--td-common-white) !important;
+  background-color: var(--td-common-white) !important;
+  color: var(--td-theme-5) !important;
 }
 
 .td-btn-group {
@@ -1298,7 +1298,7 @@ textarea {
 /*=============================
     	05. cursor
 ===============================*/
-.mouse-follower {
+.mouse-followerfollower {
   z-index: 10;
 }
 .mouse-follower span {
@@ -1336,9 +1336,10 @@ textarea {
 .mouse-follower.highlight-cursor-head .cursor-dot {
   height: 150px;
   width: 150px;
-  background: #fff;
+  background: white;
   mix-blend-mode: difference;
 }
+
 @media (max-width: 991px) {
   .mouse-follower.highlight-cursor-head .cursor-dot {
     height: 80px;
@@ -1419,7 +1420,7 @@ textarea {
   line-height: 0;
   position: fixed;
   bottom: -10%;
-  right: 50px;
+  left: 14px;
   font-size: 16px;
   border-radius: 0;
   z-index: 99;
@@ -1451,6 +1452,7 @@ textarea {
 }
 .scroll__top.open {
   bottom: 30px;
+  left : 14px;
 }
 @media (max-width: 575px) {
   .scroll__top.open {
@@ -7243,7 +7245,7 @@ textarea {
   }
 }
 .td-footer-location:hover {
-  color: var(--td-theme-primary);
+  color: var(--td-common-white);
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
   .td-footer-widget {
@@ -7318,8 +7320,8 @@ textarea {
   color: var(--td-common-white);
 }
 .td-footer-social a:hover {
-  background: var(--td-theme-primary);
-  border-color: var(--td-theme-primary);
+  background: var(--td-common-white);
+  border-color: var(--td-common-white);
   color: var(--td-common-black);
 }
 .td-footer-2-bigtitle {
@@ -8400,7 +8402,7 @@ textarea {
   }
 }
 .td-portfolio-filter-content .titles a:hover {
-  color: var(--td-theme-primary);
+  color: var(--td-common-white);
 }
 .td-portfolio-filter-thumb {
   border-radius: 6px;
@@ -9230,7 +9232,7 @@ textarea {
   font-weight: 600;
 }
 .td-team-about-wrap .td-team-4-title a:hover {
-  color: var(--td-theme-primary);
+  color: var(--td-common-white);
 }
 .td-team-details-subtitle {
   font-weight: 400;

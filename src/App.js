@@ -14,6 +14,8 @@ import Service_details_Digital from "./pages/Service_details/Service_details_Dig
 import Service_details_Event from "./pages/Service_details/Service_details_Event";
 import Service_details_Growth from "./pages/Service_details/Service_details_Growth";
 
+import Projects from "./pages/Projects/Projects";
+
 import Portfolio_details from "./pages/Portfolio_details/Portfolio_details";
 import Portfolio_details_2 from "./pages/Portfolio_details/Portfolio_details_2";
 import Portfolio_details_3 from "./pages/Portfolio_details/Portfolio_details_3";
@@ -59,6 +61,7 @@ function App() {
           <Route path="/service_details_Digital" element={<Service_details_Digital />} />
           <Route path="/service_details_Event" element={<Service_details_Event />} />
           <Route path="/service_details_Growth" element={<Service_details_Growth />} />
+            <Route path="/Projects" element={<Projects />} />
 
         <Route path="/portfolio_details" element={<Portfolio_details />} />
         <Route path="/portfolio_details_2" element={<Portfolio_details_2 />} />
