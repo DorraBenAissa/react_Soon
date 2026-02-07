@@ -2174,11 +2174,11 @@ function Home() {
                     className="td-cta-wrap p-relative z-index-1 text-center pt-135 pb-135 include-bg"
                     data-background="assets/img/cta/bg.jpg"
                   >
-                    <img
+                    {/* <img
                       className="td-cta-shape d-none d-xl-block"
                       src={cta1}
                       alt=""
-                    />
+                    /> */}
                     <h2 className="title p-relative d-inline-block">
                       {/* <img
                         className="td-cta-shape-2 d-none d-md-block"
