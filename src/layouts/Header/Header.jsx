@@ -205,7 +205,7 @@ const Header = () => {
         style={{
           width: "100%",
           padding: "10px",
-          paddingLeft: "82px",
+          paddingLeft: "86px",
           display: "flex",
           alignItems: "center",
           fontFamily: "'Aboreto', 'SF Pro', 'Plus Jakarta Sans', sans-serif",
@@ -257,7 +257,7 @@ const Header = () => {
         ))}
 
         {/* Loupe Search */}
-        <button
+        {/* <button
           className="td-header-search search-open-btn"
           style={{ marginLeft: "58%" }}
         >
@@ -283,13 +283,13 @@ const Header = () => {
               strokeLinejoin="round"
             />
           </svg>
-        </button>
+        </button> */}
 
         {/* CTA SEE YOU SOON */}
         <Link
           to="/contact"
           className="td-btn td-btn-lg d-none d-md-inline-block td-btn-switch-animation ml-10"
-          style={{ borderColor: "white", background: "#ffff" }}
+          style={{ borderColor: "white", background: "#ffff", marginLeft: "60%",}}
         >
           <span className="d-flex align-items-center justify-content-center">
             <span style={{ color: "#e26757" }} className="btn-text">
